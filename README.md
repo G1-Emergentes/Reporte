@@ -296,7 +296,11 @@ TB1:
 
 ## 4.3. Software Architecture
 
+En la arquitectura de software primero nos enfocamos en aterrizar la estructura técnica de Mirage. Para lograrlo, decidimos utilizar el Modelo C4, ya que nos permite explicar la arquitectura de forma progresiva, desde lo más general hasta los detalles técnicos. A través de estos diagramas mostramos cómo se ve la plataforma por fuera y cómo hemos dividido las responsabilidades internamente para soportar las funcionalidades de probador virtual (VTO), gestión de armarios digitales e interacción omnicanal en tiendas físicas de forma escalable y eficiente.
+
 ### 4.3.1. Software Architecture System Landscape Diagram
+
+En esta sección se presenta el System Landscape Diagram, el cual permite visualizar a Mirage dentro de un entorno más amplio, considerando no solo a los usuarios finales y tiendas aliadas que interactúan con la solución, sino también a los servicios externos clave (como motores de visión por computadora para IA/AR y servicios en la nube). Este diagrama ofrece una perspectiva general del ecosistema en el que se encuentra la aplicación, mostrando cómo se relaciona con sus actores principales y servicios externos. De esta manera, se facilita la comprensión del alcance del sistema, sus dependencias y las integraciones que hacen posible la experiencia interactiva de la plataforma.
 
 ### 4.3.2. Software Architecture Context Level Diagrams
 
