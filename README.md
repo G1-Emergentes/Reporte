@@ -207,9 +207,19 @@ TB1 (19/09/2026):
 
 # CAPÍTULO I: Introducción
 
-## 1.1. Startup Profile
+# 1.1. Startup Profile
 
-### 1.1.1. Descripción de la Startup
+## 1.1.1. Descripción de la Startup
+
+ReWear es una startup tecnológica enfocada en mejorar la forma en que las personas organizan, aprovechan y se relacionan con las prendas que forman parte de su día a día. La propuesta combina moda y tecnología para ofrecer experiencias más personalizadas, ayudando a las personas a conocer mejor lo que tienen, descubrir nuevas posibilidades dentro de su propio armario y expresar su estilo de una manera más práctica. Buscamos aprovechar tecnologías como la inteligencia artificial y las experiencias digitales interactivas para desarrollar nuevas formas de relacionarse con la moda. ReWear parte de la idea de que la tecnología no solo puede ayudar a descubrir nuevas tendencias, sino también a comprender mejor el estilo personal y aprovechar de una manera más consciente las prendas que ya forman parte del guardarropa.
+
+### Misión
+
+Desarrollar soluciones tecnológicas que ayuden a las personas a organizar, conocer y aprovechar mejor su armario, brindándoles herramientas que faciliten la exploración de su estilo y la creación de nuevas combinaciones de manera sencilla y personalizada.
+
+### Visión
+
+Convertirnos en una startup referente en la aplicación de tecnología e inteligencia artificial a la moda, creando experiencias digitales que permitan a las personas relacionarse con su ropa de una manera más personalizada, práctica y consciente.
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
@@ -222,6 +232,7 @@ TB1 (19/09/2026):
 | ![team member profile photo](assets/img/profiles/renato_zegarra.png) **Zegarra Lopez, Renato Sebastian Rubber (u202311558)** | Mi nombre es Renato Zegarra, tengo 20 años y actualmente estoy cursando la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Fuera de mis estudios, disfruto explorar mis intereses en música, videojuegos y tecnología, siempre buscando nuevas formas de integrar estas pasiones en mi vida cotidiana. Me comprometo a colaborar de manera activa y responsable en la elaboración de este documento y en la concreción de la idea propuesta, aportando mis habilidades en análisis, creatividad y adaptabilidad. Estoy convencido de que con esfuerzo y trabajo en equipo, podemos alcanzar resultados innovadores y de alta calidad. |
 
 ## 1.2. Solution Profile
+---- consiste en una aplicación mobile enfocada en la gestión del armario personal y la exploración del estilo. La plataforma permitirá que los usuarios mantengan una representación digital de sus prendas y utilicen esa información para descubrir nuevas combinaciones, organizar outfits y recibir recomendaciones personalizadas de acuerdo con sus preferencias. Además, se plantea incorporar inteligencia artificial y tecnologías de visualización digital para enriquecer la experiencia del usuario. Entre las posibilidades que se explorarán se encuentra la generación de recomendaciones de outfits y la visualización de determinados artículos mediante representaciones tridimensionales y realidad aumentada. Estas funcionalidades serán evaluadas y validadas progresivamente durante el desarrollo del proyecto.
 
 ### 1.2.1. Antecedentes y problemática
 
