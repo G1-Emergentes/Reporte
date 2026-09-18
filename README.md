@@ -464,8 +464,58 @@ Chen et al. (2024) presentaron un método que permite reconstruir prendas tridim
 
 #### 1.2.2.4. Lean UX Canvas
 
-## 1.3. Segmentos objetivo
+# 1.3. Segmentos objetivo
 
+La solución está dirigida inicialmente a dos segmentos principales: por un lado, jóvenes interesados en organizar mejor su ropa y descubrir nuevas formas de combinarla; y, por otro, tiendas de moda que buscan aumentar la visibilidad de sus prendas dentro de un entorno digital más personalizado.
+
+Ambos segmentos se relacionan dentro de la plataforma, ya que los usuarios podrán descubrir prendas de las tiendas, guardarlas como referencia dentro de su armario digital y acceder posteriormente al canal de la tienda si desean conocer más información sobre el producto.
+
+### Consumidor de moda 
+Personas que poseen distintas prendas, pero que no siempre recuerdan todo lo que tienen o encuentran nuevas formas de combinarlas. Buscan una manera más práctica de organizar su ropa, descubrir nuevas combinaciones y aprovechar mejor las prendas disponibles.
+
+- **Edad estimada:** 15 a 30 años.
+- **Ubicación inicial:** zonas urbanas.
+- **Características demográficas y de comportamiento:**
+  - Utilizan smartphones y plataformas digitales de manera frecuente.
+  - Tienen interés por la moda y su imagen personal.
+  - Buscan nuevas formas de combinar las prendas que ya poseen.
+  - Pueden repetir outfits por no recordar todas las opciones disponibles en su armario.
+  - Consumen contenido relacionado con moda, estilos y tendencias.
+  - Están familiarizados con aplicaciones visuales y experiencias personalizadas.
+
+- **Necesidades principales:**
+  - Mantener sus prendas organizadas en un solo lugar.
+  - Recordar con facilidad qué ropa poseen.
+  - Encontrar nuevas combinaciones utilizando sus propias prendas.
+  - Guardar y organizar outfits para diferentes ocasiones.
+  - Aprovechar prendas que utilizan con poca frecuencia.
+  - Descubrir nuevas prendas que puedan complementar su estilo.
+
+### Tiendas de ropa
+
+Tiendas de ropa, accesorios y productos relacionados con moda que buscan ampliar la exposición de su catálogo y llegar a usuarios interesados en prendas que puedan complementar su estilo personal.
+
+Dentro de la plataforma, las tiendas podrán registrar prendas de su catálogo para que puedan ser descubiertas por los usuarios. Estas prendas podrán ser guardadas como referencia dentro del armario digital del usuario y estarán vinculadas al canal de la tienda correspondiente, permitiendo que la plataforma funcione como un medio de descubrimiento y visibilidad, sin realizar directamente la venta.
+
+- **Tipo de organización:** tiendas de ropa, accesorios y negocios relacionados con moda.
+- **Ubicación inicial:** negocios con presencia física o digital en zonas urbanas.
+- **Características y comportamiento:**
+  - Cuentan con un catálogo de productos que desean promocionar.
+  - Utilizan redes sociales, páginas web u otros canales digitales para mostrar sus prendas.
+  - Buscan nuevas formas de llegar a usuarios interesados en moda.
+  - Necesitan generar mayor visibilidad para sus productos.
+  - Valoran herramientas que permitan mostrar sus prendas dentro de contextos más personalizados.
+  - Buscan atraer tráfico hacia sus propios canales digitales o comerciales.
+
+- **Necesidades principales:**
+  - Incrementar la visibilidad de sus prendas.
+  - Mostrar su catálogo a usuarios con interés en moda.
+  - Conseguir que sus productos sean descubiertos dentro de una experiencia personalizada.
+  - Permitir que los usuarios guarden prendas de la tienda dentro de su armario digital.
+  - Generar tráfico hacia sus propios canales de información o venta.
+  - Tener presencia dentro de un entorno donde las prendas puedan relacionarse con el estilo y el armario de cada usuario.
+
+# Referencias
 # CAPÍTULO II: Requirements & Analysis
 
 ## 2.1. Competidores
