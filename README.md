@@ -226,23 +226,241 @@ Convertirnos en una startup referente en la aplicación de tecnología e intelig
 | Estudiante | Descripción |
 |------------|-------------|
 | ![team member profile photo](assets/img/profiles/mateo_cabanillas.png) **Cabanillas Meza, José Mateo (u202311458)** | Mi nombre es Mateo Cabanillas y en la actualidad estoy cursando el octavo ciclo de la carrera de ingeniería de software en la universidad peruana de ciencias aplicadas, con una mente creativa y una actitud colaborativa. Mi amor por la programación y la resolución de problemas me impulsa a explorar nuevas soluciones y aportar ideas frescas a los proyectos. Como compañero de equipo, soy amable, atento y siempre estoy dispuesto a ayudar. Creo firmemente en la importancia de la comunicación efectiva y la colaboración para lograr resultados excepcionales. |
-| ![team member profile photo](assets/img/profiles/diego_collantes.png) **Collantes Carrillo, Diego Mateo (u202311823)** | Mi nombre es Diego Collantes. Tengo 19 años. Soy estudiante de sexto ciclo en la Universidad Peruana de Ciencias Aplicadas (UPC). Disfruto de leer, redactar y escuchar música en mi tiempo libre. Elegí esta carrera, ya que me interesó todo el proceso que hay detrás de cada aplicación o programa que usamos en nuestro día a día. Personalmente, espero ampliar mis conocimientos en este ámbito a lo largo de este curso. Además, estoy comprometido a contribuir en todo lo que sea posible con el equipo y a desempeñarme de manera adecuada. |
+| ![team member profile photo](assets/img/profiles/loreley_sarmiento.png) **Sarmiento Medina, Loreley (u202310005)** | Mi nombre es Loreley Sarmiento, tengo 20 años y actualmente curso la carrera de Ingeniería de Software. Me considero una persona responsable, organizada y con buena disposición para el trabajo en equipo, ya que valoro la comunicación y la colaboración como elementos clave para lograr buenos resultados. Me interesa seguir aprendiendo constantemente y asumir nuevos retos que me permitan fortalecer mis habilidades.En este proyecto, busco participar de manera activa, apoyar a mis compañeros, aportar ideas que contribuyan al desarrollo del equipo y cumplir con las tareas asignadas dentro de los plazos establecidos, con el objetivo de alcanzar un resultado de calidad. |
 | ![team member profile photo](assets/img/profiles/italo_sanchez.jpeg) **Italo Ludwing Sanchez Manrique (u202316967)** | Mi nombre es Italo Ludwing Sanchez Manrique, soy estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC) y actualmente curso el octavo ciclo académico. Me considero una persona perseverante, tolerante, responsable y comprometida con el cumplimiento de mis objetivos. Estas cualidades me permiten afrontar los diferentes retos que surgen durante el desarrollo de proyectos, manteniendo una actitud orientada a la búsqueda de soluciones, el aprendizaje continuo y la mejora constante. Tengo conocimientos en desarrollo de software, programación, bases de datos y diseño de soluciones tecnológicas, destacando principalmente en lenguajes como Java y C++. Asimismo, cuento con experiencia trabajando con diferentes tecnologías de gestión de datos, como SQL Server, PostgreSQL y MongoDB, desarrollando consultas, realizando operaciones de manipulación y gestión de información, y aplicando diferentes enfoques de almacenamiento de datos de acuerdo con las necesidades de cada proyecto. |
 | ![team member profile photo](assets/img/profiles/antuanete_ortiz.png) **Ortiz Cardenas, Johanna Antuanete (u202310358)** | Mi nombre es Johanna Antuanete Ortiz Cárdenas, tengo 20 años y me encuentro en el sexto ciclo de la carrera de Ingeniería de Software. Me considero una persona proactiva y responsable, siempre buscando que mis trabajos sean de la mejor calidad posible. Me apasiona investigar sobre tecnología, lo que me permite estar al tanto de las últimas novedades y tendencias. En mi tiempo libre, disfruto jugar videojuegos, escuchar música y leer cómics. En el presente proyecto grupal, me comprometo a colaborar de manera activa, aportando ideas y siendo puntual con los entregables para garantizar resultados sobresalientes. |
 | ![team member profile photo](assets/img/profiles/renato_zegarra.png) **Zegarra Lopez, Renato Sebastian Rubber (u202311558)** | Mi nombre es Renato Zegarra, tengo 20 años y actualmente estoy cursando la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Fuera de mis estudios, disfruto explorar mis intereses en música, videojuegos y tecnología, siempre buscando nuevas formas de integrar estas pasiones en mi vida cotidiana. Me comprometo a colaborar de manera activa y responsable en la elaboración de este documento y en la concreción de la idea propuesta, aportando mis habilidades en análisis, creatividad y adaptabilidad. Estoy convencido de que con esfuerzo y trabajo en equipo, podemos alcanzar resultados innovadores y de alta calidad. |
 
 ## 1.2. Solution Profile
----- consiste en una aplicación mobile enfocada en la gestión del armario personal y la exploración del estilo. La plataforma permitirá que los usuarios mantengan una representación digital de sus prendas y utilicen esa información para descubrir nuevas combinaciones, organizar outfits y recibir recomendaciones personalizadas de acuerdo con sus preferencias. Además, se plantea incorporar inteligencia artificial y tecnologías de visualización digital para enriquecer la experiencia del usuario. Entre las posibilidades que se explorarán se encuentra la generación de recomendaciones de outfits y la visualización de determinados artículos mediante representaciones tridimensionales y realidad aumentada.
+Mirage consiste en una aplicación mobile enfocada en la gestión del armario personal y la exploración del estilo. La plataforma permitirá que los usuarios mantengan una representación digital de sus prendas y utilicen esa información para descubrir nuevas combinaciones, organizar outfits y recibir recomendaciones personalizadas de acuerdo con sus preferencias. Además, se plantea incorporar inteligencia artificial y tecnologías de visualización digital para enriquecer la experiencia del usuario. Entre las posibilidades que se explorarán se encuentra la generación de recomendaciones de outfits y la visualización de determinados artículos mediante representaciones tridimensionales y realidad aumentada.
 
 ### 1.2.1. Antecedentes y problemática
+Para realizar una primera aproximación al problema se aplicó la técnica The 5 W's and 2 H's, considerando las preguntas Who, What, Where, When, Why, How y How Much.
 
-### 1.2.2. Lean UX Process
+### What
 
-#### 1.2.2.1. Lean UX Problem Statements
+**¿Cuál es el problema que se está presentando?**
 
-#### 1.2.2.2. Lean UX Assumptions
+Las personas pueden tener una cantidad considerable de prendas y, aun así, utilizar solamente una parte de ellas con frecuencia. Tener más ropa no necesariamente significa conocer todas las posibilidades que existen dentro del propio armario o recordar todas las prendas que se encuentran disponibles.
 
-#### 1.2.2.3. Lean UX Hypothesis
+*De Wagenaar et al. (2022)* analizaron el contenido de los guardarropas de participantes de diferentes países. Los participantes registraron en promedio 132.33 prendas, de las cuales 32.91 se encontraban sin uso, lo que representó aproximadamente el 24.87 % de las prendas registradas.Estos resultados corresponden a la muestra estudiada y no pueden generalizarse a toda la población. Sin embargo, permiten observar que existe una oportunidad para investigar cómo las personas pueden conocer y aprovechar mejor las prendas que ya poseen.
+
+El problema que aborda el proyecto se relaciona principalmente con la dificultad para mantener una visión organizada del armario, recordar todas las prendas disponibles y encontrar nuevas maneras de combinarlas.
+
+### When
+
+**¿Cuándo se presenta el problema?**
+
+El problema puede aparecer cuando una persona debe decidir qué ponerse y siente que no encuentra una combinación adecuada, incluso cuando dispone de diferentes prendas. También puede presentarse cuando organiza su armario, prepara un outfit para alguna ocasión o busca nuevas ideas para combinar su ropa. En estos momentos, la persona suele depender de revisar físicamente su armario, recordar combinaciones anteriores o buscar inspiración en diferentes medios digitales.
+
+### Where
+
+**¿Dónde se presenta el problema?**
+
+El problema comienza principalmente en el armario personal, pero también se extiende al entorno digital.Actualmente, una persona puede guardar fotografías de prendas en su teléfono, encontrar outfits en redes sociales, descubrir referencias de estilo en diferentes plataformas o encontrar artículos que le resultan interesantes en tiendas digitales.
+
+Sin embargo, esta información normalmente se encuentra distribuida entre diferentes medios y no necesariamente está relacionada con las prendas que la persona ya posee.
+
+### Who
+
+**¿A quién le sucede?**
+
+Inicialmente se considera que este problema puede ser relevante para jóvenes y adultos jóvenes interesados en moda y acostumbrados al uso de herramientas digitales. Como referencia dentro del contexto peruano, *Leclercq-Machado et al. (2022)* realizaron una investigación con 396 consumidores de artículos relacionados con moda en Perú. Dentro de su muestra, el 88.3 % tenía entre 18 y 29 años y el 69.97 % eran estudiantes universitarios.
+
+Estos porcentajes corresponden únicamente a la muestra de dicha investigación y no representan a toda la población joven del Perú. Sin embargo, sirven como antecedente para considerar inicialmente a un público joven vinculado con la moda y el uso de medios digitales.La delimitación final del público objetivo deberá validarse mediante encuestas, entrevistas y pruebas realizadas durante el desarrollo del proyecto.
+
+### Why
+
+**¿Por qué sucede el problema?**
+
+Una de las razones es que el armario físico no siempre facilita recordar todas las prendas disponibles ni visualizar fácilmente las diferentes combinaciones que podrían realizarse con ellas.
+
+*Jiang y Macintyre (2025)* analizaron 27 aplicaciones de gestión de armarios y 5,953 reseñas publicadas por usuarios. Entre las reseñas estudiadas, identificaron 70 usuarios que mencionaron cambios relacionados con un menor sobreconsumo o un mayor aprovechamiento de sus prendas. Asimismo, 210 usuarios mencionaron beneficios relacionados con mayor claridad mental o menor ansiedad.
+
+Estos resultados provienen de opiniones publicadas por los propios usuarios y no de un experimento controlado. Sin embargo, muestran que algunas personas encuentran valor en utilizar herramientas digitales que les permiten conocer y organizar mejor las prendas que poseen.
+
+### How
+
+**¿Cómo se enfrenta actualmente el problema?**
+
+Actualmente, las personas pueden revisar manualmente su armario, tomar fotografías de algunas prendas, guardar referencias en redes sociales o buscar ideas de outfits en Internet. El inconveniente es que estas acciones suelen realizarse por separado. Una combinación encontrada en Internet puede resultar atractiva, pero no necesariamente considera las prendas que el usuario realmente posee.
+
+*Bang y Su (2022)* estudiaron la adopción de armarios virtuales mediante una investigación realizada con 265 estudiantes universitarios. Los autores describen este tipo de tecnología como una herramienta que permite crear y administrar digitalmente un guardarropa y utilizar esa información para apoyar decisiones relacionadas con el estilo. En su investigación encontraron que una actitud favorable hacia los armarios virtuales estaba relacionada con una mayor intención de utilizarlos.
+
+Por otro lado, *Ding et al. (2023)* desarrollaron un modelo para generar outfits personalizados considerando tanto las preferencias del usuario como la compatibilidad entre las prendas. En sus pruebas, el modelo consiguió mejoras de 7.8 % y 10.3 % en precisión de personalización sobre los conjuntos de datos iFashion y Polyvore, respectivamente.Estos antecedentes muestran que existe una base tecnológica que permite explorar soluciones orientadas a organizar el armario y generar recomendaciones personalizadas.
+
+### How Much
+
+**¿Qué tan relevante es el problema?**
+
+Actualmente no se cuenta con una medición propia que permita determinar qué porcentaje del público objetivo presenta este problema en el contexto local o con qué frecuencia ocurre. Esta información deberá obtenerse posteriormente mediante investigación directa con usuarios. Sin embargo, los antecedentes permiten identificar indicadores que justifican estudiar el problema. *De Wagenaar et al. (2022)* encontraron que el 24.87 % de las prendas registradas por los participantes de su estudio se encontraba sin uso.
+
+Por su parte, *Jiang y Macintyre (2025)* analizaron 5,953 reseñas reales de usuarios de aplicaciones de gestión de armarios, encontrando experiencias relacionadas con organización, aprovechamiento de prendas y cambios en determinados hábitos.Estos resultados no permiten afirmar que todas las personas presenten el mismo problema, pero sí muestran que existe una situación que merece ser investigada dentro del segmento seleccionado.
+
+Para el desarrollo de la solución se aplicará el proceso Lean UX con el objetivo de convertir las ideas iniciales del proyecto en supuestos que puedan ser evaluados y validados progresivamente con usuarios.
+
+En esta etapa todavía no se asume que todas las funcionalidades propuestas resolverán el problema. Aspectos como la disposición del usuario a mantener un armario digital, el valor de las recomendaciones personalizadas o el interés por nuevas formas de visualización deberán ser comprobados mediante investigación, prototipos y pruebas.
+
+### 1.2.2.1. Lean UX Problem Statements
+
+#### Domain
+
+El proyecto se encuentra dentro del dominio de la moda digital y la gestión personalizada del armario, incorporando tecnologías relacionadas con inteligencia artificial, sistemas de recomendación y nuevas formas de visualización digital.
+
+#### Customer Segments
+
+Inicialmente se considera como segmento a jóvenes y adultos jóvenes interesados en moda y familiarizados con el uso frecuente de plataformas digitales.
+
+Este segmento representa un punto de partida para la investigación y podrá modificarse de acuerdo con los resultados obtenidos durante las entrevistas, encuestas y pruebas con usuarios.
+
+#### Pain Points
+
+A partir de los antecedentes revisados se identifican inicialmente los siguientes problemas:
+
+- Dificultad para recordar todas las prendas disponibles en el armario.
+- Uso frecuente de las mismas prendas o combinaciones.
+- Existencia de prendas que permanecen sin utilizar.
+- Dificultad para encontrar nuevas combinaciones utilizando la ropa existente.
+- Información e inspiración distribuida entre diferentes aplicaciones y plataformas.
+- Dificultad para visualizar cómo una nueva prenda o accesorio puede relacionarse con las prendas existentes.
+- Recomendaciones de moda que no necesariamente consideran el armario real de cada persona.
+
+Estos puntos representan una primera aproximación y deberán ser confirmados mediante investigación directa con usuarios.
+
+#### Gap
+
+Actualmente existen aplicaciones destinadas a organizar armarios y plataformas que ofrecen inspiración relacionada con moda. Sin embargo, existe una oportunidad para explorar una experiencia que tome como punto de partida el armario personal y utilice esa información para organizar prendas, generar combinaciones y ofrecer recomendaciones más relacionadas con el estilo de cada usuario.
+
+Jiang y Macintyre (2025) muestran que algunos usuarios encuentran valor en las herramientas digitales de gestión del armario. Por otro lado, Ding et al. (2023) muestran que los sistemas de recomendación pueden considerar simultáneamente las preferencias personales y la compatibilidad entre diferentes prendas.
+
+La oportunidad del proyecto consiste en investigar cómo estas capacidades pueden integrarse dentro de una experiencia centrada en el armario de cada persona.
+
+#### Vision / Strategy
+
+La estrategia consiste en colocar el armario personal del usuario como punto central de la experiencia.
+
+En lugar de ofrecer únicamente recomendaciones generales de moda, la solución busca utilizar la información de las propias prendas y las preferencias del usuario para ofrecer una experiencia más personalizada.
+
+A partir de esta información, el usuario podrá organizar su armario, descubrir nuevas combinaciones, planificar outfits y explorar diferentes posibilidades relacionadas con su estilo.
+
+#### Initial Segment
+
+Como segmento inicial se plantea trabajar con jóvenes de 18 a 29 años interesados en moda y familiarizados con herramientas digitales.
+
+Este rango de edad constituye una hipótesis inicial de segmentación y deberá validarse posteriormente mediante investigación directa con el público objetivo.
+
+#### Problem Statement
+
+La solución está orientada a personas que poseen diferentes prendas, pero que no siempre tienen una visión clara de todo lo que existe dentro de su armario ni de las combinaciones que podrían realizar con ellas. Los antecedentes revisados muestran que una parte de las prendas registradas en guardarropas puede permanecer sin utilizar y que algunos usuarios encuentran valor en herramientas digitales que les permiten organizar y conocer mejor su ropa.
+
+Actualmente, una persona puede recurrir a su armario físico, fotografías, redes sociales u otras plataformas cuando necesita inspiración. Sin embargo, estas alternativas no necesariamente consideran las prendas que realmente forman parte de su guardarropa.Por ello, se busca explorar una solución que permita reunir la información del armario personal y utilizarla para generar nuevas posibilidades de combinación y una experiencia más personalizada.
+
+**¿Cómo podríamos ayudar a las personas a conocer y aprovechar mejor las prendas que poseen, facilitando la creación y organización de outfits de acuerdo con su propio estilo?**
+
+
+### 1.2.2.2. Lean UX Assumptions
+
+#### Business Assumptions
+
+- Creemos que existe un grupo de personas que no tiene una visión completa de todas las prendas que posee.
+- Creemos que organizar las prendas dentro de un armario digital puede aportar valor al usuario.
+- Creemos que el armario digital tendrá mayor utilidad si la información registrada puede utilizarse posteriormente para generar nuevas combinaciones.
+- Creemos que los outfits generados utilizando prendas del propio usuario pueden resultar más relevantes que recomendaciones generales.
+- Creemos que permitir guardar y organizar outfits puede incentivar el uso recurrente de la solución.
+- Creemos que incorporar prendas encontradas en otras fuentes como referencia puede ayudar a explorar nuevas posibilidades de estilo.
+- Creemos que las recomendaciones pueden mejorar a medida que se conocen las preferencias del usuario.
+- Consideramos que uno de los principales riesgos es que registrar las prendas requiera demasiado tiempo o esfuerzo.
+- Otro riesgo consiste en que las recomendaciones generadas no representen adecuadamente el estilo de cada persona.
+- La utilización de representaciones tridimensionales y realidad aumentada representa un reto tecnológico que deberá ser evaluado antes de considerarse parte definitiva de la solución.
+- El modelo de monetización todavía no ha sido validado y deberá analizarse en etapas posteriores del proyecto.
+
+#### User Assumptions
+
+**¿Quién es el usuario?**
+
+Una persona interesada en moda que utiliza herramientas digitales para encontrar inspiración y que posee prendas que podrían organizarse dentro de un armario digital.
+
+**¿Dónde encaja la solución en su vida?**
+
+Principalmente en aquellos momentos en los que necesita decidir qué vestir, organizar su ropa, preparar un outfit o buscar nuevas ideas utilizando las prendas que ya posee.
+
+**¿Qué problema busca resolver?**
+
+La dificultad para visualizar de manera organizada las prendas de su armario y encontrar nuevas formas de combinarlas.
+
+**¿Cuándo podría utilizar la solución?**
+
+Antes de decidir qué ponerse, al organizar el armario, cuando prepara un outfit para alguna ocasión o cuando busca inspiración para crear nuevas combinaciones.
+
+**¿Qué características podrían ser importantes para el usuario?**
+
+- Registro sencillo de prendas.
+- Organización visual del armario.
+- Recomendaciones personalizadas de outfits.
+- Posibilidad de guardar combinaciones.
+- Personalización según preferencias.
+- Incorporación de prendas externas como referencia.
+- Nuevas formas de visualización digital.
+
+**¿Cómo debería comportarse la solución?**
+
+La experiencia debe ser principalmente visual, sencilla y rápida de comprender. El usuario debería poder identificar fácilmente sus prendas, explorar combinaciones y entender por qué determinadas recomendaciones pueden relacionarse con su estilo.
+
+### 1.2.2.3. Lean UX Hypothesis
+
+Las siguientes hipótesis representan supuestos que deberán ser validados mediante investigación y pruebas con usuarios. Los valores o comportamientos esperados todavía no representan resultados obtenidos.
+
+#### Hypothesis Statement 01: Armario digital
+
+Creemos que permitir que los usuarios registren y visualicen sus prendas dentro de un armario digital facilitará que conozcan mejor lo que poseen.
+
+Sabremos que esta hipótesis tiene sustento si los usuarios pueden consultar sus prendas con facilidad y consideran que la representación digital les ayuda a recordar lo que forma parte de su armario.
+
+#### Hypothesis Statement 02: Registro de prendas
+
+Creemos que los usuarios estarán dispuestos a invertir tiempo en registrar sus prendas si posteriormente reciben un beneficio claro.
+
+Sabremos que esta hipótesis tiene sustento si los usuarios continúan incorporando prendas después de utilizar las primeras funciones relacionadas con organización o recomendaciones.
+
+#### Hypothesis Statement 03: Generación de outfits
+
+Creemos que las recomendaciones realizadas utilizando las prendas del propio usuario serán más útiles que recomendaciones generales de moda.
+
+Sabremos que esta hipótesis tiene sustento si los usuarios muestran una mayor preferencia por las combinaciones generadas utilizando prendas de su propio armario.
+
+Ding et al. (2023) sirven como antecedente para esta hipótesis, ya que sus resultados muestran que es posible combinar preferencias individuales y compatibilidad entre prendas para mejorar la personalización de los outfits.
+
+#### Hypothesis Statement 04: Organización de outfits
+
+Creemos que permitir guardar y organizar outfits facilitará que los usuarios planifiquen sus combinaciones.
+
+Sabremos que esta hipótesis tiene sustento si los usuarios regresan posteriormente a consultar outfits que previamente guardaron.
+
+#### Hypothesis Statement 05: Personalización
+
+Creemos que conocer progresivamente las preferencias del usuario permitirá ofrecer recomendaciones más relacionadas con su estilo.
+
+Sabremos que esta hipótesis tiene sustento si las recomendaciones posteriores reciben mejores valoraciones después de que el sistema cuente con mayor información sobre las preferencias del usuario.
+
+#### Hypothesis Statement 06: Prendas de referencia
+
+Creemos que permitir agregar prendas encontradas en otras fuentes ayudará al usuario a explorar cómo podrían relacionarse con las prendas de su propio armario.
+
+Sabremos que esta hipótesis tiene sustento si los usuarios utilizan estas prendas para generar o evaluar nuevas combinaciones.
+
+#### Hypothesis Statement 07: Recuperación de prendas poco utilizadas
+
+Creemos que mostrar nuevas combinaciones utilizando prendas existentes puede ayudar a que los usuarios vuelvan a considerar ropa que utilizan con poca frecuencia.
+
+Sabremos que esta hipótesis tiene sustento si los usuarios identifican prendas poco utilizadas dentro de las recomendaciones y muestran interés en volver a utilizarlas.
+
+#### Hypothesis Statement 08: Visualización tridimensional
+
+Creemos que representar determinados artículos en un entorno tridimensional puede aportar una nueva forma de explorar el estilo personal.
+
+Sabremos que esta hipótesis merece continuar desarrollándose si las pruebas técnicas permiten generar representaciones suficientemente reconocibles y los usuarios consideran útil interactuar con ellas.
+
+Chen et al. (2024) presentaron un método que permite reconstruir prendas tridimensionales utilizando una sola imagen como entrada. Este estudio sirve como antecedente técnico para explorar esta posibilidad, aunque no garantiza el funcionamiento completo de la funcionalidad propuesta dentro del proyecto.
 
 #### 1.2.2.4. Lean UX Canvas
 
