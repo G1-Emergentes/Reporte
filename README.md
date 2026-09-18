@@ -94,43 +94,38 @@ TB1 (19/09/2026):
 </tr>
 </thead>
 <tbody>
-
 <tr>
+<td>3.c1. Comunica oralmente con efectividad a diferentes rangos de audiencia.</td>
 <td>
-<b>3.c1.</b> Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.
+<b>Cabanillas Meza, Jose Mateo</b><br>
+TB1:<br><br>
+<b>Ortiz Cardenas, Johanna Antuanete</b><br>
+TB1:<br><br>
+<b>Sánchez Manrique, Italo Ludwing</b><br>
+TB1:<br><br>
+<b>Sarmiento Medina, Loreley</b><br>
+TB1:<br><br>
+<b>Zegarra López, Renato Sebastián Rubber</b><br>
+TB1:
 </td>
-
-<td>
-<b>Cabanillas Meza, Jose Mateo:</b> TB1: <br>
-<b>Ortiz Cardenas, Johanna Antuanete:</b> TB1: <br>
-<b>Sánchez Manrique, Italo Ludwing:</b> TB1: <br>
-<b>Sarmiento Medina, Loreley:</b> TB1: <br>
-<b>Zegarra López, Renato Sebastián Rubber:</b> TB1:
-</td>
-
-<td>
-<b>TB1:</b> 
-</td>
+<td>TB1: </td>
 </tr>
-
 <tr>
+<td>3.c2. Comunica por escrito con efectividad a diferentes rangos de audiencia.</td>
 <td>
-<b>3.c2.</b> Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.
+<b>Cabanillas Meza, Jose Mateo</b><br>
+TB1:<br><br>
+<b>Ortiz Cardenas, Johanna Antuanete</b><br>
+TB1:<br><br>
+<b>Sánchez Manrique, Italo Ludwing</b><br>
+TB1:<br><br>
+<b>Sarmiento Medina, Loreley</b><br>
+TB1:<br><br>
+<b>Zegarra López, Renato Sebastián Rubber</b><br>
+TB1:
 </td>
-
-<td>
-<b>Cabanillas Meza, Jose Mateo:</b> TB1: <br>
-<b>Ortiz Cardenas, Johanna Antuanete:</b> TB1: <br>
-<b>Sánchez Manrique, Italo Ludwing:</b> TB1: <br>
-<b>Sarmiento Medina, Loreley:</b> TB1: <br>
-<b>Zegarra López, Renato Sebastián Rubber:</b> TB1: 
-</td>
-
-<td>
-<b>TB1:</b> 
-</td>
+<td>TB1: </td>
 </tr>
-
 </tbody>
 </table>
 
