@@ -101,11 +101,11 @@ TB1 (19/09/2026):
 </td>
 
 <td>
-<b>Cabanillas Meza, Jose Mateo:</b> TB1: [acción realizada].<br>
-<b>Ortiz Cardenas, Johanna Antuanete:</b> TB1: [acción realizada].<br>
-<b>Sánchez Manrique, Italo Ludwing:</b> TB1: [acción realizada].<br>
-<b>Sarmiento Medina, Loreley:</b> TB1: [acción realizada].<br>
-<b>Zegarra López, Renato Sebastián Rubber:</b> TB1: [acción realizada].
+<b>Cabanillas Meza, Jose Mateo:</b> TB1: <br>
+<b>Ortiz Cardenas, Johanna Antuanete:</b> TB1: <br>
+<b>Sánchez Manrique, Italo Ludwing:</b> TB1: <br>
+<b>Sarmiento Medina, Loreley:</b> TB1: <br>
+<b>Zegarra López, Renato Sebastián Rubber:</b> TB1:
 </td>
 
 <td>
