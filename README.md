@@ -71,7 +71,10 @@
         - Zegarra López, Renato Sebastián Rubber
       </td>
       <td>
-        ...
+        - Capítulo I: Introducción (1.1 – 1.3)<br>
+        - Capítulo II: Requirements & Analysis (2.1 – 2.4)<br>
+        - Capítulo III: Requirements Specification (3.1 – 3.4)<br>
+        - Capítulo IV: Strategic-Level Software Design (4.1 – 4.3)
       </td>
     </tr>
   
@@ -99,13 +102,35 @@ ABET – EAC - Srudent Outcome 3 – Trabajo Multidisciplinario - Capacidad de c
 <tbody>
 <tr>
 <td>3.c1. Comunica oralmente con efectividad a diferentes rangos de audiencia.</td>
-<td></td>
-<td></td>
+<td>
+<b>Cabanillas Meza, Jose Mateo</b><br>
+TB1:<br><br>
+<b>Ortiz Cardenas, Johanna Antuanete</b><br>
+TB1:<br><br>
+<b>Sánchez Manrique, Italo Ludwing</b><br>
+TB1:<br><br>
+<b>Sarmiento Medina, Loreley</b><br>
+TB1:<br><br>
+<b>Zegarra López, Renato Sebastián Rubber</b><br>
+TB1:
+</td>
+<td>TB1: </td>
 </tr>
 <tr>
 <td>3.c2. Comunica por escrito con efectividad a diferentes rangos de audiencia.</td>
-<td></td>
-<td></td>
+<td>
+<b>Cabanillas Meza, Jose Mateo</b><br>
+TB1:<br><br>
+<b>Ortiz Cardenas, Johanna Antuanete</b><br>
+TB1:<br><br>
+<b>Sánchez Manrique, Italo Ludwing</b><br>
+TB1:<br><br>
+<b>Sarmiento Medina, Loreley</b><br>
+TB1:<br><br>
+<b>Zegarra López, Renato Sebastián Rubber</b><br>
+TB1:
+</td>
+<td>TB1: </td>
 </tr>
 </tbody>
 </table>
