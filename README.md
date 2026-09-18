@@ -89,7 +89,7 @@ TB1 (19/09/2026):
 
 ## **STUDENT OUTCOME**
 
-ABET – EAC - Srudent Outcome 3 – Trabajo Multidisciplinario - Capacidad de comunicarse efectivamente con un rango de audiencias.
+**ABET – EAC – Student Outcome 3 – Trabajo Multidisciplinario:** Capacidad de comunicarse efectivamente con un rango de audiencias.
 
 <table border="1">
 <thead>
@@ -100,38 +100,43 @@ ABET – EAC - Srudent Outcome 3 – Trabajo Multidisciplinario - Capacidad de c
 </tr>
 </thead>
 <tbody>
+
 <tr>
-<td>3.c1. Comunica oralmente con efectividad a diferentes rangos de audiencia.</td>
 <td>
-<b>Cabanillas Meza, Jose Mateo</b><br>
-TB1:<br><br>
-<b>Ortiz Cardenas, Johanna Antuanete</b><br>
-TB1:<br><br>
-<b>Sánchez Manrique, Italo Ludwing</b><br>
-TB1:<br><br>
-<b>Sarmiento Medina, Loreley</b><br>
-TB1:<br><br>
-<b>Zegarra López, Renato Sebastián Rubber</b><br>
-TB1:
+<b>3.c1.</b> Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.
 </td>
-<td>TB1: </td>
+
+<td>
+<b>Cabanillas Meza, Jose Mateo:</b> TB1: [acción realizada].<br>
+<b>Ortiz Cardenas, Johanna Antuanete:</b> TB1: [acción realizada].<br>
+<b>Sánchez Manrique, Italo Ludwing:</b> TB1: [acción realizada].<br>
+<b>Sarmiento Medina, Loreley:</b> TB1: [acción realizada].<br>
+<b>Zegarra López, Renato Sebastián Rubber:</b> TB1: [acción realizada].
+</td>
+
+<td>
+<b>TB1:</b> 
+</td>
 </tr>
+
 <tr>
-<td>3.c2. Comunica por escrito con efectividad a diferentes rangos de audiencia.</td>
 <td>
-<b>Cabanillas Meza, Jose Mateo</b><br>
-TB1:<br><br>
-<b>Ortiz Cardenas, Johanna Antuanete</b><br>
-TB1:<br><br>
-<b>Sánchez Manrique, Italo Ludwing</b><br>
-TB1:<br><br>
-<b>Sarmiento Medina, Loreley</b><br>
-TB1:<br><br>
-<b>Zegarra López, Renato Sebastián Rubber</b><br>
-TB1:
+<b>3.c2.</b> Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.
 </td>
-<td>TB1: </td>
+
+<td>
+<b>Cabanillas Meza, Jose Mateo:</b> TB1: [acción realizada].<br>
+<b>Ortiz Cardenas, Johanna Antuanete:</b> TB1: [acción realizada].<br>
+<b>Sánchez Manrique, Italo Ludwing:</b> TB1: [acción realizada].<br>
+<b>Sarmiento Medina, Loreley:</b> TB1: [acción realizada].<br>
+<b>Zegarra López, Renato Sebastián Rubber:</b> TB1: [acción realizada].
+</td>
+
+<td>
+<b>TB1:</b> 
+</td>
 </tr>
+
 </tbody>
 </table>
 
@@ -212,7 +217,7 @@ TB1:
 |------------|-------------|
 | ![team member profile photo](assets/img/profiles/mateo_cabanillas.png) **Cabanillas Meza, José Mateo (u202311458)** | Mi nombre es Mateo Cabanillas y en la actualidad estoy cursando el octavo ciclo de la carrera de ingeniería de software en la universidad peruana de ciencias aplicadas, con una mente creativa y una actitud colaborativa. Mi amor por la programación y la resolución de problemas me impulsa a explorar nuevas soluciones y aportar ideas frescas a los proyectos. Como compañero de equipo, soy amable, atento y siempre estoy dispuesto a ayudar. Creo firmemente en la importancia de la comunicación efectiva y la colaboración para lograr resultados excepcionales. |
 | ![team member profile photo](assets/img/profiles/diego_collantes.png) **Collantes Carrillo, Diego Mateo (u202311823)** | Mi nombre es Diego Collantes. Tengo 19 años. Soy estudiante de sexto ciclo en la Universidad Peruana de Ciencias Aplicadas (UPC). Disfruto de leer, redactar y escuchar música en mi tiempo libre. Elegí esta carrera, ya que me interesó todo el proceso que hay detrás de cada aplicación o programa que usamos en nuestro día a día. Personalmente, espero ampliar mis conocimientos en este ámbito a lo largo de este curso. Además, estoy comprometido a contribuir en todo lo que sea posible con el equipo y a desempeñarme de manera adecuada. |
-| ![team member profile photo](assets/img/profiles/ariana_lizarbe.png) **Lizarbe Alvarez, Ariana Nickole (u202311704)** | Mi nombre es Ariana Lizarbe, tengo 20 años y estoy cursando el sexto ciclo de la carrera de ingeniería de software en la Universidad Peruana de Ciencias Aplicadas. En mi tiempo libre fuera de la universidad, procuro mejorar mis habilidades blandas, como la empatía o inteligencia emocional. También, me esfuerzo en adquirir conocimientos que pueden ayudarme a desarrollarme como futura profesional, como distintos lenguajes de programación. A su vez, disfruto de escuchar música, podcasts, leer y ver series de televisión. Me comprometo a colaborar de manera activa y responsable en la creación de esta startup, aportando mis habilidades en pensamiento crítico, trabajo en equipo y adaptabilidad para alcanzar un trabajo de calidad sobresaliente. |
+| ![team member profile photo](assets/img/profiles/ariana_lizarbe.png) **Italo Ludwing Sanchez Manrique (u202316967)** | Mi nombre es Italo Ludwing Sanchez Manrique, soy estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC) y actualmente curso el octavo ciclo académico. Me considero una persona perseverante, tolerante, responsable y comprometida con el cumplimiento de mis objetivos. Estas cualidades me permiten afrontar los diferentes retos que surgen durante el desarrollo de proyectos, manteniendo una actitud orientada a la búsqueda de soluciones, el aprendizaje continuo y la mejora constante. Tengo conocimientos en desarrollo de software, programación, bases de datos y diseño de soluciones tecnológicas, destacando principalmente en lenguajes como Java y C++. Asimismo, cuento con experiencia trabajando con diferentes tecnologías de gestión de datos, como SQL Server, PostgreSQL y MongoDB, desarrollando consultas, realizando operaciones de manipulación y gestión de información, y aplicando diferentes enfoques de almacenamiento de datos de acuerdo con las necesidades de cada proyecto. |
 | ![team member profile photo](assets/img/profiles/antuanete_ortiz.png) **Ortiz Cardenas, Johanna Antuanete (u202310358)** | Mi nombre es Johanna Antuanete Ortiz Cárdenas, tengo 20 años y me encuentro en el sexto ciclo de la carrera de Ingeniería de Software. Me considero una persona proactiva y responsable, siempre buscando que mis trabajos sean de la mejor calidad posible. Me apasiona investigar sobre tecnología, lo que me permite estar al tanto de las últimas novedades y tendencias. En mi tiempo libre, disfruto jugar videojuegos, escuchar música y leer cómics. En el presente proyecto grupal, me comprometo a colaborar de manera activa, aportando ideas y siendo puntual con los entregables para garantizar resultados sobresalientes. |
 | ![team member profile photo](assets/img/profiles/renato_zegarra.png) **Zegarra Lopez, Renato Sebastian Rubber (u202311558)** | Mi nombre es Renato Zegarra, tengo 20 años y actualmente estoy cursando la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Fuera de mis estudios, disfruto explorar mis intereses en música, videojuegos y tecnología, siempre buscando nuevas formas de integrar estas pasiones en mi vida cotidiana. Me comprometo a colaborar de manera activa y responsable en la elaboración de este documento y en la concreción de la idea propuesta, aportando mis habilidades en análisis, creatividad y adaptabilidad. Estoy convencido de que con esfuerzo y trabajo en equipo, podemos alcanzar resultados innovadores y de alta calidad. |
 
