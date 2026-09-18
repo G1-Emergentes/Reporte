@@ -228,7 +228,71 @@ TB1:
 
 ## 2.2. Entrevistas
 
+De acuerdo con Easwaramoorthy y Zarinpoush (2006), las entrevistas son un método de investigación en el que se lleva a cabo una conversación orientada a recolectar información. A través de este método, se plantean una serie de preguntas que permiten conocer con mayor profundidad las experiencias, necesidades, comportamientos y puntos de vista de los participantes respecto a una problemática determinada.
+
+Para Mirage, la información recogida mediante las entrevistas es fundamental para comprender las dificultades que presentan los consumidores de moda al momento de organizar sus prendas, recordar qué tienen disponible, encontrar nuevas formas de combinar su ropa y descubrir prendas que se adapten a su estilo. Asimismo, permitirá conocer las necesidades de las tiendas de ropa relacionadas con la visibilidad de sus productos, la promoción de sus catálogos y el uso de canales digitales para llegar a potenciales clientes.
+
+Por ello, se plantea realizar un total de **3 entrevistas por cada segmento objetivo**, considerando tanto consumidores de moda como representantes de tiendas de ropa. Las entrevistas podrán realizarse de manera presencial o a distancia mediante herramientas digitales como Google Meet, Zoom o Discord, procurando en ambos casos generar un ambiente cómodo y adecuado que permita a los participantes expresar libremente sus experiencias y opiniones.
+
 ### 2.2.1 Diseño de entrevistas
+
+## **Segmento objetivo #1: Consumidores de moda**
+
+### **Preguntas principales:**
+
+- ¿Cómo organizas actualmente las prendas que tienes en tu armario?
+- ¿Con qué frecuencia recuerdas qué prendas tienes disponibles al momento de elegir qué vestir?
+- ¿Qué dificultades encuentras al momento de elegir un outfit para una ocasión determinada?
+- ¿Qué haces actualmente cuando quieres encontrar nuevas formas de combinar las prendas que ya tienes?
+- ¿Con qué frecuencia utilizas prendas que tienes guardadas pero que usas poco?
+- ¿Has tenido situaciones en las que compraste una prenda y luego descubriste que ya tenías otras prendas similares?
+- ¿Qué medios utilizas actualmente para buscar inspiración sobre outfits, estilos o combinaciones de ropa?
+- ¿Qué información consideras importante para decidir si una prenda combina con tu estilo o con otras prendas que ya tienes?
+- ¿Has utilizado alguna aplicación o herramienta digital para organizar tu ropa, crear outfits o buscar inspiración? ¿Cómo fue tu experiencia?
+- ¿Qué características esperarías de una aplicación que te permita registrar y organizar digitalmente las prendas de tu armario?
+- ¿Qué tan útil sería para ti recibir sugerencias de outfits basadas en las prendas que ya tienes? ¿Por qué?
+- ¿Qué factores considerarías importantes para confiar en las recomendaciones realizadas por una aplicación?
+- ¿Qué opinas de poder visualizar digitalmente cómo podría verse una prenda o combinación antes de decidir utilizarla?
+- ¿En qué situaciones considerarías útil utilizar realidad aumentada o una representación digital de una prenda?
+- ¿Qué información te gustaría encontrar cuando descubres una prenda de una tienda dentro de una aplicación de moda?
+
+### **Preguntas complementarias:**
+
+- ¿Qué tipo de prendas te resulta más difícil combinar?
+- ¿Qué haces cuando tienes una prenda que te gusta pero no sabes con qué combinarla?
+- ¿Sueles planificar tus outfits con anticipación o decides qué vestir en el momento?
+- ¿Qué aplicaciones relacionadas con moda utilizas actualmente y qué es lo que más valoras de ellas?
+- ¿Qué haría que dejaras de utilizar una aplicación para organizar tu armario?
+- Si pudieras mejorar una sola cosa de la forma en que actualmente eliges tus outfits, ¿qué cambiarías?
+
+## **Segmento objetivo #2: Tiendas de ropa**
+
+### **Preguntas principales:**
+
+- ¿Cómo muestran actualmente sus prendas y productos a sus clientes?
+- ¿Qué canales digitales utilizan actualmente para promocionar su catálogo?
+- ¿Qué dificultades encuentran al momento de conseguir que sus productos tengan mayor visibilidad?
+- ¿Cómo identifican actualmente qué productos generan mayor interés entre sus clientes?
+- ¿Qué estrategias utilizan para llegar a nuevos clientes interesados en sus productos?
+- ¿Qué importancia tiene para su negocio que una prenda sea mostrada dentro de un contexto relacionado con el estilo del cliente?
+- ¿Han utilizado alguna plataforma digital adicional a sus redes sociales o página web para promocionar sus productos? ¿Cómo fue la experiencia?
+- ¿Qué información consideran importante mostrar de una prenda para que un usuario pueda conocerla mejor?
+- ¿Qué beneficios y dificultades encontrarían al registrar parte de su catálogo en una plataforma digital externa?
+- ¿Qué características tendría que ofrecer una plataforma para que consideraran útil mostrar sus productos en ella?
+- ¿Qué opinan de una plataforma que permita a los usuarios descubrir prendas de diferentes tiendas según sus preferencias y estilo?
+- ¿Qué valor tendría para su negocio que un usuario pueda guardar una de sus prendas como referencia dentro de su armario digital?
+- ¿Qué información o métricas les gustaría conocer sobre las personas que interactúan con sus productos dentro de una plataforma?
+- ¿Qué opinan de utilizar representaciones digitales o tridimensionales para mostrar determinadas prendas?
+- ¿Considerarían útil que los usuarios puedan visualizar digitalmente una prenda antes de visitar el canal de la tienda? ¿Por qué?
+
+### **Preguntas complementarias:**
+
+- ¿Qué tipo de prendas consideran que necesitan mayor promoción o visibilidad?
+- ¿Qué redes sociales o plataformas les generan actualmente mayor interacción con sus clientes?
+- ¿Qué dificultades encuentran al mantener actualizado su catálogo digital?
+- ¿Qué información necesitarían de una plataforma para evaluar si realmente les genera valor?
+- ¿Qué condiciones tendrían que cumplirse para que confiaran en una plataforma que muestre sus productos?
+- ¿Qué funcionalidades adicionales les gustaría encontrar en una plataforma digital orientada a la promoción de moda?
 
 ### 2.2.2 Registro de entrevistas
 
