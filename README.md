@@ -258,6 +258,20 @@ TB1:
 
 ## 3.2. User Stories
 
+### Epics:
+
+| Epic ID | Título | Descripción |
+| :--- | :--- | :--- |
+| **EP01** | **Gestión de Identidad, Perfil y Preferencias de Estilo** | Enfocada en el inicio de sesión, registro de usuarios y configuración inicial del perfil personal de moda. Incluye autenticación segura mediante correo o redes sociales, gestión de credenciales y el registro/actualización de preferencias de estilo, gustos y parámetros estéticos. Su objetivo es garantizar la seguridad del usuario mientras se construye la base de información necesaria para personalizar toda la experiencia. |
+| **EP02** | **Gestión del Armario Virtual** | Esta épica se centra en permitir a los usuarios digitalizar, organizar y administrar sus prendas dentro de un inventario virtual. Contempla la carga de fotografías, el reconocimiento e identificación automática mediante IA (categoría, color, tipo), la edición de información y el añadido rápido mediante códigos QR. El objetivo es ofrecer un control centralizado e intuitivo del guardarropa personal. |
+| **EP03** | **Agente de Recomendación (Estilista IA)** | Comprende el desarrollo del motor inteligente que analiza el catálogo del armario para generar sugerencias automáticas de outfits. Considera factores contextuales como el clima, la ocasión o gustos personales, calculando la compatibilidad entre prendas y guardando favoritos. El objetivo es ayudar al usuario a descubrir nuevas combinaciones y optimizar el uso de su ropa. |
+| **EP04** | **Integración con Tiendas Aliadas y Catálogo Comercial** | Esta épica abarca las herramientas para que marcas asociadas registren sus perfiles, publiquen prendas y generen códigos QR comerciales. Permite a los usuarios escanear dichos códigos, vincular artículos de tienda con su propio armario y probar combinaciones previas a la compra. Su objetivo es conectar el comercio físico y digital con la experiencia del usuario. |
+| **EP05** | **Avatar Digital y Probador Virtual** | Se centra en la creación y personalización de una representación digital (avatar) basada en las medidas del usuario. Incluye la superposición de prendas e inteligencias de ajuste sobre el avatar para simular combinaciones de vestir. El objetivo es brindar una experiencia interactiva de probador virtual para evaluar los looks antes de vestirlos o comprarlos. |
+| **EP06** | **Experiencia en Realidad Aumentada (AR)** | Incluye la implementación de tecnologías de Realidad Aumentada para proyectar prendas y accesorios mediante la cámara en tiempo real. Considera el procesamiento del entorno, detección del usuario y superposición tridimensional de accesorios en el espacio real. El objetivo es proporcionar una visualización inmersiva e innovadora de los artículos. |
+| **EP07** | **Comunidad y Moda Compartida** | Esta épica permitirá a los usuarios conectar con amigos, explorar armarios de su entorno social e interactuar a través de la moda. Contempla la gestión de amistad, solicitud de préstamos, permisos para probar ropa ajena y creación de espacios compartidos. Se busca construir un entorno colaborativo que fortalezca la interacción y la inspiración colectiva. |
+| **EP08** | **Desarrollo Técnico del Backend e Infraestructura (RESTful API)** | Esta épica comprende la implementación de la infraestructura técnica que soportará la aplicación, incluyendo la base de datos, API RESTful, servicios en la nube y procesamiento para algoritmos de IA y AR. El foco está en garantizar rendimiento, seguridad y escalabilidad para manejar de manera eficiente las operaciones de usuarios y tiendas. |
+| **EP09** | **Plataforma Web Informativa (Landing Page)** | Se centra en el desarrollo de una landing page que funcione como punto de entrada informativo y vitrina principal de Mirage, presentando la propuesta de valor, características clave y beneficios de la plataforma. El objetivo es atraer tanto a usuarios finales como a tiendas aliadas interesadas en unirse al ecosistema. |
+
 ## 3.3. Impact Mapping
 
 ## 3.4. Product Backlog
