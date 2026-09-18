@@ -3,49 +3,43 @@
   <img src="assets/img/upc_logo.png" alt="logo" width="200"/>
 </p>
 
-<h3>Universidad Peruana de Ciencias Aplicadas</h3>
-<h3>Ingeniería de Software</h3>
-
-<h4>1ASI0728 - Arquitecturas De Software Emergentes <br>202620</h4>
-
+<h4>UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS</h4>
+<h4>INGENIERIA DE SOFTWARE</h4>
+<h4>CICLO 8</h4>
+<h4>CURSO:</h4>
+<h4>1ASI0728 – ARQUITECTURAS DE SOFTWARE EN TECNOLOGIAS EMERGENTES</h4>
 <h4>NRC: 9077</h4>
-
-<h4>Docente: Marino Humberto Jara Palacios</h4>
-
-<h3>"Informe de TB1" </h3>
-
-<h4>Nombre del startup: </h4>
-
-<h4>Nombre del Producto: </h4>
-
+<h4>PROFESOR(A): Marino Humberto Jara Palacios</h4>
+<h4>INFORME DE TB1</h4>
+<h4>CICLO: 2026-20</h4>
 
 <br>
 
-<h4>Integrantes:</h4>
+<h4>STARTUP:</h4>
+<h4>PRODUCTO:</h4>
+<h4>INTEGRANTES:</h4>
+<p>
+- Cabanillas Meza, Jose Mateo (u2023)<br>
+- Ortiz Cardenas, Johanna Antuanete (u202310358)<br>
+- Sánchez Manrique, Italo Ludwing (u2023)<br>
+- Sarmiento Medina, Loreley (u202310005)<br>
+- Zegarra López, Renato Sebastián Rubber (u202311558)
+</p>
 
-<table style="border-collapse: collapse;">
-  <thead>
-    <tr>
-      <th style="border: 1px solid black;">Alumno</th>
-      <th style="border: 1px solid black;">Codigo</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td style="border: 1px solid black;">Cabanillas Meza, Jose Mateo</td><td style="border: 1px solid black;">u2023</td></tr>
-    <tr><td style="border: 1px solid black;">Ortiz Cardenas, Johanna Antuanete</td><td style="border: 1px solid black;">u202310358</td></tr>
-    <tr><td style="border: 1px solid black;">Sánchez Manrique, Italo Ludwing</td><td style="border: 1px solid black;">u2023</td></tr>
-    <tr><td style="border: 1px solid black;">Sarmiento Medina, Loreley</td><td style="border: 1px solid black;">u202310005</td></tr>
-    </tr>
-    <tr><td style="border: 1px solid black;">Rubber Zegarra López, Renato Sebastián</td><td style="border: 1px solid black;">u2023</td></tr>
-  </tbody>
-</table>
 <br>
 
-<h4>Setiembre, 2026</h4>
+<h4>SETIEMBRE - 2026</h4>
 
 </div>
 
 <div style="page-break-after: always;"></div>
+
+
+
+<br>
+<br>
+<br>
+
 
 ## Registro de Versiones del Informe
 
