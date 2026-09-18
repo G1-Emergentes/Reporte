@@ -515,7 +515,6 @@ Dentro de la plataforma, las tiendas podrán registrar prendas de su catálogo p
   - Generar tráfico hacia sus propios canales de información o venta.
   - Tener presencia dentro de un entorno donde las prendas puedan relacionarse con el estilo y el armario de cada usuario.
 
-# Referencias
 # CAPÍTULO II: Requirements & Analysis
 
 ## 2.1. Competidores
