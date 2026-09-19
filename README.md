@@ -1774,12 +1774,12 @@ Documentar y monitorear métricas de precisión de IA en producción (no solo en
 
 - Chrimes, C., & Boardman, R. (2023). Las oportunidades y desafíos del metaverso para las marcas de moda. La economía de la confección: Comprender la historia, desarrollar modelos de negocio y aprovechar tecnologías digitales, 389-410. [https://link.springer.com/chapter/10.1007/978-3-031-33302-6_20](https://link.springer.com/chapter/10.1007/978-3-031-33302-6_20)
 
-Brandolini, A. (2021). Introducing EventStorming: An acts-on-software visual guide to domain discovery. Leanpub. [ https://www.leanpub.com/introducing_eventstorming]( https://www.leanpub.com/introducing_eventstorming)
+- Brandolini, A. (2021). Introducing EventStorming: An acts-on-software visual guide to domain discovery. Leanpub. [ https://www.leanpub.com/introducing_eventstorming]( https://www.leanpub.com/introducing_eventstorming)
 
 
-Evans, E. (2003). Domain-driven design: Tackling complexity in the heart of software. Addison-Wesley Professional.[ https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/]( https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/) 
+- Evans, E. (2003). Domain-driven design: Tackling complexity in the heart of software. Addison-Wesley Professional.[ https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/]( https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/) 
 
-Mu, X., Zhang, H., Shi, J., Hou, J., Ma, J., & Yang, Y. (2024). Fashion intelligence in the Metaverse: promise and future prospects. Artificial Intelligence Review, 57(3), 67.  [ https://link.springer.com/article/10.1007/s10462-024-10703-8]( https://link.springer.com/article/10.1007/s10462-024-10703-8)
+- Mu, X., Zhang, H., Shi, J., Hou, J., Ma, J., & Yang, Y. (2024). Fashion intelligence in the Metaverse: promise and future prospects. Artificial Intelligence Review, 57(3), 67.  [ https://link.springer.com/article/10.1007/s10462-024-10703-8]( https://link.springer.com/article/10.1007/s10462-024-10703-8)
 
 
 
@@ -1787,3 +1787,5 @@ Mu, X., Zhang, H., Shi, J., Hou, J., Ma, J., & Yang, Y. (2024). Fashion intellig
 
 - Enlace de Miro: As-is y To-be : 
 [https://miro.com/welcomeonboard/SkNzcnk2TS9LOXVNUFNIZTZZWjJabDZSNGd3OGtJNjBScGtSL2JvMXF0b0NUS1pEY3ZseWJtaGc2QlQyTXBSOTFWcmVEa0Urd2UrY1BEUlltVm5EbTRacmZsZ0NhbjhxTXdGY2xMc0dFN0xlMkMzd2xWVklVNVJKcGkwVWFzYnd3VHhHVHd5UWtSM1BidUtUYmxycDRnPT0hdjE=?share_link_id=442470584812](https://miro.com/welcomeonboard/SkNzcnk2TS9LOXVNUFNIZTZZWjJabDZSNGd3OGtJNjBScGtSL2JvMXF0b0NUS1pEY3ZseWJtaGc2QlQyTXBSOTFWcmVEa0Urd2UrY1BEUlltVm5EbTRacmZsZ0NhbjhxTXdGY2xMc0dFN0xlMkMzd2xWVklVNVJKcGkwVWFzYnd3VHhHVHd5UWtSM1BidUtUYmxycDRnPT0hdjE=?share_link_id=442470584812)
+
+- Enlace de EventStorming: [https://miro.com/app/board/uXjVHluEomw=/?share_link_id=92051576728](https://miro.com/app/board/uXjVHluEomw=/?share_link_id=92051576728)
