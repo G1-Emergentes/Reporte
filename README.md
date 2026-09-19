@@ -431,9 +431,105 @@ Como resultado del proceso de Quality Attribute Workshop (QAW), se priorizaron e
 
 ## 4.2. Strategic-Level Domain-Driven Design
 
+
+En esta sección se describe el enfoque aplicado para orientar las decisiones estratégicas relacionadas con el diseño del dominio de Mirage, tomando como referencia los principios de Domain-Driven Design (DDD). El propósito principal fue comprender y estructurar el dominio del sistema a partir de sus procesos, actores, reglas de negocio y responsabilidades, permitiendo identificar límites funcionales coherentes dentro de la solución.
+
+Para este proceso, el equipo empleó herramientas de modelado colaborativo como Event Storming y Bounded Context Canvas. Event Storming permitió explorar el comportamiento del dominio mediante la identificación de eventos, comandos, actores y procesos relevantes, facilitando una visión compartida de cómo se desarrollan las principales operaciones de Mirage. Posteriormente, el Bounded Context Canvas permitió analizar y delimitar los contextos identificados, especificando su propósito, responsabilidades, modelos y relaciones con otras partes del dominio.
+
+Este enfoque permitió construir una representación estructurada del dominio de Mirage y establecer límites funcionales basados en las responsabilidades y reglas del negocio, evitando una separación arbitraria de los componentes del sistema. De esta manera, las decisiones arquitectónicas posteriores se fundamentan en una comprensión previa del dominio y de las relaciones existentes entre sus diferentes procesos.
+
 ### 4.2.1. EventStorming
 
+En esta sección se presenta el proceso de Event Storming realizado por el equipo para obtener una primera representación del dominio de Mirage. Esta técnica permitió identificar los principales eventos que ocurren dentro del sistema, así como los comandos, actores y procesos que intervienen en su generación, proporcionando una visión general del comportamiento esperado de la solución.
+
+Durante la sesión, el equipo analizó los diferentes escenarios funcionales de Mirage y organizó los elementos del dominio de acuerdo con la secuencia en la que ocurren las acciones y sus respectivos resultados. La representación visual permitió identificar dependencias, relaciones entre procesos y posibles límites funcionales, además de facilitar la discusión entre los integrantes del equipo sobre las reglas y comportamientos que debería contemplar el sistema.
+
+El desarrollo de Event Storming permitió establecer una base común de conocimiento sobre el dominio antes de definir su estructura interna. A partir de los eventos y procesos identificados, posteriormente se analizaron posibles agrupaciones de responsabilidades que sirvieron como referencia para la definición de los Bounded Contexts de Mirage y para las decisiones de diseño de su arquitectura.
+
+<p align="center">
+  <img src="assets/img/EventStorming/paso1.png" alt="EventStorming" style="width: 700">
+</p>
+
 ### 4.2.2. Candidate Context Discovery
+Durante la sesión de Event Storming se realizó el levantamiento y organización de los principales eventos asociados al funcionamiento de Mirage. A partir de esta actividad, se examinaron las acciones que intervienen en los diferentes procesos de la aplicación, buscando reconocer cómo se relacionan entre sí y qué funcionalidades del sistema representan. Esta revisión permitió agrupar los eventos de acuerdo con los flujos funcionales identificados y obtener una primera representación del comportamiento del dominio de Mirage.
+
+A partir de la organización obtenida, se establecieron las siguientes líneas de acción:
+
+**Personalización del avatar**
+
+<p align="center">
+  <img src="assets/img/EventStorming/paso2_personalizacion.png" alt="EventStorming" style="width: 700">
+</p>
+
+**Recomendación y gestión de outfits**
+
+<p align="center">
+  <img src="assets/img/EventStorming/paso2_recomendacion.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Configuración del perfil y preferencias de estilo**
+
+<p align="center">
+  <img src="assets/img/EventStorming/paso2_configuracion.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Prueba de outfits mediante realidad aumentada**
+
+<p align="center">
+  <img src="assets/img/EventStorming/paso2_prueba.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Administración del armario virtual**
+
+<p align="center">
+  <img src="assets/img/EventStorming/paso2_administracion.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Reconocimiento y registro de prendas**
+
+<p align="center">
+  <img src="assets/img/EventStorming/paso2_reconocimiento.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Gestión del catálogo de prendas de tiendas**
+
+<p align="center">
+  <img src="assets/img/EventStorming/paso2_gestion.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Integración de prendas y proceso de compra**
+
+<p align="center">
+  <img src="assets/img/EventStorming/paso2_integracion.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Intercambio de prendas entre usuarios**
+
+<p align="center">
+  <img src="assets/img/EventStorming/paso2_integracion.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Conexión entre usuarios mediante amistades**
+
+<p align="center">
+  <img src="assets/img/EventStorming/paso2_conexion.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Prueba virtual de prendas compartidas**
+
+<p align="center">
+  <img src="assets/img/EventStorming/paso2_prueba.png" alt="EventStorming" style="width: 700">
+</p>
+
 
 ### 4.2.3. Domain Message Flows Modeling
 
