@@ -358,6 +358,21 @@ En esta sección , el equipo presenta los mapas de empatia o Empathy Maps realiz
 
 ### 2.3.4. As-is Scenario Mapping
 
+En esta sección, el equipo presenta los escnerarios as is para sus respectivos users personas
+
+
+### Olivia Rodriguez
+
+![ As-is_photo_Olvia](assets/As-is/As-is-olivia.PNG)
+
+---
+
+### Alejandro Lopez
+
+![ As-is_photo_Alejandro](assets/As-is/As-is-Alejandro.PNG)
+
+---
+
 ## 2.4. Ubiquitous Language
 
 # CAPÍTULO III: Requirements Specification
