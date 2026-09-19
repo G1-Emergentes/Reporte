@@ -220,11 +220,110 @@ TB1:
 
 # CAPÍTULO II: Requirements & Analysis
 
-## 2.1. Competidores
+# 2.1. Competidores
 
-### 2.1.1 Análisis de Competidores
+## 2.1.1. Análisis de Competidores
 
-### 2.1.2. Estrategias frente a competidores
+### Competitive Analysis Landscape
+
+**¿Por qué llevar a cabo este análisis?**
+
+El análisis de competidores permite conocer cómo las soluciones actuales abordan la organización del armario digital, la recomendación de outfits y la personalización de la experiencia de moda. A partir de esta comparación se pueden identificar funcionalidades ya presentes en el mercado y oportunidades de diferenciación para la solución propuesta.
+
+Para el análisis se seleccionaron Whering, Acloset y XZ(Closet) debido a que comparten características relacionadas con armarios digitales, organización de prendas y generación de combinaciones de ropa.
+
+| Perfil | Aspecto | Solución propuesta | Whering | Acloset | XZ(Closet) |
+|---|---|---|---|---|---|
+| **Perfil** | **Overview** | Plataforma orientada a la gestión del armario personal mediante herramientas digitales e inteligencia artificial. Busca permitir al usuario organizar sus prendas, generar outfits personalizados y explorar prendas de tiendas que puedan complementar su estilo. También se plantea incorporar experiencias de prueba virtual y realidad aumentada. | Aplicación de armario digital y estilismo social que permite registrar prendas, crear outfits, planificar combinaciones, analizar el uso del armario e interactuar con los armarios de otros usuarios. | Aplicación de armario inteligente que utiliza IA para organizar prendas, recomendar outfits, registrar información automáticamente y apoyar al usuario en decisiones relacionadas con su estilo. | Aplicación de armario digital enfocada en ayudar al usuario a organizar sus prendas y recibir nuevas ideas de combinaciones de manera periódica. |
+| **Perfil** | **Ventaja competitiva / ¿Qué valor ofrece?** | Busca integrar en una misma experiencia el armario personal, recomendaciones mediante IA, visualización de prendas y conexión con catálogos de tiendas. La propuesta para las tiendas se centra en aumentar la visibilidad de sus productos y dirigir a los usuarios hacia sus propios canales comerciales. | Cuenta con una fuerte orientación social y comunitaria. Permite explorar otros armarios, compartir outfits y analizar estadísticas como frecuencia de uso y costo por uso de las prendas. | Su principal fortaleza está en la automatización mediante IA. Puede reconocer información de las prendas, recomendar outfits e importar productos desde historiales de compra y páginas de tiendas. | Se caracteriza por una experiencia sencilla enfocada en generar ideas de outfits utilizando las prendas disponibles en el armario del usuario. |
+| **Perfil de Marketing** | **Mercado objetivo** | Jóvenes interesados en moda y herramientas digitales, inicialmente entre 18 y 29 años. Como segundo segmento, tiendas de ropa y accesorios interesadas en obtener mayor visibilidad para sus productos. | Personas interesadas en organizar su guardarropa, crear outfits, compartir estilos y aprovechar mejor las prendas que poseen. | Usuarios interesados en utilizar inteligencia artificial para administrar su guardarropa, recibir recomendaciones de estilo y planificar outfits. | Hombres y mujeres que buscan organizar digitalmente sus prendas y recibir ideas para combinarlas. |
+| **Perfil de Marketing** | **Estrategias de marketing / posicionamiento** | Posicionamiento centrado en personalización, uso del armario propio e integración entre usuarios y tiendas. Se plantea complementar la captación digital con alianzas con tiendas y experiencias mediante QR. | Su comunicación se enfoca en aprovechar mejor el armario, la comunidad, el intercambio de inspiración y una relación más consciente con la moda. | Su posicionamiento se centra principalmente en la inteligencia artificial, automatización del armario y reducción del esfuerzo necesario para organizar prendas y decidir qué vestir. | Su propuesta se comunica alrededor de una necesidad cotidiana: tener prendas disponibles pero no saber cómo combinarlas. Destaca la generación automática de ideas de outfits. |
+| **Perfil de Producto** | **Productos y servicios** | - Armario digital<br>- Registro y clasificación de prendas<br>- Recomendaciones personalizadas de outfits<br>- Organización y guardado de combinaciones<br>- Catálogo de tiendas aliadas<br>- Incorporación de prendas comerciales al armario<br>- Avatar y probador virtual propuestos<br>- Experiencias de realidad aumentada propuestas<br>- Funciones sociales | - Armario digital<br>- Carga de prendas mediante fotografías, base de datos y navegador<br>- Creación y planificación de outfits<br>- Estadísticas del armario<br>- Listas de deseos y moodboards<br>- Funciones sociales<br>- Armarios compartidos<br>- Herramientas para viajes y planificación | - Armario digital con IA<br>- Clasificación automática de prendas<br>- Recomendación de outfits mediante IA<br>- Estadísticas de estilo<br>- Importación desde tiendas online<br>- Extensión para navegador<br>- Lista de deseos<br>- Funciones de estilista mediante IA<br>- Funciones de prueba virtual disponibles dentro de determinados planes | - Armario digital<br>- Registro de prendas<br>- Eliminación de fondo y recorte de imágenes<br>- Ideas automáticas de outfits<br>- Administración de prendas<br>- Recomendaciones periódicas de combinaciones |
+| **Perfil de Producto** | **Precios y costos** | El modelo de monetización todavía se encuentra en etapa de definición y validación. No se ha establecido un precio definitivo para usuarios o tiendas. | Aplicación gratuita con compras dentro de la aplicación y servicios adicionales de pago. | Permite utilizar gratuitamente determinadas funciones hasta un límite de 100 prendas. Posteriormente requiere suscripción. En Perú, App Store muestra planes Básico, Premium y Experto con diferentes precios. | Aplicación gratuita con publicidad y compras dentro de la aplicación. En la App Store peruana aparecen opciones de pago desde aproximadamente S/ 2.90. |
+| **Perfil de Producto** | **Canales de distribución** | - Aplicación móvil<br>- Landing page informativa<br>- Integración con tiendas aliadas<br>- Códigos QR en establecimientos físicos como canal complementario | - Aplicación móvil<br>- Sitio web<br>- Extensión de navegador | - Aplicación móvil<br>- Plataforma y extensión para navegador<br>- Integraciones con tiendas online | - Aplicación móvil para iOS/iPadOS<br>- Aplicación Android |
+| **Análisis SWOT** | **Fortalezas** | Propuesta que busca conectar el armario personal con recomendaciones inteligentes y productos provenientes de tiendas. La integración B2C y B2B permite generar valor tanto para usuarios como para comercios. Las funcionalidades planteadas de avatar, QR y AR pueden aportar una experiencia diferenciada si se validan correctamente. | Comunidad amplia y consolidada, con más de 10 millones de usuarios declarados en su sitio oficial. Cuenta con funciones sociales, estadísticas de uso del guardarropa y diferentes herramientas de planificación. | Cuenta con más de 8 millones de usuarios declarados y presenta un fuerte uso de IA para automatizar el registro de prendas, generar recomendaciones y facilitar la incorporación de productos desde tiendas online. | Propuesta sencilla y directa para personas que buscan ideas de outfits. Permite añadir prendas rápidamente y recibir recomendaciones automáticas sin requerir una configuración demasiado compleja. |
+| **Análisis SWOT** | **Debilidades** | La solución se encuentra en una etapa temprana y todavía no cuenta con una comunidad consolidada. Además, funcionalidades como IA, avatar, estimación corporal y AR incrementan considerablemente la complejidad técnica. El valor para las tiendas dependerá también de alcanzar una cantidad suficiente de usuarios. | La propuesta pública está fuertemente orientada al usuario final y a la comunidad. En las fuentes revisadas no se observa una propuesta B2B equivalente en la que las tiendas administren directamente un catálogo para obtener visibilidad dentro de la plataforma. | El acceso gratuito tiene límites y algunas funciones dependen de planes de suscripción. Su amplia cantidad de herramientas puede aumentar la cantidad de opciones que un usuario debe conocer y configurar. | Frente a Whering y Acloset, la propuesta pública presenta una menor amplitud de funciones relacionadas con IA avanzada, comunidad o integración comercial. En App Store se encuentra disponible principalmente en inglés y japonés. |
+| **Análisis SWOT** | **Oportunidades** | Diferenciarse mediante la integración con tiendas locales, visibilidad de catálogos, códigos QR, personalización y experiencias de prueba virtual. También existe la oportunidad de adaptar la plataforma al contexto peruano y posteriormente latinoamericano. | Puede profundizar la integración con comercios y experiencias de prueba virtual para conectar su comunidad con productos externos. | Puede ampliar su modelo hacia una relación más directa con tiendas y marcas que quieran promocionar sus catálogos dentro de la experiencia del usuario. | Puede incorporar mayor personalización mediante IA, nuevas funciones sociales, idiomas adicionales y una mayor integración con tiendas. |
+| **Análisis SWOT** | **Amenazas** | Whering y Acloset ya cuentan con millones de usuarios y funcionalidades de armario digital consolidadas. La rápida evolución de soluciones basadas en IA puede reducir la diferenciación si las funcionalidades propuestas no generan un valor claramente perceptible. | Competidores como Acloset están ampliando rápidamente sus capacidades de IA e integración con tiendas online. | Existe una alta competencia entre aplicaciones de armario digital e IA, y otras soluciones pueden incorporar rápidamente funciones similares de automatización. | Competidores con ecosistemas más completos, mayor personalización y capacidades de IA pueden atraer a los usuarios que buscan una experiencia más avanzada. |
+
+
+## 2.1.2. Estrategias frente a competidores
+
+### Personalización basada en el armario real del usuario
+
+**Estrategia:** Diferenciar la experiencia utilizando las prendas que el usuario realmente posee como base para las recomendaciones.
+
+**Táctica:** Utilizar la información registrada en el armario, las preferencias de estilo y las interacciones anteriores para generar outfits personalizados y permitir que el usuario refine las recomendaciones mediante comentarios o selecciones.
+
+
+### Integración directa con tiendas de moda
+
+**Estrategia:** Diferenciarse de aplicaciones centradas únicamente en el usuario mediante la incorporación de tiendas como segundo segmento dentro de la plataforma.
+
+**Táctica:** Permitir que las tiendas aliadas creen un perfil profesional, publiquen prendas y accesorios de su catálogo e incluyan enlaces hacia sus propios canales oficiales. Las prendas podrán aparecer dentro de espacios de descubrimiento y ser utilizadas por los usuarios como referencia junto con su armario personal.
+
+
+### Visibilidad de productos sin convertirse en marketplace
+
+**Estrategia:** Ofrecer a las tiendas un nuevo canal de exposición sin asumir directamente el proceso de compra y venta.
+
+**Táctica:** Cada prenda comercial podrá incluir información de la tienda y un acceso hacia su sitio web, red social o canal de venta. De esta manera, la plataforma genera descubrimiento y tráfico mientras la transacción continúa realizándose en el canal oficial de la tienda.
+
+
+### Conexión entre tienda física y experiencia digital mediante QR
+
+**Estrategia:** Integrar la experiencia presencial de las tiendas con las herramientas digitales de la plataforma.
+
+**Táctica:** Permitir que las tiendas generen códigos QR asociados a determinadas prendas. El usuario podrá escanearlos para consultar el producto, incorporarlo a su armario virtual como referencia o utilizarlo dentro de las herramientas de combinación y prueba disponibles.
+
+
+### Experiencia de prueba virtual
+
+**Estrategia:** Complementar la organización del armario y las recomendaciones con una experiencia visual que permita experimentar con diferentes prendas y accesorios.
+
+**Táctica:** Desarrollar progresivamente funcionalidades de avatar, probador virtual y realidad aumentada que permitan visualizar determinados artículos antes de utilizarlos o acceder al canal de la tienda.
+
+Estas funcionalidades deberán validarse técnicamente y con usuarios antes de considerarse un diferenciador definitivo.
+
+
+### Reducción del esfuerzo necesario para crear el armario digital
+
+**Estrategia:** Reducir una de las principales barreras de las aplicaciones de armario: el tiempo necesario para registrar todas las prendas.
+
+**Táctica:** Utilizar procesamiento de imágenes e inteligencia artificial para reconocer automáticamente información como tipo de prenda, categoría y color, permitiendo que el usuario revise y corrija los datos antes de guardarlos.
+
+También se plantea permitir la incorporación rápida de prendas comerciales mediante códigos QR.
+
+
+### Recomendaciones que evolucionen con el usuario
+
+**Estrategia:** Evitar que el sistema funcione únicamente como un generador estático de outfits.
+
+**Táctica:** Permitir que el usuario guarde, descarte y modifique recomendaciones. Estas interacciones podrán utilizarse para conocer mejor sus preferencias y mejorar progresivamente las sugerencias posteriores.
+
+
+### Construcción de una comunidad alrededor del estilo
+
+**Estrategia:** Complementar el armario individual con una experiencia social que permita obtener inspiración de otras personas.
+
+**Táctica:** Permitir que los usuarios hagan públicas determinadas prendas u outfits, sigan a otros perfiles, reaccionen a combinaciones y exploren prendas disponibles públicamente en otros armarios.
+
+
+### Adaptación inicial al mercado local
+
+**Estrategia:** Desarrollar inicialmente una propuesta cercana al contexto del usuario peruano y a tiendas que necesiten nuevos canales digitales de visibilidad.
+
+**Táctica:** Buscar alianzas con tiendas locales, trabajar con usuarios del segmento definido durante las primeras pruebas y adaptar progresivamente la experiencia según los resultados obtenidos.
+
+La expansión hacia otros mercados deberá realizarse después de validar la propuesta de valor en el mercado inicial.
+
+## 2.2. Entrevistas
+
+De acuerdo con Easwaramoorthy y Zarinpoush (2006), las entrevistas son un método de investigación en el que se lleva a cabo una conversación orientada a recolectar información. A través de este método, se plantean una serie de preguntas que permiten conocer con mayor profundidad las experiencias, necesidades, comportamientos y puntos de vista de los participantes respecto a una problemática determinada.
+
+Para Mirage, la información recogida mediante las entrevistas es fundamental para comprender las dificultades que presentan los consumidores de moda al momento de organizar sus prendas, recordar qué tienen disponible, encontrar nuevas formas de combinar su ropa y descubrir prendas que se adapten a su estilo. Asimismo, permitirá conocer las necesidades de las tiendas de ropa relacionadas con la visibilidad de sus productos, la promoción de sus catálogos y el uso de canales digitales para llegar a potenciales clientes.
+
+Por ello, se plantea realizar un total de **3 entrevistas por cada segmento objetivo**, considerando tanto consumidores de moda como representantes de tiendas de ropa. Las entrevistas podrán realizarse de manera presencial o a distancia mediante herramientas digitales como Google Meet, Zoom o Discord, procurando en ambos casos generar un ambiente cómodo y adecuado que permita a los participantes expresar libremente sus experiencias y opiniones.
 
 ## 2.2. Entrevistas
 
