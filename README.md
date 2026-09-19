@@ -521,6 +521,78 @@ Su principal preocupación y factor de fricción es la complejidad en el manteni
 
 ### 2.2.3 Análisis de entrevistas
 
+En esta sección, el equipo realiza el análisis respectivo de las entrevistas cualitativas realizadas, consolidándolo en un resumen estructurado por cada uno de los segmentos objetivo de **ReWear**.
+
+---
+
+### Segmento 1: Consumidores de moda
+
+**Total entrevistados:** 3  
+**Edad promedio:** 22.5 años  
+**Sexo:** 67% femenino, 33% masculino  
+
+#### Características objetivas:
+- **100%** utiliza sus smartphones y plataformas digitales (TikTok, Instagram, Pinterest) de manera frecuente para consumir contenido de moda.
+- **100%** admite repetir outfits con frecuencia por no recordar todas las prendas disponibles en su guardarropa o por falta de tiempo en las mañanas.
+- **100%** posee prendas en el clóset que utiliza con poca o nula frecuencia debido a la dificultad para combinarlas.
+- **67%** tarda más de 15 minutos diarios probándose ropa frente al espejo antes de decidir qué vestir.
+- **100%** muestra interés en probar herramientas tecnológicas que sugieran combinaciones automáticas según el clima, evento o estilo.
+
+#### Características subjetivas:
+- Sensación constante de "no tener nada qué ponerse" a pesar de tener el armario saturado de ropa.
+- Frustración por no aprovechar la inversión económica realizada en prendas que quedan en el olvido.
+- Ansiedad matutina provocada por la falta de organización y el desorden generado al probarse diferentes prendas.
+- Actitud muy positiva hacia la digitalización de su ropa si el proceso de registro es rápido e intuitivo.
+
+> **Insight clave:** El consumidor urbano no busca comprar más ropa constantemente, sino gestionar mejor lo que ya tiene. ReWear debe posicionarse como un organizador inteligente que libera tiempo, reduce el estrés matutino y redescubre el valor del guardarropa propio.
+
+---
+
+### Segmento 2: Tiendas de ropa y marcas independientes
+
+**Total entrevistados:** 3 
+**Edad promedio:** 23 años
+**Ubicación / Cobertura:** Negocios urbanos con presencia física y digital (ej. San Martín de Porres)
+
+#### Características objetivas:
+- **100%** utiliza exclusivamente redes sociales tradicionales (Instagram, TikTok, Facebook, WhatsApp Business) como canales principales de promoción
+- **0%** ha utilizado previamente aplicaciones o plataformas especializadas en *fashion discovery* o prueba digital
+- **100%** enfrenta problemas para mantener visibilidad orgánica alta debido a la fuerte competencia y cambios de algoritmo en redes
+- **100%** mide el éxito de sus productos mediante revisiones manuales de ventas, mensajes directos e interacciones sociales (likes y comentarios)
+- **100%** está dispuesto a publicar su catálogo en una app externa si esta redirige tráfico a sus canales de venta sin cobrar comisión directa de venta
+
+#### Características subjetivas:
+- Preocupación constante por la baja efectividad y el alto costo de la publicidad pagada en redes sociales.
+- Comprensión clara de que mostrar prendas aisladas no vende igual que mostrarlas integradas dentro de un outfit o estilo completo
+- Entusiasmo por la incorporación de tecnologías 3D o Realidad Aumentada para resaltar la calidad de sus diseños
+- Temor a que la gestión o actualización del inventario en la plataforma consuma demasiado tiempo operativo
+
+> **Insight clave:** Las tiendas independientes necesitan un canal alternativo a las redes sociales que reduzca la fricción publicitaria. ReWear debe ofrecer un medio de descubrimiento donde sus prendas aparezcan en el contexto real de combinación de los usuarios, brindando métricas de interés real a cambio de un mantenimiento ágil del catálogo
+
+---
+
+## Síntesis de Hallazgos y Validación Cuantitativa
+
+A partir de los datos consolidados del formulario y las entrevistas estructuradas, se identificaron los siguientes criterios para la elaboración de los gráficos de validación:
+
+### Gráfico 1: Tiempo diario dedicado a elegir qué vestir (Consumidor)
+
+![Grafico1](assets/Entrevista/Grafico1.PNG)
+**Interpretación para el informe:** El 80% de los usuarios admite repetir combinaciones por falta de visibilidad de su ropa, respaldando la propuesta del Armario Digital
+
+---
+
+### Gráfico 2: Frecuencia con la que repiten outfits por falta de organización (Tienda)
+
+![Grafico2](assets/Entrevista/grafico2.PNG)  
+**Interpretación para el informe:** Muestra la alta dependencia de las tiendas hacia las redes sociales convencionales, lo que valida la necesidad de ReWear como un canal de descubrimiento especializado
+
+---
+
+### Conclusión general
+
+El análisis cualitativo y cuantitativo demuestra una perfecta simetría entre ambos segmentos: los **consumidores** sufren por la falta de organización y creatividad al vestirse, mientras que las **tiendas de ropa** sufren por la falta de espacios contextualizados para exhibir sus catálogos. ReWear actúa como el punto de encuentro ideal al transformar la gestión del armario en un canal interactivo y de descubrimiento personalizado.
+
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
