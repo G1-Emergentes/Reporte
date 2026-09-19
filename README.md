@@ -670,6 +670,49 @@ En esta sección, el equipo presenta los escnerarios as is para sus respectivos 
 
 ## 2.4. Ubiquitous Language
 
+De acuerdo con Evans (2003), el Lenguaje Ubicuo (*Ubiquitous Language*) es un pilar fundamental del Diseño Guiado por el Dominio (*Domain-Driven Design*), consistente en un lenguaje común y estructurado compartido entre los desarrolladores del software y los expertos del dominio de negocio. A través de este glosario, se busca eliminar las ambigüedades en la comunicación, garantizando que los términos utilizados en la documentación, los requerimientos y el código fuente reflejen fielmente la lógica del negocio de **ReWear**.
+
+### 2.3.1. Stakeholders & Roles (Partes interesadas y roles)
+
+* **Fashion Consumer (Consumidor de moda):** Usuario final de la plataforma que digitaliza su armario, explora su estilo personal, recibe combinaciones recomendadas por IA y prueba prendas mediante tecnologías visuales.
+* **Partner Store (Tienda aliada):** Comercio o marca de moda registrada en la aplicación que publica su catálogo comercial para incrementar la visibilidad de sus productos y derivar tráfico a sus canales oficiales de venta.
+* **AI Stylist / Recommendation Agent (Estilista IA / Agente de recomendación):** Motor inteligente encargado de analizar las prendas del armario personal para calcular compatibilidades y generar propuestas de outfits contextualizadas.
+
+### 2.3.2. Digital Wardrobe & Garment Management (Armario digital y gestión de prendas)
+
+* **Digital Wardrobe (Armario digital):** Representación e inventario virtual donde el usuario organiza, clasifica y gestiona las prendas que forman parte de su guardarropa real.
+* **Garment (Prenda):** Artículo individual de vestir o accesorio registrado en la plataforma, asociado a atributos físicos y estéticos específicos.
+* **Garment Attribute (Atributo de prenda):** Propiedad descriptiva de un artículo de vestir, tal como categoría, color primario, tela, temporada, marca y grado de formalidad.
+* **Automatic Tagging (Etiquetado automático):** Proceso ejecutado mediante visión por computadora e inteligencia artificial para identificar y asignar atributos a una prenda a partir de una fotografía.
+* **QR Code Tagging (Etiquetado por código QR):** Funcionalidad de escaneo que permite vincular de forma instantánea una prenda de tienda o de un tercero al armario digital del usuario.
+
+### 2.3.3. AI Recommendation & Personalization (Recomendación con IA y personalización)
+
+* **Outfit Recommendation (Sugerencia de outfit):** Combinación armónica de prendas y accesorios generada de forma automática para responder a un estilo y necesidad de vestuario.
+* **Context Parameter (Parámetro contextual):** Variable ingresada por el usuario (como clima, tipo de evento o grado de formalidad) para condicionar la sugerencia generada por la IA.
+* **Style Preference (Preferencia de estilo):** Configuración de etiquetas estéticas, paleta de colores y estilos de vestir que definen el gusto personal de cada usuario.
+* **Style Feedback (Retroalimentación de estilo):** Acción de guardar, ajustar o descartar una propuesta de outfit, utilizada por el algoritmo para aprender y ajustar futuras recomendaciones.
+
+### 2.3.4. Virtual Try-On & Visualizations (Probador virtual y visualización)
+
+* **Digital Avatar (Avatar digital):** Representación tridimensional parametrizada según la contextura y medidas físicas del usuario para simular el uso de prendas.
+* **Virtual Fitting Room (Probador virtual):** Entorno interactivo donde se superponen las prendas digitales sobre el avatar para evaluar el ajuste y la combinación de un look.
+* **Augmented Reality Preview (Visualización en realidad aumentada):** Proyección tridimensional de prendas o accesorios sobre el entorno o el cuerpo del usuario capturado en tiempo real por la cámara.
+
+### 2.3.5. Store Integration & Commercial Discovery (Integración con tiendas y descubrimiento comercial)
+
+* **Commercial Catalog (Catálogo comercial):** Colección de productos registrados por tiendas aliadas dentro de la plataforma para ser descubiertos dentro de combinaciones de outfits.
+* **Product Discovery (Descubrimiento de producto):** Experiencia mediante la cual un usuario encuentra prendas comerciales afines a sus gustos mientras organiza su armario o recibe recomendaciones.
+* **External Channel Redirection (Redirección a canal externo):** Vinculación directa desde la ficha del producto hacia la tienda online, red social o canal oficial de venta de la marca aliada.
+* **Store Profile (Perfil de tienda):** Espacio digital de la marca dentro de la plataforma donde muestra su identidad comercial, catálogo disponible e información de contacto.
+
+### 2.3.6. Community & Social Fashion (Comunidad y moda compartida)
+
+* **Shared Wardrobe (Armario compartido):** Configuración de privacidad que permite a un usuario mostrar parte de su catálogo digital a su red de amigos agregados.
+* **Garment Loan Request (Solicitud de préstamo de prenda):** Interacción social en la cual un usuario solicita prestada una prenda del armario digital de un amigo para una ocasión especial.
+
+---
+
 # CAPÍTULO III: Requirements Specification
 
 ## 3.1. To-Be Scenario Mapping
