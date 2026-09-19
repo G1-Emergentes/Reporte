@@ -530,8 +530,127 @@ A partir de la organización obtenida, se establecieron las siguientes líneas d
   <img src="assets/img/EventStorming/paso2_prueba.png" alt="EventStorming" style="width: 700">
 </p>
 
+Una vez agrupados los eventos del dominio, se realizó una revisión de los diferentes flujos con el propósito de identificar los pain points, entendidos como situaciones que pueden generar dificultades, fricciones o inconsistencias durante la interacción con las funcionalidades de Mirage. Entre los principales puntos identificados se encuentran:
+
+- Dificultad para obtener las medidas corporales necesarias para generar un avatar personalizado.
+- Posibles inconsistencias en el reconocimiento automático de las características de una prenda a partir de una imagen.
+- Necesidad de contar con información suficiente del armario para generar recomendaciones de outfits pertinentes.
+- Dependencia de las preferencias de estilo del usuario para personalizar las propuestas de outfits.
+- Posibles dificultades en la actualización y mantenimiento de las prendas disponibles en el catálogo de las tiendas.
+- Necesidad de mantener sincronizada la información de las prendas entre el catálogo de las tiendas y el armario digital del usuario.
+- Dependencia de la detección correcta del usuario y del entorno para realizar la proyección de prendas mediante realidad aumentada.
+- Necesidad de controlar la visibilidad de las prendas y armarios cuando son compartidos entre usuarios.
+- Posibles fricciones en la gestión de solicitudes de amistad y permisos para compartir o probar prendas.
+
+Posteriormente, se identificaron los pivotal points, considerados como aquellos eventos o decisiones dentro de los flujos que pueden generar una transición significativa en el comportamiento del sistema. Los principales identificados fueron:
+
+- La creación y configuración de la cuenta del usuario.
+- El registro de las medidas necesarias para generar el avatar personalizado.
+- La generación de un outfit personalizado.
+- La incorporación de una prenda al armario digital.
+- El reconocimiento y registro de una prenda mediante una fotografía.
+- El registro de una tienda y la incorporación de sus prendas al catálogo.
+- La identificación de una prenda mediante el escaneo de un código QR.
+- La activación del modo de realidad aumentada.
+- El establecimiento de una amistad entre usuarios.
+- La aceptación o rechazo de una solicitud para compartir una prenda.
+- La generación de un outfit a partir de prendas de una tienda.
+
+A partir de este análisis, fue posible determinar cómo los diferentes eventos, puntos críticos y responsabilidades identificados durante el Event Storming podían organizarse en límites funcionales del dominio. Como resultado, se establecieron los siguientes Bounded Contexts para Mirage: Profile, Recommendation, Store Catalog, Social Interactions, Augmented Reality y Digital Closet.
+
+**Profile**
+
+<p align="center">
+  <img src="assets/img/EventStorming/profile_bc.png" alt="EventStorming" style="width: 700">
+</p>
+
+**Recommendation**
+<p align="center">
+  <img src="assets/img/EventStorming/recommendation_bc.png" alt="EventStorming" style="width: 700">
+</p>
+
+**Store Catalog**
+
+<p align="center">
+  <img src="assets/img/EventStorming/store_bc.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Social Interactions**
+
+<p align="center">
+  <img src="assets/img/EventStorming/social_bc.png" alt="EventStorming" style="width: 700">
+</p>
+
+**Augmented Reality**
+
+<p align="center">
+  <img src="assets/img/EventStorming/reality_bc.png" alt="EventStorming" style="width: 700">
+</p>
+
+**Digital Closet**
+
+<p align="center">
+  <img src="assets/img/EventStorming/closet_bc.png" alt="EventStorming" style="width: 700">
+</p>
 
 ### 4.2.3. Domain Message Flows Modeling
+
+El siguiente modelo representa la interacción entre los diferentes Bounded Contexts identificados para Mirage, mostrando cómo determinadas acciones realizadas por los usuarios generan eventos que permiten establecer relaciones entre los contextos del sistema. Cada Bounded Context mantiene responsabilidades específicas dentro del dominio, pero puede intercambiar información con otros contextos cuando un proceso requiere complementar sus funcionalidades.
+
+Las principales relaciones identificadas son las siguientes:
+
+**Profile y Store Catalog:**
+
+Una vez que el usuario crea satisfactoriamente su cuenta y configura su perfil, puede registrar dicha cuenta como una tienda dentro de Mirage. De esta manera, la información gestionada desde Profile permite habilitar las funcionalidades correspondientes a la administración de una tienda y su catálogo de prendas.
+
+<p align="center">
+  <img src="assets/img/EventStorming/profile_store.png" alt="EventStorming" style="width: 700">
+</p>
+
+**Profile y Social Interactions:**
+
+Después de crear y personalizar su perfil y avatar, el usuario puede establecer conexiones con otros usuarios mediante el envío de solicitudes de amistad. Una vez aceptada la solicitud, se establece la relación entre ambos perfiles, habilitando las funcionalidades de interacción social disponibles en Mirage.
+
+<p align="center">
+  <img src="assets/img/EventStorming/profile_social.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Profile y Digital Closet:**
+
+Luego de personalizar su perfil y avatar, el usuario puede incorporar prendas a su armario digital mediante el escaneo de las prendas. La información obtenida durante este proceso permite registrar las prendas y asociarlas con el usuario dentro de Digital Closet.
+
+<p align="center">
+  <img src="assets/img/EventStorming/profile_digital_closet.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Digital Closet y Recommendation:**
+
+Una vez que el usuario cuenta con prendas registradas en su armario digital, esta información puede ser utilizada por Recommendation para generar outfits personalizados. Las prendas disponibles y las preferencias de estilo del usuario sirven como elementos para elaborar propuestas acordes con sus características y preferencias.
+
+<p align="center">
+  <img src="assets/img/EventStorming/digital_recommendation.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Recommendation y Augmented Reality:**
+
+Después de obtener una recomendación de outfit, el usuario puede visualizarla mediante la funcionalidad de realidad aumentada. El outfit generado por Recommendation es utilizado como información de entrada para que Augmented Reality pueda proyectarlo sobre el usuario y permitir su visualización en el entorno aumentado.
+
+<p align="center">
+  <img src="assets/img/EventStorming/recommendation_reality.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Vista completa:**
+
+Este modelo representa las principales relaciones identificadas entre los Bounded Contexts de Mirage, permitiendo visualizar cómo las diferentes capacidades del sistema se complementan entre sí. Profile concentra la información relacionada con la cuenta, configuración del usuario, preferencias, medidas y avatar; Store Catalog gestiona las tiendas y las prendas disponibles en sus catálogos; Digital Closet administra las prendas incorporadas al armario personal; Recommendation utiliza la información disponible para generar outfits personalizados; Augmented Reality permite visualizar y probar virtualmente las prendas y outfits; y Social Interactions gestiona las relaciones entre usuarios y el intercambio de prendas.
+
+<p align="center">
+  <img src="assets/img/EventStorming/vista_completa.png" alt="EventStorming" style="width: 700">
+</p>
 
 ### 4.2.4. Bounded Context Canvases
 
