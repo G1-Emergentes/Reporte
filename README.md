@@ -513,7 +513,7 @@ A partir de la organización obtenida, se establecieron las siguientes líneas d
 **Intercambio de prendas entre usuarios**
 
 <p align="center">
-  <img src="assets/img/EventStorming/paso2_integracion.png" alt="EventStorming" style="width: 700">
+  <img src="assets/img/EventStorming/paso2_intercambio.png" alt="EventStorming" style="width: 700">
 </p>
 
 
