@@ -527,7 +527,7 @@ A partir de la organización obtenida, se establecieron las siguientes líneas d
 **Prueba virtual de prendas compartidas**
 
 <p align="center">
-  <img src="assets/img/EventStorming/paso2_prueba.png" alt="EventStorming" style="width: 700">
+  <img src="assets/img/EventStorming/paso2_prueba_virtual.png" alt="EventStorming" style="width: 700">
 </p>
 
 Una vez agrupados los eventos del dominio, se realizó una revisión de los diferentes flujos con el propósito de identificar los pain points, entendidos como situaciones que pueden generar dificultades, fricciones o inconsistencias durante la interacción con las funcionalidades de Mirage. Entre los principales puntos identificados se encuentran:
