@@ -1755,8 +1755,35 @@ El Diagrama de Despliegue ilustra la distribución física de Mirage en una infr
 </p>
 
 # Conclusiones
-# Conclusiones y Recomendaciones
+
+El enfoque Attribute-Driven Design permitió priorizar drivers arquitectónicos (comportamiento temporal, rendimiento, escalabilidad, seguridad, interoperabilidad y precisión de IA) a partir de las user stories principales, asegurando que la arquitectura responda a necesidades reales del negocio y no solo a funcionalidad.
+
+Los escenarios de atributos de calidad definidos con medidas concretas (ej. ≤4 segundos de respuesta, ≤200 ms de latencia, >500 usuarios concurrentes) hacen verificable el cumplimiento de los requisitos no funcionales, facilitando pruebas y validación posterior.
+
+El refinamiento del escenario de reconocimiento con IA evidenció la dependencia crítica de servicios externos, lo cual obliga a considerar mecanismos de resiliencia (timeouts, reintentos) desde etapas tempranas del diseño.
+
+# Recomendaciones
+
+Definir un plan de contingencia formal para fallos o demoras del servicio de IA externo, especificando tiempos máximos de espera y estrategias de reintento o degradación controlada del servicio.
+
+Ampliar los escenarios de calidad con pruebas de carga reales antes del lanzamiento, para validar que el umbral de 500 usuarios concurrentes se cumple bajo condiciones de infraestructura de producción.
+
+Documentar y monitorear métricas de precisión de IA en producción (no solo en pruebas), ya que el 70% de aceptación de recomendaciones es un valor inicial que debe ajustarse con datos reales de uso.
 
 # Bibliografía
 
+- Chrimes, C., & Boardman, R. (2023). Las oportunidades y desafíos del metaverso para las marcas de moda. La economía de la confección: Comprender la historia, desarrollar modelos de negocio y aprovechar tecnologías digitales, 389-410. [https://link.springer.com/chapter/10.1007/978-3-031-33302-6_20](https://link.springer.com/chapter/10.1007/978-3-031-33302-6_20)
+
+Brandolini, A. (2021). Introducing EventStorming: An acts-on-software visual guide to domain discovery. Leanpub. [ https://www.leanpub.com/introducing_eventstorming]( https://www.leanpub.com/introducing_eventstorming)
+
+
+Evans, E. (2003). Domain-driven design: Tackling complexity in the heart of software. Addison-Wesley Professional.[ https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/]( https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/) 
+
+Mu, X., Zhang, H., Shi, J., Hou, J., Ma, J., & Yang, Y. (2024). Fashion intelligence in the Metaverse: promise and future prospects. Artificial Intelligence Review, 57(3), 67.  [ https://link.springer.com/article/10.1007/s10462-024-10703-8]( https://link.springer.com/article/10.1007/s10462-024-10703-8)
+
+
+
 # Anexos
+
+- Enlace de Miro: As-is y To-be : 
+[https://miro.com/welcomeonboard/SkNzcnk2TS9LOXVNUFNIZTZZWjJabDZSNGd3OGtJNjBScGtSL2JvMXF0b0NUS1pEY3ZseWJtaGc2QlQyTXBSOTFWcmVEa0Urd2UrY1BEUlltVm5EbTRacmZsZ0NhbjhxTXdGY2xMc0dFN0xlMkMzd2xWVklVNVJKcGkwVWFzYnd3VHhHVHd5UWtSM1BidUtUYmxycDRnPT0hdjE=?share_link_id=442470584812](https://miro.com/welcomeonboard/SkNzcnk2TS9LOXVNUFNIZTZZWjJabDZSNGd3OGtJNjBScGtSL2JvMXF0b0NUS1pEY3ZseWJtaGc2QlQyTXBSOTFWcmVEa0Urd2UrY1BEUlltVm5EbTRacmZsZ0NhbjhxTXdGY2xMc0dFN0xlMkMzd2xWVklVNVJKcGkwVWFzYnd3VHhHVHd5UWtSM1BidUtUYmxycDRnPT0hdjE=?share_link_id=442470584812)
