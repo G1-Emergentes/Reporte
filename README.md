@@ -329,6 +329,61 @@ TB1:
 
 ## 3.4. Product Backlog
 
+
+El Product Backlog organiza todas las funcionalidades e historias técnicas identificadas.
+
+| Orden | User Story ID | Título | Descripción | Story Points |
+| :---: | :---: | :--- | :--- | :---: |
+| **1** | US01 | Registro de nueva cuenta de usuario | Como nuevo usuario, quiero registrarme en la aplicación mediante correo electrónico o cuenta de Google (Gmail) para crear mi cuenta y acceder a Mirage.| 3 |
+| **2** | US02 | Inicio de sesión de usuario | Como usuario registrado, quiero iniciar sesión con mis credenciales o mi cuenta de Google para acceder a mi armario personal y funcionalidades de la app. | 2 |
+| **3** | US03 | Recuperación de contraseña | Como usuario registrado, quiero restablecer mi contraseña en caso de olvido para poder acceder nuevamente a la plataforma. | 3 |
+| **4** | US04 | Cierre de sesión | Como usuario registrado, quiero finalizar mi sesión para garantizar la seguridad de mi cuenta en cualquier dispositivo. | 1 |
+| **5** | US05 | Configuración y edición del perfil personal | Como usuario, quiero personalizar mi información de perfil (foto de avatar, nombre e información básica) para mantener mi cuenta actualizada. | 2 |
+| **6** | US06 | Registro y actualización de preferencias de estilo | Como usuario, quiero definir mis gustos, paleta de colores y estilos de moda preferidos para recibir recomendaciones personalizadas. | 3 |
+| **7** | US07 | Carga y captura de imágenes de prendas | Como usuario, quiero capturar una foto con la cámara o subir una imagen de mi galería para iniciar la digitalización de mi prenda. | 5 |
+| **8** | US08 | Detección y etiquetado automático con IA | Como usuario, quiero que la IA identifique automáticamente el tipo, categoría, color y características de mi prenda para agilizar su registro. | 8 |
+| **9** | US09 | Edición y registro de atributos de prenda | Como usuario, quiero guardar y editar los detalles específicos de mis prendas (marca, temporada, tela, notas) para mantener mi armario bien documentado. | 3 |
+| **10** | US10 | Añadido rápido de prendas mediante código QR | Como usuario, quiero escanear un código QR de una prenda para incorporarla directamente a mi armario virtual sin necesidad de cargar fotos manualmente. | 3 |
+| **11** | US11 | Búsqueda y filtrado del armario personal | Como usuario, quiero filtrar y buscar mis prendas por categoría, color, uso o etiquetas personalizadas para encontrar la ropa que necesito rápidamente. | 3 |
+| **12** | US12 | Creación y gestión de categorías personalizadas | Como usuario, quiero crear mis propias etiquetas o categorías (ej. "Trabajo", "Gym", "Fiesta") y asignarlas a mis prendas para organizar mi armario a mi gusto.| 2 |
+| **13** | US13 | Eliminación de prendas del armario | Como usuario, quiero eliminar prendas de mi armario virtual cuando ya no las posea o no las utilice para mantener mi inventario actualizado. | 1 |
+| **14** | US14 | Generación de sugerencias integrales por contexto | Como usuario, quiero recibir recomendaciones automáticas de outfits (prendas y accesorios) basadas en el clima, la ocasión o el evento ingresado. | 8 |
+| **15** | US15 | Recomendación a partir de un artículo clave | Como usuario, quiero seleccionar un elemento específico de mi armario (prenda o accesorio) para que la IA me sugiera cómo combinarlo. | 5 |
+| **16** | US16 | Refinamiento interactivo de sugerencias mediante comentarios | Como usuario, quiero ingresar comentarios o instrucciones de ajuste (ej. "cambia las zapatillas", "hazlo más abrigo") a la sugerencia mostrada para que la IA la reformule. | 8 |
+| **17** | US17 | Valoración, guardado y aprendizaje del agente | Como usuario, quiero guardar mis combinaciones favoritas o descartar propuestas para que el agente aprenda progresivamente sobre mis gustos reales. | 5 |
+| **18** | US18 | Registro de cuenta profesional de tienda | Como representante de una marca, quiero crear una cuenta profesional en la plataforma para habilitar mi presencia comercial y gestionar mi catálogo. | 3 |
+| **19** | US19 | Vinculación de enlaces y canales externos | Como representante de una tienda aliada, quiero vincular mi sitio web, redes sociales y canales de contacto a mi perfil comercial para redirigir a los usuarios a mis plataformas oficiales.| 2 |
+| **20** | US20 | Publicación de catálogo comercial y accesorios | Como tienda aliada, quiero subir prendas y accesorios a mi catálogo para que los usuarios puedan explorarlos y probárselos virtualmente. | 5 |
+| **21** | US21 | Generación de códigos QR comerciales de exhibición y adquisición | Como tienda aliada, quiero generar códigos QR de exhibición para locales y códigos QR de adquisición para etiquetas físicas de mis productos. | 5 |
+| **22** | US22 | Escaneo de QR de exhibición y prueba previa a la compra | Como posible comprador, quiero escanear el QR de exhibición en una tienda física para probarme el artículo en mi avatar y combinarlo con la ropa de mi armario.| 5 |
+| **23** | US23 | Añadir prenda comercial al armario desde el probador virtual | Como posible comprador, quiero agregar a mi armario virtual una prenda comercial que estoy visualizando en el probador virtual, para conservarla y combinarla posteriormente con mis prendas. | 3 |
+| **24** | US24 | Generación de rostro mediante selfie | Como usuario, quiero tomarme una foto del rostro para que la app genere un avatar con mis facciones reales. | 8 |
+| **25** | US25 | Estimación automática de dimensiones corporales por foto de cuerpo entero | Como usuario, quiero subir o capturar una fotografía de cuerpo completo para que la IA extraiga automáticamente mis proporciones corporales sin tener que medirme manualmente.| 13 |
+| **26** | US26 | Ajuste y refinamiento manual de proporciones corporales | Como usuario, quiero ajustar manualmente mis proporciones corporales representadas en mi avatar visual, para corregir o personalizar la estimación obtenida a partir de mis fotografías. | 3 |
+| **27** | US27 | Prueba virtual de prendas sobre el avatar personalizado | Como usuario, quiero probarme prendas de mi armario o de tiendas aliadas sobre mi avatar para visualizar cómo me lucen puestas. | 13 |
+| **28** | US28 | Prueba virtual de accesorios sobre el avatar | Como usuario, quiero colocar accesorios (gafas, bolsos, sombreros, joyas) en mi avatar para evaluar el impacto visual del look completo. | 8 |
+| **29** | US29 | Estimación del calce de la prenda | Como usuario, quiero consultar una estimación del calce de una prenda comercial según mis proporciones corporales, para conocer si una talla podría quedarme ajustada, justa u holgada. | 8 |
+| **30** | US30 | Comparación de looks | Como usuario, quiero comparar dos combinaciones diferentes probadas sobre mi avatar para decidir cuál se me ve mejor. | 5 |
+| **31** | US31 | Guardado de outfits generados | Como usuario, quiero guardar en mi colección los outfits generados (manualmente en el probador o sugeridos por la IA) para consultarlos o usarlos posteriormente.| 3 |
+| **32** | US32 | Probador virtual de prendas en tiempo real con cámara | Como usuario, quiero usar la cámara de mi dispositivo en tiempo real para probarme prendas de vestir sobre mi cuerpo mediante Realidad Aumentada. | 21 |
+| **33** | US33 | Prueba de accesorios en tiempo real | Como usuario, quiero probarme accesorios (gafas, sombreros, joyas, bolsos) mediante filtros AR sobre mi rostro o cuerpo en tiempo real para evaluar cómo lucen. | 13 |
+| **34** | US34 | Captura de fotos en Realidad Aumentada | Como usuario, quiero tomar fotografías de mi prueba en AR con prendas o accesorios para guardarlas en mi galería o compartirlas. | 5 |
+| **35** | US35 | Perfil público de armario y outfits | Como usuario, quiero mostrar mis outfits creados y prendas públicas en mi perfil para que mis amigos puedan explorar mi estilo. | 5 |
+| **36** | US36 | Seguimiento e interacción con amigos | Como usuario, quiero buscar y seguir a otros usuarios para estar conectado con sus perfiles de estilo. | 3 |
+| **37** | US37 | Prueba virtual de prendas del armario de un amigo | Como usuario, quiero seleccionar prendas del armario de un amigo para probármelas en mi propio avatar dentro del probador virtual. | 8 |
+| **38** | US38 | Reacciones a outfits de perfil | Como usuario, quiero dar "me gusta" a las combinaciones guardadas en el perfil de mis amigos para interactuar con sus outfits.| 2 |
+| **39** | US39 | Información general y propuesta de valor | Como visitante, quiero entender rápidamente los beneficios de Mirage y tener un botón accesible para descargar la aplicación. | 2 |
+| **40** | US40 | Navegación responsive y encabezado | Como usuario móvil o de escritorio, quiero un menú de navegación claro que se adapte a cualquier tamaño de pantalla. | 3 |
+| **41** | US41 | Sección de equipo, misión y visión | Como visitante interesado, quiero conocer al equipo creador y los objetivos de Mirage a largo plazo. | 1 |
+| **42** | US42 | Registro de alianzas para tiendas (B2B) | Como representante de una tienda física, quiero un formulario de contacto para solicitar unirme a la red de comercios aliados.| 3 |
+| **43** | US43 | Pie de página con enlaces institucionales | Como visitante, quiero un pie de página organizado para acceder fácilmente a redes sociales, políticas de privacidad y contacto. | 1 |
+| **44** | TS01 | Procesamiento centralizado de modelos de IA | Los modelos de IA usados para reconocimiento de prendas, estimación corporal y recomendaciones deben ejecutarse en un módulo separado, independiente del backend principal. | 13 |
+| **45** | TS02 | Renderizado 3D y AR compatible con hardware estándar | El avatar y el probador con Realidad Aumentada deben funcionar en dispositivos móviles de gama media, sin exigir hardware especializado.| 13 |
+| **46** | TS03 | Procesamiento asíncrono de imágenes | La carga y el análisis de fotografías de prendas o de cuerpo completo deben resolverse en segundo plano, sin bloquear la interacción del usuario con la aplicación. | 8 |
+| **47** | TS04 | Escalamiento independiente por tipo de usuario | La infraestructura debe permitir escalar por separado la carga generada por usuarios finales y por tiendas aliadas. | 8 |
+| **48** | TS05 | Integración con servicios externos | El sistema debe conectarse con proveedores externos de autenticación, generación de QR y servicios de IA en la nube. | 5 |
+| **49** | TS06 | Despliegue en infraestructura cloud | La solución debe alojarse en un proveedor cloud que soporte el procesamiento de IA y de renderizado sin depender de servidores propios. | 5 |
+
 # CAPÍTULO IV: Strategic-Level Software Design
 
 ## 4.1. Strategic-Level Attribute-Driven Design
