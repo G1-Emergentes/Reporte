@@ -326,7 +326,9 @@ TB1:
 | TS06 | Despliegue en infraestructura cloud | La solución debe alojarse en un proveedor cloud que soporte el procesamiento de IA y de renderizado sin depender de servidores propios. | La plataforma permanece disponible en línea y soporta acceso remoto continuo. | EP08 |
 
 ## 3.3. Impact Mapping
+El Impact Mapping nos ayuda a ordenar la idea del proyecto y entender cómo cada parte de la solución aporta valor. A partir del objetivo principal, se identifican los usuarios involucrados, los resultados que se busca generar en cada uno y las funcionalidades necesarias para alcanzarlos. En este caso, el mapa permite relacionar las necesidades de los usuarios finales y de las tiendas aliadas con los entregables e historias de usuario del proyecto.
 
+ ![ImpactMap_ photo](assets/img/ImpactMapMirage.png)
 ## 3.4. Product Backlog
 
 
