@@ -846,15 +846,286 @@ Como resultado del proceso de Quality Attribute Workshop (QAW), se priorizaron e
 
 ## 4.2. Strategic-Level Domain-Driven Design
 
+
+En esta sección se describe el enfoque aplicado para orientar las decisiones estratégicas relacionadas con el diseño del dominio de Mirage, tomando como referencia los principios de Domain-Driven Design (DDD). El propósito principal fue comprender y estructurar el dominio del sistema a partir de sus procesos, actores, reglas de negocio y responsabilidades, permitiendo identificar límites funcionales coherentes dentro de la solución.
+
+Para este proceso, el equipo empleó herramientas de modelado colaborativo como Event Storming y Bounded Context Canvas. Event Storming permitió explorar el comportamiento del dominio mediante la identificación de eventos, comandos, actores y procesos relevantes, facilitando una visión compartida de cómo se desarrollan las principales operaciones de Mirage. Posteriormente, el Bounded Context Canvas permitió analizar y delimitar los contextos identificados, especificando su propósito, responsabilidades, modelos y relaciones con otras partes del dominio.
+
+Este enfoque permitió construir una representación estructurada del dominio de Mirage y establecer límites funcionales basados en las responsabilidades y reglas del negocio, evitando una separación arbitraria de los componentes del sistema. De esta manera, las decisiones arquitectónicas posteriores se fundamentan en una comprensión previa del dominio y de las relaciones existentes entre sus diferentes procesos.
+
 ### 4.2.1. EventStorming
 
+En esta sección se presenta el proceso de Event Storming realizado por el equipo para obtener una primera representación del dominio de Mirage. Esta técnica permitió identificar los principales eventos que ocurren dentro del sistema, así como los comandos, actores y procesos que intervienen en su generación, proporcionando una visión general del comportamiento esperado de la solución.
+
+Durante la sesión, el equipo analizó los diferentes escenarios funcionales de Mirage y organizó los elementos del dominio de acuerdo con la secuencia en la que ocurren las acciones y sus respectivos resultados. La representación visual permitió identificar dependencias, relaciones entre procesos y posibles límites funcionales, además de facilitar la discusión entre los integrantes del equipo sobre las reglas y comportamientos que debería contemplar el sistema.
+
+El desarrollo de Event Storming permitió establecer una base común de conocimiento sobre el dominio antes de definir su estructura interna. A partir de los eventos y procesos identificados, posteriormente se analizaron posibles agrupaciones de responsabilidades que sirvieron como referencia para la definición de los Bounded Contexts de Mirage y para las decisiones de diseño de su arquitectura.
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/paso1.png" alt="EventStorming" style="width: 700">
+</p>
+
 ### 4.2.2. Candidate Context Discovery
+Durante la sesión de Event Storming se realizó el levantamiento y organización de los principales eventos asociados al funcionamiento de Mirage. A partir de esta actividad, se examinaron las acciones que intervienen en los diferentes procesos de la aplicación, buscando reconocer cómo se relacionan entre sí y qué funcionalidades del sistema representan. Esta revisión permitió agrupar los eventos de acuerdo con los flujos funcionales identificados y obtener una primera representación del comportamiento del dominio de Mirage.
+
+A partir de la organización obtenida, se establecieron las siguientes líneas de acción:
+
+**Personalización del avatar**
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/paso2_personalizacion.png" alt="EventStorming" style="width: 700">
+</p>
+
+**Recomendación y gestión de outfits**
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/paso2_recomendacion.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Configuración del perfil y preferencias de estilo**
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/paso2_configuracion.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Prueba de outfits mediante realidad aumentada**
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/paso2_prueba.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Administración del armario virtual**
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/paso2_administracion.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Reconocimiento y registro de prendas**
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/paso2_reconocimiento.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Gestión del catálogo de prendas de tiendas**
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/paso2_gestion.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Integración de prendas y proceso de compra**
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/paso2_integracion.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Intercambio de prendas entre usuarios**
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/paso2_intercambio.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Conexión entre usuarios mediante amistades**
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/paso2_conexion.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Prueba virtual de prendas compartidas**
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/paso2_prueba_virtual.png" alt="EventStorming" style="width: 700">
+</p>
+
+Una vez agrupados los eventos del dominio, se realizó una revisión de los diferentes flujos con el propósito de identificar los pain points, entendidos como situaciones que pueden generar dificultades, fricciones o inconsistencias durante la interacción con las funcionalidades de Mirage. Entre los principales puntos identificados se encuentran:
+
+- Dificultad para obtener las medidas corporales necesarias para generar un avatar personalizado.
+- Posibles inconsistencias en el reconocimiento automático de las características de una prenda a partir de una imagen.
+- Necesidad de contar con información suficiente del armario para generar recomendaciones de outfits pertinentes.
+- Dependencia de las preferencias de estilo del usuario para personalizar las propuestas de outfits.
+- Posibles dificultades en la actualización y mantenimiento de las prendas disponibles en el catálogo de las tiendas.
+- Necesidad de mantener sincronizada la información de las prendas entre el catálogo de las tiendas y el armario digital del usuario.
+- Dependencia de la detección correcta del usuario y del entorno para realizar la proyección de prendas mediante realidad aumentada.
+- Necesidad de controlar la visibilidad de las prendas y armarios cuando son compartidos entre usuarios.
+- Posibles fricciones en la gestión de solicitudes de amistad y permisos para compartir o probar prendas.
+
+Posteriormente, se identificaron los pivotal points, considerados como aquellos eventos o decisiones dentro de los flujos que pueden generar una transición significativa en el comportamiento del sistema. Los principales identificados fueron:
+
+- La creación y configuración de la cuenta del usuario.
+- El registro de las medidas necesarias para generar el avatar personalizado.
+- La generación de un outfit personalizado.
+- La incorporación de una prenda al armario digital.
+- El reconocimiento y registro de una prenda mediante una fotografía.
+- El registro de una tienda y la incorporación de sus prendas al catálogo.
+- La identificación de una prenda mediante el escaneo de un código QR.
+- La activación del modo de realidad aumentada.
+- El establecimiento de una amistad entre usuarios.
+- La aceptación o rechazo de una solicitud para compartir una prenda.
+- La generación de un outfit a partir de prendas de una tienda.
+
+A partir de este análisis, fue posible determinar cómo los diferentes eventos, puntos críticos y responsabilidades identificados durante el Event Storming podían organizarse en límites funcionales del dominio. Como resultado, se establecieron los siguientes Bounded Contexts para Mirage: Profile, Recommendation, Store Catalog, Social Interactions, Augmented Reality y Digital Closet.
+
+**Profile**
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/profile_bc.png" alt="EventStorming" style="width: 700">
+</p>
+
+**Recommendation**
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/recommendation_bc.png" alt="EventStorming" style="width: 700">
+</p>
+
+**Store Catalog**
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/store_bc.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Social Interactions**
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/social_bc.png" alt="EventStorming" style="width: 700">
+</p>
+
+**Augmented Reality**
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/reality_bc.png" alt="EventStorming" style="width: 700">
+</p>
+
+**Digital Closet**
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/closet_bc.png" alt="EventStorming" style="width: 700">
+</p>
 
 ### 4.2.3. Domain Message Flows Modeling
 
+El siguiente modelo representa la interacción entre los diferentes Bounded Contexts identificados para Mirage, mostrando cómo determinadas acciones realizadas por los usuarios generan eventos que permiten establecer relaciones entre los contextos del sistema. Cada Bounded Context mantiene responsabilidades específicas dentro del dominio, pero puede intercambiar información con otros contextos cuando un proceso requiere complementar sus funcionalidades.
+
+Las principales relaciones identificadas son las siguientes:
+
+**Profile y Store Catalog:**
+
+Una vez que el usuario crea satisfactoriamente su cuenta y configura su perfil, puede registrar dicha cuenta como una tienda dentro de Mirage. De esta manera, la información gestionada desde Profile permite habilitar las funcionalidades correspondientes a la administración de una tienda y su catálogo de prendas.
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/profile_store.png" alt="EventStorming" style="width: 700">
+</p>
+
+**Profile y Social Interactions:**
+
+Después de crear y personalizar su perfil y avatar, el usuario puede establecer conexiones con otros usuarios mediante el envío de solicitudes de amistad. Una vez aceptada la solicitud, se establece la relación entre ambos perfiles, habilitando las funcionalidades de interacción social disponibles en Mirage.
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/profile_social.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Profile y Digital Closet:**
+
+Luego de personalizar su perfil y avatar, el usuario puede incorporar prendas a su armario digital mediante el escaneo de las prendas. La información obtenida durante este proceso permite registrar las prendas y asociarlas con el usuario dentro de Digital Closet.
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/profile_digital_closet.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Digital Closet y Recommendation:**
+
+Una vez que el usuario cuenta con prendas registradas en su armario digital, esta información puede ser utilizada por Recommendation para generar outfits personalizados. Las prendas disponibles y las preferencias de estilo del usuario sirven como elementos para elaborar propuestas acordes con sus características y preferencias.
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/digital_recommendation.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Recommendation y Augmented Reality:**
+
+Después de obtener una recomendación de outfit, el usuario puede visualizarla mediante la funcionalidad de realidad aumentada. El outfit generado por Recommendation es utilizado como información de entrada para que Augmented Reality pueda proyectarlo sobre el usuario y permitir su visualización en el entorno aumentado.
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/recommendation_reality.png" alt="EventStorming" style="width: 700">
+</p>
+
+
+**Vista completa:**
+
+Este modelo representa las principales relaciones identificadas entre los Bounded Contexts de Mirage, permitiendo visualizar cómo las diferentes capacidades del sistema se complementan entre sí. Profile concentra la información relacionada con la cuenta, configuración del usuario, preferencias, medidas y avatar; Store Catalog gestiona las tiendas y las prendas disponibles en sus catálogos; Digital Closet administra las prendas incorporadas al armario personal; Recommendation utiliza la información disponible para generar outfits personalizados; Augmented Reality permite visualizar y probar virtualmente las prendas y outfits; y Social Interactions gestiona las relaciones entre usuarios y el intercambio de prendas.
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/EventStorming/vista_completa.png" alt="EventStorming" style="width: 700">
+</p>
+
 ### 4.2.4. Bounded Context Canvases
 
+En esta sección se presentan los Bounded Contexts que delimitan y organizan el dominio principal de Mirage. Su definición se realizó a partir del análisis de los eventos, comandos, políticas y relaciones identificados durante el Event Storming, buscando establecer límites claros entre las distintas responsabilidades del sistema y evitar la superposición de conceptos. Para documentar cada contexto se empleó el Bounded Context Canvas, herramienta que permite describir de manera estructurada su propósito, reglas de negocio, capacidades, lenguaje ubicuo, dependencias y consideraciones de diseño.
+
+El proceso de definición de los contextos contempló los siguientes aspectos:
+
+Context Overview Definition: Se establece el propósito y alcance de cada contexto, especificando la responsabilidad que asume dentro del dominio de Mirage.
+Business Rules Distillation & Ubiquitous Language Capture: Se determinan las reglas de negocio propias de cada contexto y los conceptos principales que conforman su lenguaje ubicuo.
+Capability Analysis: Se identifican las capacidades necesarias para cumplir con las responsabilidades asignadas al contexto.
+Capability Layering: Se organizan las capacidades según su importancia, diferenciando aquellas que constituyen el núcleo del contexto de las que funcionan como soporte.
+Dependencies Capture: Se reconocen las relaciones que mantiene cada contexto con los demás, considerando la información que requiere o proporciona para completar determinados procesos.
+Design Critique: Se analiza la delimitación propuesta, considerando fortalezas, posibles debilidades y riesgos asociados al diseño del contexto.
+
+A continuación, se presentan los Bounded Context Canvas correspondientes a cada uno de los contextos identificados para Mirage.
+
+Profile: Este contexto concentra la gestión de la información principal del usuario dentro de Mirage. Comprende la creación y configuración de la cuenta, las preferencias de estilo, el registro de medidas corporales y la generación del avatar personalizado, proporcionando la información necesaria para personalizar la experiencia del usuario.
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/BC_Canvas/bc_canvas_profile.png" alt="EventStorming" style="width: 700">
+</p>
+
+Digital Closet: Este contexto se encarga de administrar las prendas pertenecientes al armario digital del usuario. Incluye el registro, incorporación, actualización, eliminación y organización de prendas, así como el procesamiento de información obtenida mediante el reconocimiento de imágenes.
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/BC_Canvas/bc_canvas_closet.png" alt="EventStorming" style="width: 700">
+</p>
+
+Recommendation: Este contexto gestiona la generación de outfits personalizados a partir de las prendas disponibles y las preferencias de estilo del usuario. Comprende el cálculo de compatibilidad, la generación de propuestas y las acciones posteriores sobre los outfits, como guardarlos, marcarlos como favoritos o rechazarlos.
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/BC_Canvas/bc_canvas_recommendation.png" alt="EventStorming" style="width: 700">
+</p>
+
+Store Catalog: Este contexto administra la información relacionada con las tiendas y sus prendas disponibles. Incluye el registro de tiendas, la configuración de sus perfiles, la gestión del catálogo de productos, la generación de códigos QR y la actualización o retiro de prendas.
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/BC_Canvas/bc_canvas_store.png" alt="EventStorming" style="width: 700">
+</p>
+
+Social Interactions: Este contexto gestiona las relaciones e interacciones entre los usuarios de Mirage. Comprende el envío y gestión de solicitudes de amistad, el establecimiento de relaciones, la visualización de perfiles y armarios de amistades y el intercambio de prendas entre usuarios.
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/BC_Canvas/bc_canvas_social.png" alt="EventStorming" style="width: 700">
+</p>
+
+Augmented Reality: Este contexto se encarga de las funcionalidades relacionadas con la visualización y prueba virtual de prendas y outfits mediante realidad aumentada. Incluye la detección del usuario y del entorno, la generación de superposiciones y la proyección de prendas u outfits sobre el usuario.
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/BC_Canvas/bc_canvas_reality.png" alt="EventStorming" style="width: 700">
+</p>
+
 ### 4.2.5. Context Mapping
+El Context Mapping es una técnica estratégica de Domain-Driven Design (DDD) que permite representar las relaciones existentes entre los diferentes Bounded Contexts de un sistema. A través de este mapeo se pueden identificar las dependencias entre contextos y determinar qué contexto proporciona información o capacidades y cuál las consume. De esta manera, se establecen límites claros entre las distintas partes del dominio y se facilita una evolución independiente de cada contexto, evitando dependencias innecesarias.
+
+En Mirage se identificaron seis Bounded Contexts principales: Profile, Store Catalog, Social Interactions, Digital Closet, Recommendation y Augmented Reality. El contexto Profile actúa como Upstream (U) frente a Store Catalog, Social Interactions y Digital Closet, ya que proporciona información relacionada con el usuario que es utilizada por estos contextos, que cumplen el rol de Downstream (D). A su vez, Digital Closet funciona como Upstream para Recommendation, proporcionando la información de las prendas registradas que permite generar recomendaciones personalizadas. Finalmente, Recommendation actúa como Upstream para Augmented Reality, que consume las recomendaciones generadas para permitir su visualización mediante realidad aumentada.
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/BC_Canvas/Context_Mapping.png" alt="EventStorming" style="width: 700">
+</p>
 
 ## 4.3. Software Architecture
 
@@ -863,13 +1134,33 @@ En la arquitectura de software primero nos enfocamos en aterrizar la estructura 
 ### 4.3.1. Software Architecture System Landscape Diagram
 
 En esta sección se presenta el System Landscape Diagram, el cual permite visualizar a Mirage dentro de un entorno más amplio, considerando no solo a los usuarios finales y tiendas aliadas que interactúan con la solución, sino también a los servicios externos clave (como motores de visión por computadora para IA/AR y servicios en la nube). Este diagrama ofrece una perspectiva general del ecosistema en el que se encuentra la aplicación, mostrando cómo se relaciona con sus actores principales y servicios externos. De esta manera, se facilita la comprensión del alcance del sistema, sus dependencias y las integraciones que hacen posible la experiencia interactiva de la plataforma.
+<p align="center">
+  <img src="assets/img/Capitulo-4/c4/LandscapeDiagram.png" alt="LandscapeDiagram" style="width: 600">
+</p>
 
 ### 4.3.2. Software Architecture Context Level Diagrams
 
+El diagrama ubica a Mirage en el centro de la arquitectura como el motor de la experiencia, conectando las interacciones del Usuario quien gestiona su armario digital, combina outfits y usa el probador virtual con las de la Tienda, que administra su catálogo y códigos QR. Para soportar estos flujos, la plataforma delega tareas operativas en integraciones clave: Cloudinary almacena los recursos multimedia, Gmail gestiona el correo transaccional, Google Gemini API extrae atributos e interpreta las imágenes de las prendas, y TripoSR las convierte en modelos 3D para la experiencia en realidad aumentada.
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/c4/ContextDiagram.png" alt="ContextDiagram" style="width: 600">
+</p>
+
 ### 4.3.3. Software Architecture Container Level Diagrams
+
+En este nivel, las solicitudes de los usuarios ingresan desde la aplicación móvil (Flutter) o la Landing Page (Angular) e impactan en un API Gateway centralizado (C++ / Drogon) que gestiona la autenticación y el enrutamiento. Desde allí, el tráfico se distribuye hacia microservicios especializados (Auth, Wardrobe y QR Service) respaldados por bases de datos PostgreSQL independientes. Por su parte, las operaciones complejas de visión, recomendación y 3D son canalizadas mediante una fachada de integración en Python (FastAPI), la cual coordina un grupo de agentes de IA apoyados en caché Redis, base de datos vectoriales, embeddings en Pinecone y la asistencia de API externas como Gemini y TripoSR.
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/c4/ContainerDiagram.png" alt="ContainerDiagram" style="width: 700">
+</p>
 
 ### 4.3.4. Software Architecture Deployment Diagrams
 
+El Diagrama de Despliegue ilustra la distribución física de Mirage en una infraestructura de nube optimizada para alta disponibilidad e inferencia de IA. Mientras la Landing Page se aloja en GitHub Pages y la Mobile App corre nativamente en los dispositivos de los usuarios, todo el backend se orquesta en AWS Cloud Infrastructure. Allí, el tráfico ingresa mediante un servidor de API Gateway y se distribuye hacia tres clústeres especializados: un clúster Kubernetes para los microservicios de negocio, un clúster con nodos GPU dedicado exclusivamente al procesamiento de los agentes de IA, y un clúster de bases de datos gestionadas que asegura la persistencia relacional, vectorial y de caché.
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/c4/DeploymentDiagram.png" alt="DeploymentDiagram" style="width: 700">
+</p>
 
 # Conclusiones
 # Conclusiones y Recomendaciones
