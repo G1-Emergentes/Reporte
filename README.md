@@ -302,9 +302,59 @@ Por ello, se plantea realizar un total de **3 entrevistas por cada segmento obje
 
 ### 2.3.1. User Personas
 
+En esta sección, el equipo presenta los User Personas realizados
+
+### Olivia Rodriguez
+
+/
+![User_photo](assets/empathy/Olivia-Perez.png)
+
+--- 
+
+### Alejandro Lopez
+
+/
+![User_Alejandro_photo](assets/empathy/Alejandro-Lopez.png)
+
+---
+
+
 ### 2.3.2. User Task Matrix
 
+En esta sección se detallan las tareas clave que realizan los diferentes segmentos de usuarios representados por los **User Personas** de **ReWear**, con el objetivo de cumplir sus metas relacionadas con la organización del armario digital, el descubrimiento de outfits mediante Inteligencia Artificial, la prueba virtual en avatar 3D y la visibilidad de catálogos comerciales para tiendas aliadas.
+
+| Persona | Actividad | Frecuencia | Importancia |
+|---|---|---|---|
+| **Olivia Rodríguez - Consumidor de moda** | Digitalizar prendas en el armario virtual mediante captura de foto o carga | Frecuentemente | Alta |
+| | Solicitar recomendaciones automáticas de outfits a la IA según el contexto (clima, evento) | Diariamente | Alta |
+| | Probar combinaciones de ropa y accesorios sobre su avatar 3D personalizado | Frecuentemente | Alta |
+| | Guardar y organizar outfits favoritos en colecciones personalizadas | Frecuentemente | Media |
+| | Escanear códigos QR en tiendas para vincular prendas de catálogo a su armario | Ocasionalmente | Media |
+| | Explorar el armario virtual de amigos e interactuar con prendas compartidas | Ocasionalmente | Media |
+| **Alejandro López - Owner de boutique / Tienda de ropa** | Registrar y cargar prendas del catálogo comercial en la plataforma | Ocasionalmente | Alta |
+| | Generar códigos QR comerciales para etiquetado en tiendas físicas o e-commerce | Ocasionalmente | Alta |
+| | Monitorear métricas de rendimiento (veces guardada la prenda, pruebas en avatar) | Frecuentemente | Alta |
+| | Actualizar información, fotos o etiquetas de prendas registradas | Ocasionalmente | Media |
+| | Evaluar el tráfico derivado desde la plataforma hacia sus propios canales de venta | Frecuentemente | Alta |
+
 ### 2.3.3. Empathy Mapping
+
+En esta sección , el equipo presenta los mapas de empatia o Empathy Maps realizados por User Persona
+
+### Olivia Rodriguez
+
+/
+![Empathy_Mapping_ photo](assets/empathy/Olvia-Empathy-map.png)
+
+---
+
+### Alejandro Lopez
+
+/
+![Empathy_Mapping_ photo](assets/empathy/Alejandro-Lopez-empathy.png)
+
+---
+
 
 ### 2.3.4. As-is Scenario Mapping
 
