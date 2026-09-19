@@ -571,6 +571,116 @@ En esta sección, el equipo realiza el análisis respectivo de las entrevistas c
 
 ---
 
+**Entrevista: César Vázquez**  
+- **Sexo:** Masculino  
+- **Edad:** 22 años  
+- **Ocupación:** Gerente de una tienda de ropa  
+- **Link:** [Ver entrevista](https://youtu.be/GomduemGw4E?si=7g3iN5LehWtjluyt)  
+- **Inicia en:** 0:02  
+- **Duración:** 7:36  
+
+![Entrevista_Cesar_Vazquez](assets/Entrevista/Entrevista_cesar.png)
+
+### Resumen de entrevista
+
+**Datos objetivos y perfil general:**  
+César Vázquez tiene 22 años y trabaja como gerente de una tienda de ropa. Actualmente, la tienda utiliza principalmente canales digitales como Instagram y TikTok para mostrar sus productos, debido al carácter visual de estas plataformas. También cuentan con un catálogo para clientes que prefieren revisar las prendas de manera física y utilizan Gmail para comunicar novedades, nuevos productos y ofertas.
+
+**Características subjetivas – Personalidad y comportamiento:**  
+Durante la entrevista, César mostró una actitud abierta hacia el uso de nuevas herramientas digitales para promocionar las prendas de la tienda. Considera importante mantener una comunicación cercana con los clientes y conocer sus opiniones y gustos para poder ofrecerles recomendaciones más relacionadas con su estilo. También valora especialmente que las herramientas utilizadas por la tienda sean prácticas y fáciles de aprender, debido a que la incorporación de nuevo personal puede generar retrasos cuando las aplicaciones utilizadas son complejas.
+
+**Promoción y visibilidad de las prendas:**  
+La tienda concentra actualmente su promoción en Instagram y TikTok. César señaló que identifican qué productos generan mayor interés observando las preguntas realizadas por los clientes y las métricas disponibles en sus publicaciones, principalmente la cantidad de visualizaciones y "me gusta".
+
+Uno de los objetivos de la tienda es llegar a más clientes y mantener una interacción constante con ellos. Para César, conocer las preferencias de cada persona también permite recomendar prendas que puedan ajustarse mejor a su estilo.
+
+**Canales digitales utilizados:**  
+Los principales medios utilizados actualmente por la tienda son:
+
+- Instagram.
+- TikTok.
+- Gmail para informar sobre nuevos productos u ofertas.
+- Catálogo físico.
+
+César indicó que actualmente no utilizan una aplicación externa especializada ni cuentan con una plataforma propia adicional para promocionar su catálogo.
+
+**Información importante al mostrar una prenda:**  
+Para César, una publicación debería mostrar suficiente información para que el usuario pueda comprender correctamente las características del producto antes de interesarse por él.
+
+Entre la información que considera más importante se encuentran:
+
+- Medidas de la prenda.
+- Tipo de material.
+- Color real del producto.
+- Tallas disponibles.
+- Información visual clara y detallada.
+
+Mencionó especialmente la importancia de representar correctamente el color, ya que una fotografía puede hacer que una prenda se vea más clara, opaca o desgastada de lo que realmente es.
+
+**Dificultades en la gestión del catálogo:**  
+Uno de los principales problemas identificados está relacionado con la actualización de productos entre el canal digital y la tienda física. César explicó que, cuando las ventas se realizan en ambos espacios, puede resultar difícil mantener correctamente actualizada la cantidad disponible de cada producto.
+
+Esto puede ocasionar que una prenda permanezca publicada aunque ya no exista stock, que un producto haya salido de temporada o que resulte difícil identificar cuánto se ha vendido de manera virtual y cuánto de manera presencial.
+
+Por esta razón, considera importante que una plataforma permita realizar cambios de manera rápida y sencilla, incluyendo:
+
+- Agregar productos.
+- Modificar información.
+- Actualizar productos.
+- Eliminar productos del catálogo.
+
+**Valor de una plataforma de armario digital:**  
+César considera positiva la posibilidad de que las prendas de una tienda puedan formar parte de una aplicación de armario virtual. Durante la entrevista indicó que este tipo de plataformas le parecen interactivas y que actualmente tienen potencial comercial.
+
+También considera beneficioso que un usuario pueda guardar una prenda de la tienda dentro de su armario digital y utilizarla como referencia al momento de crear outfits. Desde su perspectiva, esto podría ayudar al cliente a reducir el tiempo necesario para decidir si una prenda combina con su ropa.
+
+Además, señaló que una decisión más rápida antes de visitar la tienda podría contribuir a reducir el tiempo de compra, las colas y la aglomeración dentro del establecimiento.
+
+**Información que sería útil conocer sobre los usuarios:**  
+César manifestó interés en conocer determinada información del público que interactúa con las prendas de la tienda.
+
+Entre los datos mencionados durante la entrevista se encuentran:
+
+- Edad del usuario.
+- Tipo de ropa de preferencia.
+- Rango de precios de interés.
+- Tallas.
+
+Destacó particularmente el rango de precios y las tallas, debido a que esta información podría facilitar la presentación de productos más relacionados con las posibilidades y características del cliente.
+
+**Percepción sobre Realidad Aumentada y prueba virtual:**  
+César mostró una opinión favorable frente a la posibilidad de utilizar Realidad Aumentada para visualizar prendas o accesorios antes de visitar el canal de venta.
+
+Considera que sería una propuesta creativa y que permitiría observar con mayor detalle los productos y apreciarlos desde diferentes ángulos. También señaló que visualizar previamente cómo podría verse una prenda sobre el usuario podría generar mayor seguridad respecto al producto que está considerando.
+
+Según su percepción, este tipo de experiencia haría más eficiente el proceso de decisión del cliente, ya que tendría una referencia visual antes de acudir a la tienda o realizar la compra.
+
+**Principales necesidades identificadas:**
+
+- Conseguir mayor visibilidad para las prendas de la tienda.
+- Llegar a nuevos clientes interesados en sus productos.
+- Mostrar información detallada y visualmente clara de cada prenda.
+- Mantener actualizado el catálogo de forma sencilla.
+- Reducir problemas de sincronización entre productos disponibles en canales físicos y digitales.
+- Conocer qué prendas generan mayor interés entre los usuarios.
+- Conocer información como preferencias, rango de precios y tallas de potenciales clientes.
+- Permitir que los usuarios puedan guardar productos y utilizarlos como referencia para crear outfits.
+- Facilitar una experiencia que permita al cliente visualizar mejor una prenda antes de dirigirse al canal de venta.
+
+**Influencias y factores de rechazo / abandono:**  
+El principal factor de rechazo identificado es la complejidad de uso. César explicó que cuando una herramienta requiere demasiado tiempo para aprenderse, la capacitación de nuevo personal se vuelve más lenta y puede generar retrasos en las operaciones.
+
+También podría existir una dificultad si la plataforma no permite mantener fácilmente actualizado el catálogo, especialmente cuando la tienda maneja simultáneamente productos y ventas en canales digitales y físicos.
+
+Por ello, para que una plataforma resulte útil para la tienda, César considera importante que sea:
+
+- Práctica.
+- Fácil de aprender y utilizar.
+- Rápida al momento de modificar información.
+- Sencilla para agregar o eliminar productos.
+- Capaz de mantener actualizado el catálogo.
+---
+
 ## Síntesis de Hallazgos y Validación Cuantitativa
 
 A partir de los datos consolidados del formulario y las entrevistas estructuradas, se identificaron los siguientes criterios para la elaboración de los gráficos de validación:
