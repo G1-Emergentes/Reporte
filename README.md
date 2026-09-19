@@ -654,7 +654,63 @@ Este modelo representa las principales relaciones identificadas entre los Bounde
 
 ### 4.2.4. Bounded Context Canvases
 
+En esta sección se presentan los Bounded Contexts que delimitan y organizan el dominio principal de Mirage. Su definición se realizó a partir del análisis de los eventos, comandos, políticas y relaciones identificados durante el Event Storming, buscando establecer límites claros entre las distintas responsabilidades del sistema y evitar la superposición de conceptos. Para documentar cada contexto se empleó el Bounded Context Canvas, herramienta que permite describir de manera estructurada su propósito, reglas de negocio, capacidades, lenguaje ubicuo, dependencias y consideraciones de diseño.
+
+El proceso de definición de los contextos contempló los siguientes aspectos:
+
+Context Overview Definition: Se establece el propósito y alcance de cada contexto, especificando la responsabilidad que asume dentro del dominio de Mirage.
+Business Rules Distillation & Ubiquitous Language Capture: Se determinan las reglas de negocio propias de cada contexto y los conceptos principales que conforman su lenguaje ubicuo.
+Capability Analysis: Se identifican las capacidades necesarias para cumplir con las responsabilidades asignadas al contexto.
+Capability Layering: Se organizan las capacidades según su importancia, diferenciando aquellas que constituyen el núcleo del contexto de las que funcionan como soporte.
+Dependencies Capture: Se reconocen las relaciones que mantiene cada contexto con los demás, considerando la información que requiere o proporciona para completar determinados procesos.
+Design Critique: Se analiza la delimitación propuesta, considerando fortalezas, posibles debilidades y riesgos asociados al diseño del contexto.
+
+A continuación, se presentan los Bounded Context Canvas correspondientes a cada uno de los contextos identificados para Mirage.
+
+Profile: Este contexto concentra la gestión de la información principal del usuario dentro de Mirage. Comprende la creación y configuración de la cuenta, las preferencias de estilo, el registro de medidas corporales y la generación del avatar personalizado, proporcionando la información necesaria para personalizar la experiencia del usuario.
+
+<p align="center">
+  <img src="assets/img/BC_Canvas/bc_canvas_profile.png" alt="EventStorming" style="width: 700">
+</p>
+
+Digital Closet: Este contexto se encarga de administrar las prendas pertenecientes al armario digital del usuario. Incluye el registro, incorporación, actualización, eliminación y organización de prendas, así como el procesamiento de información obtenida mediante el reconocimiento de imágenes.
+
+<p align="center">
+  <img src="assets/img/BC_Canvas/bc_canvas_closet.png" alt="EventStorming" style="width: 700">
+</p>
+
+Recommendation: Este contexto gestiona la generación de outfits personalizados a partir de las prendas disponibles y las preferencias de estilo del usuario. Comprende el cálculo de compatibilidad, la generación de propuestas y las acciones posteriores sobre los outfits, como guardarlos, marcarlos como favoritos o rechazarlos.
+
+<p align="center">
+  <img src="assets/img/BC_Canvas/bc_canvas_recommendation.png" alt="EventStorming" style="width: 700">
+</p>
+
+Store Catalog: Este contexto administra la información relacionada con las tiendas y sus prendas disponibles. Incluye el registro de tiendas, la configuración de sus perfiles, la gestión del catálogo de productos, la generación de códigos QR y la actualización o retiro de prendas.
+
+<p align="center">
+  <img src="assets/img/BC_Canvas/bc_canvas_store.png" alt="EventStorming" style="width: 700">
+</p>
+
+Social Interactions: Este contexto gestiona las relaciones e interacciones entre los usuarios de Mirage. Comprende el envío y gestión de solicitudes de amistad, el establecimiento de relaciones, la visualización de perfiles y armarios de amistades y el intercambio de prendas entre usuarios.
+
+<p align="center">
+  <img src="assets/img/BC_Canvas/bc_canvas_social.png" alt="EventStorming" style="width: 700">
+</p>
+
+Augmented Reality: Este contexto se encarga de las funcionalidades relacionadas con la visualización y prueba virtual de prendas y outfits mediante realidad aumentada. Incluye la detección del usuario y del entorno, la generación de superposiciones y la proyección de prendas u outfits sobre el usuario.
+
+<p align="center">
+  <img src="assets/img/BC_Canvas/bc_canvas_reality.png" alt="EventStorming" style="width: 700">
+</p>
+
 ### 4.2.5. Context Mapping
+El Context Mapping es una técnica estratégica de Domain-Driven Design (DDD) que permite representar las relaciones existentes entre los diferentes Bounded Contexts de un sistema. A través de este mapeo se pueden identificar las dependencias entre contextos y determinar qué contexto proporciona información o capacidades y cuál las consume. De esta manera, se establecen límites claros entre las distintas partes del dominio y se facilita una evolución independiente de cada contexto, evitando dependencias innecesarias.
+
+En Mirage se identificaron seis Bounded Contexts principales: Profile, Store Catalog, Social Interactions, Digital Closet, Recommendation y Augmented Reality. El contexto Profile actúa como Upstream (U) frente a Store Catalog, Social Interactions y Digital Closet, ya que proporciona información relacionada con el usuario que es utilizada por estos contextos, que cumplen el rol de Downstream (D). A su vez, Digital Closet funciona como Upstream para Recommendation, proporcionando la información de las prendas registradas que permite generar recomendaciones personalizadas. Finalmente, Recommendation actúa como Upstream para Augmented Reality, que consume las recomendaciones generadas para permitir su visualización mediante realidad aumentada.
+
+<p align="center">
+  <img src="assets/img/BC_Canvas/Context_Mapping.png" alt="EventStorming" style="width: 700">
+</p>
 
 ## 4.3. Software Architecture
 
