@@ -19,9 +19,9 @@
 <h4>PRODUCTO:</h4>
 <h4>INTEGRANTES:</h4>
 <p>
-- Cabanillas Meza, Jose Mateo (u2023)<br>
+- Cabanillas Meza, Jose Mateo (u202311458)<br>
 - Ortiz Cardenas, Johanna Antuanete (u202310358)<br>
-- Sánchez Manrique, Italo Ludwing (u2023)<br>
+- Sánchez Manrique, Italo Ludwing (u202316967)<br>
 - Sarmiento Medina, Loreley (u202310005)<br>
 - Zegarra López, Renato Sebastián Rubber (u202311558)
 </p>
@@ -80,6 +80,7 @@
 
 TB1 (19/09/2026):
 
+ ![insights](assets/img/insights1.png)
 
 ## **STUDENT OUTCOME**
 
@@ -98,33 +99,33 @@ TB1 (19/09/2026):
 <td>3.c1. Comunica oralmente con efectividad a diferentes rangos de audiencia.</td>
 <td>
 <b>Cabanillas Meza, Jose Mateo</b><br>
-TB1:<br><br>
+TB1: Participé exponiendo los diagramas de arquitectura de software (system landscape, contexto, contenedores y despliegue) ante el equipo y el docente.<br><br>
 <b>Ortiz Cardenas, Johanna Antuanete</b><br>
-TB1:<br><br>
+TB1: Participé explicando el Attribute-Driven Design (drivers, decisiones de diseño y escenarios de calidad) al equipo y en la sustentación.<br><br>
 <b>Sánchez Manrique, Italo Ludwing</b><br>
-TB1:<br><br>
+TB1: Participé comunicando los hallazgos de entrevistas, needfinding y ubiquitous language en las revisiones del equipo.<br><br>
 <b>Sarmiento Medina, Loreley</b><br>
-TB1:<br><br>
+TB1: Participé presentando el perfil de la startup, el proceso Lean UX y los segmentos objetivo ante el equipo y el docente.<br><br>
 <b>Zegarra López, Renato Sebastián Rubber</b><br>
-TB1:
+TB1: Participé exponiendo el Event Storming y el modelado estratégico de DDD al equipo.
 </td>
-<td>TB1: </td>
+<td>TB1: El equipo comunicó oralmente sus avances de forma clara y ordenada, adaptando el nivel técnico según la audiencia (compañeros, docente).</td>
 </tr>
 <tr>
 <td>3.c2. Comunica por escrito con efectividad a diferentes rangos de audiencia.</td>
 <td>
 <b>Cabanillas Meza, Jose Mateo</b><br>
-TB1:<br><br>
+TB1: Me encargué de redactar la sección de arquitectura de software del informe (4.3).<br><br>
 <b>Ortiz Cardenas, Johanna Antuanete</b><br>
-TB1:<br><br>
+TB1: Me encargué de redactar la sección de Attribute-Driven Design del informe (4.1).<br><br>
 <b>Sánchez Manrique, Italo Ludwing</b><br>
-TB1:<br><br>
+TB1: Me encargué de redactar las secciones de entrevistas, needfinding y ubiquitous language del informe (2.2 a 2.4).<br><br>
 <b>Sarmiento Medina, Loreley</b><br>
-TB1:<br><br>
+TB1: Me encargué de redactar el perfil de la startup, el Lean UX y el análisis de competidores del informe (1.1 a 2.1).<br><br>
 <b>Zegarra López, Renato Sebastián Rubber</b><br>
-TB1:
+TB1: Me encargué de redactar la sección de Domain-Driven Design con Event Storming del informe (4.2.2 a 4.2.5).
 </td>
-<td>TB1: </td>
+<td>TB1: El equipo elaboró un informe escrito estructurado y coherente, integrando cada sección de forma clara para distintos lectores (docente, equipo).</td>
 </tr>
 </tbody>
 </table>
