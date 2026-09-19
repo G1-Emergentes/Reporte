@@ -296,6 +296,130 @@ Por ello, se plantea realizar un total de **3 entrevistas por cada segmento obje
 
 ### 2.2.2 Registro de entrevistas
 
+En esta sección, el equipo realiza el registro de las entrevistas realizadas
+
+### Segmento #1: Consumidores de moda
+
+**Entrevista: Nicole González**  
+- **Sexo:** Femenino  
+- **Edad:** 18  
+- **Link:** [Ver entrevista](https://www.youtube.com/watch?v=4Ar3FaM9zWA)  
+- **Inicia en:** 0:04
+- **Duración:** 8:00
+
+![Registro_photo](assets/Entrevista/Entrevista-1.PNG)
+  
+### Resumen de entrevista: 
+
+**Datos objetivos y perfil general:**  
+Nicole González es una joven de 18 años que reside en el distrito de Ate, Lima. Se encuentra dentro del segmento objetivo de consumidores de moda jóvenes que utilizan tecnologías digitales diariamente. Organiza su armario físico agrupando las prendas por tipo de ropa y por color. No siempre recuerda con exactitud todo el catálogo de prendas que posee, por lo que debe revisar su clóset físicamente cada vez que arma un outfit.
+
+**Características subjetivas – Personalidad y comportamiento:**  
+Nicole muestra una personalidad práctica, juvenil y orientada a la estética personal. Tiende a decidir qué vestir en el momento de salir, salvo en ocasiones especiales donde planifica sus outfits con días de anticipación. Experimenta momentos de fricción y estres al no saber cómo combinar ciertas prendas o cuando no encuentra en su clóset lo que ve en plataformas de inspiración digital.
+
+**Relación con la organización del armario y vestuario:**  
+Al enfrentar fallas eléctricas como cortes de luz o tomacorrientes que no funcionan, su primera reacción es buscar ayuda externa. No intenta resolverlo por sí misma, y suele sentir frustración e incertidumbre. No realiza mantenimientos preventivos eléctricos debido a la falta de conocimientos técnicos y a la ausencia de recordatorios o planificación específica en su rutina.
+
+**Canales de búsqueda y decisión:**  
+Su canal principal para buscar inspiración de estilo es Pinterest, la cual valora por su versatilidad y variedad. Sin embargo, manifiesta que la experiencia resulta estresante y poco eficiente debido a que los outfits sugeridos en dicha red no corresponden con las prendas reales que ella tiene disponibles en su clóset.
+
+**Dispositivos y tecnología utilizada:**  
+Es usuaria habitual de smartphones y aplicaciones móviles con alto contenido visual. Demuestra una actitud sumamente receptiva hacia la incorporación de representaciones digitales y realidad aumentada (AR) para probarse ropa de manera virtual, destacando que esta tecnología le ahorraría tiempo valioso en días donde necesita vestirse con prisa.
+
+**Criterios de elección de técnicos/proveedores:**  
+Al momento de armar un outfit o evaluar prendas de tiendas externas dentro de una app, los factores que más valora son:
+
+- **Coherencia estética y armonía de colores.**  
+- **Compatibilidad con sus accesorios habituales.**  
+- **Tallas y medidas exactas al explorar ropa de tiendas.**  
+- **Previsualización digital de cómo le quedaría la prenda antes de usarla o comprarla.**  
+
+**Influencias y factores de rechazo / abandono:**
+
+Su decisión de adoptar y mantener el uso de una aplicación depende de la fluidez y libertad que esta le ofrezca. Mencionó explícitamente que dejaría de usar la plataforma si esta impone límites a la cantidad de ropa que puede subir o si requiere un costo/suscripción obligatoria. Valora la gratuidad en funciones esenciales de organización y la precisión de la IA para adaptarse a sus gustos.
+
+
+
+**Entrevista 2: Matías Medina**  
+- **Sexo:** Masculino  
+- **Edad:** 21  
+- **Link:** [Ver entrevista](https://www.youtube.com/watch?v=4H6sIBXIa74)  
+- **Inicia en:** 0:04
+- **Duración:** 5:24
+
+![Registro_Matias_photo](assets/Entrevista/Entrevista-2.PNG)
+  
+### Resumen de entrevista: 
+
+**Datos objetivos y perfil general:**  
+Matías Medina es un joven de 21 años residente en el distrito de La Molina, Lima. Forma parte del segmento objetivo de consumidores de moda urbanos. Organiza su armario de manera básica dividiendo sus prendas únicamente por tipo (polos colgados en ganchos, pantalones guardados en cajones), sin categorizar por colores u ocasiones. Admite que solo recuerda y utiliza con frecuencia una pequeña fracción de su vestuario, manteniendo guardadas prendas que olvida que posee.
+
+**Características subjetivas – Personalidad y comportamiento:**  
+Matías muestra una personalidad práctica, reservada y con un alto enfoque en la comodidad funcional. Es un usuario que prioriza mantener su propio estilo personal por encima de las tendencias del momento. Su principal punto de fricción al vestirse radica en la dificultad de visualizar cómo lucirá una combinación sin probársela físicamente, lo cual le genera pérdida de tiempo e incertidumbre sobre si el outfit se ajusta al nivel de formalidad requerido por la ocasión.
+
+**Relación con la organización del armario y vestuario:**  
+Al no contar con una categorización estructurada, no le resulta fácil recordar todo su guardarropa. Ha comprado prendas duplicadas o casi idénticas en múltiples ocasiones (posee polos del mismo diseño y cuatro buzos prácticamente iguales) debido a no recordar lo que ya tiene. Ante la dificultad de combinar, suele repetir las mismas combinaciones seguras de siempre o recurre a comprar ropa nueva en lugar de explorar combinaciones con su vestuario actual
+
+**Canales de búsqueda y decisión:**  
+Consume esporádicamente contenidos en redes sociales, pero no las utiliza como su canal principal de inspiración. Considera que lo que se vuelve "trending" en internet no siempre refleja sus gustos reales, por lo que prefiere guiarse por su propio criterio estético y nivel de confort.
+
+**Dispositivos y tecnología utilizada:**  
+Es usuario habitual de smartphones. Mencionó haber intentado utilizar previamente aplicaciones extranjeras de organización de ropa (como la versión beta de la app "Alta"), aunque sintió limitaciones por la falta de disponibilidad completa en el país. Se muestra abierto a la tecnología siempre que le aporte soluciones prácticas y no sea restrictiva.
+
+**Criterios de elección de técnicos/proveedores:**  
+Al momento de elegir una prenda o evaluar una combinación, Matías establece la siguiente jerarquía de criterios:
+
+- **Comodidad (factor primordial e indispensable).**  
+- **Material y textura de la prenda.**  
+- **Color y preferencia de tono personal.**  
+- **Adecuación al contexto (evaluación de si el look es suficientemente formal o casual para el evento)**  
+
+**Influencias y factores de rechazo / abandono:**
+
+Su adopción de la plataforma está condicionada a la capacidad del sistema de mostrar visualizaciones integrales realistas. Dejaría de utilizar la aplicación si esta impone restricciones en sus funciones de personalización o si solo muestra listas/fotografías estáticas que no le permitan evaluar el outfit completo.
+
+
+
+### Segmento #2: Tiendas de ropa
+
+**Entrevista: Rodrigo Mendez**  
+- **Sexo:** Masculino   
+- **Edad:** 20  
+- **Link:** [Ver entrevista](https://www.youtube.com/watch?v=QUZJWbwIgeY)  
+- **Inicia en:** 0:05
+- **Duración:** 4:59
+
+![Registro_Tienda_photo](assets/Entrevista/Entrevista-3.PNG)
+  
+### Resumen de entrevista: 
+
+**Datos objetivos y perfil general:**  
+Rodrigo es un joven emprendedor de 20 años que administra la tienda de ropa "Clouds Plus Ultra", ubicada en el distrito de San Martín de Porres, Lima. Su modelo de negocio combina la atención directa en su local físico con la comercialización y exhibición digital a través de redes sociales. Mantiene un catálogo activo dirigido a un público joven interesado en moda urbana.
+
+**Características subjetivas – Personalidad y comportamiento:**  
+Rodrigo demuestra una actitud pragmática, innovadora y orientada al crecimiento comercial. Es consciente de la alta saturación de marcas en el mercado textil y busca constantemente alternativas para destacar. Valora la experiencia visual del cliente, comprendiendo que el usuario no solo compra una prenda por separado, sino por cómo esta se integra con su estilo de vestir personal.
+
+**Relación con la organización del armario y vestuario:**  
+Su mayor reto actual es la alta competencia en redes sociales y la dificultad para alcanzar orgánicamente a nuevos clientes. Mide el interés de sus productos evaluando las ventas finales, las consultas directas de precio/talla y las interacciones en publicaciones (likes y comentarios). Reconoce que cuando una prenda se muestra contextualizada (sugerida en un outfit real), el cliente logra imaginar la combinación con mayor facilidad, aumentando la probabilidad de compra.
+
+**Canales de búsqueda, promoción y decisión:**  
+Promociona su catálogo utilizando principalmente Instagram, Facebook, TikTok y WhatsApp Business. Hasta la fecha no ha utilizado plataformas comerciales o apps especializadas en fashion discovery, concentrando todos sus esfuerzos en redes sociales tradicionales y la recomendación boca a boca de sus propios clientes.
+
+**Dispositivos y tecnología utilizada:**  
+Utiliza smartphones y herramientas de gestión digital para administrar sus redes y canalizar ventas. Se mostró receptivo y entusiasmado ante la incorporación de tecnologías tridimensionales (3D) y Realidad Aumentada (AR), destacando que estas representaciones permiten apreciar mejor la calidad del diseño, los acabados y los detalles de cada prenda.
+
+**Criterios de elección de técnicos/proveedores:**  
+Para considerar útil una plataforma de exhibición de productos, Rodrigo exige que esta permita detallar los siguientes datos clave:
+
+- **Fotografías de alta calidad de la prenda.**  
+- **Precio, disponibilidad de colores y tallas.**  
+- **Tipo de material y guía de medidas exactas.**  
+- **Facilidad técnica para registrar y actualizar ítems en tiempo real.**  
+
+**Influencias y factores de rechazo / abandono:**
+
+Su principal preocupación y factor de fricción es la complejidad en el mantenimiento del inventario. Señaló que dejaría de usar la plataforma si la actualización del catálogo y precios resulta tediosa, si el sistema es difícil de usar o si no le proporciona estadísticas e indicadores útiles sobre el comportamiento del usuario con sus productos.
+
 ### 2.2.3 Análisis de entrevistas
 
 ## 2.3. Needfinding
