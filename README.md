@@ -15,8 +15,8 @@
 
 <br>
 
-<h4>STARTUP:</h4>
-<h4>PRODUCTO:</h4>
+<h4>STARTUP: ReWear</h4>
+<h4>PRODUCTO: Mirage</h4>
 <h4>INTEGRANTES:</h4>
 <p>
 - Cabanillas Meza, Jose Mateo (u202311458)<br>
