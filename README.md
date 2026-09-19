@@ -379,6 +379,20 @@ En esta sección, el equipo presenta los escnerarios as is para sus respectivos 
 
 ## 3.1. To-Be Scenario Mapping
 
+En esta sección , el equipo muestra los artecfactos To-Be Scenario Maps 
+
+
+### Olivia Rodriguez
+
+![ To-Be_photo_Olvia](assets/As-is/To-be-olivia.PNG)
+
+---
+
+### Alejandro Lopez
+
+![ To-Be_photo_Alejandro](assets/As-is/To-be-Alejandro.PNG)
+
+---
 ## 3.2. User Stories
 
 ## 3.3. Impact Mapping
