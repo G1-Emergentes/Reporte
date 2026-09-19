@@ -725,10 +725,27 @@ En esta sección se presenta el System Landscape Diagram, el cual permite visual
 
 ### 4.3.2. Software Architecture Context Level Diagrams
 
+El diagrama ubica a Mirage en el centro de la arquitectura como el motor de la experiencia, conectando las interacciones del Usuario quien gestiona su armario digital, combina outfits y usa el probador virtual con las de la Tienda, que administra su catálogo y códigos QR. Para soportar estos flujos, la plataforma delega tareas operativas en integraciones clave: Cloudinary almacena los recursos multimedia, Gmail gestiona el correo transaccional, Google Gemini API extrae atributos e interpreta las imágenes de las prendas, y TripoSR las convierte en modelos 3D para la experiencia en realidad aumentada.
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/c4/ContextDiagram.png" alt="ContextDiagram" style="width: 600">
+</p>
+
 ### 4.3.3. Software Architecture Container Level Diagrams
+
+En este nivel, las solicitudes de los usuarios ingresan desde la aplicación móvil (Flutter) o la Landing Page (Angular) e impactan en un API Gateway centralizado (C++ / Drogon) que gestiona la autenticación y el enrutamiento. Desde allí, el tráfico se distribuye hacia microservicios especializados (Auth, Wardrobe y QR Service) respaldados por bases de datos PostgreSQL independientes. Por su parte, las operaciones complejas de visión, recomendación y 3D son canalizadas mediante una fachada de integración en Python (FastAPI), la cual coordina un grupo de agentes de IA apoyados en caché Redis, base de datos vectoriales, embeddings en Pinecone y la asistencia de API externas como Gemini y TripoSR.
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/c4/ContainerDiagram.png" alt="ContainerDiagram" style="width: 700">
+</p>
 
 ### 4.3.4. Software Architecture Deployment Diagrams
 
+El Diagrama de Despliegue ilustra la distribución física de Mirage en una infraestructura de nube optimizada para alta disponibilidad e inferencia de IA. Mientras la Landing Page se aloja en GitHub Pages y la Mobile App corre nativamente en los dispositivos de los usuarios, todo el backend se orquesta en AWS Cloud Infrastructure. Allí, el tráfico ingresa mediante un servidor de API Gateway y se distribuye hacia tres clústeres especializados: un clúster Kubernetes para los microservicios de negocio, un clúster con nodos GPU dedicado exclusivamente al procesamiento de los agentes de IA, y un clúster de bases de datos gestionadas que asegura la persistencia relacional, vectorial y de caché.
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/c4/DeploymentDiagram.png" alt="DeploymentDiagram" style="width: 700">
+</p>
 
 # Conclusiones
 # Conclusiones y Recomendaciones
