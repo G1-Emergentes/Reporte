@@ -2015,7 +2015,7 @@ El objetivo de la iconografía es facilitar el reconocimiento rápido de las acc
 Los íconos se utilizan generalmente acompañados de etiquetas cuando forman parte de la navegación principal, mientras que en acciones secundarias pueden aparecer de manera independiente cuando su significado resulta suficientemente reconocible.
 
 <p align="center">
-  <img src="assets/images/Iconograpfia.png" alt="Iconografía utilizada en Mirage" width="700">
+  <img src="assets/ux-design/Iconografia.png" alt="Iconografía utilizada en Mirage" width="700">
 </p>
 
 En cuanto a los componentes de interacción, Mirage mantiene una estructura visual consistente entre las diferentes pantallas. Los botones principales utilizan el color rosa de la identidad visual y se emplean para representar las acciones prioritarias de cada vista, como continuar, guardar, confirmar, generar o iniciar una experiencia.
@@ -2511,7 +2511,7 @@ Los wireframes permiten validar la organización de la información, los recorri
 Este grupo incluye las pantallas iniciales de la aplicación, el acceso al sistema, la vista Home y la gestión del armario digital. También considera la organización por categorías y el registro de nuevas prendas.
 
 <p align="center">
-  <img src="assets/images/ux-design/wireframes/01-wireframe-onboarding-home-closet.png" alt="Wireframes de Onboarding, Home y Closet de Mirage" width="900">
+  <img src="assets/ux-design/wireframes/01-wireframe-onboarding-home-closet.png" alt="Wireframes de Onboarding, Home y Closet de Mirage" width="900">
 </p>
 
 #### 02. Outfit Builder & AI Try-On
@@ -2519,7 +2519,7 @@ Este grupo incluye las pantallas iniciales de la aplicación, el acceso al siste
 Estos wireframes representan el flujo utilizado para construir un outfit, seleccionar las prendas que lo conforman y posteriormente acceder al proceso de AI Try-On mediante fotografías y datos opcionales del usuario.
 
 <p align="center">
-  <img src="assets/images/ux-design/wireframes/02-wireframe-outfit-builder-ai-try-on.png" alt="Wireframes de Outfit Builder y AI Try-On de Mirage" width="900">
+  <img src="assets/ux-design/wireframes/02-wireframe-outfit-builder-ai-try-on.png" alt="Wireframes de Outfit Builder y AI Try-On de Mirage" width="900">
 </p>
 
 #### 03. 3D & Augmented Reality
@@ -2527,7 +2527,7 @@ Estos wireframes representan el flujo utilizado para construir un outfit, selecc
 Este conjunto muestra la estructura de las pantallas relacionadas con la visualización de accesorios en 3D y la experiencia de Realidad Aumentada mediante la cámara del dispositivo.
 
 <p align="center">
-  <img src="assets/images/ux-design/wireframes/03-wireframe-3d-augmented-reality.png" alt="Wireframes de 3D y Realidad Aumentada de Mirage" width="900">
+  <img src="assets/ux-design/wireframes/03-wireframe-3d-augmented-reality.png" alt="Wireframes de 3D y Realidad Aumentada de Mirage" width="900">
 </p>
 
 
@@ -2536,7 +2536,7 @@ Este conjunto muestra la estructura de las pantallas relacionadas con la visuali
 Este grupo comprende la exploración de productos, búsqueda, resultados, detalle de productos provenientes de tiendas aliadas y las principales vistas relacionadas con el perfil del usuario.
 
 <p align="center">
-  <img src="assets/images/ux-design/wireframes/04-wireframe-explore-stores-profile.png" alt="Wireframes de Explore, Stores y Profile de Mirage" width="900">
+  <img src="assets/ux-design/wireframes/04-wireframe-explore-stores-profile.png" alt="Wireframes de Explore, Stores y Profile de Mirage" width="900">
 </p>
 
 #### 05. Community
@@ -2544,7 +2544,7 @@ Este grupo comprende la exploración de productos, búsqueda, resultados, detall
 Estos wireframes representan las funciones sociales de Mirage, incluyendo el feed de comunidad, perfiles públicos y la visualización de armarios compartidos.
 
 <p align="center">
-  <img src="assets/images/ux-design/wireframes/05-wireframe-community.png" alt="Wireframes del módulo Community de Mirage" width="900">
+  <img src="assets/ux-design/wireframes/05-wireframe-community.png" alt="Wireframes del módulo Community de Mirage" width="900">
 </p>
 
 #### 06. Partner Store Management
@@ -2552,7 +2552,7 @@ Estos wireframes representan las funciones sociales de Mirage, incluyendo el fee
 Este grupo presenta la estructura de las pantallas destinadas a las tiendas aliadas, incluyendo el registro profesional, dashboard, catálogo comercial, publicación de productos y administración del perfil de tienda.
 
 <p align="center">
-  <img src="assets/images/ux-design/wireframes/06-wireframe-partner-store-management.png" alt="Wireframes de Partner Store Management de Mirage" width="900">
+  <img src="assets/ux-design/wireframes/06-wireframe-partner-store-management.png" alt="Wireframes de Partner Store Management de Mirage" width="900">
 </p>
 
 #### 07. QR Experience
@@ -2560,7 +2560,7 @@ Este grupo presenta la estructura de las pantallas destinadas a las tiendas alia
 Estos wireframes muestran el flujo relacionado con la generación, visualización y escaneo de códigos QR asociados a los productos de las tiendas aliadas.
 
 <p align="center">
-  <img src="assets/images/ux-design/wireframes/07-wireframe-qr-experience.png" alt="Wireframes de la experiencia QR de Mirage" width="900">
+  <img src="assets/ux-design/wireframes/07-wireframe-qr-experience.png" alt="Wireframes de la experiencia QR de Mirage" width="900">
 </p>
 
 #### 08. Avatar & Virtual Fitting Room
@@ -2568,7 +2568,7 @@ Estos wireframes muestran el flujo relacionado con la generación, visualizació
 Este grupo presenta la estructura de las pantallas utilizadas para crear la representación digital personalizada del usuario y utilizarla posteriormente dentro del Virtual Fitting Room.
 
 <p align="center">
-  <img src="assets/images/ux-design/wireframes/08-wireframe-avatar-virtual-fitting-room.png" alt="Wireframes de Avatar y Virtual Fitting Room de Mirage" width="900">
+  <img src="assets/ux-design/wireframes/08-wireframe-avatar-virtual-fitting-room.png" alt="Wireframes de Avatar y Virtual Fitting Room de Mirage" width="900">
 </p>
 
 ### 6.4.2. Applications Wireflow Diagrams
@@ -2582,7 +2582,7 @@ En esta sección se presentan los mock-ups de alta fidelidad de la aplicación m
 Este grupo reúne las pantallas iniciales de Mirage, incluyendo el onboarding, acceso a la aplicación, pantalla principal y gestión del armario digital. También contempla la visualización por categorías, el detalle de prendas y el registro de nuevos elementos mediante fotografía y reconocimiento asistido por IA.
 
 <p align="center">
-  <img src="assets/images/ux-design/mockups/01-onboarding-home-closet.png" alt="Mock-ups de Onboarding, Home y Closet de Mirage" width="900">
+  <img src="assets/ux-design/mockups/01-onboarding-home-closet.png" alt="Mock-ups de Onboarding, Home y Closet de Mirage" width="900">
 </p>
 
 #### 02. Outfit Builder & AI Try-On
@@ -2590,7 +2590,7 @@ Este grupo reúne las pantallas iniciales de Mirage, incluyendo el onboarding, a
 Estas pantallas representan el proceso de creación de outfits y generación de una vista personalizada mediante Inteligencia Artificial. El usuario puede seleccionar prendas de su armario, construir un look y posteriormente utilizar fotografías y medidas opcionales para generar una representación visual del outfit.
 
 <p align="center">
-  <img src="assets/images/ux-design/mockups/02-outfit-builder-ai-try-on.png" alt="Mock-ups de Outfit Builder y AI Try-On de Mirage" width="900">
+  <img src="assets/ux-design/mockups/02-outfit-builder-ai-try-on.png" alt="Mock-ups de Outfit Builder y AI Try-On de Mirage" width="900">
 </p>
 
 #### 03. 3D & Augmented Reality
@@ -2598,7 +2598,7 @@ Estas pantallas representan el proceso de creación de outfits y generación de 
 Este grupo presenta las funcionalidades de visualización tridimensional y Realidad Aumentada. Los accesorios compatibles pueden ser explorados en 3D y posteriormente probados mediante la cámara del dispositivo utilizando controles de interacción como movimiento, escala y rotación.
 
 <p align="center">
-  <img src="assets/images/ux-design/mockups/03-3d-augmented-reality.png" alt="Mock-ups de 3D y Realidad Aumentada de Mirage" width="900">
+  <img src="assets/ux-design/mockups/03-3d-augmented-reality.png" alt="Mock-ups de 3D y Realidad Aumentada de Mirage" width="900">
 </p>
 
 #### 04. Explore, Stores & Profile
@@ -2606,7 +2606,7 @@ Este grupo presenta las funcionalidades de visualización tridimensional y Reali
 Estas pantallas permiten explorar contenido y productos provenientes de tiendas aliadas, realizar búsquedas, visualizar resultados y consultar el detalle de los productos. También se incluye el acceso al perfil del usuario y a sus principales configuraciones personales.
 
 <p align="center">
-  <img src="assets/images/ux-design/mockups/04-explore-stores-profile.png" alt="Mock-ups de Explore, Stores y Profile de Mirage" width="900">
+  <img src="assets/ux-design/mockups/04-explore-stores-profile.png" alt="Mock-ups de Explore, Stores y Profile de Mirage" width="900">
 </p>
 
 #### 05. Community
@@ -2614,7 +2614,7 @@ Estas pantallas permiten explorar contenido y productos provenientes de tiendas 
 El módulo Community está orientado al descubrimiento de contenido compartido por otros usuarios. Incluye un feed de inspiración, perfiles públicos y armarios compartidos, permitiendo explorar looks y prendas disponibles públicamente dentro de la comunidad.
 
 <p align="center">
-  <img src="assets/images/ux-design/mockups/05-community.png" alt="Mock-ups del módulo Community de Mirage" width="900">
+  <img src="assets/ux-design/mockups/05-community.png" alt="Mock-ups del módulo Community de Mirage" width="900">
 </p>
 
 #### 06. Partner Store Management
@@ -2622,7 +2622,7 @@ El módulo Community está orientado al descubrimiento de contenido compartido p
 Este grupo corresponde a la experiencia de las tiendas aliadas. Incluye el registro de cuenta profesional, dashboard comercial, administración del catálogo, publicación de productos y gestión del perfil de la tienda y sus canales externos.
 
 <p align="center">
-  <img src="assets/images/ux-design/mockups/06-partner-store-management.png" alt="Mock-ups de gestión de tiendas aliadas en Mirage" width="900">
+  <img src="assets/ux-design/mockups/06-partner-store-management.png" alt="Mock-ups de gestión de tiendas aliadas en Mirage" width="900">
 </p>
 
 #### 07. QR Experience
@@ -2630,7 +2630,7 @@ Este grupo corresponde a la experiencia de las tiendas aliadas. Incluye el regis
 Estas pantallas muestran la integración entre la experiencia física y digital mediante códigos QR. Las tiendas pueden generar y administrar códigos asociados a sus productos, mientras que los consumidores pueden escanearlos para acceder al detalle del artículo dentro de Mirage.
 
 <p align="center">
-  <img src="assets/images/ux-design/mockups/07-qr-experience.png" alt="Mock-ups de la experiencia QR de Mirage" width="900">
+  <img src="assets/ux-design/mockups/07-qr-experience.png" alt="Mock-ups de la experiencia QR de Mirage" width="900">
 </p>
 
 #### 08. Avatar & Virtual Fitting Room
@@ -2638,10 +2638,112 @@ Estas pantallas muestran la integración entre la experiencia física y digital 
 Este grupo presenta la creación de la representación digital personalizada del usuario a partir de sus fotografías y medidas opcionales. Esta representación puede utilizarse posteriormente dentro del Virtual Fitting Room para visualizar prendas y construir diferentes combinaciones.
 
 <p align="center">
-  <img src="assets/images/ux-design/mockups/08-avatar-virtual-fitting-room.png" alt="Mock-ups de Avatar y Virtual Fitting Room de Mirage" width="900">
+  <img src="assets/ux-design/mockups/08-avatar-virtual-fitting-room.png" alt="Mock-ups de Avatar y Virtual Fitting Room de Mirage" width="900">
 </p>
 
 ### 6.4.4. Applications User Flow Diagrams
+
+En esta sección se presentan los User Flow Diagrams de Mirage. Cada diagrama representa un recorrido específico dentro de la aplicación y permite visualizar cómo el usuario avanza entre pantallas para completar una determinada tarea.
+
+Los flujos fueron separados según el objetivo que cumple cada conjunto de pantallas, facilitando la comprensión de la navegación y de las relaciones entre las distintas funcionalidades de Mirage.
+
+#### KnowUs
+
+Este flujo representa el primer contacto del usuario con Mirage. Incluye las pantallas iniciales de presentación y onboarding, donde se comunica la propuesta de valor de la aplicación antes de llegar al acceso mediante Login o Sign Up.
+
+<p align="center">
+  <img src="assets/ux-design/KnowUs.png" alt="User Flow KnowUs de Mirage" width="900">
+</p>
+
+#### Account
+
+Este flujo representa el proceso relacionado con el acceso a la cuenta del usuario. Incluye las opciones de inicio de sesión y registro, así como la transición hacia la pantalla principal de la aplicación una vez completado el acceso.
+
+<p align="center">
+  <img src="assets/ux-design/Account.png" alt="User Flow Account de Mirage" width="900">
+</p>
+
+#### Navigate
+
+Este flujo representa la navegación principal del consumidor dentro de Mirage. Muestra el recorrido desde Home hacia el armario digital, las categorías de prendas, el detalle de un artículo y otras vistas relacionadas con la administración del closet.
+
+También permite visualizar accesos hacia recomendaciones, registro de nuevas prendas, accesorios y perfil del usuario.
+
+<p align="center">
+  <img src="assets/ux-design/Navigate.png" alt="User Flow Navigate de Mirage" width="900">
+</p>
+
+#### Outfit Builder
+
+Este flujo representa el proceso de creación de un outfit y su posterior visualización mediante Inteligencia Artificial.
+
+El usuario comienza seleccionando las prendas que compondrán el look, revisa la combinación generada y puede continuar hacia el AI Try-On. Para ello, proporciona fotografías personales y medidas opcionales antes de iniciar el procesamiento mediante IA.
+
+Finalmente, el usuario puede visualizar el resultado generado y comparar el look obtenido.
+
+<p align="center">
+  <img src="assets/ux-design/Outfit_Builder.png" alt="User Flow Outfit Builder de Mirage" width="900">
+</p>
+
+#### Augmented Reality
+
+Este flujo muestra la experiencia de visualización de accesorios mediante tecnologías 3D y Realidad Aumentada.
+
+El usuario accede desde la categoría de accesorios hacia el detalle de un elemento compatible, puede visualizarlo en 3D y posteriormente iniciar la experiencia de AR mediante la cámara del dispositivo.
+
+<p align="center">
+  <img src="assets/ux-design/Augmented_Reality.png" alt="User Flow Augmented Reality de Mirage" width="900">
+</p>
+
+#### Explore
+
+Este flujo representa el proceso de descubrimiento de productos provenientes de tiendas aliadas.
+
+El usuario puede acceder a Explore, realizar una búsqueda, visualizar los resultados disponibles y posteriormente ingresar al detalle de un producto para conocer sus características y las opciones disponibles.
+
+<p align="center">
+  <img src="assets/ux-design/Explore.png" alt="User Flow Explore de Mirage" width="900">
+</p>
+
+#### Community
+
+Este flujo representa la experiencia social de Mirage.
+
+Desde el Community Feed, el usuario puede descubrir contenido compartido por otras personas, acceder a un perfil público y posteriormente explorar el Shared Wardrobe de ese usuario.
+
+<p align="center">
+  <img src="assets/ux-design/Community.png" alt="User Flow Community de Mirage" width="900">
+</p>
+
+#### Partner Store
+
+Este flujo representa la experiencia destinada a las tiendas aliadas.
+
+Incluye la creación de una cuenta profesional, el acceso al panel principal de la tienda, la administración del catálogo comercial, la incorporación de nuevos productos y la gestión del perfil de la marca.
+
+<p align="center">
+  <img src="assets/ux-design/Partner_Store.png" alt="User Flow Partner Store de Mirage" width="900">
+</p>
+
+#### QR Experience
+
+Este flujo representa la integración entre la experiencia física de una tienda y Mirage mediante códigos QR.
+
+Desde la perspectiva de la tienda, permite acceder a la gestión y visualización de códigos QR asociados a productos. Desde la perspectiva del consumidor, permite escanear el código y consultar el producto correspondiente dentro de la aplicación.
+
+<p align="center">
+  <img src="assets/ux-design/QR_Experience.png" alt="User Flow QR Experience de Mirage" width="900">
+</p>
+
+#### Avatar
+
+Este flujo representa el proceso de creación y utilización de la representación digital personalizada del usuario.
+
+El usuario proporciona fotografías y, de manera opcional, información corporal para generar su Digital Avatar mediante Inteligencia Artificial. Posteriormente, esta representación puede utilizarse dentro del Virtual Fitting Room para visualizar distintas combinaciones de prendas.
+
+<p align="center">
+  <img src="assets/ux-design/Avatar.png" alt="User Flow Avatar de Mirage" width="900">
+</p>
 
 ## 6.5. Applications Prototyping
 
@@ -2656,7 +2758,7 @@ El prototipo cubre los User Flows presentados en la sección anterior para ambos
 - **Confirmaciones:** mensajes breves al guardar una prenda, un outfit o una publicación.
 
 <p align="center">
-  <img src="assets/images/ux-design/prototyping.png" alt="Prototyping" width="800">
+  <img src="assets/ux-design/prototyping.png" alt="Prototyping" width="800">
 </p>
 
 Enlace del vídeo: ` `
