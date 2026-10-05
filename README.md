@@ -1916,7 +1916,7 @@ El concepto visual combina tres características principales:
 La identidad visual empleada en la Landing Page mantiene los mismos principios utilizados en la aplicación móvil para evitar que ambos productos sean percibidos como experiencias independientes.
 
 <p align="center">
-  <img src="assets/images/ux-design/Logo.png" alt="Logo Mirage" width="700">
+  <img src="assets/ux-design/Logo.png" alt="Logo Mirage" width="700">
 </p>
 
 #### Colores
@@ -1942,7 +1942,7 @@ El tono crema `#F7F5EF` se utiliza como base general debido a que proporciona un
 La paleta se mantiene de forma consistente tanto en la aplicación móvil como en la Landing Page, reforzando la identidad visual de Mirage en ambos productos digitales.
 
 <p align="center">
-  <img src="assets/images/ux-design/Colores.png" alt="Paleta de colores de Mirage" width="700">
+  <img src="assets/ux-design/Colores.png" alt="Paleta de colores de Mirage" width="700">
 </p>
 
 #### Tipografía
@@ -1954,7 +1954,7 @@ La identidad visual de Mirage utiliza dos familias tipográficas principales: **
 En los mock-ups, esta tipografía puede observarse en títulos como **“Your closet. Digital.”**, **“Style what you already own.”**, **“See more. Try more.”**, **“Your style. Your space.”** y **“Your AI Look”**.
 
 <p align="center">
-  <img src="assets/images/ux-design/typography-lora.PNG" alt="Tipografía Lora utilizada en Mirage" width="700">
+  <img src="assets/ux-design/typography-lora.PNG" alt="Tipografía Lora utilizada en Mirage" width="700">
 </p>
 
 Por otro lado, **Inter** se utiliza en los elementos funcionales y de lectura de la interfaz, como textos descriptivos, etiquetas, campos de formularios, navegación, categorías, filtros y botones. Su diseño facilita la lectura en pantallas móviles y permite establecer diferentes niveles de jerarquía utilizando variaciones de peso y contraste.
@@ -1978,7 +1978,7 @@ De esta manera, la jerarquía tipográfica utilizada en Mirage se organiza de la
 Esta combinación permite establecer una separación clara entre el contenido **editorial y expresivo**, representado por Lora, y el contenido **funcional e informativo**, representado por Inter, manteniendo una identidad consistente tanto en la aplicación móvil como en la Landing Page.
 
 <p align="center">
-  <img src="assets/images/ux-design/typography-inter.PNG" alt="Tipografía Inter utilizada en Mirage" width="700">
+  <img src="assets/ux-design/typography-inter.PNG" alt="Tipografía Inter utilizada en Mirage" width="700">
 </p>
 
 #### Iconografía y componentes
@@ -2015,7 +2015,7 @@ El objetivo de la iconografía es facilitar el reconocimiento rápido de las acc
 Los íconos se utilizan generalmente acompañados de etiquetas cuando forman parte de la navegación principal, mientras que en acciones secundarias pueden aparecer de manera independiente cuando su significado resulta suficientemente reconocible.
 
 <p align="center">
-  <img src="assets/images/ux-design/Iconograpfia.png" alt="Iconografía utilizada en Mirage" width="700">
+  <img src="assets/images/Iconograpfia.png" alt="Iconografía utilizada en Mirage" width="700">
 </p>
 
 En cuanto a los componentes de interacción, Mirage mantiene una estructura visual consistente entre las diferentes pantallas. Los botones principales utilizan el color rosa de la identidad visual y se emplean para representar las acciones prioritarias de cada vista, como continuar, guardar, confirmar, generar o iniciar una experiencia.
@@ -2041,7 +2041,7 @@ La navegación inferior mantiene los mismos cinco accesos principales en la apli
 El acceso `Create` se diferencia visualmente mediante un botón central destacado, reforzando su importancia dentro del flujo principal de la aplicación.
 
 <p align="center">
-  <img src="assets/images/ux-design/Botones.png" alt="Componentes de interfaz utilizados en Mirage" width="700">
+  <img src="assets/ux-design/Botones.png" alt="Componentes de interfaz utilizados en Mirage" width="700">
 </p>
 
 La consistencia entre iconografía, botones, navegación, tarjetas y controles permite que el usuario reconozca patrones de interacción similares a lo largo de toda la aplicación, reduciendo la curva de aprendizaje y facilitando la navegación entre las diferentes funcionalidades.
@@ -2092,10 +2092,10 @@ En la versión Desktop, las imágenes de prendas, accesorios y vistas de la apli
 El Header se mantiene visible durante el desplazamiento de la página y conserva una estructura compacta, permitiendo que las acciones principales permanezcan accesibles sin ocupar un área excesiva de la pantalla.
 
 <p align="center">
-  <img src="assets/images/ux-design/web-guidelines1.png" alt="Web Style Guidelines de Mirage" width="700">
+  <img src="assets/ux-design/web-guidelines1.png" alt="Web Style Guidelines de Mirage" width="700">
 </p>
 <p align="center">
-  <img src="assets/images/ux-design/web-guidelines2.png" alt="Web Style Guidelines de Mirage" width="700">
+  <img src="assets/ux-design/web-guidelines2.png" alt="Web Style Guidelines de Mirage" width="700">
 </p>
 
 #### Mobile (Aplicación)
@@ -2132,13 +2132,13 @@ Los principales lineamientos de interacción utilizados son:
 El diseño busca mantener las acciones principales al alcance del usuario y evitar la acumulación de controles dentro de una misma pantalla.
 
 <p align="center">
-  <img src="assets/images/ux-design/web-guidelines2.png" alt="Web Style Guidelines de Mirage" width="700">
+  <img src="assets/ux-design/web-guidelines2.png" alt="Web Style Guidelines de Mirage" width="700">
 </p>
 <p align="center">
-  <img src="assets/images/ux-design/Botones.png" alt="Componentes de interfaz utilizados en Mirage" width="700">
+  <img src="assets/ux-design/Botones.png" alt="Componentes de interfaz utilizados en Mirage" width="700">
 </p>
 <p align="center">
-  <img src="assets/images/ux-design/Iconograpfia.png" alt="Iconografía utilizada en Mirage" width="700">
+  <img src="assets/ux-design/Iconograpfia.png" alt="Iconografía utilizada en Mirage" width="700">
 </p>
 
 ## 6.2. Information Architecture
@@ -2481,7 +2481,7 @@ Los wireframes consideran tanto la versión Desktop como Mobile y muestran la ub
 Su objetivo es validar la organización del contenido, el recorrido vertical de la página y la ubicación de las principales llamadas a la acción antes de desarrollar los mock-ups de alta fidelidad.
 
 <p align="center">
-  <img src="assets/images/ux-design/landing-page-wireframe.png" alt="Landing Page Wireframe de Mirage" width="800">
+  <img src="assets/ux-design/landing-page-wireframe.png" alt="Landing Page Wireframe de Mirage" width="800">
 </p>
 
 ### 6.3.2. Landing Page Mock-up
@@ -2493,7 +2493,7 @@ Los mock-ups incorporan la identidad visual final del producto, incluyendo la pa
 La propuesta contempla versiones **Desktop y Mobile**, manteniendo una experiencia visual consistente en ambos formatos. El diseño prioriza la presentación de la propuesta de valor de Mirage, sus funcionalidades principales, la tecnología diferencial, la sección dirigida a tiendas aliadas y las llamadas a la acción para descargar la aplicación o solicitar información comercial.
 
 <p align="center">
-  <img src="assets/images/ux-design/landing-page-mockup.png" alt="Landing Page Mock-up de Mirage" width="800">
+  <img src="assets/ux-design/landing-page-mockup.png" alt="Landing Page Mock-up de Mirage" width="800">
 </p>
 
 ## 6.4. Applications UX/UI Design
@@ -2502,9 +2502,144 @@ En esta sección se presenta el diseño de la aplicación móvil de Mirage para 
 
 ### 6.4.1. Applications Wireframes
 
+En esta sección se presentan los wireframes de la aplicación móvil de Mirage. Estos representan la estructura inicial de las pantallas, la distribución de los componentes y la jerarquía de las acciones antes de aplicar la identidad visual definitiva.
+
+Los wireframes permiten validar la organización de la información, los recorridos principales y la relación entre las diferentes funcionalidades de la aplicación. Para facilitar su lectura, se agrupan según los principales módulos funcionales de Mirage.
+
+#### 01. Onboarding, Home & Closet
+
+Este grupo incluye las pantallas iniciales de la aplicación, el acceso al sistema, la vista Home y la gestión del armario digital. También considera la organización por categorías y el registro de nuevas prendas.
+
+<p align="center">
+  <img src="assets/images/ux-design/wireframes/01-wireframe-onboarding-home-closet.png" alt="Wireframes de Onboarding, Home y Closet de Mirage" width="900">
+</p>
+
+#### 02. Outfit Builder & AI Try-On
+
+Estos wireframes representan el flujo utilizado para construir un outfit, seleccionar las prendas que lo conforman y posteriormente acceder al proceso de AI Try-On mediante fotografías y datos opcionales del usuario.
+
+<p align="center">
+  <img src="assets/images/ux-design/wireframes/02-wireframe-outfit-builder-ai-try-on.png" alt="Wireframes de Outfit Builder y AI Try-On de Mirage" width="900">
+</p>
+
+#### 03. 3D & Augmented Reality
+
+Este conjunto muestra la estructura de las pantallas relacionadas con la visualización de accesorios en 3D y la experiencia de Realidad Aumentada mediante la cámara del dispositivo.
+
+<p align="center">
+  <img src="assets/images/ux-design/wireframes/03-wireframe-3d-augmented-reality.png" alt="Wireframes de 3D y Realidad Aumentada de Mirage" width="900">
+</p>
+
+
+#### 04. Explore, Stores & Profile
+
+Este grupo comprende la exploración de productos, búsqueda, resultados, detalle de productos provenientes de tiendas aliadas y las principales vistas relacionadas con el perfil del usuario.
+
+<p align="center">
+  <img src="assets/images/ux-design/wireframes/04-wireframe-explore-stores-profile.png" alt="Wireframes de Explore, Stores y Profile de Mirage" width="900">
+</p>
+
+#### 05. Community
+
+Estos wireframes representan las funciones sociales de Mirage, incluyendo el feed de comunidad, perfiles públicos y la visualización de armarios compartidos.
+
+<p align="center">
+  <img src="assets/images/ux-design/wireframes/05-wireframe-community.png" alt="Wireframes del módulo Community de Mirage" width="900">
+</p>
+
+#### 06. Partner Store Management
+
+Este grupo presenta la estructura de las pantallas destinadas a las tiendas aliadas, incluyendo el registro profesional, dashboard, catálogo comercial, publicación de productos y administración del perfil de tienda.
+
+<p align="center">
+  <img src="assets/images/ux-design/wireframes/06-wireframe-partner-store-management.png" alt="Wireframes de Partner Store Management de Mirage" width="900">
+</p>
+
+#### 07. QR Experience
+
+Estos wireframes muestran el flujo relacionado con la generación, visualización y escaneo de códigos QR asociados a los productos de las tiendas aliadas.
+
+<p align="center">
+  <img src="assets/images/ux-design/wireframes/07-wireframe-qr-experience.png" alt="Wireframes de la experiencia QR de Mirage" width="900">
+</p>
+
+#### 08. Avatar & Virtual Fitting Room
+
+Este grupo presenta la estructura de las pantallas utilizadas para crear la representación digital personalizada del usuario y utilizarla posteriormente dentro del Virtual Fitting Room.
+
+<p align="center">
+  <img src="assets/images/ux-design/wireframes/08-wireframe-avatar-virtual-fitting-room.png" alt="Wireframes de Avatar y Virtual Fitting Room de Mirage" width="900">
+</p>
+
 ### 6.4.2. Applications Wireflow Diagrams
 
 ### 6.4.3. Applications Mock-ups
+
+En esta sección se presentan los mock-ups de alta fidelidad de la aplicación móvil de Mirage. Las pantallas se organizan por grupos funcionales para facilitar la visualización de cada parte de la experiencia y mostrar con mayor detalle la evolución de los principales flujos de la aplicación.
+
+#### 01. Onboarding, Home & Closet
+
+Este grupo reúne las pantallas iniciales de Mirage, incluyendo el onboarding, acceso a la aplicación, pantalla principal y gestión del armario digital. También contempla la visualización por categorías, el detalle de prendas y el registro de nuevos elementos mediante fotografía y reconocimiento asistido por IA.
+
+<p align="center">
+  <img src="assets/images/ux-design/mockups/01-onboarding-home-closet.png" alt="Mock-ups de Onboarding, Home y Closet de Mirage" width="900">
+</p>
+
+#### 02. Outfit Builder & AI Try-On
+
+Estas pantallas representan el proceso de creación de outfits y generación de una vista personalizada mediante Inteligencia Artificial. El usuario puede seleccionar prendas de su armario, construir un look y posteriormente utilizar fotografías y medidas opcionales para generar una representación visual del outfit.
+
+<p align="center">
+  <img src="assets/images/ux-design/mockups/02-outfit-builder-ai-try-on.png" alt="Mock-ups de Outfit Builder y AI Try-On de Mirage" width="900">
+</p>
+
+#### 03. 3D & Augmented Reality
+
+Este grupo presenta las funcionalidades de visualización tridimensional y Realidad Aumentada. Los accesorios compatibles pueden ser explorados en 3D y posteriormente probados mediante la cámara del dispositivo utilizando controles de interacción como movimiento, escala y rotación.
+
+<p align="center">
+  <img src="assets/images/ux-design/mockups/03-3d-augmented-reality.png" alt="Mock-ups de 3D y Realidad Aumentada de Mirage" width="900">
+</p>
+
+#### 04. Explore, Stores & Profile
+
+Estas pantallas permiten explorar contenido y productos provenientes de tiendas aliadas, realizar búsquedas, visualizar resultados y consultar el detalle de los productos. También se incluye el acceso al perfil del usuario y a sus principales configuraciones personales.
+
+<p align="center">
+  <img src="assets/images/ux-design/mockups/04-explore-stores-profile.png" alt="Mock-ups de Explore, Stores y Profile de Mirage" width="900">
+</p>
+
+#### 05. Community
+
+El módulo Community está orientado al descubrimiento de contenido compartido por otros usuarios. Incluye un feed de inspiración, perfiles públicos y armarios compartidos, permitiendo explorar looks y prendas disponibles públicamente dentro de la comunidad.
+
+<p align="center">
+  <img src="assets/images/ux-design/mockups/05-community.png" alt="Mock-ups del módulo Community de Mirage" width="900">
+</p>
+
+#### 06. Partner Store Management
+
+Este grupo corresponde a la experiencia de las tiendas aliadas. Incluye el registro de cuenta profesional, dashboard comercial, administración del catálogo, publicación de productos y gestión del perfil de la tienda y sus canales externos.
+
+<p align="center">
+  <img src="assets/images/ux-design/mockups/06-partner-store-management.png" alt="Mock-ups de gestión de tiendas aliadas en Mirage" width="900">
+</p>
+
+#### 07. QR Experience
+
+Estas pantallas muestran la integración entre la experiencia física y digital mediante códigos QR. Las tiendas pueden generar y administrar códigos asociados a sus productos, mientras que los consumidores pueden escanearlos para acceder al detalle del artículo dentro de Mirage.
+
+<p align="center">
+  <img src="assets/images/ux-design/mockups/07-qr-experience.png" alt="Mock-ups de la experiencia QR de Mirage" width="900">
+</p>
+
+#### 08. Avatar & Virtual Fitting Room
+
+Este grupo presenta la creación de la representación digital personalizada del usuario a partir de sus fotografías y medidas opcionales. Esta representación puede utilizarse posteriormente dentro del Virtual Fitting Room para visualizar prendas y construir diferentes combinaciones.
+
+<p align="center">
+  <img src="assets/images/ux-design/mockups/08-avatar-virtual-fitting-room.png" alt="Mock-ups de Avatar y Virtual Fitting Room de Mirage" width="900">
+</p>
 
 ### 6.4.4. Applications User Flow Diagrams
 
