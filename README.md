@@ -1950,9 +1950,13 @@ El `Profile Repository` encapsula el acceso a la base de datos, mientras que el 
 ### 5.1.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.1.6.1. Bounded Context Domain Layer Class Diagrams
 
+<p align="center">
+  <img src="assets/img/Capitulo-4/Profile-ClassDiagram.png" alt="ProfileClassDiagram" style="width: 700">
+</p>
+
 #### 5.1.6.2. Bounded Context Database Design Diagram
 
-El diagrama presenta el modelo de base de datos completo de Mirage, diseñado bajo la Tercera Forma Normal (3FN). En esta sección se describen las tablas correspondientes al bounded context **Profile**, persistidas en la Auth Database.
+El diagrama presenta el modelo de base de datos completo de Mirage, diseñado bajo las 3 formas normales. En esta sección se describen las tablas correspondientes al bounded context **Profile**, persistidas en la Auth Database.
 
 - **User_accounts:** almacena las cuentas de acceso a la plataforma, el proveedor de autenticación (correo o Google) y el tipo de cuenta (consumidor o tienda).
 - **User_profiles:** almacena la información del perfil asociada a cada cuenta, incluyendo el nombre mostrado, la fecha de nacimiento, la imagen de perfil y la referencia al avatar generado.
@@ -2112,9 +2116,14 @@ La Infrastructure Layer implementa el almacenamiento del armario y las integraci
 
 ### 5.2.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/DigitalCloset-ClassDiagram.png" alt="DigitalClosetClassDiagram" style="width: 700">
+</p>
+
 #### 5.2.6.2. Bounded Context Database Design Diagram
 
-El diagrama presenta el modelo de base de datos completo de Mirage, diseñado bajo la Tercera Forma Normal (3FN). En esta sección se describen las tablas correspondientes al bounded context **Digital Closet**, persistidas en la Wardrobe Database.
+El diagrama presenta el modelo de base de datos completo de Mirage, diseñado bajo las 3 formas normales. En esta sección se describen las tablas correspondientes al bounded context **Digital Closet**, persistidas en la Wardrobe Database.
 
 - **Wardrobes:** representa el armario digital de cada usuario. El campo `user_id` es único, ya que cada usuario posee un solo armario.
 - **Garment_categories:** almacena las categorías generales de prendas, como polos, pantalones, calzado o accesorios.
@@ -2255,9 +2264,14 @@ Recommendation no accede directamente a las bases de datos de Profile o Digital 
 
 ### 5.3.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/Recommendation-ClassDiagram.png" alt="RecommendationClassDiagram" style="width: 700">
+</p>
+
 #### 5.3.6.2. Bounded Context Database Design Diagram
 
-El diagrama presenta el modelo de base de datos completo de Mirage, diseñado bajo la Tercera Forma Normal (3FN). En esta sección se describen las tablas correspondientes al bounded context **Recommendation**. Este contexto no es propietario de las prendas ni de las preferencias del usuario, por lo que solo almacena los resultados de las recomendaciones y las referencias a las prendas utilizadas.
+El diagrama presenta el modelo de base de datos completo de Mirage, diseñado bajo las 3 formas normales. En esta sección se describen las tablas correspondientes al bounded context **Recommendation**. Este contexto no es propietario de las prendas ni de las preferencias del usuario, por lo que solo almacena los resultados de las recomendaciones y las referencias a las prendas utilizadas.
 
 - **Outfit_recommendations:** almacena cada propuesta generada, la ocasión solicitada, el estilo y su estado (`GENERATED`, `SAVED`, `FAVORITE` o `REJECTED`). Los estados guardados y rechazados permiten ajustar las recomendaciones futuras.
 - **Recommendation_garments:** registra las prendas que conforman cada outfit. Su llave primaria compuesta evita repetir una prenda dentro de la misma recomendación, y el campo `garment_id` referencia lógicamente a las prendas de Digital Closet.
@@ -2397,9 +2411,14 @@ La Infrastructure Layer contiene los mecanismos técnicos utilizados por el disp
 
 ### 5.4.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/AugmentedReality-ClassDiagram.png" alt="AugmentedRealityClassDiagram" style="width: 700">
+</p>
+
 #### 5.4.6.2. Bounded Context Database Design Diagram
 
-El diagrama presenta el modelo de base de datos completo de Mirage, diseñado bajo la Tercera Forma Normal (3FN). En esta sección se describen las tablas correspondientes al bounded context **Augmented Reality**. La mayor parte del procesamiento de este contexto ocurre en tiempo real dentro del dispositivo, por lo que solo se persiste el registro de las sesiones y de las superposiciones generadas.
+El diagrama presenta el modelo de base de datos completo de Mirage, diseñado bajo las 3 formas normales. En esta sección se describen las tablas correspondientes al bounded context **Augmented Reality**. La mayor parte del procesamiento de este contexto ocurre en tiempo real dentro del dispositivo, por lo que solo se persiste el registro de las sesiones y de las superposiciones generadas.
 
 - **Ar_sessions:** almacena cada sesión de prueba virtual, la prenda seleccionada, su estado y si el entorno y el usuario fueron detectados.
 - **Garment_overlays:** persiste el value object `GarmentOverlay`, guardando el recurso visual utilizado, la escala y la posición de la superposición. No almacena la prenda, ya que esta se obtiene a partir de la sesión a la que pertenece.
@@ -2559,9 +2578,14 @@ La Infrastructure Layer implementa la persistencia de relaciones sociales y las 
 
 ### 5.5.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/SocialInteractions-ClassDiagram.png" alt="SocialInteractionsClassDiagram" style="width: 700">
+</p>
+
 #### 5.5.6.2. Bounded Context Database Design Diagram
 
-El diagrama presenta el modelo de base de datos completo de Mirage, diseñado bajo la Tercera Forma Normal (3FN). En esta sección se describen las tablas correspondientes al bounded context **Social Interactions**, persistidas en la Social Database.
+El diagrama presenta el modelo de base de datos completo de Mirage, diseñado bajo las 3 formas normales. En esta sección se describen las tablas correspondientes al bounded context **Social Interactions**, persistidas en la Social Database.
 
 - **Friendships:** almacena las relaciones entre usuarios, quién envió y quién recibió la solicitud, y su estado (`PENDING`, `ACCEPTED`, `REJECTED` o `REMOVED`), definido por el value object `FriendshipStatus`. La restricción única sobre `requester_id` y `receiver_id` evita solicitudes duplicadas.
 - **Visibility_policies:** persiste el value object `SocialVisibilityPolicy`, indicando si el usuario permite ver su armario, sus prendas y probar virtualmente sus prendas compartidas.
@@ -2749,7 +2773,7 @@ La Infrastructure Layer implementa la persistencia de tiendas y productos, resol
 
 #### 5.6.6.2. Bounded Context Database Design Diagram
 
-El diagrama presenta el modelo de base de datos completo de Mirage, diseñado bajo la Tercera Forma Normal (3FN). En esta sección se describen las tablas correspondientes al bounded context **Store Catalog**, persistidas en la Store Database.
+El diagrama presenta el modelo de base de datos completo de Mirage, diseñado bajo las 3 formas normales. En esta sección se describen las tablas correspondientes al bounded context **Store Catalog**, persistidas en la Store Database.
 
 - **Stores:** almacena la información de las tiendas registradas, su estado y su canal externo. El value object `ExternalChannel` se persiste dentro de esta tabla mediante las columnas `external_channel_url` y `external_channel_type`, ya que no posee identidad propia.
 - **Catalog_items:** almacena las prendas comerciales publicadas. Cada registro se relaciona con una tienda mediante la llave foránea `store_id`, y el campo `active` permite deshabilitar una prenda sin eliminar su historial.
