@@ -2858,10 +2858,10 @@ El prototipo cubre los User Flows presentados en la sección anterior para ambos
 - **Confirmaciones:** mensajes breves al guardar una prenda, un outfit o una publicación.
 
 <p align="center">
-  <img src="assets/ux-design/prototyping.png" alt="Prototyping" width="800">
+  <img src="assets/ux-design/Prototipo.png" alt="Prototyping" width="800">
 </p>
 
-Enlace del vídeo: ` `
+Enlace del vídeo: `https://youtu.be/FMOcAuq7MDI`
 
 # Conclusiones
 
