@@ -10,7 +10,7 @@
 <h4>1ASI0728 – ARQUITECTURAS DE SOFTWARE EN TECNOLOGIAS EMERGENTES</h4>
 <h4>NRC: 9077</h4>
 <h4>PROFESOR(A): Marino Humberto Jara Palacios</h4>
-<h4>INFORME DE TB1</h4>
+<h4>INFORME DE TP</h4>
 <h4>CICLO: 2026-20</h4>
 
 <br>
@@ -28,7 +28,7 @@
 
 <br>
 
-<h4>SETIEMBRE - 2026</h4>
+<h4>OCTUBRE - 2026</h4>
 
 </div>
 
@@ -71,7 +71,21 @@
         - Capítulo IV: Strategic-Level Software Design (4.1 – 4.3)
       </td>
     </tr>
-  
+    <tr>
+      <td>TP</td>
+      <td>05/10/2026</td>
+      <td>
+        - Cabanillas Meza, Jose Mateo <br>
+        - Ortiz Cardenas, Johanna Antuanete <br>
+        - Sánchez Manrique, Italo Ludwing <br>
+        - Sarmiento Medina, Loreley <br>
+        - Zegarra López, Renato Sebastián Rubber
+      </td>
+      <td>
+        - Capítulo V: Tactical-Level Software Design (5.1 – 5.6)<br>
+        - Capítulo VI: Solution UX Design (6.1 – 6.5)
+      </td>
+    </tr>
   </tbody>
 </table>
 </div>
@@ -102,6 +116,7 @@ TB1 (19/09/2026):
 TB1: Participé exponiendo los diagramas de arquitectura de software (system landscape, contexto, contenedores y despliegue) ante el equipo y el docente.<br><br>
 <b>Ortiz Cardenas, Johanna Antuanete</b><br>
 TB1: Participé explicando el Attribute-Driven Design (drivers, decisiones de diseño y escenarios de calidad) al equipo y en la sustentación.<br><br>
+TP: Participé explicando al equipo y en la sustentación los diagramas de clases y el modelo de base de datos de los bounded contexts, así como el diseño de la landing page, de la aplicación y los wireflows que conectan sus pantallas.<br><br>
 <b>Sánchez Manrique, Italo Ludwing</b><br>
 TB1: Participé comunicando los hallazgos de entrevistas, needfinding y ubiquitous language en las revisiones del equipo.<br><br>
 <b>Sarmiento Medina, Loreley</b><br>
@@ -118,8 +133,10 @@ TB1: Participé exponiendo el Event Storming y el modelado estratégico de DDD a
 TB1: Me encargué de redactar la sección de arquitectura de software del informe (4.3).<br><br>
 <b>Ortiz Cardenas, Johanna Antuanete</b><br>
 TB1: Me encargué de redactar la sección de Attribute-Driven Design del informe (4.1).<br><br>
+TP: Me encargué de elaborar y redactar los Domain Layer Class Diagrams y el Database Design Diagram de los bounded contexts (5.X.6.1 y 5.X.6.2), así como las secciones de Landing & Applications Design y Applications Wireflow Diagrams del informe (6.3, 6.4.2).<br><br>
 <b>Sánchez Manrique, Italo Ludwing</b><br>
 TB1: Me encargué de redactar las secciones de entrevistas, needfinding y ubiquitous language del informe (2.2 a 2.4).<br><br>
+
 <b>Sarmiento Medina, Loreley</b><br>
 TB1: Me encargué de redactar el perfil de la startup, el Lean UX y el análisis de competidores del informe (1.1 a 2.1).<br><br>
 <b>Zegarra López, Renato Sebastián Rubber</b><br>
@@ -2863,21 +2880,21 @@ El prototipo cubre los User Flows presentados en la sección anterior para ambos
 
 Enlace del vídeo: `https://youtu.be/FMOcAuq7MDI`
 
-# Conclusiones
+## Conclusiones
 
-El enfoque Attribute-Driven Design permitió priorizar drivers arquitectónicos (comportamiento temporal, rendimiento, escalabilidad, seguridad, interoperabilidad y precisión de IA) a partir de las user stories principales, asegurando que la arquitectura responda a necesidades reales del negocio y no solo a funcionalidad.
+El enfoque Attribute-Driven Design permitió priorizar los drivers arquitectónicos de Mirage, como el comportamiento temporal, el rendimiento, la escalabilidad, la seguridad, la interoperabilidad y la precisión de la IA, a partir de las user stories principales. Esto aseguró que la arquitectura responda a necesidades reales del negocio y no solo a la funcionalidad. Además, los escenarios de atributos de calidad se definieron con medidas concretas, como un tiempo de respuesta de 4 segundos o menos, una latencia de 200 ms o menos y más de 500 usuarios concurrentes, lo que hace verificable el cumplimiento de los requisitos no funcionales y facilita su validación posterior. El refinamiento del escenario de reconocimiento con IA evidenció, a su vez, la dependencia crítica de servicios externos, por lo que es necesario considerar mecanismos de resiliencia, como timeouts y reintentos, desde etapas tempranas del diseño.
 
-Los escenarios de atributos de calidad definidos con medidas concretas (ej. ≤4 segundos de respuesta, ≤200 ms de latencia, >500 usuarios concurrentes) hacen verificable el cumplimiento de los requisitos no funcionales, facilitando pruebas y validación posterior.
+En el nivel táctico, el diseño de los seis bounded contexts (Profile, Digital Closet, Recommendation, Augmented Reality, Social Interactions y Store Catalog) permitió traducir el modelo estratégico en agregados, entidades, value objects, servicios de dominio y eventos concretos, manteniendo cada contexto con responsabilidades claras y reglas de negocio propias. El modelo de base de datos, normalizado hasta la Tercera Forma Normal, elimina dependencias transitivas y redundancias, como se observa en la separación de categorías y tipos de prenda o en la referencia a prendas comerciales mediante un único identificador. Asimismo, el uso de referencias lógicas entre bounded contexts, en lugar de llaves foráneas físicas, preserva su independencia y facilita su evolución como servicios separados.
 
-El refinamiento del escenario de reconocimiento con IA evidenció la dependencia crítica de servicios externos, lo cual obliga a considerar mecanismos de resiliencia (timeouts, reintentos) desde etapas tempranas del diseño.
+Finalmente, el diseño de la Landing Page y de la aplicación móvil, junto con los wireframes, wireflows y mockups, permitió validar visualmente los flujos principales de ambos segmentos antes de la implementación. La Landing Page prioriza dos acciones claras: descargar la aplicación y unirse como tienda aliada. Por su parte, los wireflows evidenciaron que la experiencia de Mirage se organiza en diez flujos coherentes con los bounded contexts definidos, lo que asegura la trazabilidad entre el diseño de dominio, las historias de usuario y las pantallas de la aplicación.
 
-# Recomendaciones
+## Recomendaciones
 
-Definir un plan de contingencia formal para fallos o demoras del servicio de IA externo, especificando tiempos máximos de espera y estrategias de reintento o degradación controlada del servicio.
+Se recomienda definir un plan de contingencia formal ante fallos o demoras del servicio de IA externo, que especifique tiempos máximos de espera y estrategias de reintento o degradación controlada del servicio. También es importante ampliar los escenarios de calidad con pruebas de carga reales antes del lanzamiento, para validar que el umbral de 500 usuarios concurrentes se cumple en la infraestructura de producción. Del mismo modo, se sugiere documentar y monitorear las métricas de precisión de la IA en producción y no solo durante las pruebas, ya que el 70% de aceptación de recomendaciones es un valor inicial que debe ajustarse con datos reales de uso.
 
-Ampliar los escenarios de calidad con pruebas de carga reales antes del lanzamiento, para validar que el umbral de 500 usuarios concurrentes se cumple bajo condiciones de infraestructura de producción.
+En cuanto al diseño táctico, se recomienda implementar mecanismos de consistencia eventual entre bounded contexts, como la publicación y el consumo de eventos de dominio, para mantener sincronizadas las referencias lógicas; por ejemplo, cuando una prenda comercial se retira del catálogo y ya se encuentra guardada en el armario de un usuario. Además, es necesario mantener alineados el modelo de dominio, el diagrama de base de datos y los diseños de interfaz a medida que el producto evolucione, actualizando la documentación ante cada cambio en los bounded contexts.
 
-Documentar y monitorear métricas de precisión de IA en producción (no solo en pruebas), ya que el 70% de aceptación de recomendaciones es un valor inicial que debe ajustarse con datos reales de uso.
+Respecto a la experiencia de usuario, se recomienda realizar pruebas de usabilidad con usuarios reales de ambos segmentos sobre el prototipo en Figma, priorizando los flujos de Outfit Builder, AI Try-On y Realidad Aumentada, por ser los de mayor complejidad e innovación. Asimismo, se sugiere validar las funciones de AR y avatar en dispositivos de gama media antes del desarrollo, para confirmar que el rendimiento y la experiencia visual sean adecuados sin necesidad de hardware especializado.
 
 # Bibliografía
 
