@@ -121,6 +121,7 @@ TP: Participé explicando al equipo y en la sustentación los diagramas de clase
 TB1: Participé comunicando los hallazgos de entrevistas, needfinding y ubiquitous language en las revisiones del equipo.<br><br>
 <b>Sarmiento Medina, Loreley</b><br>
 TB1: Participé presentando el perfil de la startup, el proceso Lean UX y los segmentos objetivo ante el equipo y el docente.<br><br>
+TP: Participé explicando al equipo y durante la sustentación las decisiones de UX/UI de Mirage, incluyendo los lineamientos visuales, la arquitectura de información, la organización de la Landing Page y los principales flujos de navegación de la aplicación. Asimismo, presenté los wireframes, mock-ups y User Flows desarrollados para los módulos de armario digital, creación de outfits, AI Try-On, realidad aumentada, comunidad, tiendas aliadas, experiencia QR y probador virtual.<br><br>
 <b>Zegarra López, Renato Sebastián Rubber</b><br>
 TB1: Participé exponiendo el Event Storming y el modelado estratégico de DDD al equipo.
 </td>
@@ -139,6 +140,7 @@ TB1: Me encargué de redactar las secciones de entrevistas, needfinding y ubiqui
 
 <b>Sarmiento Medina, Loreley</b><br>
 TB1: Me encargué de redactar el perfil de la startup, el Lean UX y el análisis de competidores del informe (1.1 a 2.1).<br><br>
+TP: Me encargué de desarrollar y documentar el capítulo de Solution UX Design, incluyendo los Style Guidelines, Information Architecture, Landing Page UI Design y Applications UX/UI Design. Elaboré y organicé los wireframes, mock-ups y User Flow Diagrams de la aplicación, así como la documentación del prototipo navegable en Figma<br><br>
 <b>Zegarra López, Renato Sebastián Rubber</b><br>
 TB1: Me encargué de redactar la sección de Domain-Driven Design con Event Storming del informe (4.2.2 a 4.2.5).
 </td>
