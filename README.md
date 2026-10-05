@@ -199,7 +199,7 @@ TB1: Me encargué de redactar la sección de Domain-Driven Design con Event Stor
     - [5.1.6. Bounded Context Software Architecture Code Level Diagrams](#516-bounded-context-software-architecture-code-level-diagrams)
       - [5.1.6.1. Bounded Context Domain Layer Class Diagrams](#5161-bounded-context-domain-layer-class-diagrams)
       - [5.1.6.2. Bounded Context Database Design Diagram](#5162-bounded-context-database-design-diagram)
-  - [5.2. Bounded Context: Recommendation](#52-bounded-context-recommendation)
+  - [5.2. Bounded Context: Digital Closet](#52-bounded-context-digital-closet)
     - [5.2.1. Domain Layer](#521-domain-layer)
     - [5.2.2. Interface Layer](#522-interface-layer)
     - [5.2.3. Application Layer](#523-application-layer)
@@ -208,7 +208,7 @@ TB1: Me encargué de redactar la sección de Domain-Driven Design con Event Stor
     - [5.2.6. Bounded Context Software Architecture Code Level Diagrams](#526-bounded-context-software-architecture-code-level-diagrams)
       - [5.2.6.1. Bounded Context Domain Layer Class Diagrams](#5261-bounded-context-domain-layer-class-diagrams)
       - [5.2.6.2. Bounded Context Database Design Diagram](#5262-bounded-context-database-design-diagram)
-  - [5.3. Bounded Context: Store Catalog](#53-bounded-context-store-catalog)
+  - [5.3. Bounded Context: Recommendation](#53-bounded-context-recommendation)
     - [5.3.1. Domain Layer](#531-domain-layer)
     - [5.3.2. Interface Layer](#532-interface-layer)
     - [5.3.3. Application Layer](#533-application-layer)
@@ -217,7 +217,7 @@ TB1: Me encargué de redactar la sección de Domain-Driven Design con Event Stor
     - [5.3.6. Bounded Context Software Architecture Code Level Diagrams](#536-bounded-context-software-architecture-code-level-diagrams)
       - [5.3.6.1. Bounded Context Domain Layer Class Diagrams](#5361-bounded-context-domain-layer-class-diagrams)
       - [5.3.6.2. Bounded Context Database Design Diagram](#5362-bounded-context-database-design-diagram)
-  - [5.4. Bounded Context: Social Interactions](#54-bounded-context-social-interactions)
+  - [5.4. Bounded Context: Augmented Reality](#54-bounded-context-augmented-reality)
     - [5.4.1. Domain Layer](#541-domain-layer)
     - [5.4.2. Interface Layer](#542-interface-layer)
     - [5.4.3. Application Layer](#543-application-layer)
@@ -226,7 +226,7 @@ TB1: Me encargué de redactar la sección de Domain-Driven Design con Event Stor
     - [5.4.6. Bounded Context Software Architecture Code Level Diagrams](#546-bounded-context-software-architecture-code-level-diagrams)
       - [5.4.6.1. Bounded Context Domain Layer Class Diagrams](#5461-bounded-context-domain-layer-class-diagrams)
       - [5.4.6.2. Bounded Context Database Design Diagram](#5462-bounded-context-database-design-diagram)
-  - [5.5. Bounded Context: Augmented Reality](#55-bounded-context-augmented-reality)
+  - [5.5. Bounded Context: Social Interactions](#55-bounded-context-social-interactions)
     - [5.5.1. Domain Layer](#551-domain-layer)
     - [5.5.2. Interface Layer](#552-interface-layer)
     - [5.5.3. Application Layer](#553-application-layer)
@@ -235,7 +235,7 @@ TB1: Me encargué de redactar la sección de Domain-Driven Design con Event Stor
     - [5.5.6. Bounded Context Software Architecture Code Level Diagrams](#556-bounded-context-software-architecture-code-level-diagrams)
       - [5.5.6.1. Bounded Context Domain Layer Class Diagrams](#5561-bounded-context-domain-layer-class-diagrams)
       - [5.5.6.2. Bounded Context Database Design Diagram](#5562-bounded-context-database-design-diagram)
-  - [5.6. Bounded Context: Digital Closet](#56-bounded-context-digital-closet)
+  - [5.6. Bounded Context: Store Catalog](#56-bounded-context-store-catalog)
     - [5.6.1. Domain Layer](#561-domain-layer)
     - [5.6.2. Interface Layer](#562-interface-layer)
     - [5.6.3. Application Layer](#563-application-layer)
@@ -1833,64 +1833,980 @@ El Diagrama de Despliegue ilustra la distribución física de Mirage en una infr
 # Capítulo V: Tactical-Level Software Design
 
 ## 5.1. Bounded Context: Profile
+
 ### 5.1.1. Domain Layer
+
+El Domain Layer del bounded context **Profile** representa la información personal y las preferencias necesarias para personalizar la experiencia del usuario dentro de Mirage. Este contexto administra la configuración del perfil, las preferencias de estilo, las características utilizadas para personalización y la información asociada al avatar digital.
+
+El objetivo principal de esta capa es mantener las reglas de negocio relacionadas con la identidad funcional del usuario dentro de la plataforma, independientemente de los mecanismos utilizados para almacenar la información o procesar imágenes mediante inteligencia artificial.
+
+#### Aggregate: UserProfileAggregate
+
+**Descripción:** Agregado raíz encargado de gestionar el perfil del usuario, sus preferencias y la información utilizada por otros bounded contexts para personalizar la experiencia.
+
+#### Entity: UserProfile
+
+| **Atributo** | **Tipo** | **Descripción** |
+| --- | --- | --- |
+| id | UUID | Identificador único del perfil. |
+| userId | UUID | Identificador de la cuenta asociada. |
+| displayName | String | Nombre mostrado dentro de la plataforma. |
+| birthDate | LocalDate | Fecha de nacimiento registrada. |
+| profileImageUrl | String | Referencia a la imagen de perfil. |
+| createdAt | Instant | Fecha de creación del perfil. |
+| updatedAt | Instant | Fecha de última actualización. |
+
+#### Value Object: StylePreferences
+
+**Descripción:** Representa las preferencias utilizadas para personalizar recomendaciones y experiencias relacionadas con moda.
+
+| **Atributo** | **Tipo** | **Descripción** |
+| --- | --- | --- |
+| preferredStyles | List<String> | Estilos de moda seleccionados por el usuario. |
+| preferredColors | List<String> | Colores preferidos. |
+| avoidedColors | List<String> | Colores que el usuario desea evitar. |
+| preferredCategories | List<String> | Categorías de prendas de mayor interés. |
+
+#### Value Object: BodyMeasurements
+
+**Descripción:** Encapsula las medidas estimadas o registradas para la generación y personalización del avatar.
+
+| **Atributo** | **Tipo** | **Descripción** |
+| --- | --- | --- |
+| height | Decimal | Altura aproximada del usuario. |
+| shoulderWidth | Decimal | Ancho estimado de hombros. |
+| chest | Decimal | Medida estimada de pecho. |
+| waist | Decimal | Medida estimada de cintura. |
+| hip | Decimal | Medida estimada de cadera. |
+
+### Domain Services
+
+| **Nombre** | **Responsabilidad** | **Reglas Aplicadas** |
+| --- | --- | --- |
+| ProfileDomainService | Gestionar las reglas asociadas a la configuración y actualización del perfil. | El perfil debe estar asociado a una cuenta válida. |
+| PreferenceDomainService | Gestionar las preferencias de estilo del usuario. | Las preferencias pueden modificarse sin alterar la identidad de la cuenta. |
+| AvatarProfileDomainService | Gestionar la información morfológica utilizada para personalizar el avatar. | Las medidas deben pertenecer al usuario correspondiente. |
+
+---
+
 ### 5.1.2. Interface Layer
+
+La Interface Layer del bounded context **Profile** actúa como punto de entrada para las operaciones relacionadas con cuentas, perfiles, preferencias y generación del avatar.
+
+Esta capa recibe las solicitudes provenientes de la aplicación móvil a través del API Gateway, valida la estructura de los datos recibidos y delega la ejecución de los casos de uso a la Application Layer.
+
+#### Profile API Controller
+
+| **Nombre** | **Método** | **Ruta** | **Descripción** |
+| --- | --- | --- | --- |
+| createProfile | POST | `/api/v1/profiles` | Crea y configura el perfil inicial del usuario. |
+| getProfile | GET | `/api/v1/profiles/{userId}` | Obtiene la información del perfil. |
+| updateProfile | PUT | `/api/v1/profiles/{userId}` | Actualiza la información del perfil. |
+| getPreferences | GET | `/api/v1/profiles/{userId}/preferences` | Obtiene las preferencias de estilo. |
+| updatePreferences | PUT | `/api/v1/profiles/{userId}/preferences` | Registra o actualiza preferencias. |
+| generateAvatar | POST | `/api/v1/profiles/{userId}/avatar` | Solicita el procesamiento necesario para generar el avatar. |
+
+---
+
 ### 5.1.3. Application Layer
+
+La Application Layer del bounded context **Profile** coordina los casos de uso relacionados con la creación y actualización de perfiles, administración de preferencias y generación del avatar.
+
+Esta capa utiliza los servicios del dominio y coordina las integraciones necesarias sin incorporar detalles específicos de persistencia o inteligencia artificial.
+
+#### Profile Command Handlers
+
+| **Capability** | **Command Handler** | **Descripción** |
+| --- | --- | --- |
+| Crear perfil | `ProfileService.handle(CreateProfileCommand)` | Crea el perfil inicial asociado a una cuenta. |
+| Actualizar perfil | `ProfileService.handle(UpdateProfileCommand)` | Actualiza información personal del perfil. |
+| Registrar preferencias | `PreferencesService.handle(RegisterPreferencesCommand)` | Registra preferencias iniciales de estilo. |
+| Actualizar preferencias | `PreferencesService.handle(UpdatePreferencesCommand)` | Modifica las preferencias existentes. |
+| Generar avatar | `AvatarOrchestrator.handle(GenerateAvatarCommand)` | Coordina el procesamiento de medidas y generación del avatar. |
+
+#### Profile Event Handlers
+
+| **Capability** | **Event Handler** | **Descripción** |
+| --- | --- | --- |
+| Perfil configurado | `ProfileConfiguredEventHandler` | Procesa el evento generado después de configurar el perfil. |
+| Preferencias actualizadas | `PreferencesUpdatedEventHandler` | Actualiza la información utilizada por procesos de personalización. |
+| Avatar generado | `AvatarGeneratedEventHandler` | Registra las medidas y la referencia final del avatar generado. |
+
+---
+
 ### 5.1.4. Infrastructure Layer
+
+La Infrastructure Layer implementa los mecanismos técnicos requeridos por Profile para almacenar información y comunicarse con otros componentes.
+
+El `Profile Repository` encapsula el acceso a la base de datos, mientras que el `Avatar Orchestrator` utiliza la `AI Integration Facade` para solicitar análisis visual al `Vision & Avatar Agent`.
+
+#### ProfileRepository
+
+| **Método** | **Descripción** |
+| --- | --- |
+| save | Guarda o actualiza un perfil. |
+| findById | Obtiene un perfil por su identificador. |
+| findByUserId | Obtiene el perfil asociado a una cuenta. |
+| updatePreferences | Actualiza las preferencias del usuario. |
+| saveMeasurements | Almacena las medidas asociadas al avatar. |
+| saveAvatarReference | Guarda la referencia del avatar generado. |
+
+#### External Integrations
+
+| **Componente** | **Responsabilidad** |
+| --- | --- |
+| Auth Database | Almacenar cuentas, perfiles, preferencias y referencias del avatar. |
+| AI Integration Facade | Centralizar las solicitudes relacionadas con inteligencia artificial. |
+| Vision & Avatar Agent | Procesar imágenes y estimar características morfológicas del usuario. |
+
+---
+
 ### 5.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/C4/Profile-BD.png" alt="BoundedProfile" style="width: 700">
+</p>
+
 ### 5.1.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/Profile-ClassDiagram.png" alt="ProfileClassDiagram" style="width: 700">
+</p>
+
 #### 5.1.6.2. Bounded Context Database Design Diagram
 
-## 5.2. Bounded Context: Recommendation
+El diagrama presenta el modelo de base de datos completo de Mirage, diseñado bajo las 3 formas normales. En esta sección se describen las tablas correspondientes al bounded context **Profile**, persistidas en la Auth Database.
+
+- **User_accounts:** almacena las cuentas de acceso a la plataforma, el proveedor de autenticación (correo o Google) y el tipo de cuenta (consumidor o tienda).
+- **User_profiles:** almacena la información del perfil asociada a cada cuenta, incluyendo el nombre mostrado, la fecha de nacimiento, la imagen de perfil y la referencia al avatar generado.
+- **Style_preferences:** persiste el value object `StylePreferences`. Cada registro guarda un único valor y su tipo (`STYLE`, `COLOR`, `AVOIDED_COLOR` o `CATEGORY`), lo que permite almacenar listas de preferencias respetando la atomicidad de los datos. La restricción única evita registrar la misma preferencia más de una vez.
+- **Body_measurements:** persiste el value object `BodyMeasurements` con las medidas utilizadas para generar y personalizar el avatar del usuario.
+
+| **Relación** | **Cardinalidad** | **Descripción** |
+| --- | --- | --- |
+| User_accounts → User_profiles | 1 a 1 | Cada cuenta tiene un único perfil. |
+| User_profiles → Style_preferences | 1 a 0..* | Un perfil puede registrar múltiples preferencias de estilo. |
+| User_profiles → Body_measurements | 1 a 0..1 | Un perfil puede tener un registro de medidas corporales. |
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/DatabaseDiagram.png" alt="DatabaseDiagram" style="width: 700">
+</p>
+
+## 5.2. Bounded Context: Digital Closet
 ### 5.2.1. Domain Layer
+
+El Domain Layer del bounded context **Digital Closet** representa el núcleo funcional del armario digital. Su responsabilidad es administrar las prendas que pertenecen al usuario, sus características, su estado dentro del armario y las operaciones realizadas sobre ellas.
+
+Este contexto permite registrar prendas desde fotografías, clasificarlas, incorporarlas al armario, actualizarlas, eliminarlas y marcarlas como favoritas. También permite almacenar referencias de prendas provenientes del catálogo de una tienda.
+
+#### Aggregate: WardrobeAggregate
+
+**Descripción:** Agregado raíz encargado de administrar el armario digital y garantizar que cada prenda se encuentre correctamente asociada al usuario correspondiente.
+
+#### Entity: Wardrobe
+
+| **Atributo** | **Tipo** | **Descripción** |
+| --- | --- | --- |
+| id | UUID | Identificador único del armario. |
+| userId | UUID | Usuario propietario del armario. |
+| garments | List<Garment> | Colección de prendas registradas. |
+| createdAt | Instant | Fecha de creación del armario. |
+
+#### Entity: Garment
+
+| **Atributo** | **Tipo** | **Descripción** |
+| --- | --- | --- |
+| id | UUID | Identificador de la prenda. |
+| wardrobeId | UUID | Armario al que pertenece. |
+| name | String | Nombre o descripción de la prenda. |
+| category | String | Categoría identificada. |
+| type | String | Tipo específico de prenda. |
+| color | String | Color principal identificado. |
+| imageUrl | String | Ubicación de la fotografía. |
+| favorite | Boolean | Indica si la prenda fue marcada como favorita. |
+| source | String | Indica si la prenda es propia o proviene de una tienda. |
+
+#### Value Object: GarmentCharacteristics
+
+| **Atributo** | **Tipo** | **Descripción** |
+| --- | --- | --- |
+| category | String | Categoría general. |
+| garmentType | String | Tipo de prenda. |
+| primaryColor | String | Color principal. |
+| secondaryColors | List<String> | Colores secundarios. |
+| pattern | String | Patrón visual detectado. |
+
+#### Value Object: StoreGarmentReference
+
+| **Atributo** | **Tipo** | **Descripción** |
+| --- | --- | --- |
+| storeId | UUID | Tienda de origen. |
+| catalogItemId | UUID | Identificador de la prenda comercial. |
+| externalUrl | String | Canal externo asociado al producto. |
+
+### Domain Services
+
+| **Nombre** | **Responsabilidad** | **Reglas Aplicadas** |
+| --- | --- | --- |
+| WardrobeDomainService | Gestionar prendas dentro del armario. | Una prenda debe pertenecer a un armario válido. |
+| GarmentDomainService | Gestionar características y estado de una prenda. | Los cambios deben mantener consistencia de categoría y propietario. |
+| FavoritePolicyService | Gestionar prendas favoritas. | Solo pueden marcarse prendas existentes en el armario. |
+
+---
+
 ### 5.2.2. Interface Layer
+
+La Interface Layer permite que la aplicación móvil gestione el armario mediante operaciones HTTP expuestas por el `Wardrobe API Controller`.
+
+#### Wardrobe API Controller
+
+| **Nombre** | **Método** | **Ruta** | **Descripción** |
+| --- | --- | --- | --- |
+| uploadGarment | POST | `/api/v1/wardrobes/{wardrobeId}/garments/upload` | Carga una fotografía para registrar una nueva prenda. |
+| getGarments | GET | `/api/v1/wardrobes/{wardrobeId}/garments` | Obtiene las prendas del armario. |
+| getGarment | GET | `/api/v1/garments/{garmentId}` | Obtiene una prenda específica. |
+| updateGarment | PUT | `/api/v1/garments/{garmentId}` | Actualiza información de la prenda. |
+| deleteGarment | DELETE | `/api/v1/garments/{garmentId}` | Elimina una prenda. |
+| markFavorite | PATCH | `/api/v1/garments/{garmentId}/favorite` | Marca o desmarca una prenda favorita. |
+| importStoreGarment | POST | `/api/v1/wardrobes/{wardrobeId}/store-garments` | Incorpora una referencia de una prenda comercial. |
+
+---
+
 ### 5.2.3. Application Layer
+
+La Application Layer coordina el procesamiento de fotografías, clasificación de prendas, registro dentro del armario y administración posterior de las mismas.
+
+#### Garment Command Handlers
+
+| **Capability** | **Command Handler** | **Descripción** |
+| --- | --- | --- |
+| Cargar fotografía | `GarmentIngestionService.handle(UploadGarmentCommand)` | Almacena la imagen e inicia su análisis. |
+| Registrar prenda | `WardrobeService.handle(RegisterGarmentCommand)` | Registra la prenda procesada dentro del armario. |
+| Actualizar prenda | `GarmentManagementService.handle(UpdateGarmentCommand)` | Actualiza información de la prenda. |
+| Eliminar prenda | `GarmentManagementService.handle(DeleteGarmentCommand)` | Elimina una prenda del armario. |
+| Marcar favorita | `GarmentManagementService.handle(MarkFavoriteCommand)` | Cambia el estado de favorito. |
+| Importar prenda comercial | `WardrobeService.handle(ImportStoreGarmentCommand)` | Registra una referencia de una prenda de tienda. |
+
+#### Domain Events
+
+| **Capability** | **Evento** | **Descripción** |
+| --- | --- | --- |
+| Fotografía procesada | `GarmentImageProcessedEvent` | Indica que la fotografía fue procesada. |
+| Prenda reconocida | `GarmentRecognizedEvent` | Contiene las características identificadas mediante IA. |
+| Prenda registrada | `GarmentRegisteredEvent` | Indica que la prenda fue persistida. |
+| Prenda añadida al armario | `GarmentAddedToWardrobeEvent` | Confirma su incorporación al armario. |
+
+---
+
 ### 5.2.4. Infrastructure Layer
+
+La Infrastructure Layer implementa el almacenamiento del armario y las integraciones necesarias para imágenes, clasificación mediante IA y catálogo de tiendas.
+
+#### WardrobeRepository
+
+| **Método** | **Descripción** |
+| --- | --- |
+| save | Guarda un armario o una prenda. |
+| findById | Obtiene un armario por ID. |
+| findGarmentById | Obtiene una prenda específica. |
+| findAllGarments | Recupera las prendas de un armario. |
+| updateGarment | Actualiza una prenda. |
+| deleteGarment | Elimina una prenda. |
+
+#### External Integrations
+
+| **Componente** | **Responsabilidad** |
+| --- | --- |
+| Media Storage Adapter | Gestionar almacenamiento y recuperación de fotografías. |
+| Cloudinary CDN | Almacenar y distribuir imágenes de prendas. |
+| Garment Classification Adapter | Solicitar clasificación automática de prendas. |
+| AI Integration Facade | Intermediar las solicitudes de análisis mediante IA. |
+| Vision & Avatar Agent | Reconocer categorías, tipos, colores y características visuales. |
+| Store Garment Import Adapter | Obtener información de prendas provenientes de Store Catalog. |
+| Wardrobe Database | Persistir armarios y prendas. |
+
+---
+
 ### 5.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/C4/DigitalCloset-BD.png" alt="BoundedDigitalCloset" style="width: 700">
+</p>
+
 ### 5.2.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/DigitalCloset-ClassDiagram.png" alt="DigitalClosetClassDiagram" style="width: 700">
+</p>
+
 #### 5.2.6.2. Bounded Context Database Design Diagram
 
-## 5.3. Bounded Context: Store Catalog
+El diagrama presenta el modelo de base de datos completo de Mirage, diseñado bajo las 3 formas normales. En esta sección se describen las tablas correspondientes al bounded context **Digital Closet**, persistidas en la Wardrobe Database.
+
+- **Wardrobes:** representa el armario digital de cada usuario. El campo `user_id` es único, ya que cada usuario posee un solo armario.
+- **Garment_categories:** almacena las categorías generales de prendas, como polos, pantalones, calzado o accesorios.
+- **Garment_types:** almacena los tipos específicos de prenda y la categoría a la que pertenecen. Se separa de `Garments` porque la categoría depende del tipo de prenda y no de la prenda en sí.
+- **Garments:** almacena las prendas registradas con su tipo, color principal, patrón, imagen, estado de favorito y origen (`OWN` o `STORE`).
+- **Garment_secondary_colors:** almacena los colores secundarios de cada prenda, definidos en el value object `GarmentCharacteristics`, garantizando un solo valor por columna.
+- **Store_garment_references:** persiste el value object `StoreGarmentReference` para las prendas importadas desde una tienda. Solo guarda `catalog_item_id`, ya que la tienda y el canal externo dependen del producto y se obtienen desde Store Catalog.
+
+| **Relación** | **Cardinalidad** | **Descripción** |
+| --- | --- | --- |
+| Wardrobes → Garments | 1 a 0..* | Un armario contiene muchas prendas; cada prenda pertenece a un solo armario. |
+| Garment_categories → Garment_types | 1 a 0..* | Una categoría agrupa varios tipos de prenda. |
+| Garment_types → Garments | 1 a 0..* | Un tipo de prenda puede asignarse a muchas prendas. |
+| Garments → Garment_secondary_colors | 1 a 0..* | Una prenda puede tener varios colores secundarios. |
+| Garments → Store_garment_references | 1 a 0..1 | Solo las prendas provenientes de una tienda tienen referencia comercial. |
+| Store_garment_references ⇢ Catalog_items | Referencia lógica | La prenda importada se vincula al producto de Store Catalog sin depender de su base de datos. |
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/DatabaseDiagram.png" alt="DatabaseDiagram" style="width: 700">
+</p>
+
+## 5.3. Bounded Context: Recommendation
+
 ### 5.3.1. Domain Layer
+
+El Domain Layer del bounded context **Recommendation** contiene las reglas utilizadas para determinar qué prendas pueden combinarse y generar propuestas personalizadas de outfits.
+
+Este contexto utiliza información proveniente del perfil y del armario digital, pero no es propietario de dichos datos. Su responsabilidad es evaluar el contexto disponible y producir recomendaciones acordes con las preferencias y prendas del usuario.
+
+#### Aggregate: RecommendationAggregate
+
+**Descripción:** Representa una solicitud de recomendación y las propuestas de outfit generadas como resultado.
+
+#### Entity: OutfitRecommendation
+
+| **Atributo** | **Tipo** | **Descripción** |
+| --- | --- | --- |
+| id | UUID | Identificador de la recomendación. |
+| userId | UUID | Usuario que solicitó la recomendación. |
+| garments | List<UUID> | Prendas utilizadas en el outfit. |
+| occasion | String | Ocasión indicada para la recomendación. |
+| status | String | Estado de la recomendación. |
+| generatedAt | Instant | Momento de generación. |
+
+#### Value Object: RecommendationParameters
+
+| **Atributo** | **Tipo** | **Descripción** |
+| --- | --- | --- |
+| occasion | String | Ocasión para la cual se solicita el outfit. |
+| style | String | Estilo preferido. |
+| preferredColors | List<String> | Colores priorizados. |
+| excludedGarments | List<UUID> | Prendas que no deben utilizarse. |
+
+#### Value Object: CompatibilityScore
+
+| **Atributo** | **Tipo** | **Descripción** |
+| --- | --- | --- |
+| garmentA | UUID | Primera prenda evaluada. |
+| garmentB | UUID | Segunda prenda evaluada. |
+| score | Decimal | Nivel de compatibilidad calculado. |
+
+### Domain Services
+
+| **Nombre** | **Responsabilidad** | **Reglas Aplicadas** |
+| --- | --- | --- |
+| RecommendationPolicyEngine | Evaluar compatibilidad y aplicar parámetros de personalización. | Solo se consideran prendas disponibles y compatibles con las preferencias. |
+| OutfitCompatibilityService | Determinar qué prendas pueden formar una combinación. | Se evalúan color, categoría, estilo y contexto. |
+
+---
+
 ### 5.3.2. Interface Layer
+
+La Interface Layer recibe las solicitudes de generación de outfits y las acciones realizadas posteriormente sobre las recomendaciones.
+
+#### Recommendation API Controller
+
+| **Nombre** | **Método** | **Ruta** | **Descripción** |
+| --- | --- | --- | --- |
+| generateRecommendation | POST | `/api/v1/recommendations` | Solicita la generación de un outfit personalizado. |
+| saveOutfit | POST | `/api/v1/recommendations/{id}/save` | Guarda una recomendación. |
+| markFavorite | POST | `/api/v1/recommendations/{id}/favorite` | Marca una recomendación como favorita. |
+| rejectOutfit | POST | `/api/v1/recommendations/{id}/reject` | Registra el rechazo de una propuesta. |
+
+---
+
 ### 5.3.3. Application Layer
+
+La Application Layer coordina todo el flujo de recomendación mediante el `Recommendation Orchestrator`.
+
+Primero obtiene las prendas disponibles del Digital Closet y las preferencias del Profile bounded context. Posteriormente aplica las políticas de compatibilidad y prepara el contexto que será enviado al agente recomendador.
+
+#### Recommendation Command Handlers
+
+| **Capability** | **Command Handler** | **Descripción** |
+| --- | --- | --- |
+| Solicitar outfit | `RecommendationOrchestrator.handle(GenerateRecommendationCommand)` | Inicia el proceso de recomendación. |
+| Calcular compatibilidad | `RecommendationPolicyEngine.evaluate()` | Evalúa prendas y parámetros disponibles. |
+| Generar outfit | `RecommenderAgentAdapter.generate()` | Solicita al agente IA una propuesta personalizada. |
+| Guardar outfit | `OutfitActionService.handle(SaveOutfitCommand)` | Guarda una propuesta seleccionada. |
+| Marcar favorito | `OutfitActionService.handle(FavoriteOutfitCommand)` | Registra la recomendación como favorita. |
+| Rechazar outfit | `OutfitActionService.handle(RejectOutfitCommand)` | Registra que la propuesta fue rechazada. |
+
+#### Domain Events
+
+| **Evento** | **Descripción** |
+| --- | --- |
+| `CompatibleGarmentsIdentifiedEvent` | Indica que se identificaron prendas compatibles. |
+| `RecommendationParametersProcessedEvent` | Confirma que los parámetros fueron procesados. |
+| `OutfitGeneratedEvent` | Indica que se generó una nueva propuesta. |
+| `OutfitSavedEvent` | Indica que una recomendación fue guardada. |
+| `OutfitRejectedEvent` | Registra el rechazo para futuras recomendaciones. |
+
+---
+
 ### 5.3.4. Infrastructure Layer
+
+Recommendation no accede directamente a las bases de datos de Profile o Digital Closet. La comunicación se realiza mediante clientes especializados, manteniendo separados los bounded contexts.
+
+#### External Integrations
+
+| **Componente** | **Responsabilidad** |
+| --- | --- |
+| Wardrobe Context Client | Consultar prendas disponibles en Digital Closet. |
+| Profile Context Client | Consultar preferencias del usuario. |
+| Recommender Agent Adapter | Adaptar los datos antes de enviarlos al agente de IA. |
+| Stylist & Recommender Agent | Generar combinaciones personalizadas. |
+| Wardrobe & Catalog Service | Persistir outfits guardados y actualizar el historial. |
+| User & Auth Service | Proporcionar información de preferencias del usuario. |
+
+
+---
+
 ### 5.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/C4/Recommendation-BD.png" alt="BoundedRecommendation" style="width: 700">
+</p>
+
 ### 5.3.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/Recommendation-ClassDiagram.png" alt="RecommendationClassDiagram" style="width: 700">
+</p>
+
 #### 5.3.6.2. Bounded Context Database Design Diagram
 
-## 5.4. Bounded Context: Social Interactions
+El diagrama presenta el modelo de base de datos completo de Mirage, diseñado bajo las 3 formas normales. En esta sección se describen las tablas correspondientes al bounded context **Recommendation**. Este contexto no es propietario de las prendas ni de las preferencias del usuario, por lo que solo almacena los resultados de las recomendaciones y las referencias a las prendas utilizadas.
+
+- **Outfit_recommendations:** almacena cada propuesta generada, la ocasión solicitada, el estilo y su estado (`GENERATED`, `SAVED`, `FAVORITE` o `REJECTED`). Los estados guardados y rechazados permiten ajustar las recomendaciones futuras.
+- **Recommendation_garments:** registra las prendas que conforman cada outfit. Su llave primaria compuesta evita repetir una prenda dentro de la misma recomendación, y el campo `garment_id` referencia lógicamente a las prendas de Digital Closet.
+- **Recommendation_parameters:** persiste el value object `RecommendationParameters`, almacenando los colores priorizados y las prendas excluidas mediante el campo `parameter_type`.
+- **Compatibility_scores:** persiste el value object `CompatibilityScore`, guardando el nivel de compatibilidad calculado entre dos prendas. La restricción única impide registrar dos veces el mismo par de prendas.
+
+| **Relación** | **Cardinalidad** | **Descripción** |
+| --- | --- | --- |
+| Outfit_recommendations → Recommendation_garments | 1 a 1..* | Cada recomendación incluye al menos una prenda. |
+| Outfit_recommendations → Recommendation_parameters | 1 a 0..* | Una recomendación puede registrar varios parámetros de personalización. |
+| Recommendation_garments ⇢ Garments | Referencia lógica | Las prendas se consultan a Digital Closet mediante el Wardrobe Context Client. |
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/DatabaseDiagram.png" alt="DatabaseDiagram" style="width: 700">
+</p>
+
+## 5.4. Bounded Context: Augmented Reality
+
 ### 5.4.1. Domain Layer
+
+El Domain Layer del bounded context **Augmented Reality** contiene las reglas necesarias para administrar una sesión de prueba virtual de prendas.
+
+Este contexto coordina la representación de una prenda sobre el usuario considerando información de seguimiento corporal, posición, entorno y recursos visuales generados por los servicios de inteligencia artificial.
+
+#### Aggregate: ARSessionAggregate
+
+**Descripción:** Representa una sesión activa de realidad aumentada y mantiene el estado requerido durante una prueba virtual.
+
+#### Entity: ARSession
+
+| **Atributo** | **Tipo** | **Descripción** |
+| --- | --- | --- |
+| id | UUID | Identificador de la sesión AR. |
+| garmentId | UUID | Prenda seleccionada. |
+| status | String | Estado actual de la sesión. |
+| environmentDetected | Boolean | Indica si el entorno fue reconocido. |
+| userDetected | Boolean | Indica si el usuario fue detectado. |
+| startedAt | Instant | Inicio de la sesión. |
+
+#### Value Object: TrackingState
+
+| **Atributo** | **Tipo** | **Descripción** |
+| --- | --- | --- |
+| userPosition | Vector3 | Posición detectada del usuario. |
+| userOrientation | Quaternion | Orientación estimada. |
+| environmentAnchor | Vector3 | Referencia espacial utilizada para renderizado. |
+| trackingQuality | Decimal | Calidad actual del seguimiento. |
+
+#### Value Object: GarmentOverlay
+
+| **Atributo** | **Tipo** | **Descripción** |
+| --- | --- | --- |
+| garmentId | UUID | Prenda que será proyectada. |
+| assetReference | String | Recurso utilizado para renderizado. |
+| scale | Decimal | Escala aplicada a la prenda. |
+| position | Vector3 | Posición de la superposición. |
+
+### Domain Services
+
+| **Nombre** | **Responsabilidad** | **Reglas Aplicadas** |
+| --- | --- | --- |
+| ARSessionDomainService | Gestionar el estado de una sesión AR. | Solo puede renderizarse una prenda cuando usuario y entorno han sido detectados. |
+| OverlayAlignmentService | Calcular alineamiento entre usuario y recurso visual. | La superposición debe mantenerse sincronizada con el tracking. |
+
+---
+
 ### 5.4.2. Interface Layer
+
+La Interface Layer se encuentra principalmente en el Mobile App debido a que la cámara y la experiencia AR se ejecutan directamente en el dispositivo.
+
+#### AR Screen Controller
+
+| **Operación** | **Descripción** |
+| --- | --- |
+| activateARMode | Activa el modo de realidad aumentada. |
+| selectGarment | Selecciona una prenda para prueba virtual. |
+| startVirtualTryOn | Inicia la superposición de la prenda. |
+| stopARSession | Finaliza la sesión AR. |
+| displayOverlay | Presenta el resultado visual en tiempo real. |
+
+---
+
 ### 5.4.3. Application Layer
+
+La Application Layer coordina la sesión mediante `AR Session Manager` y `Virtual Try-On Coordinator`.
+
+Estos componentes reciben información de los servicios de tracking, obtienen los recursos de la prenda y solicitan procesamiento adicional al backend cuando es necesario.
+
+#### Application Services
+
+| **Capability** | **Componente** | **Descripción** |
+| --- | --- | --- |
+| Activar AR | AR Session Manager | Inicializa la sesión AR y la calibración. |
+| Detectar entorno | Environment Tracking Service | Obtiene referencias espaciales del entorno. |
+| Detectar usuario | User Tracking Service | Identifica posición y silueta del usuario. |
+| Preparar prueba virtual | Virtual Try-On Coordinator | Reúne información de usuario, entorno y prenda. |
+| Generar superposición | AR Overlay Renderer | Compone la representación final. |
+| Proyectar outfit | AR Screen Controller | Presenta la prenda u outfit en tiempo real. |
+
+#### Domain Events
+
+| **Evento** | **Descripción** |
+| --- | --- |
+| `ARModeActivatedEvent` | Indica que la sesión AR fue iniciada. |
+| `EnvironmentDetectedEvent` | Indica que el entorno fue reconocido. |
+| `UserDetectedEvent` | Indica que el usuario fue detectado correctamente. |
+| `GarmentOverlayGeneratedEvent` | Indica que la superposición está disponible. |
+| `OutfitProjectedEvent` | Confirma que el outfit está siendo mostrado. |
+
+---
+
 ### 5.4.4. Infrastructure Layer
+
+La Infrastructure Layer contiene los mecanismos técnicos utilizados por el dispositivo y las integraciones backend requeridas para procesar recursos visuales.
+
+#### Infrastructure Components
+
+| **Componente** | **Responsabilidad** |
+| --- | --- |
+| Environment Tracking Service | Obtener información espacial mediante capacidades AR del dispositivo. |
+| User Tracking Service | Detectar y seguir la posición corporal del usuario. |
+| Garment Asset Client | Obtener los recursos correspondientes a la prenda seleccionada. |
+| AR Backend Client | Comunicarse con los servicios backend de procesamiento. |
+| AR Overlay Renderer | Renderizar la superposición visual en tiempo real. |
+| AI Integration Facade | Coordinar procesos de IA requeridos por AR. |
+| Vision & Avatar Agent | Realizar segmentación y análisis corporal. |
+| Outfit Render Agent | Generar composiciones visuales del outfit. |
+| 3D Mesh Pipeline Agent | Procesar o generar recursos tridimensionales. |
+
+---
+
 ### 5.4.5. Bounded Context Software Architecture Component Level Diagrams
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/C4/AugmentedReality-BD.png" alt="BoundedAugmentedReality " style="width: 700">
+</p>
+
 ### 5.4.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/AugmentedReality-ClassDiagram.png" alt="AugmentedRealityClassDiagram" style="width: 700">
+</p>
+
 #### 5.4.6.2. Bounded Context Database Design Diagram
 
-## 5.5. Bounded Context: Augmented Reality
+El diagrama presenta el modelo de base de datos completo de Mirage, diseñado bajo las 3 formas normales. En esta sección se describen las tablas correspondientes al bounded context **Augmented Reality**. La mayor parte del procesamiento de este contexto ocurre en tiempo real dentro del dispositivo, por lo que solo se persiste el registro de las sesiones y de las superposiciones generadas.
+
+- **Ar_sessions:** almacena cada sesión de prueba virtual, la prenda seleccionada, su estado y si el entorno y el usuario fueron detectados.
+- **Garment_overlays:** persiste el value object `GarmentOverlay`, guardando el recurso visual utilizado, la escala y la posición de la superposición. No almacena la prenda, ya que esta se obtiene a partir de la sesión a la que pertenece.
+
+El value object `TrackingState` no se almacena, debido a que su información cambia de forma continua durante la sesión y solo es necesaria en el dispositivo mientras la experiencia AR está activa.
+
+| **Relación** | **Cardinalidad** | **Descripción** |
+| --- | --- | --- |
+| Ar_sessions → Garment_overlays | 1 a 0..* | Una sesión puede generar varias superposiciones. |
+| Ar_sessions ⇢ Garments | Referencia lógica | La prenda probada se obtiene de Digital Closet mediante el Garment Asset Client. |
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/DatabaseDiagram.png" alt="DatabaseDiagram" style="width: 700">
+</p>
+
+## 5.5. Bounded Context: Social Interactions
+
+
 ### 5.5.1. Domain Layer
+
+El Domain Layer del bounded context **Social Interactions** representa las relaciones sociales establecidas entre usuarios dentro de Mirage.
+
+Este contexto administra solicitudes de amistad, relaciones confirmadas, reglas de visibilidad, acceso a armarios de amistades, prendas compartidas y wishlist.
+
+#### Aggregate: FriendshipAggregate
+
+**Descripción:** Agregado responsable de mantener el ciclo de vida de una relación social entre dos usuarios.
+
+#### Entity: Friendship
+
+| **Atributo** | **Tipo** | **Descripción** |
+| --- | --- | --- |
+| id | UUID | Identificador de la relación. |
+| requesterId | UUID | Usuario que envió la solicitud. |
+| receiverId | UUID | Usuario que recibió la solicitud. |
+| status | FriendshipStatus | Estado de la relación. |
+| createdAt | Instant | Fecha de creación. |
+| updatedAt | Instant | Fecha de última actualización. |
+
+#### Value Object: FriendshipStatus
+
+**Valores posibles:**
+
+- `PENDING`
+- `ACCEPTED`
+- `REJECTED`
+- `REMOVED`
+
+#### Value Object: SharedGarmentReference
+
+| **Atributo** | **Tipo** | **Descripción** |
+| --- | --- | --- |
+| garmentId | UUID | Identificador de la prenda compartida. |
+| ownerId | UUID | Propietario de la prenda. |
+| sharedWithId | UUID | Usuario autorizado a visualizarla. |
+
+#### Value Object: SocialVisibilityPolicy
+
+| **Atributo** | **Tipo** | **Descripción** |
+| --- | --- | --- |
+| wardrobeVisible | Boolean | Permite visualizar el armario. |
+| garmentsVisible | Boolean | Permite visualizar prendas. |
+| virtualTryOnAllowed | Boolean | Permite probar virtualmente prendas compartidas. |
+
+### Domain Services
+
+| **Nombre** | **Responsabilidad** | **Reglas Aplicadas** |
+| --- | --- | --- |
+| FriendshipDomainService | Gestionar relaciones de amistad. | No pueden existir solicitudes duplicadas activas. |
+| SocialAccessPolicy | Validar acceso a perfiles, armarios y prendas. | El acceso depende de amistad y permisos configurados. |
+| SharingDomainService | Gestionar prendas compartidas. | Una prenda solo puede compartirse por su propietario. |
+
+---
+
 ### 5.5.2. Interface Layer
+
+La Interface Layer recibe las operaciones sociales desde la aplicación móvil mediante el `Social API Controller`.
+
+#### Social API Controller
+
+| **Nombre** | **Método** | **Ruta** | **Descripción** |
+| --- | --- | --- | --- |
+| searchUsers | GET | `/api/v1/social/users` | Busca usuarios dentro de la plataforma. |
+| sendFriendRequest | POST | `/api/v1/social/friends/requests` | Envía una solicitud de amistad. |
+| acceptFriendRequest | POST | `/api/v1/social/friends/requests/{id}/accept` | Acepta una solicitud. |
+| rejectFriendRequest | POST | `/api/v1/social/friends/requests/{id}/reject` | Rechaza una solicitud. |
+| getFriends | GET | `/api/v1/social/friends` | Obtiene las amistades del usuario. |
+| getSharedWardrobe | GET | `/api/v1/social/friends/{friendId}/wardrobe` | Obtiene el armario compartido de una amistad. |
+| shareGarment | POST | `/api/v1/social/shared-garments` | Comparte una prenda. |
+| removeSharedGarment | DELETE | `/api/v1/social/shared-garments/{id}` | Retira una prenda compartida. |
+| addWishlistItem | POST | `/api/v1/social/wishlist` | Guarda una prenda en wishlist. |
+| virtualTryOn | POST | `/api/v1/social/garments/{id}/try-on` | Solicita una prueba virtual de una prenda compartida. |
+
+---
+
 ### 5.5.3. Application Layer
+
+La Application Layer coordina las interacciones sociales y aplica las políticas de acceso antes de permitir operaciones sobre información perteneciente a otros usuarios.
+
+#### Social Command Handlers
+
+| **Capability** | **Command Handler** | **Descripción** |
+| --- | --- | --- |
+| Enviar solicitud | `FriendshipService.handle(SendFriendRequestCommand)` | Crea una solicitud de amistad. |
+| Aceptar solicitud | `FriendshipService.handle(AcceptFriendRequestCommand)` | Establece una relación de amistad. |
+| Rechazar solicitud | `FriendshipService.handle(RejectFriendRequestCommand)` | Rechaza una solicitud pendiente. |
+| Compartir prenda | `GarmentSharingService.handle(ShareGarmentCommand)` | Añade una prenda al espacio compartido. |
+| Retirar prenda | `GarmentSharingService.handle(RemoveSharedGarmentCommand)` | Retira una referencia compartida. |
+| Guardar en wishlist | `SocialWishlistService.handle(AddWishlistItemCommand)` | Registra una prenda como deseada. |
+| Probar prenda | `VirtualTryOnAdapter.handle(TryFriendGarmentCommand)` | Coordina la prueba virtual de una prenda autorizada. |
+
+#### Social Event Handlers
+
+| **Evento** | **Descripción** |
+| --- | --- |
+| `FriendRequestSentEvent` | Registra una solicitud pendiente. |
+| `FriendRequestAcceptedEvent` | Establece la relación de amistad. |
+| `FriendRequestRejectedEvent` | Registra el rechazo. |
+| `GarmentSharedEvent` | Indica que una prenda fue compartida. |
+| `WishlistItemAddedEvent` | Registra una nueva referencia en wishlist. |
+
+---
+
 ### 5.5.4. Infrastructure Layer
+
+La Infrastructure Layer implementa la persistencia de relaciones sociales y las integraciones con Profile, Digital Closet y los servicios necesarios para la prueba virtual.
+
+#### SocialRepository
+
+| **Método** | **Descripción** |
+| --- | --- |
+| saveFriendRequest | Guarda una nueva solicitud. |
+| findRequestById | Obtiene una solicitud pendiente. |
+| findFriendship | Verifica una relación entre dos usuarios. |
+| findFriendsByUserId | Obtiene las amistades de un usuario. |
+| saveSharedGarment | Guarda una referencia compartida. |
+| deleteSharedGarment | Elimina una referencia compartida. |
+| saveWishlistItem | Guarda una prenda en wishlist. |
+| findWishlistByUserId | Recupera la wishlist del usuario. |
+
+#### External Integrations
+
+| **Componente** | **Responsabilidad** |
+| --- | --- |
+| Profile Context Client | Consultar perfiles y usuarios. |
+| Wardrobe Context Client | Obtener información de armarios y prendas. |
+| Virtual Try-On Adapter | Coordinar solicitudes de prueba virtual. |
+| AI Integration Facade | Solicitar procesamiento visual cuando sea requerido. |
+| Social Database | Persistir amistades, permisos, wishlist y prendas compartidas. |
+---
+
 ### 5.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/C4/SocialInteractions-BD.png" alt="BoundedSocialInteractions" style="width: 700">
+</p>
+
 ### 5.5.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/SocialInteractions-ClassDiagram.png" alt="SocialInteractionsClassDiagram" style="width: 700">
+</p>
+
 #### 5.5.6.2. Bounded Context Database Design Diagram
 
-## 5.6. Bounded Context: Digital Closet
+El diagrama presenta el modelo de base de datos completo de Mirage, diseñado bajo las 3 formas normales. En esta sección se describen las tablas correspondientes al bounded context **Social Interactions**, persistidas en la Social Database.
+
+- **Friendships:** almacena las relaciones entre usuarios, quién envió y quién recibió la solicitud, y su estado (`PENDING`, `ACCEPTED`, `REJECTED` o `REMOVED`), definido por el value object `FriendshipStatus`. La restricción única sobre `requester_id` y `receiver_id` evita solicitudes duplicadas.
+- **Visibility_policies:** persiste el value object `SocialVisibilityPolicy`, indicando si el usuario permite ver su armario, sus prendas y probar virtualmente sus prendas compartidas.
+- **Shared_garments:** persiste el value object `SharedGarmentReference`, registrando qué prenda fue compartida y con qué usuario. El propietario no se almacena, ya que depende de la prenda y se consulta en Digital Closet.
+- **Wishlist_items:** almacena las prendas guardadas como deseadas por el usuario y su origen (`FRIEND` o `STORE`). La restricción única evita guardar la misma prenda más de una vez.
+
+| **Relación** | **Cardinalidad** | **Descripción** |
+| --- | --- | --- |
+| Friendships ⇢ User_accounts | Referencia lógica | Los usuarios de la relación se consultan a Profile mediante el Profile Context Client. |
+| Shared_garments ⇢ Garments | Referencia lógica | Las prendas compartidas y su propietario se obtienen de Digital Closet mediante el Wardrobe Context Client. |
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/DatabaseDiagram.png" alt="DatabaseDiagram" style="width: 700">
+</p>
+
+## 5.6. Bounded Context: Store Catalog
+
 ### 5.6.1. Domain Layer
+
+El Domain Layer del bounded context **Store Catalog** representa la administración de tiendas y prendas comerciales disponibles dentro de Mirage.
+
+Este contexto permite registrar tiendas, administrar sus catálogos, asociar códigos QR a prendas y proporcionar información de productos para que puedan ser descubiertos por usuarios de la plataforma.
+
+Mirage actúa como un medio de descubrimiento y visibilidad, mientras que la adquisición final del producto continúa realizándose mediante los canales comerciales propios de la tienda.
+
+#### Aggregate: StoreAggregate
+
+**Descripción:** Agregado raíz responsable de representar una tienda registrada y controlar su información comercial.
+
+#### Entity: Store
+
+| **Atributo** | **Tipo** | **Descripción** |
+| --- | --- | --- |
+| id | UUID | Identificador de la tienda. |
+| name | String | Nombre comercial. |
+| description | String | Descripción de la tienda. |
+| logoUrl | String | Imagen representativa. |
+| externalChannelUrl | String | Canal externo de información o venta. |
+| status | String | Estado de la tienda dentro de la plataforma. |
+
+#### Aggregate: CatalogAggregate
+
+**Descripción:** Gestiona las prendas comerciales publicadas por una tienda.
+
+#### Entity: CatalogItem
+
+| **Atributo** | **Tipo** | **Descripción** |
+| --- | --- | --- |
+| id | UUID | Identificador del producto. |
+| storeId | UUID | Tienda propietaria. |
+| name | String | Nombre de la prenda. |
+| description | String | Descripción comercial. |
+| category | String | Categoría del producto. |
+| color | String | Color principal. |
+| imageUrl | String | Imagen de catálogo. |
+| externalUrl | String | Enlace al canal de la tienda. |
+| active | Boolean | Indica si el producto está disponible. |
+
+#### Value Object: QRCode
+
+| **Atributo** | **Tipo** | **Descripción** |
+| --- | --- | --- |
+| code | String | Valor único del código QR. |
+| catalogItemId | UUID | Producto asociado. |
+| generatedAt | Instant | Fecha de generación. |
+
+#### Value Object: ExternalChannel
+
+| **Atributo** | **Tipo** | **Descripción** |
+| --- | --- | --- |
+| url | String | Dirección del canal externo. |
+| channelType | String | Tipo de canal: web, red social u otro. |
+
+### Domain Services
+
+| **Nombre** | **Responsabilidad** | **Reglas Aplicadas** |
+| --- | --- | --- |
+| StoreDomainService | Gestionar la información de tiendas registradas. | Una tienda debe encontrarse activa para publicar productos. |
+| CatalogDomainService | Administrar productos pertenecientes al catálogo. | Cada producto debe pertenecer a una tienda registrada. |
+| QRDomainService | Gestionar la asociación entre códigos QR y productos. | Cada QR debe resolver a un producto válido. |
+
+---
+
 ### 5.6.2. Interface Layer
+
+La Interface Layer recibe solicitudes tanto del Store Portal utilizado por las tiendas como del Mobile App utilizado por consumidores.
+
+#### Store Catalog API Controller
+
+| **Nombre** | **Método** | **Ruta** | **Descripción** |
+| --- | --- | --- | --- |
+| registerStore | POST | `/api/v1/stores` | Registra una nueva tienda. |
+| updateStore | PUT | `/api/v1/stores/{storeId}` | Actualiza información de una tienda. |
+| addCatalogItem | POST | `/api/v1/stores/{storeId}/catalog` | Registra una nueva prenda comercial. |
+| getCatalog | GET | `/api/v1/stores/{storeId}/catalog` | Obtiene el catálogo de una tienda. |
+| updateCatalogItem | PUT | `/api/v1/catalog/{itemId}` | Actualiza una prenda comercial. |
+| deleteCatalogItem | DELETE | `/api/v1/catalog/{itemId}` | Elimina o deshabilita una prenda comercial. |
+| generateQR | POST | `/api/v1/catalog/{itemId}/qr` | Genera un QR asociado al producto. |
+| resolveQR | GET | `/api/v1/qr/{code}` | Identifica la prenda vinculada a un QR. |
+| addToWardrobe | POST | `/api/v1/catalog/{itemId}/wardrobe` | Solicita incorporar la referencia al armario del usuario. |
+
+---
+
 ### 5.6.3. Application Layer
+
+La Application Layer coordina la administración de tiendas y catálogos, generación de códigos QR, descubrimiento de prendas y comunicación con Digital Closet.
+
+#### Store Command Handlers
+
+| **Capability** | **Command Handler** | **Descripción** |
+| --- | --- | --- |
+| Registrar tienda | `StoreManagementService.handle(RegisterStoreCommand)` | Registra una nueva tienda. |
+| Actualizar tienda | `StoreManagementService.handle(UpdateStoreCommand)` | Actualiza información comercial. |
+
+#### Catalog Command Handlers
+
+| **Capability** | **Command Handler** | **Descripción** |
+| --- | --- | --- |
+| Registrar prenda | `CatalogService.handle(AddCatalogItemCommand)` | Añade una nueva prenda al catálogo. |
+| Actualizar prenda | `CatalogService.handle(UpdateCatalogItemCommand)` | Actualiza la información comercial. |
+| Eliminar prenda | `CatalogService.handle(DeleteCatalogItemCommand)` | Retira una prenda del catálogo. |
+| Generar QR | `QRService.handle(GenerateQRCodeCommand)` | Genera un código asociado a la prenda. |
+| Resolver QR | `QRService.handle(ResolveQRCodeQuery)` | Obtiene la prenda asociada a un código. |
+| Añadir al armario | `WardrobeLinkAdapter.handle(AddStoreGarmentToWardrobeCommand)` | Solicita a Digital Closet incorporar una referencia comercial. |
+
+#### Domain Events
+
+| **Evento** | **Descripción** |
+| --- | --- |
+| `StoreRegisteredEvent` | Indica que una tienda fue registrada. |
+| `CatalogItemRegisteredEvent` | Indica que una nueva prenda fue añadida. |
+| `CatalogItemUpdatedEvent` | Indica que la información de una prenda fue modificada. |
+| `CatalogItemRemovedEvent` | Indica que una prenda fue retirada. |
+| `QRCodeGeneratedEvent` | Confirma la generación del QR. |
+| `QRCodeResolvedEvent` | Indica que una prenda fue identificada mediante QR. |
+
+---
+
 ### 5.6.4. Infrastructure Layer
+
+La Infrastructure Layer implementa la persistencia de tiendas y productos, resolución de códigos QR e integración con Digital Closet y los canales externos de las tiendas.
+
+#### StoreRepository
+
+| **Método** | **Descripción** |
+| --- | --- |
+| save | Guarda o actualiza una tienda. |
+| findById | Obtiene una tienda por ID. |
+| findAll | Recupera tiendas registradas. |
+| update | Actualiza información comercial. |
+
+#### CatalogRepository
+
+| **Método** | **Descripción** |
+| --- | --- |
+| save | Guarda una prenda de catálogo. |
+| findById | Obtiene un producto por ID. |
+| findAllByStoreId | Recupera el catálogo de una tienda. |
+| update | Actualiza una prenda. |
+| deleteById | Retira una prenda del catálogo. |
+| saveQRCode | Guarda la asociación entre QR y producto. |
+| findByQRCode | Localiza la prenda asociada a un código QR. |
+
+#### External Integrations
+
+| **Componente** | **Responsabilidad** |
+| --- | --- |
+| Store Database | Persistir tiendas, productos y códigos QR. |
+| Wardrobe Link Adapter | Comunicar Store Catalog con Digital Closet. |
+| Wardrobe & Catalog Service | Incorporar referencias comerciales al armario personal. |
+| Store External Channel | Redirigir al sitio web, red social o canal comercial de la tienda. |
+
 ### 5.6.5. Bounded Context Software Architecture Component Level Diagrams
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/C4/StoreCatalog-BD.png" alt="BoundedStoreCatalog" style="width: 700">
+</p>
+
 ### 5.6.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.6.6.1. Bounded Context Domain Layer Class Diagrams
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/StoreCatalog-ClassDiagram.png" alt="StoreCatalogClassDiagram" style="width: 700">
+</p>
+
 #### 5.6.6.2. Bounded Context Database Design Diagram
+
+El diagrama presenta el modelo de base de datos completo de Mirage, diseñado bajo las 3 formas normales. En esta sección se describen las tablas correspondientes al bounded context **Store Catalog**, persistidas en la Store Database.
+
+- **Stores:** almacena la información de las tiendas registradas, su estado y su canal externo. El value object `ExternalChannel` se persiste dentro de esta tabla mediante las columnas `external_channel_url` y `external_channel_type`, ya que no posee identidad propia.
+- **Catalog_items:** almacena las prendas comerciales publicadas. Cada registro se relaciona con una tienda mediante la llave foránea `store_id`, y el campo `active` permite deshabilitar una prenda sin eliminar su historial.
+- **Qr_codes:** almacena los códigos QR generados. El campo `code` funciona como llave primaria para resolver rápidamente la prenda asociada, y `catalog_item_id` es único para que cada prenda tenga como máximo un código.
+
+| **Relación** | **Cardinalidad** | **Descripción** |
+| --- | --- | --- |
+| Stores → Catalog_items | 1 a 0..* | Una tienda puede publicar muchas prendas; cada prenda pertenece a una sola tienda. |
+| Catalog_items → Qr_codes | 1 a 0..1 | Una prenda puede tener como máximo un código QR asociado. |
+
+<p align="center">
+  <img src="assets/img/Capitulo-4/DatabaseDiagram.png" alt="DatabaseDiagram" style="width: 700">
+</p>
 
 # Capítulo VI: Solution UX Design
 
