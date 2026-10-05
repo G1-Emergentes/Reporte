@@ -1904,227 +1904,569 @@ Las Style Guidelines reúnen las decisiones visuales y de comunicación que dan 
 
 Mirage busca transmitir una relación cercana entre la moda y la tecnología. La identidad visual se apoya en tres ideas: reflejo, personalización y descubrimiento. El usuario debe percibir la aplicación como un espacio propio donde su armario cobra vida, y no como un catálogo genérico de tienda.
 
-**Branding:**
+#### Branding
+La identidad de Mirage by ReWear busca representar la relación entre el armario personal, la experimentación con diferentes estilos y las nuevas formas de visualizar prendas y accesorios mediante tecnologías digitales.
+La aplicación no se plantea únicamente como un organizador de ropa, sino como una experiencia donde el usuario puede digitalizar su armario, crear combinaciones, descubrir nuevas posibilidades utilizando sus prendas y explorar funcionalidades de visualización avanzada.
 
-El nombre Mirage hace referencia a una imagen que aparece ante los ojos, idea que se vincula directamente con las funciones centrales del producto: ver el propio armario en formato digital, visualizar combinaciones antes de vestirlas y probar prendas sobre un avatar o mediante realidad aumentada. El logotipo combina el nombre de la marca con un isotipo inspirado en un espejo, elemento que representa el momento cotidiano en el que una persona decide qué ponerse. El isotipo se utiliza de forma independiente como ícono de la aplicación y como favicon de la Landing Page.
+El concepto visual combina tres características principales:
+- Fashion, debido a que las prendas y accesorios constituyen el elemento visual principal.
+- Playful, debido a la experiencia de creación de outfits mediante una lógica similar a un armario o espacio digital de composición.
+- Technology, debido a la incorporación de Inteligencia Artificial, modelos 3D y Realidad Aumentada.
 
-<p align="center">
-  <img src="assets/images/ux-design/logo.png" alt="Logo Mirage" width="700">
-</p>
-
-**Colores:**
-
-La paleta se construye a partir de un tono principal que identifica a la marca y un conjunto de neutros que dejan protagonismo a las prendas, ya que las fotografías de ropa son el contenido más importante de la interfaz.
-
-| Color | Código | Uso |
-|-------|--------|-----|
-| Violeta Mirage | #6C4DF6 | Color primario. Botones principales, estados activos de la navegación e íconos destacados. |
-| Tinta | #1F1B2D | Textos principales, encabezados y fondos oscuros de secciones de alto contraste. |
-| Rosa suave | #F4A9C4 | Color de acento. Etiquetas, insignias de recomendaciones de IA y elementos de interacción social. |
-| Fondo claro | #F7F5FB | Fondo general de pantallas y secciones de la Landing Page. |
-| Blanco | #FFFFFF | Tarjetas de prendas, outfits y formularios. |
-| Gris medio | #8A8799 | Textos secundarios, placeholders y bordes. |
-| Verde éxito | #2EB872 | Confirmaciones, como prenda registrada u outfit guardado. |
-| Rojo error | #E5484D | Mensajes de error y validaciones de formularios. |
+La identidad visual empleada en la Landing Page mantiene los mismos principios utilizados en la aplicación móvil para evitar que ambos productos sean percibidos como experiencias independientes.
 
 <p align="center">
-  <img src="assets/images/ux-design/colors.png" alt="Paleta de colores" width="700">
+  <img src="assets/images/ux-design/Logo.png" alt="Logo Mirage" width="700">
 </p>
 
-**Tipografía:**
+#### Colores
 
-Se utilizan dos familias tipográficas de Google Fonts, lo que permite su uso libre tanto en Angular como en Flutter:
+La identidad visual de Mirage utiliza una paleta clara y vibrante que combina una base neutra con colores de acento relacionados con moda, personalización y tecnología.
 
-- **Poppins:** para títulos, encabezados y botones. Su forma geométrica aporta un carácter moderno y reconocible.
-- **Inter:** para textos de cuerpo, etiquetas de prendas, formularios y descripciones. Prioriza la legibilidad en tamaños pequeños, algo necesario en pantallas con muchas tarjetas de contenido.
+El fondo principal utiliza un tono crema muy claro, lo que permite que las prendas, accesorios y elementos gráficos mantengan el protagonismo dentro de la interfaz. Sobre esta base se emplean colores de acento en rosa, lima, lila y azul claro, utilizados para diferenciar acciones, estados y componentes visuales sin sobrecargar la experiencia.
 
+La paleta definida para Mirage es la siguiente:
 
-| Estilo | Familia | Peso | Tamaño |
-|--------|---------|------|--------|
-| H1 | Poppins | SemiBold | 32 px |
-| H2 | Poppins | SemiBold | 24 px |
-| H3 | Poppins | Medium | 20 px |
-| Body | Inter | Regular | 16 px |
-| Body small | Inter | Regular | 14 px |
-| Caption | Inter | Medium | 12 px |
-| Button | Poppins | Medium | 16 px |
+| Color | Código HEX | Uso principal |
+|---|---|---|
+| Rosa Mirage | `#ED2478` | Color de acento principal. Se utiliza en botones, llamadas a la acción, indicadores activos y elementos visuales destacados. |
+| Lima | `#D8F66D` | Acento secundario utilizado en badges, etiquetas, elementos interactivos y detalles visuales de alto contraste. |
+| Lila | `#E4DAF6` | Fondo secundario para tarjetas, módulos de personalización y elementos relacionados con funcionalidades digitales. |
+| Azul claro | `#DFEBF3` | Fondo complementario para tarjetas, secciones informativas y composiciones visuales. |
+| Crema | `#F7F5EF` | Fondo principal de la aplicación móvil y de la Landing Page. |
+
+La combinación de estos colores busca mantener un equilibrio entre una estética editorial relacionada con moda y una interfaz funcional. El rosa `#ED2478` concentra las acciones principales y permite identificar rápidamente botones y elementos interactivos, mientras que los tonos lima, lila y azul claro funcionan como acentos visuales para diferenciar secciones y componentes.
+
+El tono crema `#F7F5EF` se utiliza como base general debido a que proporciona un fondo neutro y cálido que permite destacar las fotografías de prendas, accesorios y previews generados dentro de la aplicación.
+
+La paleta se mantiene de forma consistente tanto en la aplicación móvil como en la Landing Page, reforzando la identidad visual de Mirage en ambos productos digitales.
 
 <p align="center">
-  <img src="assets/images/ux-design/typography.png" alt="Tipografía" width="700">
+  <img src="assets/images/ux-design/Colores.png" alt="Paleta de colores de Mirage" width="700">
 </p>
 
-**Iconografía y componentes:**
+#### Tipografía
 
-Se emplean íconos de línea con esquinas redondeadas y un grosor uniforme, acompañados de componentes con bordes redondeados de 12 px en tarjetas y 24 px en botones. Las tarjetas de prendas siguen una proporción vertical para mostrar la ropa completa, y las acciones generadas por la IA se identifican con un ícono de destello para que el usuario distinga una recomendación automática de una acción manual.
+La identidad visual de Mirage utiliza dos familias tipográficas principales: **Lora** e **Inter**. La combinación de ambas permite mantener el carácter editorial relacionado con moda que se busca transmitir en la propuesta, sin perder legibilidad en los elementos funcionales de la aplicación móvil y de la Landing Page.
+
+**Lora** se utiliza principalmente en títulos, encabezados y mensajes de mayor jerarquía visual. Su tratamiento aporta un carácter editorial y expresivo que ayuda a diferenciar a Mirage de una aplicación convencional de gestión de información. Dependiendo de la composición visual, puede utilizarse tanto en su variante regular como en cursiva, especialmente en elementos relacionados con la identidad de la marca y encabezados destacados.
+
+En los mock-ups, esta tipografía puede observarse en títulos como **“Your closet. Digital.”**, **“Style what you already own.”**, **“See more. Try more.”**, **“Your style. Your space.”** y **“Your AI Look”**.
 
 <p align="center">
-  <img src="assets/images/ux-design/style-guidelines/components.png" alt="Componentes" width="700">
+  <img src="assets/images/ux-design/typography-lora.PNG" alt="Tipografía Lora utilizada en Mirage" width="700">
 </p>
 
-**Tono de comunicación:**
+Por otro lado, **Inter** se utiliza en los elementos funcionales y de lectura de la interfaz, como textos descriptivos, etiquetas, campos de formularios, navegación, categorías, filtros y botones. Su diseño facilita la lectura en pantallas móviles y permite establecer diferentes niveles de jerarquía utilizando variaciones de peso y contraste.
 
-Mirage se comunica como un amigo con buen gusto: cercano, positivo y directo. Se tutea al usuario, se evitan tecnicismos al hablar de IA o realidad aumentada y se prefieren frases cortas orientadas a la acción, por ejemplo "Prueba este look" o "Agrega tu primera prenda". Con las tiendas aliadas el tono se mantiene amable, pero más informativo, enfocado en visibilidad y resultados.
+El peso de Inter se adapta al propósito de cada elemento. Los botones y acciones principales utilizan un peso visual mayor, mientras que los textos explicativos y secundarios emplean pesos más ligeros. Las etiquetas, elementos de navegación y controles utilizan pesos intermedios para distinguirlos del contenido descriptivo sin competir visualmente con los títulos principales.
 
+De esta manera, la jerarquía tipográfica utilizada en Mirage se organiza de la siguiente forma:
+
+| Uso | Familia tipográfica | Tratamiento |
+|---|---|---|
+| Títulos principales | Lora | Regular o Italic |
+| Encabezados de sección | Lora | Regular |
+| Identidad y elementos editoriales | Lora | Regular o Italic |
+| Texto de cuerpo | Inter | Light o Regular |
+| Textos secundarios | Inter | Light |
+| Labels y categorías | Inter | Medium o SemiBold |
+| Navegación | Inter | Medium o SemiBold |
+| Botones principales | Inter | SemiBold o Bold |
+| Captions y textos de apoyo | Inter | Light o Regular |
+
+Esta combinación permite establecer una separación clara entre el contenido **editorial y expresivo**, representado por Lora, y el contenido **funcional e informativo**, representado por Inter, manteniendo una identidad consistente tanto en la aplicación móvil como en la Landing Page.
+
+<p align="center">
+  <img src="assets/images/ux-design/typography-inter.PNG" alt="Tipografía Inter utilizada en Mirage" width="700">
+</p>
+
+#### Iconografía y componentes
+
+La interfaz de Mirage utiliza una iconografía de línea simple y consistente, diseñada para acompañar la navegación y las acciones principales sin competir visualmente con las prendas, accesorios y fotografías que constituyen el contenido principal de la aplicación.
+
+Los íconos mantienen un estilo minimalista, con trazos finos, formas reconocibles y una apariencia uniforme. Se utilizan principalmente para representar acciones frecuentes como volver, buscar, editar, configurar, visualizar imágenes, utilizar la cámara, guardar elementos o acceder a funciones específicas de la aplicación.
+
+Entre los principales íconos utilizados se encuentran:
+
+- Home;
+- Closet;
+- Create;
+- Explore;
+- Profile;
+- Search;
+- Settings;
+- Camera;
+- Images;
+- Edit;
+- History;
+- Notifications;
+- Filters;
+- Favorite;
+- Close;
+- Back;
+- Upload;
+- Privacy / Security;
+- Sparkles;
+- Globe.
+
+El objetivo de la iconografía es facilitar el reconocimiento rápido de las acciones y reducir la cantidad de texto necesario dentro de las pantallas móviles.
+
+Los íconos se utilizan generalmente acompañados de etiquetas cuando forman parte de la navegación principal, mientras que en acciones secundarias pueden aparecer de manera independiente cuando su significado resulta suficientemente reconocible.
+
+<p align="center">
+  <img src="assets/images/ux-design/Iconograpfia.png" alt="Iconografía utilizada en Mirage" width="700">
+</p>
+
+En cuanto a los componentes de interacción, Mirage mantiene una estructura visual consistente entre las diferentes pantallas. Los botones principales utilizan el color rosa de la identidad visual y se emplean para representar las acciones prioritarias de cada vista, como continuar, guardar, confirmar, generar o iniciar una experiencia.
+
+Los componentes principales utilizados son:
+
+- **Botón primario:** se utiliza para la acción principal de una pantalla, por ejemplo `Continue`, `Try on Me`, `Generate My Look` o `Save Look`.
+- **Botón secundario:** se utiliza para acciones complementarias que no requieren el mismo nivel de énfasis visual.
+- **Botones con ícono:** permiten representar acciones rápidas como regresar, cerrar, agregar o navegar.
+- **Navigation Items:** forman parte de la barra de navegación inferior y combinan ícono y etiqueta.
+- **Tabs:** permiten alternar entre categorías o filtros dentro de una misma vista.
+- **Cards:** agrupan prendas, accesorios, outfits y resultados de búsqueda.
+- **Badges:** identifican características especiales como `3D` y `AR READY`.
+- **Campos de formulario:** se utilizan para registro, autenticación, medidas corporales y datos personales.
+- **Filtros y controles de ordenamiento:** permiten reducir y reorganizar el contenido mostrado.
+
+Los botones mantienen formas redondeadas y una jerarquía visual clara. La acción principal utiliza mayor contraste, mientras que las acciones secundarias emplean fondos neutros o menor peso visual.
+
+La navegación inferior mantiene los mismos cinco accesos principales en la aplicación:
+
+**Home — Closet — Create — Explore — Profile**
+
+El acceso `Create` se diferencia visualmente mediante un botón central destacado, reforzando su importancia dentro del flujo principal de la aplicación.
+
+<p align="center">
+  <img src="assets/images/ux-design/Botones.png" alt="Componentes de interfaz utilizados en Mirage" width="700">
+</p>
+
+La consistencia entre iconografía, botones, navegación, tarjetas y controles permite que el usuario reconozca patrones de interacción similares a lo largo de toda la aplicación, reduciendo la curva de aprendizaje y facilitando la navegación entre las diferentes funcionalidades.
+
+#### Tono de comunicación
+
+Mirage utiliza un tono de comunicación **casual, cercano, playful, inclusivo y entusiasta**, acorde con una experiencia digital orientada a usuarios jóvenes interesados en moda y tecnología.
+
+El lenguaje empleado en la aplicación y en la Landing Page busca ser directo y fácil de comprender. Se priorizan frases breves, claras y orientadas a la acción, evitando tecnicismos innecesarios incluso cuando se presentan funcionalidades relacionadas con Inteligencia Artificial, modelos 3D o Realidad Aumentada.
+
+Algunos ejemplos utilizados en la interfaz son:
+
+- **Your wardrobe, reimagined.**
+- **What should we wear today?**
+- **Try Something New**
+- **Create Look**
+- **Try on Me**
+- **Generate My Look**
+- **View in 3D**
+- **Try in AR**
+
+La comunicación también diferencia el nivel de énfasis según el tipo de mensaje. Las acciones principales utilizan textos breves y directos, mientras que los mensajes explicativos emplean un tono más informativo y calmado.
+
+En funcionalidades que utilizan Inteligencia Artificial, Mirage evita presentar los resultados como representaciones exactas de la realidad. Por ello, se incluyen mensajes que aclaran el carácter aproximado de las visualizaciones generadas, por ejemplo:
+
+> **AI visual preview. Actual fit may vary.**
+
+De esta manera, el tono de comunicación mantiene una personalidad moderna y cercana, pero al mismo tiempo conserva claridad y transparencia respecto al funcionamiento de las tecnologías utilizadas.
 
 ### 6.1.2. Web, Mobile & Devices Style Guidelines
 
-**Web (Landing Page):**
+#### Web (Landing Page)
 
-La Landing Page se desarrolla en Angular y se diseña bajo un enfoque mobile first. Se utiliza una grilla de 12 columnas en escritorio, 8 en tablet y 4 en móvil, con los siguientes puntos de quiebre:
+La Landing Page de Mirage mantiene la misma identidad visual definida para la aplicación móvil, de modo que ambos productos digitales sean percibidos como parte de una misma experiencia.
 
-| Dispositivo | Ancho |
-|-------------|-------|
-| Móvil | menor a 768 px |
-| Tablet | 768 px a 1023 px |
-| Escritorio | 1024 px a más |
+La versión web conserva las familias tipográficas **Lora** e **Inter**, la paleta de colores de Mirage, el estilo de iconografía, los botones redondeados y el tratamiento visual de prendas y accesorios utilizado en los mock-ups de la aplicación.
 
-En escritorio la navegación se muestra completa en el encabezado. En pantallas reducidas se agrupa en un menú lateral, y el encabezado permanece fijo durante el desplazamiento. Los botones de descarga de la aplicación se mantienen visibles en la sección principal y al final de la página.
+Para la versión de escritorio se trabaja sobre una composición de referencia de **1440 px de ancho**, aprovechando el espacio disponible para utilizar títulos de mayor escala, bloques amplios de contenido y composiciones editoriales que combinan texto, prendas, accesorios y mock-ups de la aplicación móvil.
 
-<p align="center">
-  <img src="assets/images/ux-design/style-guidelines/web-guidelines.png" alt="Web Style Guidelines" width="700">
-</p>
+El diseño prioriza fondos claros para mantener el protagonismo de los elementos relacionados con moda. Los colores de acento —rosa, lima, lila y azul claro— se emplean para diferenciar secciones, llamadas a la acción y elementos destacados sin perder consistencia con la aplicación móvil.
 
-**Mobile (Aplicación):**
+Los títulos principales utilizan **Lora**, reforzando el carácter editorial de la propuesta, mientras que los textos descriptivos, botones, etiquetas y elementos de navegación utilizan **Inter** para mantener una lectura clara.
 
-La aplicación se desarrolla en Flutter para Android e iOS. Se aplican los siguientes lineamientos:
+Los botones principales conservan el color rosa `#ED2478` y un alto contraste respecto al fondo. Las acciones secundarias utilizan un tratamiento visual más neutro para mantener una jerarquía clara entre acciones principales y complementarias.
 
-- Área táctil mínima de 48 x 48 px para botones e íconos interactivos.
-- Barra de navegación inferior para las secciones principales, al alcance del pulgar.
-- Márgenes laterales de 16 px y espaciado basado en múltiplos de 8 px.
-- Botón de acción principal flotante en el armario para registrar prendas.
-- Grilla de dos columnas para prendas y outfits, priorizando la imagen sobre el texto.
+En la versión Desktop, las imágenes de prendas, accesorios y vistas de la aplicación pueden utilizar composiciones asimétricas y superpuestas, siempre manteniendo suficiente espacio entre elementos para evitar una interfaz visualmente saturada.
+
+El Header se mantiene visible durante el desplazamiento de la página y conserva una estructura compacta, permitiendo que las acciones principales permanezcan accesibles sin ocupar un área excesiva de la pantalla.
 
 <p align="center">
-  <img src="assets/images/ux-design/style-guidelines/mobile-guidelines.png" alt="Mobile Style Guidelines" width="700">
+  <img src="assets/images/ux-design/web-guidelines1.png" alt="Web Style Guidelines de Mirage" width="700">
+</p>
+<p align="center">
+  <img src="assets/images/ux-design/web-guidelines2.png" alt="Web Style Guidelines de Mirage" width="700">
 </p>
 
-**Devices (Cámara, avatar y realidad aumentada):**
+#### Mobile (Aplicación)
 
-Las funciones de probador virtual y realidad aumentada dependen de la cámara del dispositivo y deben funcionar en equipos de gama media. Por ello, las pantallas de cámara muestran guías visuales de encuadre para fotografías de prendas y de cuerpo completo, indicadores de carga mientras la IA procesa la imagen y controles mínimos superpuestos para no obstruir la vista. El modo de realidad aumentada se diseña en orientación vertical, con los controles agrupados en la parte inferior de la pantalla.
+La aplicación móvil constituye el principal producto digital de Mirage y fue diseñada bajo un enfoque **mobile-first**, tomando como referencia pantallas de **390 × 844 px**.
+
+La interfaz mantiene la identidad visual definida para la marca mediante el uso de las tipografías **Lora** e **Inter**, la paleta de colores establecida y componentes consistentes entre las diferentes pantallas.
+
+La navegación principal se concentra en una barra inferior con cinco accesos:
+
+- **Home**
+- **Closet**
+- **Create**
+- **Explore**
+- **Profile**
+
+La opción **Create** ocupa la posición central y recibe un mayor énfasis visual, debido a que concentra acciones frecuentes como la creación de outfits y la incorporación de nuevas prendas.
+
+El contenido visual tiene prioridad sobre el texto. Las prendas y accesorios se presentan principalmente mediante imágenes aisladas dentro de cards y grillas, permitiendo que el usuario pueda identificarlos rápidamente.
+
+En las vistas de categorías como **Tops** o **Accessories**, el contenido se organiza mediante una grilla de dos columnas, complementada con herramientas de búsqueda, filtrado y ordenamiento.
+
+Los principales lineamientos de interacción utilizados son:
+
+- navegación inferior persistente en las vistas principales;
+- botones principales con alto contraste mediante el color rosa `#ED2478`;
+- textos y etiquetas breves para reducir la carga visual;
+- navegación hacia atrás visible en pantallas secundarias;
+- cards con tratamiento consistente para prendas, accesorios y outfits;
+- badges como **3D** y **AR READY** para identificar funcionalidades especiales;
+- predominio de imágenes sobre contenido textual en las vistas de armario y exploración;
+- formularios simples y secuenciales para procesos que requieren información adicional.
+
+El diseño busca mantener las acciones principales al alcance del usuario y evitar la acumulación de controles dentro de una misma pantalla.
+
+<p align="center">
+  <img src="assets/images/ux-design/web-guidelines2.png" alt="Web Style Guidelines de Mirage" width="700">
+</p>
+<p align="center">
+  <img src="assets/images/ux-design/Botones.png" alt="Componentes de interfaz utilizados en Mirage" width="700">
+</p>
+<p align="center">
+  <img src="assets/images/ux-design/Iconograpfia.png" alt="Iconografía utilizada en Mirage" width="700">
+</p>
 
 ## 6.2. Information Architecture
 
-La arquitectura de información define cómo se organiza, nombra, busca y recorre el contenido de Mirage. Su objetivo es que tanto el consumidor de moda como la tienda aliada encuentren lo que necesitan con el menor esfuerzo posible, a pesar de que la aplicación reúne funciones variadas como armario digital, estilista IA, avatar, realidad aumentada y comunidad. En esta sección se detallan los sistemas de organización, etiquetado, búsqueda, SEO y navegación.
+La arquitectura de información de Mirage define cómo se organiza, agrupa y presenta el contenido dentro de la aplicación móvil y de la Landing Page, con el objetivo de que cada usuario pueda identificar rápidamente las funciones disponibles y completar sus tareas con el menor número posible de pasos.
+
+Mirage contempla dos públicos principales: el **consumidor de moda** y la **tienda aliada**. La aplicación móvil concentra las funcionalidades de gestión del armario, creación de outfits, recomendaciones mediante Inteligencia Artificial, visualización mediante un avatar digital personalizado, experiencias 3D y Realidad Aumentada, exploración de productos comerciales y funciones de comunidad. Por otro lado, las tiendas aliadas disponen de funcionalidades orientadas a la administración de su perfil, catálogo y códigos QR comerciales.
+
+La Landing Page funciona como punto informativo de entrada para ambos públicos, presentando la propuesta de valor de Mirage, sus principales funcionalidades, la descarga de la aplicación y el acceso para que las tiendas soliciten información para convertirse en aliadas.
+
+La arquitectura se desarrolla mediante sistemas de organización, etiquetado, búsqueda y navegación que mantienen una estructura consistente entre las distintas experiencias de Mirage.
 
 ### 6.2.1. Organization Systems
 
-El contenido de Mirage se organiza según el tipo de usuario y el tipo de tarea que realiza:
+Mirage utiliza diferentes sistemas de organización de acuerdo con el tipo de usuario, el contenido presentado y la tarea que se está realizando.
 
-- **Organización por audiencia:** la aplicación presenta experiencias diferenciadas según el tipo de cuenta. El consumidor de moda accede a su armario, recomendaciones, probador y comunidad, mientras que la tienda aliada accede a su catálogo comercial, sus códigos QR y su perfil de tienda. La Landing Page también separa su contenido para usuarios y para tiendas.
-- **Organización por categorías:** las prendas del armario digital y del catálogo comercial se agrupan por categoría (polos, pantalones, calzado, accesorios, entre otras), color, temporada y etiquetas personalizadas creadas por el usuario.
-- **Organización secuencial:** se aplica en procesos que requieren pasos ordenados, como el registro y la configuración de preferencias de estilo, la digitalización de una prenda (captura, detección con IA, edición y guardado) y la creación del avatar (selfie, foto de cuerpo entero y ajuste de proporciones).
-- **Organización jerárquica:** en cada pantalla se destaca la acción principal mediante tamaño, color primario y posición. Por ejemplo, en el estilista IA la recomendación generada ocupa el área central y las acciones de guardar, ajustar o descartar se ubican debajo.
-- **Organización cronológica:** los outfits guardados y la actividad de amigos se muestran del más reciente al más antiguo.
+- **Organización por audiencia:**  
+  La información se diferencia entre el consumidor de moda y la tienda aliada. El consumidor accede a funcionalidades relacionadas con su armario, creación y exploración de outfits, recomendaciones, avatar digital, Realidad Aumentada, comunidad y descubrimiento de productos. La tienda aliada dispone de herramientas para gestionar su perfil comercial, catálogo, enlaces externos y códigos QR asociados a sus productos.
+
+- **Organización por funcionalidades:**  
+  La experiencia principal del consumidor se distribuye mediante cinco áreas de navegación: **Home, Closet, Create, Explore y Profile**. Estas secciones agrupan funciones relacionadas y permiten que el usuario mantenga una estructura reconocible durante toda la navegación.
+
+- **Organización por categorías:**  
+  El armario digital organiza las prendas en categorías como **Tops, Bottoms, Shoes y Accessories**. Los accesorios pueden dividirse en categorías específicas como **Bags, Glasses, Jewelry y Hats**. La misma lógica de clasificación se utiliza para facilitar la exploración de productos provenientes de tiendas aliadas.
+
+- **Organización secuencial:**  
+  Se aplica en procesos que requieren completar diferentes etapas en un orden específico. Entre estos procesos se encuentran:
+  - incorporación de prendas mediante fotografía y reconocimiento con IA;
+  - creación de outfits;
+  - configuración del AI Try-On mediante fotografías y medidas opcionales;
+  - generación del avatar digital personalizado;
+  - acceso al probador virtual;
+  - visualización de accesorios en 3D y posterior acceso a Realidad Aumentada;
+  - escaneo de códigos QR y visualización del producto asociado;
+  - publicación de productos por parte de una tienda aliada.
+
+- **Organización jerárquica:**  
+  En cada pantalla se prioriza visualmente una acción principal mediante posición, tamaño y contraste. Las acciones secundarias permanecen disponibles sin competir visualmente con la tarea principal. Por ejemplo, en la creación de un outfit la selección de prendas constituye el contenido principal, mientras que acciones como guardar, editar o generar una visualización aparecen como opciones complementarias.
+
+- **Organización visual:**  
+  Debido a la naturaleza del producto, Mirage prioriza el uso de imágenes de prendas, accesorios, outfits y representaciones personalizadas. Las cards y grillas permiten mostrar contenido de manera rápida y reconocible, mientras que los textos funcionan como soporte para identificar categorías, acciones y atributos.
+
+- **Organización social:**  
+  El módulo Community agrupa contenido público generado por los usuarios, permitiendo explorar looks, perfiles y armarios compartidos. El contenido se presenta mediante vistas como **Community Feed**, **User Public Profile** y **Shared Wardrobe**.
+
+- **Organización comercial:**  
+  Las funcionalidades para tiendas se agrupan en un área específica de gestión que contempla el registro profesional, dashboard, catálogo, publicación de productos, perfil comercial y administración de códigos QR. Esta estructura permite separar las tareas comerciales de la experiencia personal del consumidor.
+
+- **Organización por capacidades tecnológicas:**  
+  Las funcionalidades que requieren tecnologías específicas se presentan como experiencias diferenciadas. Mirage identifica los elementos compatibles con 3D o AR mediante indicadores visuales, mientras que las funciones de IA se integran en procesos como reconocimiento de prendas, recomendaciones, AI Try-On y generación del avatar digital.
+
+El **avatar digital** de Mirage no corresponde a un personaje genérico o caricaturesco. Se entiende como una representación personalizada del usuario generada mediante Inteligencia Artificial a partir de sus fotografías y, de manera opcional, sus medidas corporales. Esta representación puede utilizarse posteriormente como base para el probador virtual y la visualización de diferentes prendas.
 
 ### 6.2.2. Labeling Systems
 
+Mirage utiliza etiquetas breves, claras y consistentes para identificar secciones, acciones y funcionalidades dentro de la aplicación móvil y de la Landing Page.
 
-Las etiquetas se definen en español, con palabras cortas y cotidianas, y se mantienen iguales en todas las pantallas donde aparece la misma función.
+La interfaz principal se plantea en inglés y mantiene los mismos términos cuando una función aparece en diferentes pantallas. Esto permite evitar variaciones innecesarias en la nomenclatura y facilita que el usuario reconozca rápidamente las acciones disponibles.
 
-**Aplicación – Consumidor de moda:**
+Las etiquetas priorizan palabras de uso cotidiano y expresiones orientadas a la acción. En funcionalidades tecnológicas se utilizan términos breves como **AI**, **3D** y **AR**, acompañados de textos explicativos cuando es necesario.
 
-| Sección / Función | Etiqueta |
-|-------------------|----------|
-| Pantalla principal con resumen y sugerencias del día | Inicio |
-| Inventario digital de prendas | Mi armario |
-| Registrar una prenda por foto | Agregar prenda |
-| Registrar una prenda por código QR | Escanear QR |
-| Agente de recomendación de outfits | Estilista IA |
-| Avatar y prueba de prendas | Probador |
-| Prueba con cámara en tiempo real | Probar en AR |
-| Combinaciones guardadas | Mis outfits |
-| Amigos y perfiles públicos | Comunidad |
-| Datos personales y preferencias | Mi perfil |
-| Configuración de gustos y colores | Mi estilo |
+#### Aplicación — Consumidor de moda
 
-**Aplicación – Tienda aliada:**
+| Sección / Función | Etiqueta utilizada |
+|---|---|
+| Pantalla principal | Home |
+| Armario digital | Closet / My Closet |
+| Agregar una nueva prenda | Add New Item |
+| Categoría de prendas superiores | Tops |
+| Categoría de prendas inferiores | Bottoms |
+| Categoría de calzado | Shoes |
+| Categoría de accesorios | Accessories |
+| Crear una combinación | Create / Create Outfit |
+| Seleccionar una prenda | Select Top / Select Item |
+| Vista previa del outfit | Your Look |
+| Probar el outfit mediante IA | Try on Me |
+| Fotografías del usuario | Your Photos |
+| Medidas corporales | Your Measurements |
+| Confirmación previa a generación | Ready to Try |
+| Generación mediante IA | Creating your look |
+| Resultado personalizado mediante IA | Your AI Look |
+| Comparación de resultados | Compare Look |
+| Visualización tridimensional | View in 3D |
+| Prueba mediante Realidad Aumentada | Try in AR |
+| Exploración de contenido y productos | Explore |
+| Búsqueda | Search |
+| Perfil del usuario | Profile |
+| Comunidad | Community |
+| Perfil público de otro usuario | User Public Profile |
+| Armario compartido | Shared Wardrobe |
+| Escaneo de código QR | Scan QR |
 
-| Sección / Función | Etiqueta |
-|-------------------|----------|
-| Resumen de la tienda | Inicio |
-| Prendas publicadas | Mi catálogo |
-| Publicar una prenda | Publicar prenda |
-| Generación de códigos de exhibición y adquisición | Códigos QR |
-| Información de la marca y enlaces externos | Perfil de tienda |
+#### Aplicación — Tienda aliada
 
-**Landing Page:**
+| Sección / Función | Etiqueta utilizada |
+|---|---|
+| Registro profesional de tienda | Create Store Account |
+| Panel principal | Store Dashboard |
+| Catálogo comercial | My Catalog |
+| Agregar un producto | Add Product |
+| Publicar un producto | Publish to Catalog |
+| Perfil comercial | Store Profile |
+| Enlaces externos de la tienda | External Channels |
+| Gestión de códigos QR | QR Codes |
+| Código para exhibición | Exhibition QR |
+| Código para adquisición | Acquisition QR |
+| Generar código QR | Generate QR Code |
+| Visitar canal oficial | Visit Official Store |
 
-| Sección | Etiqueta |
-|---------|----------|
+#### Avatar digital y probador virtual
+
+En Mirage, el término **Digital Avatar** se utiliza para identificar la representación personalizada del usuario generada mediante Inteligencia Artificial a partir de sus fotografías y medidas opcionales.
+
+| Sección / Función | Etiqueta utilizada |
+|---|---|
+| Configuración de representación personalizada | Create your digital avatar |
+| Resultado generado | Your Digital Avatar |
+| Ajuste de información corporal | Refine Body Profile |
+| Acceso al probador | Continue to Fitting Room |
+| Probador virtual | Virtual Fitting Room |
+| Cambiar una prenda | Change Item |
+| Guardar combinación | Save Look |
+| Generar una vista más realista | Try Realistic Preview |
+
+#### Landing Page
+
+| Sección / Función | Etiqueta utilizada |
+|---|---|
 | Sección principal | Inicio |
-| Funciones del producto | Funcionalidades |
+| Funcionalidades del producto | Funcionalidades |
 | Propuesta para comercios | Para tiendas |
-| Equipo, misión y visión | Nosotros |
-| Formulario B2B | Únete como tienda |
-| Botón de descarga | Descargar app |
+| Información del equipo | Nosotros |
+| Formulario para tiendas | Únete como tienda |
+| Descarga de la aplicación | Descargar app |
+
+Aunque la Landing Page actualmente utiliza etiquetas en español, Mirage contempla soporte de internacionalización para mantener equivalencias entre inglés y español sin modificar la estructura de navegación.
 
 ### 6.2.3. Searching Systems
 
-Mirage incorpora mecanismos de búsqueda pensados para un contenido principalmente visual, donde el usuario suele recordar una prenda por su tipo o color antes que por un nombre.
+Mirage incorpora mecanismos de búsqueda, filtrado y exploración orientados principalmente a contenido visual. Debido a que gran parte de la información de la aplicación corresponde a prendas, accesorios, outfits y productos de tiendas, los sistemas de búsqueda se complementan con categorías y filtros que permiten reducir rápidamente el contenido mostrado.
 
-- **Búsqueda y filtros del armario:** en Mi armario se incluye una barra de búsqueda por texto y filtros combinables por categoría, color, temporada y etiquetas personalizadas. Los resultados se actualizan en la misma grilla sin cambiar de pantalla.
-- **Selección de prenda clave en el Estilista IA:** al pedir una recomendación a partir de un artículo, el usuario busca la prenda dentro de su armario usando los mismos filtros, lo que mantiene una única forma de buscar en toda la aplicación.
-- **Búsqueda de usuarios:** en Comunidad se puede buscar a otras personas por nombre de usuario para seguirlas y explorar su armario público.
-- **Exploración del catálogo comercial:** las prendas de tiendas aliadas se filtran por categoría, tienda y color, permitiendo encontrar artículos que complementen el armario del usuario.
-- **Búsqueda en el catálogo de la tienda:** la tienda aliada puede buscar sus prendas publicadas por nombre o categoría para editarlas o generar sus códigos QR.
-- **Navegación por anclas en la Landing Page:** el menú superior lleva directamente a cada sección de la página, funcionando como el sistema de búsqueda del sitio.
+#### Búsqueda en el armario digital
+
+En **My Closet**, el usuario dispone de una barra de búsqueda que permite localizar prendas dentro de su armario. La búsqueda se complementa con categorías principales como:
+
+- **All**
+- **Tops**
+- **Bottoms**
+- **Shoes**
+- **Accessories**
+
+Dentro de las vistas específicas de cada categoría también se incorporan controles de **Filter** y **Sort**, permitiendo reducir u ordenar el contenido sin abandonar la pantalla actual.
+
+Esta estructura prioriza la exploración visual de las prendas mediante imágenes y cards.
+
+#### Búsqueda durante la creación de outfits
+
+Durante el proceso **Create Outfit**, el usuario puede acceder a la selección de prendas de su propio armario para completar las diferentes partes del look.
+
+La selección mantiene una estructura similar a la utilizada en el armario digital, permitiendo identificar visualmente las prendas disponibles según el tipo requerido, como tops, bottoms, shoes o accessories.
+
+De esta manera, Mirage mantiene patrones de búsqueda y selección consistentes entre la administración del armario y la creación de outfits.
+
+#### Búsqueda y exploración de accesorios
+
+En la sección de accesorios, el usuario puede utilizar categorías específicas para reducir los elementos mostrados, entre ellas:
+
+- **All**
+- **Bags**
+- **Glasses**
+- **Jewelry**
+- **Hats**
+
+Los accesorios compatibles con funcionalidades especiales también pueden identificarse mediante indicadores como **3D** y **AR READY**, facilitando el descubrimiento de elementos que permiten experiencias tridimensionales o de Realidad Aumentada.
+
+#### Búsqueda en Explore
+
+La sección **Explore** permite descubrir contenido y productos provenientes de tiendas aliadas. Desde esta sección el usuario puede acceder a una búsqueda específica y visualizar posteriormente los resultados encontrados.
+
+El flujo general se estructura de la siguiente manera:
+
+**Explore → Search → Search Results → Store Product Detail**
+
+La búsqueda permite reducir el número de productos mostrados antes de ingresar al detalle de un artículo.
+
+#### Exploración de contenido en Community
+
+El módulo **Community** utiliza principalmente mecanismos de descubrimiento mediante categorías de contenido como:
+
+- **For You**
+- **Trending**
+- **Following**
+
+Adicionalmente, dentro de un **Shared Wardrobe**, el usuario puede utilizar categorías para explorar las prendas públicas compartidas por otro usuario.
+
+#### Búsqueda en el catálogo de una tienda aliada
+
+En **My Catalog**, la tienda dispone de una barra de búsqueda para localizar productos publicados dentro de su propio catálogo.
+
+La búsqueda se complementa con categorías o estados como:
+
+- **All**
+- **Clothing**
+- **Accessories**
+- **Drafts**
+
+Esto permite que la tienda encuentre rápidamente un producto para visualizarlo, editarlo o administrar su estado de publicación.
+
+En conjunto, estos mecanismos mantienen un patrón consistente basado en **búsqueda por texto, categorías, filtros y exploración visual**, evitando introducir formas de búsqueda diferentes en cada módulo de Mirage.
 
 ### 6.2.4. SEO Tags and Meta Tags
 
-Se definen las etiquetas que mejoran la visibilidad de Mirage en buscadores (SEO, Search Engine Optimization) y en tiendas de aplicaciones (ASO, App Store Optimization).
+Mirage define etiquetas de **SEO (Search Engine Optimization)** para mejorar la identificación y visibilidad de la Landing Page en motores de búsqueda, así como información de **ASO (App Store Optimization)** para describir la aplicación dentro de las tiendas de aplicaciones.
 
-**Landing Page:**
+Las etiquetas utilizadas mantienen términos relacionados directamente con la propuesta de valor de Mirage, como armario digital, Inteligencia Artificial, outfits, probador virtual, Realidad Aumentada y moda.
+
+#### Landing Page — SEO
 
 | Etiqueta | Valor asignado |
-|----------|----------------|
-| Title | Mirage – Tu armario digital con estilista IA |
-| Meta Description | Digitaliza tu ropa, recibe combinaciones creadas con inteligencia artificial y pruébate prendas en tu avatar o con realidad aumentada antes de vestirlas. |
-| Keywords | armario digital, outfits, estilista IA, probador virtual, realidad aumentada, moda, combinaciones de ropa, Mirage |
+|---|---|
+| Title | Mirage – Tu armario digital con Inteligencia Artificial |
+| Meta Description | Organiza tu ropa, crea nuevos outfits y explora tu estilo con Inteligencia Artificial, visualización 3D y Realidad Aumentada. |
+| Keywords | Mirage, armario digital, outfits, moda, inteligencia artificial, AI Try-On, probador virtual, realidad aumentada, accesorios 3D |
 | Author | ReWear |
 | Viewport | width=device-width, initial-scale=1 |
 | Language | es |
 
-**Aplicación móvil:**
+El **Title** identifica la marca y resume la propuesta principal del producto, mientras que la **Meta Description** presenta de forma breve las funcionalidades más representativas de Mirage.
+
+Las palabras clave se relacionan directamente con las capacidades principales de la solución y permiten mantener consistencia entre el contenido visible de la Landing Page y sus metadatos.
+
+#### Aplicación móvil — ASO
+
+Debido a que la interfaz principal de la aplicación utiliza inglés, los datos principales para publicación se plantean inicialmente en este idioma, manteniendo la posibilidad de localizar posteriormente la información para español latinoamericano.
 
 | Elemento | Valor asignado |
-|----------|----------------|
+|---|---|
 | App Title | Mirage |
-| App Subtitle | Tu armario digital y probador virtual |
-| App Description | Mirage te ayuda a organizar tu ropa en un armario digital, recibir outfits recomendados por IA según el clima o la ocasión, probarte prendas sobre tu avatar o con realidad aumentada y descubrir prendas de tiendas aliadas que combinan con tu estilo. |
-| App Keywords | armario, ropa, outfits, moda, estilista, probador virtual, realidad aumentada, avatar |
-| App Category | Estilo de vida |
+| App Subtitle | Your AI-powered digital wardrobe |
+| App Description | Mirage helps you organize your digital wardrobe, create outfits, receive personalized style recommendations, generate AI-powered visual previews and explore fashion through 3D accessories and Augmented Reality. You can also discover products from partner stores and use them as references for your looks. |
+| App Keywords | digital wardrobe, outfits, fashion, AI stylist, AI try-on, virtual fitting, augmented reality, 3D accessories |
+| App Category | Lifestyle |
 | App Developer | ReWear |
+
+Para la versión localizada en español latinoamericano, los textos y palabras clave podrán adaptarse manteniendo el mismo significado y estructura general de la aplicación.
+
+De esta manera, tanto el SEO de la Landing Page como el ASO de la aplicación utilizan términos consistentes con la identidad, funcionalidades y propuesta de valor de Mirage.
 
 ### 6.2.5. Navigation Systems
 
-**Landing Page:**
+Mirage utiliza sistemas de navegación diferentes según el tipo de experiencia: la Landing Page emplea navegación vertical de una sola página, mientras que la aplicación móvil utiliza navegación inferior persistente para acceder a las funciones principales.
 
-La Landing Page sigue una navegación de una sola página con desplazamiento vertical y un encabezado fijo:
+#### Landing Page
 
-- **Inicio:** presenta la propuesta de valor, las funciones principales (armario digital y probador virtual) y el botón de descarga.
-- **Funcionalidades:** describe el armario digital, el Estilista IA, el avatar, la realidad aumentada y la comunidad.
-- **Para tiendas:** explica los beneficios para comercios aliados, como el catálogo comercial y los códigos QR.
-- **Nosotros:** muestra al equipo, la misión y la visión.
-- **Únete como tienda:** formulario de contacto para solicitar la incorporación a la red de tiendas aliadas.
-- **Footer:** enlaces a redes sociales, políticas de privacidad y contacto.
+La Landing Page utiliza una navegación de una sola página con desplazamiento vertical y un encabezado fijo.
 
-En móvil, el encabezado se reduce al logotipo y a un ícono de menú que despliega las mismas secciones.
+Las opciones principales del menú son:
 
-**Aplicación – Consumidor de moda:**
+- **Inicio:** presenta la propuesta de valor de Mirage y los accesos principales para descargar la aplicación.
+- **Funcionalidades:** dirige hacia la sección donde se presentan las principales capacidades del producto.
+- **Para tiendas:** presenta la propuesta de valor dirigida a comercios interesados en formar parte de Mirage.
+- **Nosotros:** permite acceder a la información del equipo, misión y visión.
+- **Descargar app:** funciona como llamada a la acción principal del encabezado.
 
-Se utiliza una barra de navegación inferior con cinco secciones:
+Adicionalmente, la página incluye la sección **Únete como tienda**, donde los representantes de comercios pueden completar un formulario para solicitar información.
 
-- **Inicio:** sugerencia de outfit del día, accesos rápidos y actividad reciente de amigos.
-- **Armario:** grilla de prendas con búsqueda, filtros y el botón para agregar prendas por foto o QR.
-- **Estilista:** generación de outfits por contexto o a partir de una prenda clave, con opciones para ajustar, guardar o descartar.
-- **Probador:** avatar personalizado, prueba de prendas y accesorios, comparación de looks y acceso al modo AR.
-- **Perfil:** datos personales, preferencias de estilo, outfits guardados y acceso a Comunidad.
+En pantallas móviles, la navegación se adapta a un menú compacto mediante un ícono de tipo hamburger, manteniendo disponibles las mismas secciones de la versión Desktop.
 
-Las pantallas secundarias se abren sobre la sección actual con un botón de retroceso, y los procesos de varios pasos muestran un indicador de progreso.
+El Footer complementa la navegación mediante accesos a información institucional, políticas, contacto y redes sociales.
 
-**Aplicación – Tienda aliada:**
+#### Aplicación — Consumidor de moda
 
-La barra inferior se reduce a cuatro secciones: Inicio, Catálogo, Códigos QR y Perfil de tienda.
+La navegación principal de la aplicación se organiza mediante una barra inferior persistente con cinco accesos:
+
+- **Home:** concentra el contenido inicial, recomendaciones y accesos a funcionalidades relevantes.
+- **Closet:** permite acceder al armario digital, visualizar las prendas registradas, utilizar categorías y agregar nuevos elementos.
+- **Create:** constituye la acción central de la aplicación y permite iniciar procesos relacionados con la creación de outfits y experiencias de prueba.
+- **Explore:** permite descubrir prendas, accesorios y productos provenientes de tiendas aliadas.
+- **Profile:** agrupa la información personal del usuario y el acceso a funcionalidades relacionadas con su perfil.
+
+La opción **Create** ocupa la posición central de la barra y recibe un mayor énfasis visual para facilitar el acceso a las acciones principales relacionadas con la creación de looks.
+
+Las pantallas secundarias utilizan navegación mediante un botón de retroceso, permitiendo regresar al nivel anterior sin perder la referencia del flujo actual.
+
+Algunas funcionalidades siguen recorridos secuenciales. Por ejemplo:
+
+**Create Outfit → Select Garment → Outfit Preview → AI Try-On → AI Look Result**
+
+De manera similar, la experiencia de Realidad Aumentada sigue un recorrido desde el detalle del accesorio hacia la visualización tridimensional y posteriormente hacia el modo AR:
+
+**Accessory Detail → 3D Viewer → Try in AR**
+
+La exploración de productos comerciales mantiene igualmente una navegación progresiva:
+
+**Explore → Search → Search Results → Store Product Detail**
+
+#### Navegación — Community
+
+La sección **Community** permite navegar entre contenido compartido por otros usuarios y sus perfiles públicos.
+
+El recorrido general puede estructurarse de la siguiente manera:
+
+**Community Feed → User Public Profile → Shared Wardrobe**
+
+Desde estas vistas el usuario puede explorar looks, perfiles y prendas públicas sin abandonar la experiencia principal de Mirage.
+
+#### Aplicación — Tienda aliada
+
+Las funcionalidades de la tienda aliada se agrupan dentro de una experiencia de gestión comercial orientada a administrar su presencia dentro de Mirage.
+
+Las principales áreas son:
+
+- **Store Dashboard:** resumen general de la cuenta profesional.
+- **My Catalog:** administración de prendas y accesorios publicados.
+- **QR Codes:** gestión de códigos QR comerciales asociados a productos.
+- **Store Profile:** administración de información comercial y canales externos.
+
+Desde el catálogo, la tienda puede acceder al registro o edición de productos, mientras que desde la gestión de QR puede generar y visualizar códigos asociados a artículos específicos.
+
+Los recorridos principales son:
+
+**Store Dashboard → My Catalog → Add Product → Publish to Catalog**
+
+y
+
+**Store Dashboard → QR Codes → Generate QR Code → QR Code Detail**
+
+De esta manera, Mirage mantiene una navegación diferenciada entre consumidor y tienda, pero conserva patrones visuales y de interacción consistentes dentro del mismo ecosistema.
 
 ## 6.3. Landing Page UI Design
 
@@ -2132,15 +2474,38 @@ En esta sección se presenta el diseño de la Landing Page de Mirage. Su funció
 
 ### 6.3.1. Landing Page Wireframe
 
+En esta sección se presentan los wireframes de la Landing Page de Mirage, los cuales permiten definir la estructura, distribución y jerarquía de los principales bloques de contenido antes de aplicar el diseño visual final.
+
+Los wireframes consideran tanto la versión Desktop como Mobile y muestran la ubicación del encabezado, Hero, funcionalidades, sección para tiendas, información del equipo, formulario de contacto y Footer.
+
+Su objetivo es validar la organización del contenido, el recorrido vertical de la página y la ubicación de las principales llamadas a la acción antes de desarrollar los mock-ups de alta fidelidad.
+
+<p align="center">
+  <img src="assets/images/ux-design/landing-page-wireframe.png" alt="Landing Page Wireframe de Mirage" width="800">
+</p>
+
 ### 6.3.2. Landing Page Mock-up
+
+En esta sección se presentan los mock-ups de alta fidelidad de la Landing Page de Mirage, desarrollados a partir de la estructura previamente definida en los wireframes.
+
+Los mock-ups incorporan la identidad visual final del producto, incluyendo la paleta de colores, las tipografías **Lora** e **Inter**, la iconografía, los componentes de interfaz y las imágenes asociadas a moda, tecnología y a la aplicación móvil.
+
+La propuesta contempla versiones **Desktop y Mobile**, manteniendo una experiencia visual consistente en ambos formatos. El diseño prioriza la presentación de la propuesta de valor de Mirage, sus funcionalidades principales, la tecnología diferencial, la sección dirigida a tiendas aliadas y las llamadas a la acción para descargar la aplicación o solicitar información comercial.
+
+<p align="center">
+  <img src="assets/images/ux-design/landing-page-mockup.png" alt="Landing Page Mock-up de Mirage" width="800">
+</p>
 
 ## 6.4. Applications UX/UI Design
 
 En esta sección se presenta el diseño de la aplicación móvil de Mirage para sus dos segmentos objetivo. El diseño se organiza por módulos funcionales, que corresponden a las épicas del Product Backlog, para facilitar su trazabilidad con las historias de usuario.
 
 ### 6.4.1. Applications Wireframes
+
 ### 6.4.2. Applications Wireflow Diagrams
+
 ### 6.4.3. Applications Mock-ups
+
 ### 6.4.4. Applications User Flow Diagrams
 
 ## 6.5. Applications Prototyping
