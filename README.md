@@ -1815,7 +1815,7 @@ El Diagrama de Despliegue ilustra la distribución física de Mirage en una infr
 ## 5.1. Bounded Context: Profile
 
 <p align="center">
-  <img src="assets/img/Capitulo-4/c4/Profile-BD.png" alt="BoundedProfile" style="width: 700">
+  <img src="assets/img/Capitulo-4/C4/Profile-BD.png" alt="BoundedProfile" style="width: 700">
 </p>
 
 ### 5.1.1. Domain Layer
@@ -1947,7 +1947,7 @@ El `Profile Repository` encapsula el acceso a la base de datos, mientras que el 
 ## 5.1. Bounded Context: Digital Closet
 
 <p align="center">
-  <img src="assets/img/Capitulo-4/c4/DigitalCloset-BD.png" alt="BoundedDigitalCloset" style="width: 700">
+  <img src="assets/img/Capitulo-4/C4/DigitalCloset-BD.png" alt="BoundedDigitalCloset" style="width: 700">
 </p>
 
 
@@ -2087,7 +2087,7 @@ La Infrastructure Layer implementa el almacenamiento del armario y las integraci
 ## 5.1. Bounded Context: Recommendation
 
 <p align="center">
-  <img src="assets/img/Capitulo-4/c4/Recommendation-BD.png" alt="BoundedRecommendation" style="width: 700">
+  <img src="assets/img/Capitulo-4/C4/Recommendation-BD.png" alt="BoundedRecommendation" style="width: 700">
 </p>
 
 
@@ -2203,7 +2203,7 @@ Recommendation no accede directamente a las bases de datos de Profile o Digital 
 ## 5.1. Bounded Context: Augmented Reality
 
 <p align="center">
-  <img src="assets/img/Capitulo-4/c4/AugmentedReality-BD.png" alt="BoundedAugmentedReality " style="width: 700">
+  <img src="assets/img/Capitulo-4/C4/AugmentedReality-BD.png" alt="BoundedAugmentedReality " style="width: 700">
 </p>
 
 ### 5.4.1. Domain Layer
@@ -2322,7 +2322,7 @@ La Infrastructure Layer contiene los mecanismos técnicos utilizados por el disp
 ## 5.1. Bounded Context: Social Interactions
 
 <p align="center">
-  <img src="assets/img/Capitulo-4/c4/Profile-BD.png" alt="BoundedSocialInteractions" style="width: 700">
+  <img src="assets/img/Capitulo-4/C4/SocialInteractions-BD.png" alt="BoundedSocialInteractions" style="width: 700">
 </p>
 
 ### 5.5.1. Domain Layer
@@ -2461,7 +2461,7 @@ La Infrastructure Layer implementa la persistencia de relaciones sociales y las 
 ## 5.1. Bounded Context: Store Catalog
 
 <p align="center">
-  <img src="assets/img/Capitulo-4/c4/StoreCatalog-BD.png" alt="BoundedStoreCatalog" style="width: 700">
+  <img src="assets/img/Capitulo-4/C4/StoreCatalog-BD.png" alt="BoundedStoreCatalog" style="width: 700">
 </p>
 
 ### 5.6.1. Domain Layer
