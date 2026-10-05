@@ -245,6 +245,26 @@ TB1: Me encargué de redactar la sección de Domain-Driven Design con Event Stor
       - [5.6.6.1. Bounded Context Domain Layer Class Diagrams](#5661-bounded-context-domain-layer-class-diagrams)
       - [5.6.6.2. Bounded Context Database Design Diagram](#5662-bounded-context-database-design-diagram)
         
+ - [CAPÍTULO VI: Solution UX Design](#capítulo-vi-solution-ux-design)
+  - [6.1. Style Guidelines](#61-style-guidelines)
+    - [6.1.1. General Style Guidelines](#611-general-style-guidelines)
+    - [6.1.2. Web, Mobile & Devices Style Guidelines](#612-web-mobile--devices-style-guidelines)
+  - [6.2. Information Architecture](#62-information-architecture)
+    - [6.2.1. Organization Systems](#621-organization-systems)
+    - [6.2.2. Labeling Systems](#622-labeling-systems)
+    - [6.2.3. Searching Systems](#623-searching-systems)
+    - [6.2.4. SEO Tags and Meta Tags](#624-seo-tags-and-meta-tags)
+    - [6.2.5. Navigation Systems](#625-navigation-systems)
+  - [6.3. Landing Page UI Design](#63-landing-page-ui-design)
+    - [6.3.1. Landing Page Wireframe](#631-landing-page-wireframe)
+    - [6.3.2. Landing Page Mock-up](#632-landing-page-mock-up)
+  - [6.4. Applications UX/UI Design](#64-applications-uxui-design)
+    - [6.4.1. Applications Wireframes](#641-applications-wireframes)
+    - [6.4.2. Applications Wireflow Diagrams](#642-applications-wireflow-diagrams)
+    - [6.4.3. Applications Mock-ups](#643-applications-mock-ups)
+    - [6.4.4. Applications User Flow Diagrams](#644-applications-user-flow-diagrams)
+  - [6.5. Applications Prototyping](#65-applications-prototyping)
+           
 - [Conclusiones](#conclusiones)
 - [Conclusiones y Recomendaciones](#conclusiones-y-recomendaciones)
   
@@ -1871,6 +1891,32 @@ El Diagrama de Despliegue ilustra la distribución física de Mirage en una infr
 ### 5.6.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.6.6.1. Bounded Context Domain Layer Class Diagrams
 #### 5.6.6.2. Bounded Context Database Design Diagram
+
+# Capítulo VI: Solution UX Design
+
+## 6.1. Style Guidelines
+### 6.1.1. General Style Guidelines
+### 6.1.2. Web, Mobile & Devices Style Guidelines
+
+## 6.2. Information Architecture
+### 6.2.1. Organization Systems
+### 6.2.2. Labeling Systems
+### 6.2.3. Searching Systems
+### 6.2.4. SEO Tags and Meta Tags
+### 6.2.5. Navigation Systems
+
+## 6.3. Landing Page UI Design
+### 6.3.1. Landing Page Wireframe
+### 6.3.2. Landing Page Mock-up
+
+## 6.4. Applications UX/UI Design
+### 6.4.1. Applications Wireframes
+### 6.4.2. Applications Wireflow Diagrams
+### 6.4.3. Applications Mock-ups
+### 6.4.4. Applications User Flow Diagrams
+
+## 6.5. Applications Prototyping
+
 
 # Conclusiones
 
