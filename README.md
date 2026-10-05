@@ -100,6 +100,7 @@ TB1 (19/09/2026):
 <td>
 <b>Cabanillas Meza, Jose Mateo</b><br>
 TB1: Participé exponiendo los diagramas de arquitectura de software (system landscape, contexto, contenedores y despliegue) ante el equipo y el docente.<br><br>
+TP: Participé en el desarrollo del proyecto realizando los diagramas C4, definiendo los sistemas tecnológicos y elaborando los wireframes, comunicando y coordinando las decisiones de diseño con el equipo.<br><br>
 <b>Ortiz Cardenas, Johanna Antuanete</b><br>
 TB1: Participé explicando el Attribute-Driven Design (drivers, decisiones de diseño y escenarios de calidad) al equipo y en la sustentación.<br><br>
 <b>Sánchez Manrique, Italo Ludwing</b><br>
@@ -108,7 +109,9 @@ TB1: Participé comunicando los hallazgos de entrevistas, needfinding y ubiquito
 TB1: Participé presentando el perfil de la startup, el proceso Lean UX y los segmentos objetivo ante el equipo y el docente.<br><br>
 <b>Zegarra López, Renato Sebastián Rubber</b><br>
 TB1: Participé exponiendo el Event Storming y el modelado estratégico de DDD al equipo.
+  TP: Participé en el desarrollo del proyecto elaborando los diagramas C4, definiendo los sistemas tecnológicos y diseñando los wireframes, coordinando las decisiones de arquitectura y diseño con el equipo.<br><br>
 </td>
+
 <td>TB1: El equipo comunicó oralmente sus avances de forma clara y ordenada, adaptando el nivel técnico según la audiencia (compañeros, docente).</td>
 </tr>
 <tr>
@@ -116,6 +119,7 @@ TB1: Participé exponiendo el Event Storming y el modelado estratégico de DDD a
 <td>
 <b>Cabanillas Meza, Jose Mateo</b><br>
 TB1: Me encargué de redactar la sección de arquitectura de software del informe (4.3).<br><br>
+TP: Documenté en el proyecto los diagramas C4, los sistemas tecnológicos y los wireframes, describiendo de manera clara la arquitectura y la propuesta de solución.<br><br>
 <b>Ortiz Cardenas, Johanna Antuanete</b><br>
 TB1: Me encargué de redactar la sección de Attribute-Driven Design del informe (4.1).<br><br>
 <b>Sánchez Manrique, Italo Ludwing</b><br>
@@ -124,7 +128,9 @@ TB1: Me encargué de redactar las secciones de entrevistas, needfinding y ubiqui
 TB1: Me encargué de redactar el perfil de la startup, el Lean UX y el análisis de competidores del informe (1.1 a 2.1).<br><br>
 <b>Zegarra López, Renato Sebastián Rubber</b><br>
 TB1: Me encargué de redactar la sección de Domain-Driven Design con Event Storming del informe (4.2.2 a 4.2.5).
+  TP: Documenté los diagramas C4, los sistemas tecnológicos y los wireframes desarrollados para el proyecto, explicando de forma clara la arquitectura y el diseño de la solución.</b><br>
 </td>
+
 <td>TB1: El equipo elaboró un informe escrito estructurado y coherente, integrando cada sección de forma clara para distintos lectores (docente, equipo).</td>
 </tr>
 </tbody>
