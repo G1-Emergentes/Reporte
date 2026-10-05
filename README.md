@@ -2573,6 +2573,106 @@ Este grupo presenta la estructura de las pantallas utilizadas para crear la repr
 
 ### 6.4.2. Applications Wireflow Diagrams
 
+En esta sección se presentan los Wireflow Diagrams de Mirage. Cada wireflow combina los wireframes de baja fidelidad con las conexiones entre pantallas, permitiendo visualizar la estructura de cada vista y la secuencia que sigue el usuario para completar una tarea dentro de la aplicación.
+
+A diferencia de los User Flow Diagrams, los wireflows priorizan la disposición de los elementos en cada pantalla y los puntos de interacción que generan el cambio de una vista a otra. Los flujos se organizan según los mismos objetivos definidos para los User Flows, lo que facilita la trazabilidad entre ambos artefactos.
+
+#### KnowUs
+
+Este wireflow muestra la secuencia de pantallas de bienvenida y onboarding (W01–W04). Cada vista presenta una funcionalidad clave de Mirage mediante una estructura simple de imagen, título, texto breve y botón de avance, hasta llegar a la pantalla de acceso.
+
+<p align="center">
+  <img src="assets/ux-design/KnowUs_wireframe.png" alt="Wireflow KnowUs de Mirage" width="900">
+</p>
+
+#### Account
+
+Este wireflow representa la pantalla de acceso a la cuenta (W05). Muestra la disposición de los campos de correo y contraseña, el botón principal de inicio de sesión y las alternativas de acceso con Google y Apple, así como la transición hacia Home una vez autenticado el usuario.
+
+<p align="center">
+  <img src="assets/ux-design/Account_wireframe.png" alt="Wireflow Account de Mirage" width="900">
+</p>
+
+#### Navigate
+
+Este wireflow presenta la navegación principal del consumidor (W06–W13). Parte de Home y conecta con el armario digital, las categorías de prendas y accesorios, el detalle de una prenda y el registro de nuevas prendas mediante fotografía y reconocimiento con IA.
+
+La barra de navegación inferior se mantiene visible en las pantallas principales, permitiendo identificar los puntos de acceso entre las distintas secciones de la aplicación.
+
+<p align="center">
+  <img src="assets/ux-design/Navigate_wireframe.png" alt="Wireflow Navigate de Mirage" width="900">
+</p>
+
+#### Outfit Builder
+
+Este wireflow muestra la estructura de las pantallas involucradas en la creación de un outfit y su visualización con IA (W14–W23).
+
+Inicia en el área de composición con espacios para cada tipo de prenda, continúa con la selección de prendas desde el armario y la vista previa del look. Luego avanza hacia el AI Try-On, donde se ubican las tarjetas de carga de fotografías, los campos de medidas opcionales, la confirmación y la pantalla de generación. Finaliza con la vista del resultado y la comparación entre el outfit original y la vista previa generada.
+
+<p align="center">
+  <img src="assets/ux-design/Outfit_Builder_wireframe.png" alt="Wireflow Outfit Builder de Mirage" width="900">
+</p>
+
+#### Augmented Reality
+
+Este wireflow presenta la secuencia de pantallas para visualizar accesorios en 3D y Realidad Aumentada (W10, W24–W27).
+
+El recorrido inicia en la categoría de accesorios, donde las insignias 3D y AR READY identifican los elementos compatibles. Continúa con el detalle del accesorio, el visor 3D, la solicitud de permiso de cámara y finalmente la experiencia AR a pantalla completa. Las acciones Move, Scale, Rotate, Capture, Save y Change Item se representan como interacciones dentro de la misma pantalla y no como vistas adicionales.
+
+<p align="center">
+  <img src="assets/ux-design/Augmented_Reality_wireframe.png" alt="Wireflow Augmented Reality de Mirage" width="900">
+</p>
+
+#### Explore
+
+Este wireflow muestra la estructura del descubrimiento de productos de tiendas aliadas (W28–W32).
+
+Incluye la vista Explore con pestañas y tarjetas de productos, la pantalla de búsqueda con búsquedas recientes y filtros, la grilla de resultados y el detalle del producto. En este último, las acciones disponibles son guardar como referencia, probar en AR y visitar la tienda, sin incluir opciones de compra dentro de la aplicación.
+
+<p align="center">
+  <img src="assets/ux-design/Explore_wireframe.png" alt="Wireflow Explore de Mirage" width="900">
+</p>
+
+#### Community
+
+Este wireflow representa la estructura de la experiencia social (W33–W35).
+
+Parte del feed de la comunidad, compuesto por tarjetas de publicaciones, avanza hacia el perfil público de otro usuario con sus estadísticas y outfits, y finaliza en el Shared Wardrobe, donde se muestran las prendas compartidas junto con las acciones para probarlas o solicitarlas.
+
+<p align="center">
+  <img src="assets/ux-design/Community_wireframe.png" alt="Wireflow Community de Mirage" width="900">
+</p>
+
+#### Partner Store
+
+Este wireflow presenta las pantallas destinadas a las tiendas aliadas (W36–W40).
+
+Incluye el formulario de creación del perfil de tienda, el panel principal con indicadores y accesos rápidos, la lista del catálogo comercial, el formulario para agregar un producto y el perfil público de la marca con sus canales externos.
+
+<p align="center">
+  <img src="assets/ux-design/Partner_Store_wireframe.png" alt="Wireflow Partner Store de Mirage" width="900">
+</p>
+
+#### QR Experience
+
+Este wireflow muestra las pantallas que conectan la tienda física con Mirage mediante códigos QR (W41–W44).
+
+Desde la tienda, se visualiza la lista de códigos generados y el detalle de un QR con opciones de descarga. Desde el consumidor, se presenta la cámara de escaneo y la pantalla del producto identificado, con acceso a probarlo en AR o visitar el canal de la tienda.
+
+<p align="center">
+  <img src="assets/ux-design/QR_Experience_wireframe.png" alt="Wireflow QR Experience de Mirage" width="900">
+</p>
+
+#### Avatar
+
+Este wireflow representa la estructura de las pantallas para crear y utilizar el avatar digital (W45–W47).
+
+Inicia con la carga de la selfie y la fotografía de cuerpo entero, continúa con la vista del avatar generado y sus opciones de ajuste, y finaliza en el Virtual Fitting Room, donde el usuario selecciona prendas por categoría para visualizarlas sobre su avatar.
+
+<p align="center">
+  <img src="assets/ux-design/Avatar_wireframe.png" alt="Wireflow Avatar de Mirage" width="900">
+</p>
+
 ### 6.4.3. Applications Mock-ups
 
 En esta sección se presentan los mock-ups de alta fidelidad de la aplicación móvil de Mirage. Las pantallas se organizan por grupos funcionales para facilitar la visualización de cada parte de la experiencia y mostrar con mayor detalle la evolución de los principales flujos de la aplicación.
