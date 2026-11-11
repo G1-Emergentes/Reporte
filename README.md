@@ -2882,6 +2882,142 @@ El prototipo cubre los User Flows presentados en la sección anterior para ambos
 
 Enlace del vídeo: `https://youtu.be/FMOcAuq7MDI`
 
+# Capítulo VII: Product Implementation, Validation & Deployment
+
+## 7.1.	Software Configuration Management.
+
+A continuación, se va a realizar el proceso por el cual organizamos y gestionamos los cambios desarrolados en el proyecto de Mirage
+
+### 7.1.1.	Software Development Environment Configuration.
+
+Para el desarrollo de **Mirage**, solución digital propuesta por la startup ReWear, se establece un conjunto de herramientas tecnológicas que permitirá al equipo colaborar durante las distintas etapas del ciclo de vida del software. Estas herramientas abarcan la gestión del proyecto, administración de requerimientos, diseño de producto, desarrollo, pruebas, despliegue y documentación.
+
+La selección considera las características de Mirage, una plataforma orientada a la gestión del armario digital, creación y recomendación personalizada de outfits mediante inteligencia artificial, visualización de prendas mediante avatares tridimensionales, experiencias de realidad aumentada e integración de catálogos comerciales de tiendas de moda.
+
+Las herramientas se organizan según su propósito dentro del proyecto, diferenciando las tecnologías contempladas en la arquitectura de las herramientas de apoyo propuestas para su implementación y validación.
+
+## Project Management
+
+Para gestionar las actividades del proyecto se consideran herramientas que permitan organizar los sprints, asignar responsabilidades, establecer prioridades y realizar el seguimiento de los entregables del equipo.
+
+| Plataforma / Herramienta | Descripción y propósito en Mirage | Enlace |
+|---|---|---|
+| **Trello** | Plataforma colaborativa propuesta para organizar las actividades del equipo mediante tableros Kanban. Permitirá gestionar los sprints, distribuir tareas, asignar responsables y visualizar el avance de los módulos de armario digital, recomendaciones con IA, probador virtual y catálogo comercial. | https://trello.com |
+| **GitHub Projects** | Herramienta de planificación integrada con GitHub. Se propone para relacionar actividades técnicas con issues y pull requests, facilitando el seguimiento de errores, mejoras y funcionalidades durante el desarrollo de Mirage. | https://github.com/features/issues |
+
+## Requirements Management
+
+Para la gestión de requerimientos se contemplan herramientas que faciliten el análisis de las necesidades de los consumidores de moda y las tiendas aliadas, la documentación de historias de usuario y la validación de los procesos definidos mediante Lean UX y Domain-Driven Design.
+
+| Plataforma / Herramienta | Descripción y propósito en Mirage | Enlace |
+|---|---|---|
+| **UXPressia** | Plataforma de diseño de experiencias de usuario propuesta para elaborar User Personas, Customer Journey Maps y Empathy Maps. Permitirá representar las necesidades, motivaciones y dificultades de los consumidores que desean organizar sus prendas y de las tiendas interesadas en promocionar sus catálogos. | https://uxpressia.com |
+| **Mural** | Herramienta colaborativa propuesta para realizar sesiones de brainstorming, Event Storming, Scenario Mapping e Impact Mapping. Facilitará la identificación de procesos, eventos del dominio y oportunidades de mejora en la experiencia de Mirage. | https://www.mural.co |
+| **GitHub Issues** | Sistema de seguimiento de tareas y requerimientos integrado con los repositorios del proyecto. Permitirá registrar historias de usuario, criterios de aceptación, incidencias y solicitudes de mejora, manteniendo trazabilidad entre las necesidades funcionales y su implementación. | https://github.com/features/issues |
+
+## Product Design
+
+En la etapa de diseño se consideran herramientas orientadas a la elaboración de interfaces, prototipos interactivos, diagramas de arquitectura, modelos de datos y recursos visuales para las experiencias tridimensionales propuestas.
+
+| Plataforma / Herramienta | Descripción y propósito en Mirage | Enlace |
+|---|---|---|
+| **Figma** | Plataforma de diseño colaborativo utilizada para desarrollar wireframes, mockups y prototipos interactivos de Mirage. Permite representar los flujos de registro de prendas, organización del armario, generación de outfits, gestión de tiendas aliadas, creación del avatar y probador virtual, facilitando las pruebas de usabilidad antes de la implementación. | https://www.figma.com |
+| **Lucidchart** | Herramienta de diagramación propuesta para representar procesos de negocio, diagramas UML, flujos de interacción y estructuras del sistema. Permitirá documentar la relación entre los módulos funcionales de Mirage. | https://www.lucidchart.com |
+| **Structurizr** | Plataforma especializada en modelado de arquitecturas mediante el modelo C4. Se propone para representar los niveles de contexto, contenedores y componentes de Mirage, incluyendo la aplicación Flutter, la landing page Angular, los servicios backend y las integraciones de inteligencia artificial. | https://structurizr.com |
+| **Vertabelo** | Herramienta de modelado de bases de datos relacionales propuesta para diseñar y documentar los esquemas de PostgreSQL. Facilitará la representación de entidades asociadas a usuarios, prendas, outfits, tiendas, catálogos y relaciones entre los distintos Bounded Contexts. | https://vertabelo.com |
+| **Canva** | Plataforma de diseño visual propuesta para elaborar presentaciones, elementos gráficos, materiales promocionales y recursos de comunicación asociados con la identidad de ReWear y el producto Mirage. | https://www.canva.com |
+| **Blender** | Software de creación y edición de contenido tridimensional propuesto para preparar, inspeccionar y optimizar modelos de prendas y accesorios. Podrá utilizarse durante los prototipos del avatar digital y las experiencias 3D, siempre que su viabilidad técnica sea confirmada. | https://www.blender.org/download/ |
+
+## Software Development
+
+Para la implementación de Mirage se consideran herramientas compatibles con la arquitectura tecnológica diseñada, compuesta por una aplicación móvil desarrollada en Flutter, una landing page en Angular, servicios backend en C++ y Python, almacenamiento relacional y componentes especializados en inteligencia artificial.
+
+| Plataforma / Herramienta | Descripción y propósito en Mirage | Enlace |
+|---|---|---|
+| **Git y GitHub** | Git permitirá gestionar versiones del código fuente, mientras que GitHub facilitará el trabajo colaborativo mediante ramas, commits y pull requests. Se utilizará como plataforma de repositorios para los componentes de Mirage y su documentación técnica. | https://git-scm.com/downloads / https://github.com |
+| **Visual Studio Code** | Editor de código multiplataforma propuesto para desarrollar y mantener los componentes web, móviles y backend. Su compatibilidad con extensiones para Dart, Flutter, Angular, Python y C++ facilitará el trabajo entre los integrantes del equipo. | https://code.visualstudio.com/download |
+| **Flutter SDK y Dart** | Framework y lenguaje definidos para construir la aplicación móvil de Mirage. Permitirán implementar las interfaces del armario digital, el registro fotográfico de prendas, las recomendaciones personalizadas, la interacción con el avatar y la integración con los servicios backend. | https://docs.flutter.dev/install |
+| **Android Studio** | Entorno de desarrollo que permitirá configurar el Android SDK, administrar emuladores y ejecutar pruebas de la aplicación Flutter. Será especialmente relevante para validar funcionalidades relacionadas con cámara, captura de imágenes, lectura de códigos QR y rendimiento móvil. | https://developer.android.com/studio |
+| **Angular CLI y Node.js** | Herramientas contempladas para desarrollar la landing page de Mirage. Permitirán implementar la presentación del producto, la información institucional y el formulario de contacto para tiendas interesadas en establecer alianzas con ReWear. | https://angular.dev/installation / https://nodejs.org |
+| **C++ y Drogon** | Lenguaje y framework definidos en la arquitectura propuesta para implementar el API Gateway y servicios backend. Se utilizarán para administrar solicitudes HTTP, enrutar operaciones y facilitar la comunicación entre la aplicación móvil, los módulos de negocio y los servicios externos. | https://github.com/drogonframework/drogon |
+| **CMake** | Herramienta de configuración y compilación propuesta para facilitar la construcción de los componentes desarrollados en C++, incluyendo aquellos basados en Drogon. | https://cmake.org/download/ |
+| **Python y FastAPI** | Tecnologías definidas para implementar los servicios especializados de inteligencia artificial. Permitirán exponer endpoints para procesar imágenes, coordinar el reconocimiento de prendas, generar recomendaciones y conectar los módulos de reconstrucción tridimensional. | https://www.python.org/downloads/ / https://fastapi.tiangolo.com |
+| **PostgreSQL y pgAdmin** | PostgreSQL se contempla como gestor de bases de datos relacionales para almacenar la información de usuarios, armarios digitales, prendas, outfits, tiendas y catálogos. pgAdmin se propone como herramienta para administrar, consultar y verificar las bases de datos durante el desarrollo. | https://www.postgresql.org/download/ / https://www.pgadmin.org/download/ |
+| **Redis** | Sistema de almacenamiento en memoria definido en la arquitectura para facilitar operaciones de caché y acceso rápido a información temporal, especialmente en procesos relacionados con recomendaciones y servicios de inteligencia artificial. | https://redis.io |
+| **Pinecone** | Servicio de base de datos vectorial contemplado para almacenar y consultar representaciones vectoriales de información. Permitirá explorar mecanismos de búsqueda por similitud y recuperación de información relevante para las recomendaciones personalizadas de outfits. | https://www.pinecone.io |
+| **Cloudinary** | Plataforma en la nube definida para gestionar recursos multimedia. Se contempla para almacenar y distribuir fotografías de prendas, imágenes de perfiles y contenido visual asociado con los catálogos de las tiendas. | https://cloudinary.com |
+| **Google Gemini API** | Servicio de inteligencia artificial contemplado para analizar imágenes y extraer atributos de las prendas, como categoría, color y otras características visuales. También podrá apoyar el procesamiento de información utilizada por los módulos de recomendación, sujeto a validación. | https://ai.google.dev/gemini-api/docs |
+| **TripoSR** | Modelo de reconstrucción tridimensional contemplado para experimentar con la generación de representaciones 3D a partir de imágenes. Su aplicación en Mirage deberá validarse técnicamente para determinar si los modelos generados son adecuados para la visualización de prendas y accesorios. | https://github.com/VAST-AI-Research/TripoSR |
+
+## Software Testing
+
+Para garantizar la calidad de Mirage se proponen herramientas que permitan verificar el funcionamiento de las interfaces, la comunicación entre servicios, la integridad de las operaciones y el cumplimiento de los requerimientos funcionales y no funcionales.
+
+| Plataforma / Herramienta | Descripción y propósito en Mirage | Enlace |
+|---|---|---|
+| **Postman** | Herramienta de pruebas de APIs REST propuesta para validar los endpoints de autenticación, gestión de perfiles, registro de prendas, creación de outfits, catálogos comerciales y solicitudes a los servicios de inteligencia artificial. Permitirá verificar códigos HTTP, estructuras JSON y comportamientos ante errores. | https://www.postman.com/downloads/ |
+| **Flutter Test e Integration Test** | Herramientas del ecosistema Flutter que permitirán ejecutar pruebas unitarias, de widgets y de integración. Se utilizarán para validar procesos de navegación, formularios, gestión de prendas y comunicación entre la aplicación móvil y los servicios backend. | https://docs.flutter.dev/testing |
+| **Pytest** | Framework de pruebas para Python propuesto para verificar el comportamiento de los servicios implementados con FastAPI, incluyendo validaciones de entradas, respuestas de endpoints y manejo de errores en operaciones de IA. | https://docs.pytest.org |
+| **Google Lighthouse** | Herramienta de auditoría propuesta para evaluar la calidad de la landing page de Mirage mediante indicadores de rendimiento, accesibilidad, buenas prácticas y optimización para motores de búsqueda. | https://developer.chrome.com/docs/lighthouse |
+
+## Software Deployment
+
+Para el despliegue de Mirage se consideran herramientas que permitan distribuir los componentes de la solución, administrar sus dependencias y preparar una infraestructura escalable que pueda soportar servicios convencionales y procesamiento de inteligencia artificial.
+
+| Plataforma / Herramienta | Descripción y propósito en Mirage | Enlace |
+|---|---|---|
+| **Docker** | Plataforma de contenerización propuesta para empaquetar los componentes backend y sus dependencias en entornos reproducibles. Facilitará las pruebas locales y la preparación de servicios para su posterior despliegue en la nube. | https://www.docker.com/products/docker-desktop/ |
+| **GitHub Actions** | Servicio de integración y entrega continua propuesto para automatizar actividades de compilación, ejecución de pruebas y validación de cambios. Podrá utilizarse para preparar versiones de los componentes de Mirage y controlar su calidad antes del despliegue. | https://github.com/features/actions |
+| **Amazon Web Services (AWS)** | Proveedor de infraestructura cloud contemplado en el diseño arquitectónico para alojar los servicios backend, los componentes de inteligencia artificial y los recursos necesarios para el funcionamiento de Mirage. Su configuración definitiva dependerá de los resultados de las pruebas técnicas y los recursos disponibles. | https://aws.amazon.com |
+| **Kubernetes** | Plataforma de orquestación contemplada para una etapa de despliegue escalable. Permitirá administrar contenedores, distribuir cargas y mantener separados los recursos destinados a servicios de negocio y procesamiento de inteligencia artificial. Su incorporación se evaluará según la complejidad y necesidades reales de la solución. | https://kubernetes.io |
+| **GitHub Pages** | Servicio de alojamiento de sitios estáticos contemplado para publicar la landing page de Mirage. Permitirá presentar la propuesta de valor de ReWear, las funcionalidades del producto y los canales de contacto para potenciales usuarios y tiendas aliadas. | https://pages.github.com |
+
+## Software Documentation
+
+La documentación del proyecto se gestionará mediante herramientas que permitan mantener los entregables actualizados, facilitar la revisión colaborativa y conservar la trazabilidad de las decisiones técnicas y funcionales.
+
+| Plataforma / Herramienta | Descripción y propósito en Mirage | Enlace |
+|---|---|---|
+| **GitHub y Markdown** | Plataforma y formato utilizados para mantener el informe técnico del proyecto. Permiten documentar los requerimientos, historias de usuario, modelos de dominio, diagramas de arquitectura, decisiones de diseño y avances de Mirage mediante archivos versionados. | https://github.com/G1-Emergentes/Reporte |
+| **Google Docs** | Editor colaborativo propuesto como herramienta complementaria para redactar, revisar y comentar entregables académicos, actas de reuniones, resultados de entrevistas e informes de validación antes de integrarlos a la documentación oficial del proyecto. | https://docs.google.com |
+
+
+### 7.1.2.	Source Code Management.
+
+### 7.1.3.	Source Code Style Guide & Conventions.
+
+### 7.1.4.	Software Deployment Configuration.
+
+## 7.2.	Solution Implementation.
+
+### 7.2.1.	Sprint 1
+
+### 7.2.1.1.	Sprint Planning 1.
+
+### 7.2.1.2.	Sprint Backlog 1.
+
+### 7.2.1.3.	Development Evidence for Sprint Review.
+
+### 7.2.1.4.	Testing Suite Evidence for Sprint Review.
+
+### 7.2.1.5.	Execution Evidence for Sprint Review.
+
+### 7.2.1.6.	Services Documentation Evidence for Sprint Review.
+
+### 7.2.1.7.	Software Deployment Evidence for Sprint Review.
+
+### 7.2.1.8.	Team Collaboration Insights during Sprint.
+
+## 7.3.	Validation Interviews.
+
+### 7.3.1.	Diseño de Entrevistas.
+
+### 7.3.2.	Registro de Entrevistas.
+
+### 7.3.3.	Evaluaciones según heurísticas.
+
+## 7.4.	Video About-the-Product.
+
 ## Conclusiones
 
 El enfoque Attribute-Driven Design permitió priorizar los drivers arquitectónicos de Mirage, como el comportamiento temporal, el rendimiento, la escalabilidad, la seguridad, la interoperabilidad y la precisión de la IA, a partir de las user stories principales. Esto aseguró que la arquitectura responda a necesidades reales del negocio y no solo a la funcionalidad. Además, los escenarios de atributos de calidad se definieron con medidas concretas, como un tiempo de respuesta de 4 segundos o menos, una latencia de 200 ms o menos y más de 500 usuarios concurrentes, lo que hace verificable el cumplimiento de los requisitos no funcionales y facilita su validación posterior. El refinamiento del escenario de reconocimiento con IA evidenció, a su vez, la dependencia crítica de servicios externos, por lo que es necesario considerar mecanismos de resiliencia, como timeouts y reintentos, desde etapas tempranas del diseño.
