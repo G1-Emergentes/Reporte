@@ -2984,7 +2984,109 @@ La documentación del proyecto se gestionará mediante herramientas que permitan
 
 ### 7.1.2.	Source Code Management.
 
+# Source Code Management
+
+Para la gestión del código fuente de **Mirage**, el equipo de desarrollo de ReWear utilizará **Git** como sistema de control de versiones distribuido y **GitHub** como plataforma centralizada para el almacenamiento, administración y seguimiento de los cambios realizados durante el ciclo de vida del software.
+
+El uso de estas herramientas permitirá mantener un historial de modificaciones, facilitar el desarrollo colaborativo, controlar la integración de nuevas funcionalidades y garantizar la trazabilidad entre las historias de usuario del Product Backlog y los cambios implementados.
+
+La estrategia de gestión del código fuente se basará en **GitFlow**, modelo propuesto por Vincent Driessen, complementado con las convenciones **Semantic Versioning 2.0.0** para el versionamiento de entregas y **Conventional Commits 1.0.0** para estandarizar los mensajes de confirmación de cambios.
+
+## Repositorios de código fuente
+
+Los productos digitales de Mirage se administrarán mediante repositorios independientes dentro de la organización G1-Emergentes en GitHub, facilitando la separación de responsabilidades entre la aplicación móvil, los servicios backend y la documentación técnica.
+
+| Producto digital | Descripción | Repositorio |
+|---|---|---|
+| **Mirage Mobile Application** | Aplicación móvil desarrollada con Flutter y Dart. Comprende las interfaces de usuario, autenticación, gestión del perfil y las funcionalidades progresivas del armario digital, recomendaciones y probador virtual. | https://github.com/G1-Emergentes/mirage-mobile |
+| **Mirage IAM Service** | Servicio backend implementado en C++ con Drogon para gestionar autenticación, sesiones y perfiles. Incluye un componente Python independiente para procesamiento del avatar y archivos de pruebas. | https://github.com/G1-Emergentes/iam-service |
+| **Mirage Technical Documentation** | Repositorio de documentación que contiene el informe del proyecto, la descripción de los requerimientos, arquitectura, diseños y demás entregables académicos. | https://github.com/G1-Emergentes/Reporte |
+
+Los repositorios anteriores corresponden a los productos actualmente identificados dentro de la organización. Los futuros componentes, como la landing page o servicios adicionales de recomendaciones y realidad aumentada, deberán incorporarse a repositorios existentes o nuevos, según las decisiones arquitectónicas del equipo. Sus enlaces se registrarán cuando sean creados.
+
+En el caso de los Web Services, cada repositorio deberá contener tanto el código fuente del servicio como sus archivos de pruebas automatizadas y escenarios de comportamiento descritos mediante archivos `.feature`, utilizando la sintaxis Gherkin.
+
+Esta organización permitirá mantener una correspondencia entre los servicios implementados, sus contratos de API y los escenarios utilizados para validar su comportamiento.
+
+## GitFlow Workflow
+
+El equipo adoptará el modelo de ramificación **GitFlow**, con el objetivo de organizar el desarrollo simultáneo de funcionalidades y separar el código en desarrollo de las versiones preparadas para su publicación.
+
+Este modelo establece dos ramas principales de larga duración, `main` y `develop`, además de tres tipos de ramas temporales: `feature`, `release` y `hotfix`.
+
+| Tipo de rama | Convención | Propósito | Rama de origen | Rama de destino |
+|---|---|---|---|---|
+| **Main Branch** | `main` | Mantener las versiones estables y aprobadas del producto. | Rama principal del repositorio | — |
+| **Development Branch** | `develop` | Integrar las funcionalidades completadas y preparar las siguientes versiones. | `main`, al inicializar GitFlow | — |
+| **Feature Branch** | `feature/USXX-descripcion` | Desarrollar una funcionalidad específica del Product Backlog de manera independiente. | `develop` | `develop` |
+| **Release Branch** | `release/X.Y.Z` | Preparar una versión para su publicación, ejecutando pruebas finales y correcciones menores. | `develop` | `main` y `develop` |
+| **Hotfix Branch** | `hotfix/X.Y.Z` | Corregir errores críticos detectados en una versión publicada. | `main` | `main` y `develop` |
+
+## Gestión de Pull Requests y revisión de cambios
+
+Para garantizar la calidad del código, las modificaciones deberán integrarse mediante Pull Requests en GitHub.
+
+Cada Pull Request deberá incluir una descripción del cambio realizado, su relación con una historia de usuario o historia técnica y la evidencia de las pruebas ejecutadas.
+
+El flujo de trabajo establecido será el siguiente:
+
+1. Actualizar la rama `develop` con los cambios más recientes del repositorio remoto.
+2. Crear una rama `feature` a partir de `develop`, utilizando la nomenclatura definida.
+3. Implementar la funcionalidad asignada y registrar los cambios mediante Conventional Commits.
+4. Ejecutar las pruebas correspondientes y verificar los criterios de aceptación.
+5. Publicar la rama en GitHub y crear un Pull Request hacia `develop`.
+6. Realizar la revisión de código por al menos otro integrante del equipo.
+7. Corregir las observaciones identificadas durante la revisión.
+8. Integrar los cambios una vez aprobados y superadas las validaciones.
+9. Eliminar la rama temporal cuando ya no sea necesaria.
+
+Se establecerá como política de colaboración evitar modificaciones directas en `main` y `develop`, promoviendo el uso de Pull Requests y la revisión colaborativa.
+
+## Gestión de archivos de pruebas en Web Services
+
+Los repositorios que contengan Web Services deberán incluir el código fuente y los archivos necesarios para ejecutar y documentar las pruebas del servicio.
+
+Para los escenarios de aceptación se utilizarán archivos `.feature` escritos en lenguaje Gherkin, permitiendo describir comportamientos esperados mediante las palabras clave `Feature`, `Scenario`, `Given`, `When` y `Then`.
+
+En el caso del servicio IAM de Mirage, se propone organizar estos archivos dentro de un directorio `tests/features/`, con escenarios relacionados con el registro, inicio de sesión, recuperación de contraseña, actualización del perfil y administración de sesiones.
+
+Por ejemplo, el escenario de autenticación deberá validar que un usuario registrado pueda proporcionar credenciales válidas y recibir una respuesta de autenticación exitosa. También deberán contemplarse escenarios negativos, como credenciales incorrectas o sesiones no autorizadas.
+
+Los archivos `.feature` deberán mantenerse versionados dentro del mismo repositorio que el servicio correspondiente. Para su ejecución automatizada se incorporarán las definiciones de pasos y las herramientas de pruebas compatibles con el stack tecnológico de cada servicio.
+
+Esta práctica permitirá establecer trazabilidad entre las historias de usuario, los escenarios de aceptación y los componentes backend desarrollados.
+
 ### 7.1.3.	Source Code Style Guide & Conventions.
+
+Esta sección establece las convenciones de estilo y guías de codificación adoptadas por el equipo de desarrollo de **Mirage**, con el propósito de garantizar la consistencia, legibilidad, calidad y mantenibilidad del código fuente en los diferentes componentes de la solución.
+
+Se adoptarán los principios de **Clean Code**, utilizando exclusivamente el **idioma inglés** para nombrar variables, clases, métodos, funciones, interfaces, archivos y comentarios. Asimismo, se seguirán las convenciones oficiales de cada lenguaje y framework empleado en el desarrollo de la aplicación móvil, landing page, servicios backend y módulos de inteligencia artificial.
+
+#### Lenguajes y estándares aplicados
+
+El ecosistema tecnológico de **Mirage** contempla Flutter y Dart para la aplicación móvil, Angular y TypeScript para la landing page, C++ con Drogon para los servicios backend, Python con FastAPI para los módulos de inteligencia artificial y PostgreSQL para la gestión de datos. Además, se utilizará Gherkin para describir los escenarios de pruebas funcionales.
+
+| **Lenguaje / Tecnología** | **Guía de estilo adoptada** | **Referencia oficial** |
+|---|---|---|
+| **Dart / Flutter (Aplicación móvil)** | Aplicación de las convenciones oficiales de Dart, utilizando `UpperCamelCase` para clases, `lowerCamelCase` para variables y métodos, y `snake_case` para archivos. Se priorizará la organización modular y reutilización de widgets. | [Effective Dart](https://dart.dev/effective-dart/style) |
+| **TypeScript / Angular (Landing Page)** | Aplicación de Google TypeScript Style Guide y convenciones de Angular. Se utilizará `PascalCase` para clases, `camelCase` para variables y métodos, y nombres de archivos en `kebab-case`. | [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html) / [Angular Style Guide](https://angular.dev/style-guide) |
+| **C++ / Drogon (Backend)** | Aplicación de Google C++ Style Guide, priorizando el uso de nombres descriptivos, separación de responsabilidades, manejo seguro de recursos y organización modular de controladores y servicios. | [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html) |
+| **Python / FastAPI (Servicios de IA)** | Aplicación del estándar PEP 8, utilizando `snake_case` para funciones y variables, `PascalCase` para clases y `UPPER_CASE` para constantes. Se fomentará el uso de anotaciones de tipos y funciones reutilizables. | [PEP 8](https://peps.python.org/pep-0008/) |
+| **SQL / PostgreSQL (Base de datos)** | Aplicación de convenciones SQL con nombres descriptivos en inglés, preferentemente `snake_case` para tablas y columnas. Se mantendrá consistencia en claves primarias, claves foráneas y relaciones entre entidades. | [SQL Style Guide](https://www.sqlstyle.guide/) |
+| **Gherkin (Archivos .feature – QA / BDD)** | Aplicación de convenciones para especificaciones legibles, utilizando `Feature`, `Scenario`, `Given`, `When` y `Then` para describir comportamientos verificables de los servicios backend. | [Gherkin Reference](https://cucumber.io/docs/gherkin/reference/) |
+
+#### Convenciones generales de codificación
+
+El equipo de **ReWear** aplicará las siguientes convenciones en todos los componentes de Mirage:
+
+- **Idioma:** inglés para los identificadores, comentarios y nombres de archivos, así como para la descripción de escenarios Gherkin.
+- **Nomenclatura:** uso de `PascalCase`, `camelCase` y `snake_case` según las convenciones de cada lenguaje.
+- **Organización:** separación del código por módulos y responsabilidades, siguiendo los principios de Clean Code.
+- **Documentación:** comentarios claros y concisos para explicar la lógica compleja, evitando información redundante.
+- **Calidad:** aplicación de formateadores y analizadores estáticos, como `dart format`, `dart analyze`, ESLint y Ruff, según corresponda.
+
+Estas convenciones permitirán mantener un código uniforme, facilitar el trabajo colaborativo y reducir errores durante el desarrollo y mantenimiento de Mirage.
+
 
 ### 7.1.4.	Software Deployment Configuration.
 
