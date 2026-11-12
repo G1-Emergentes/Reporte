@@ -5274,6 +5274,10 @@ Incorporar una sección visible para tiendas aliadas y un botón de acción con 
 
 ## 7.4.	Video About-the-Product.
 
+Enlace:  `https://www.youtube.com/watch?v=rDSOrsWHj3k`
+
+![Team Collaboration](assets/videoabout.png)
+
 ## Conclusiones
 
 El enfoque Attribute-Driven Design permitió priorizar los drivers arquitectónicos de Mirage, como el comportamiento temporal, el rendimiento, la escalabilidad, la seguridad, la interoperabilidad y la precisión de la IA, a partir de las user stories principales. Esto aseguró que la arquitectura responda a necesidades reales del negocio y no solo a la funcionalidad. Además, los escenarios de atributos de calidad se definieron con medidas concretas, como un tiempo de respuesta de 4 segundos o menos, una latencia de 200 ms o menos y más de 500 usuarios concurrentes, lo que hace verificable el cumplimiento de los requisitos no funcionales y facilita su validación posterior. El refinamiento del escenario de reconocimiento con IA evidenció, a su vez, la dependencia crítica de servicios externos, por lo que es necesario considerar mecanismos de resiliencia, como timeouts y reintentos, desde etapas tempranas del diseño.
