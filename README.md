@@ -3804,6 +3804,1398 @@ El prototipo cubre los User Flows presentados en la sección anterior para ambos
 
 Enlace del vídeo: `https://youtu.be/FMOcAuq7MDI`
 
+# Capítulo VII: Product Implementation, Validation & Deployment
+
+## 7.1.	Software Configuration Management.
+
+A continuación, se va a realizar el proceso por el cual organizamos y gestionamos los cambios desarrolados en el proyecto de Mirage
+
+### 7.1.1.	Software Development Environment Configuration.
+
+Para el desarrollo de **Mirage**, solución digital propuesta por la startup ReWear, se establece un conjunto de herramientas tecnológicas que permitirá al equipo colaborar durante las distintas etapas del ciclo de vida del software. Estas herramientas abarcan la gestión del proyecto, administración de requerimientos, diseño de producto, desarrollo, pruebas, despliegue y documentación.
+
+La selección considera las características de Mirage, una plataforma orientada a la gestión del armario digital, creación y recomendación personalizada de outfits mediante inteligencia artificial, visualización de prendas mediante avatares tridimensionales, experiencias de realidad aumentada e integración de catálogos comerciales de tiendas de moda.
+
+Las herramientas se organizan según su propósito dentro del proyecto, diferenciando las tecnologías contempladas en la arquitectura de las herramientas de apoyo propuestas para su implementación y validación.
+
+## Project Management
+
+Para gestionar las actividades del proyecto se consideran herramientas que permitan organizar los sprints, asignar responsabilidades, establecer prioridades y realizar el seguimiento de los entregables del equipo.
+
+| Plataforma / Herramienta | Descripción y propósito en Mirage | Enlace |
+|---|---|---|
+| **Trello** | Plataforma colaborativa propuesta para organizar las actividades del equipo mediante tableros Kanban. Permitirá gestionar los sprints, distribuir tareas, asignar responsables y visualizar el avance de los módulos de armario digital, recomendaciones con IA, probador virtual y catálogo comercial. | https://trello.com |
+| **GitHub Projects** | Herramienta de planificación integrada con GitHub. Se propone para relacionar actividades técnicas con issues y pull requests, facilitando el seguimiento de errores, mejoras y funcionalidades durante el desarrollo de Mirage. | https://github.com/features/issues |
+
+## Requirements Management
+
+Para la gestión de requerimientos se contemplan herramientas que faciliten el análisis de las necesidades de los consumidores de moda y las tiendas aliadas, la documentación de historias de usuario y la validación de los procesos definidos mediante Lean UX y Domain-Driven Design.
+
+| Plataforma / Herramienta | Descripción y propósito en Mirage | Enlace |
+|---|---|---|
+| **UXPressia** | Plataforma de diseño de experiencias de usuario propuesta para elaborar User Personas, Customer Journey Maps y Empathy Maps. Permitirá representar las necesidades, motivaciones y dificultades de los consumidores que desean organizar sus prendas y de las tiendas interesadas en promocionar sus catálogos. | https://uxpressia.com |
+| **Mural** | Herramienta colaborativa propuesta para realizar sesiones de brainstorming, Event Storming, Scenario Mapping e Impact Mapping. Facilitará la identificación de procesos, eventos del dominio y oportunidades de mejora en la experiencia de Mirage. | https://www.mural.co |
+| **GitHub Issues** | Sistema de seguimiento de tareas y requerimientos integrado con los repositorios del proyecto. Permitirá registrar historias de usuario, criterios de aceptación, incidencias y solicitudes de mejora, manteniendo trazabilidad entre las necesidades funcionales y su implementación. | https://github.com/features/issues |
+
+## Product Design
+
+En la etapa de diseño se consideran herramientas orientadas a la elaboración de interfaces, prototipos interactivos, diagramas de arquitectura, modelos de datos y recursos visuales para las experiencias tridimensionales propuestas.
+
+| Plataforma / Herramienta | Descripción y propósito en Mirage | Enlace |
+|---|---|---|
+| **Figma** | Plataforma de diseño colaborativo utilizada para desarrollar wireframes, mockups y prototipos interactivos de Mirage. Permite representar los flujos de registro de prendas, organización del armario, generación de outfits, gestión de tiendas aliadas, creación del avatar y probador virtual, facilitando las pruebas de usabilidad antes de la implementación. | https://www.figma.com |
+| **Lucidchart** | Herramienta de diagramación propuesta para representar procesos de negocio, diagramas UML, flujos de interacción y estructuras del sistema. Permitirá documentar la relación entre los módulos funcionales de Mirage. | https://www.lucidchart.com |
+| **Structurizr** | Plataforma especializada en modelado de arquitecturas mediante el modelo C4. Se propone para representar los niveles de contexto, contenedores y componentes de Mirage, incluyendo la aplicación Flutter, la landing page Angular, los servicios backend y las integraciones de inteligencia artificial. | https://structurizr.com |
+| **Vertabelo** | Herramienta de modelado de bases de datos relacionales propuesta para diseñar y documentar los esquemas de PostgreSQL. Facilitará la representación de entidades asociadas a usuarios, prendas, outfits, tiendas, catálogos y relaciones entre los distintos Bounded Contexts. | https://vertabelo.com |
+| **Canva** | Plataforma de diseño visual propuesta para elaborar presentaciones, elementos gráficos, materiales promocionales y recursos de comunicación asociados con la identidad de ReWear y el producto Mirage. | https://www.canva.com |
+| **Blender** | Software de creación y edición de contenido tridimensional propuesto para preparar, inspeccionar y optimizar modelos de prendas y accesorios. Podrá utilizarse durante los prototipos del avatar digital y las experiencias 3D, siempre que su viabilidad técnica sea confirmada. | https://www.blender.org/download/ |
+
+## Software Development
+
+Para la implementación de Mirage se consideran herramientas compatibles con la arquitectura tecnológica diseñada, compuesta por una aplicación móvil desarrollada en Flutter, una landing page en Angular, servicios backend en C++ y Python, almacenamiento relacional y componentes especializados en inteligencia artificial.
+
+| Plataforma / Herramienta | Descripción y propósito en Mirage | Enlace |
+|---|---|---|
+| **Git y GitHub** | Git permitirá gestionar versiones del código fuente, mientras que GitHub facilitará el trabajo colaborativo mediante ramas, commits y pull requests. Se utilizará como plataforma de repositorios para los componentes de Mirage y su documentación técnica. | https://git-scm.com/downloads / https://github.com |
+| **Visual Studio Code** | Editor de código multiplataforma propuesto para desarrollar y mantener los componentes web, móviles y backend. Su compatibilidad con extensiones para Dart, Flutter, Angular, Python y C++ facilitará el trabajo entre los integrantes del equipo. | https://code.visualstudio.com/download |
+| **Flutter SDK y Dart** | Framework y lenguaje definidos para construir la aplicación móvil de Mirage. Permitirán implementar las interfaces del armario digital, el registro fotográfico de prendas, las recomendaciones personalizadas, la interacción con el avatar y la integración con los servicios backend. | https://docs.flutter.dev/install |
+| **Android Studio** | Entorno de desarrollo que permitirá configurar el Android SDK, administrar emuladores y ejecutar pruebas de la aplicación Flutter. Será especialmente relevante para validar funcionalidades relacionadas con cámara, captura de imágenes, lectura de códigos QR y rendimiento móvil. | https://developer.android.com/studio |
+| **Angular CLI y Node.js** | Herramientas contempladas para desarrollar la landing page de Mirage. Permitirán implementar la presentación del producto, la información institucional y el formulario de contacto para tiendas interesadas en establecer alianzas con ReWear. | https://angular.dev/installation / https://nodejs.org |
+| **C++ y Drogon** | Lenguaje y framework definidos en la arquitectura propuesta para implementar el API Gateway y servicios backend. Se utilizarán para administrar solicitudes HTTP, enrutar operaciones y facilitar la comunicación entre la aplicación móvil, los módulos de negocio y los servicios externos. | https://github.com/drogonframework/drogon |
+| **CMake** | Herramienta de configuración y compilación propuesta para facilitar la construcción de los componentes desarrollados en C++, incluyendo aquellos basados en Drogon. | https://cmake.org/download/ |
+| **Python y FastAPI** | Tecnologías definidas para implementar los servicios especializados de inteligencia artificial. Permitirán exponer endpoints para procesar imágenes, coordinar el reconocimiento de prendas, generar recomendaciones y conectar los módulos de reconstrucción tridimensional. | https://www.python.org/downloads/ / https://fastapi.tiangolo.com |
+| **PostgreSQL y pgAdmin** | PostgreSQL se contempla como gestor de bases de datos relacionales para almacenar la información de usuarios, armarios digitales, prendas, outfits, tiendas y catálogos. pgAdmin se propone como herramienta para administrar, consultar y verificar las bases de datos durante el desarrollo. | https://www.postgresql.org/download/ / https://www.pgadmin.org/download/ |
+| **Redis** | Sistema de almacenamiento en memoria definido en la arquitectura para facilitar operaciones de caché y acceso rápido a información temporal, especialmente en procesos relacionados con recomendaciones y servicios de inteligencia artificial. | https://redis.io |
+| **Pinecone** | Servicio de base de datos vectorial contemplado para almacenar y consultar representaciones vectoriales de información. Permitirá explorar mecanismos de búsqueda por similitud y recuperación de información relevante para las recomendaciones personalizadas de outfits. | https://www.pinecone.io |
+| **Cloudinary** | Plataforma en la nube definida para gestionar recursos multimedia. Se contempla para almacenar y distribuir fotografías de prendas, imágenes de perfiles y contenido visual asociado con los catálogos de las tiendas. | https://cloudinary.com |
+| **Google Gemini API** | Servicio de inteligencia artificial contemplado para analizar imágenes y extraer atributos de las prendas, como categoría, color y otras características visuales. También podrá apoyar el procesamiento de información utilizada por los módulos de recomendación, sujeto a validación. | https://ai.google.dev/gemini-api/docs |
+| **TripoSR** | Modelo de reconstrucción tridimensional contemplado para experimentar con la generación de representaciones 3D a partir de imágenes. Su aplicación en Mirage deberá validarse técnicamente para determinar si los modelos generados son adecuados para la visualización de prendas y accesorios. | https://github.com/VAST-AI-Research/TripoSR |
+
+## Software Testing
+
+Para garantizar la calidad de Mirage se proponen herramientas que permitan verificar el funcionamiento de las interfaces, la comunicación entre servicios, la integridad de las operaciones y el cumplimiento de los requerimientos funcionales y no funcionales.
+
+| Plataforma / Herramienta | Descripción y propósito en Mirage | Enlace |
+|---|---|---|
+| **Postman** | Herramienta de pruebas de APIs REST propuesta para validar los endpoints de autenticación, gestión de perfiles, registro de prendas, creación de outfits, catálogos comerciales y solicitudes a los servicios de inteligencia artificial. Permitirá verificar códigos HTTP, estructuras JSON y comportamientos ante errores. | https://www.postman.com/downloads/ |
+| **Flutter Test e Integration Test** | Herramientas del ecosistema Flutter que permitirán ejecutar pruebas unitarias, de widgets y de integración. Se utilizarán para validar procesos de navegación, formularios, gestión de prendas y comunicación entre la aplicación móvil y los servicios backend. | https://docs.flutter.dev/testing |
+| **Pytest** | Framework de pruebas para Python propuesto para verificar el comportamiento de los servicios implementados con FastAPI, incluyendo validaciones de entradas, respuestas de endpoints y manejo de errores en operaciones de IA. | https://docs.pytest.org |
+| **Google Lighthouse** | Herramienta de auditoría propuesta para evaluar la calidad de la landing page de Mirage mediante indicadores de rendimiento, accesibilidad, buenas prácticas y optimización para motores de búsqueda. | https://developer.chrome.com/docs/lighthouse |
+
+## Software Deployment
+
+Para el despliegue de Mirage se consideran herramientas que permitan distribuir los componentes de la solución, administrar sus dependencias y preparar una infraestructura escalable que pueda soportar servicios convencionales y procesamiento de inteligencia artificial.
+
+| Plataforma / Herramienta | Descripción y propósito en Mirage | Enlace |
+|---|---|---|
+| **Docker** | Plataforma de contenerización propuesta para empaquetar los componentes backend y sus dependencias en entornos reproducibles. Facilitará las pruebas locales y la preparación de servicios para su posterior despliegue en la nube. | https://www.docker.com/products/docker-desktop/ |
+| **GitHub Actions** | Servicio de integración y entrega continua propuesto para automatizar actividades de compilación, ejecución de pruebas y validación de cambios. Podrá utilizarse para preparar versiones de los componentes de Mirage y controlar su calidad antes del despliegue. | https://github.com/features/actions |
+| **Amazon Web Services (AWS)** | Proveedor de infraestructura cloud contemplado en el diseño arquitectónico para alojar los servicios backend, los componentes de inteligencia artificial y los recursos necesarios para el funcionamiento de Mirage. Su configuración definitiva dependerá de los resultados de las pruebas técnicas y los recursos disponibles. | https://aws.amazon.com |
+| **Kubernetes** | Plataforma de orquestación contemplada para una etapa de despliegue escalable. Permitirá administrar contenedores, distribuir cargas y mantener separados los recursos destinados a servicios de negocio y procesamiento de inteligencia artificial. Su incorporación se evaluará según la complejidad y necesidades reales de la solución. | https://kubernetes.io |
+| **GitHub Pages** | Servicio de alojamiento de sitios estáticos contemplado para publicar la landing page de Mirage. Permitirá presentar la propuesta de valor de ReWear, las funcionalidades del producto y los canales de contacto para potenciales usuarios y tiendas aliadas. | https://pages.github.com |
+
+## Software Documentation
+
+La documentación del proyecto se gestionará mediante herramientas que permitan mantener los entregables actualizados, facilitar la revisión colaborativa y conservar la trazabilidad de las decisiones técnicas y funcionales.
+
+| Plataforma / Herramienta | Descripción y propósito en Mirage | Enlace |
+|---|---|---|
+| **GitHub y Markdown** | Plataforma y formato utilizados para mantener el informe técnico del proyecto. Permiten documentar los requerimientos, historias de usuario, modelos de dominio, diagramas de arquitectura, decisiones de diseño y avances de Mirage mediante archivos versionados. | https://github.com/G1-Emergentes/Reporte |
+| **Google Docs** | Editor colaborativo propuesto como herramienta complementaria para redactar, revisar y comentar entregables académicos, actas de reuniones, resultados de entrevistas e informes de validación antes de integrarlos a la documentación oficial del proyecto. | https://docs.google.com |
+
+
+### 7.1.2.	Source Code Management.
+
+# Source Code Management
+
+Para la gestión del código fuente de **Mirage**, el equipo de desarrollo de ReWear utilizará **Git** como sistema de control de versiones distribuido y **GitHub** como plataforma centralizada para el almacenamiento, administración y seguimiento de los cambios realizados durante el ciclo de vida del software.
+
+El uso de estas herramientas permitirá mantener un historial de modificaciones, facilitar el desarrollo colaborativo, controlar la integración de nuevas funcionalidades y garantizar la trazabilidad entre las historias de usuario del Product Backlog y los cambios implementados.
+
+La estrategia de gestión del código fuente se basará en **GitFlow**, modelo propuesto por Vincent Driessen, complementado con las convenciones **Semantic Versioning 2.0.0** para el versionamiento de entregas y **Conventional Commits 1.0.0** para estandarizar los mensajes de confirmación de cambios.
+
+## Repositorios de código fuente
+
+Los productos digitales de Mirage se administrarán mediante repositorios independientes dentro de la organización G1-Emergentes en GitHub, facilitando la separación de responsabilidades entre la aplicación móvil, los servicios backend y la documentación técnica.
+
+| Producto digital | Descripción | Repositorio |
+|---|---|---|
+| **Mirage Mobile Application** | Aplicación móvil desarrollada con Flutter y Dart. Comprende las interfaces de usuario, autenticación, gestión del perfil y las funcionalidades progresivas del armario digital, recomendaciones y probador virtual. | https://github.com/G1-Emergentes/mirage-mobile |
+| **Mirage IAM Service** | Servicio backend implementado en C++ con Drogon para gestionar autenticación, sesiones y perfiles. Incluye un componente Python independiente para procesamiento del avatar y archivos de pruebas. | https://github.com/G1-Emergentes/iam-service |
+| **Mirage Technical Documentation** | Repositorio de documentación que contiene el informe del proyecto, la descripción de los requerimientos, arquitectura, diseños y demás entregables académicos. | https://github.com/G1-Emergentes/Reporte |
+
+Los repositorios anteriores corresponden a los productos actualmente identificados dentro de la organización. Los futuros componentes, como la landing page o servicios adicionales de recomendaciones y realidad aumentada, deberán incorporarse a repositorios existentes o nuevos, según las decisiones arquitectónicas del equipo. Sus enlaces se registrarán cuando sean creados.
+
+En el caso de los Web Services, cada repositorio deberá contener tanto el código fuente del servicio como sus archivos de pruebas automatizadas y escenarios de comportamiento descritos mediante archivos `.feature`, utilizando la sintaxis Gherkin.
+
+Esta organización permitirá mantener una correspondencia entre los servicios implementados, sus contratos de API y los escenarios utilizados para validar su comportamiento.
+
+## GitFlow Workflow
+
+El equipo adoptará el modelo de ramificación **GitFlow**, con el objetivo de organizar el desarrollo simultáneo de funcionalidades y separar el código en desarrollo de las versiones preparadas para su publicación.
+
+Este modelo establece dos ramas principales de larga duración, `main` y `develop`, además de tres tipos de ramas temporales: `feature`, `release` y `hotfix`.
+
+| Tipo de rama | Convención | Propósito | Rama de origen | Rama de destino |
+|---|---|---|---|---|
+| **Main Branch** | `main` | Mantener las versiones estables y aprobadas del producto. | Rama principal del repositorio | — |
+| **Development Branch** | `develop` | Integrar las funcionalidades completadas y preparar las siguientes versiones. | `main`, al inicializar GitFlow | — |
+| **Feature Branch** | `feature/USXX-descripcion` | Desarrollar una funcionalidad específica del Product Backlog de manera independiente. | `develop` | `develop` |
+| **Release Branch** | `release/X.Y.Z` | Preparar una versión para su publicación, ejecutando pruebas finales y correcciones menores. | `develop` | `main` y `develop` |
+| **Hotfix Branch** | `hotfix/X.Y.Z` | Corregir errores críticos detectados en una versión publicada. | `main` | `main` y `develop` |
+
+## Gestión de Pull Requests y revisión de cambios
+
+Para garantizar la calidad del código, las modificaciones deberán integrarse mediante Pull Requests en GitHub.
+
+Cada Pull Request deberá incluir una descripción del cambio realizado, su relación con una historia de usuario o historia técnica y la evidencia de las pruebas ejecutadas.
+
+El flujo de trabajo establecido será el siguiente:
+
+1. Actualizar la rama `develop` con los cambios más recientes del repositorio remoto.
+2. Crear una rama `feature` a partir de `develop`, utilizando la nomenclatura definida.
+3. Implementar la funcionalidad asignada y registrar los cambios mediante Conventional Commits.
+4. Ejecutar las pruebas correspondientes y verificar los criterios de aceptación.
+5. Publicar la rama en GitHub y crear un Pull Request hacia `develop`.
+6. Realizar la revisión de código por al menos otro integrante del equipo.
+7. Corregir las observaciones identificadas durante la revisión.
+8. Integrar los cambios una vez aprobados y superadas las validaciones.
+9. Eliminar la rama temporal cuando ya no sea necesaria.
+
+Se establecerá como política de colaboración evitar modificaciones directas en `main` y `develop`, promoviendo el uso de Pull Requests y la revisión colaborativa.
+
+## Gestión de archivos de pruebas en Web Services
+
+Los repositorios que contengan Web Services deberán incluir el código fuente y los archivos necesarios para ejecutar y documentar las pruebas del servicio.
+
+Para los escenarios de aceptación se utilizarán archivos `.feature` escritos en lenguaje Gherkin, permitiendo describir comportamientos esperados mediante las palabras clave `Feature`, `Scenario`, `Given`, `When` y `Then`.
+
+En el caso del servicio IAM de Mirage, se propone organizar estos archivos dentro de un directorio `tests/features/`, con escenarios relacionados con el registro, inicio de sesión, recuperación de contraseña, actualización del perfil y administración de sesiones.
+
+Por ejemplo, el escenario de autenticación deberá validar que un usuario registrado pueda proporcionar credenciales válidas y recibir una respuesta de autenticación exitosa. También deberán contemplarse escenarios negativos, como credenciales incorrectas o sesiones no autorizadas.
+
+Los archivos `.feature` deberán mantenerse versionados dentro del mismo repositorio que el servicio correspondiente. Para su ejecución automatizada se incorporarán las definiciones de pasos y las herramientas de pruebas compatibles con el stack tecnológico de cada servicio.
+
+Esta práctica permitirá establecer trazabilidad entre las historias de usuario, los escenarios de aceptación y los componentes backend desarrollados.
+
+### 7.1.3.	Source Code Style Guide & Conventions.
+
+Esta sección establece las convenciones de estilo y guías de codificación adoptadas por el equipo de desarrollo de **Mirage**, con el propósito de garantizar la consistencia, legibilidad, calidad y mantenibilidad del código fuente en los diferentes componentes de la solución.
+
+Se adoptarán los principios de **Clean Code**, utilizando exclusivamente el **idioma inglés** para nombrar variables, clases, métodos, funciones, interfaces, archivos y comentarios. Asimismo, se seguirán las convenciones oficiales de cada lenguaje y framework empleado en el desarrollo de la aplicación móvil, landing page, servicios backend y módulos de inteligencia artificial.
+
+#### Lenguajes y estándares aplicados
+
+El ecosistema tecnológico de **Mirage** contempla Flutter y Dart para la aplicación móvil, Angular y TypeScript para la landing page, C++ con Drogon para los servicios backend, Python con FastAPI para los módulos de inteligencia artificial y PostgreSQL para la gestión de datos. Además, se utilizará Gherkin para describir los escenarios de pruebas funcionales.
+
+| **Lenguaje / Tecnología** | **Guía de estilo adoptada** | **Referencia oficial** |
+|---|---|---|
+| **Dart / Flutter (Aplicación móvil)** | Aplicación de las convenciones oficiales de Dart, utilizando `UpperCamelCase` para clases, `lowerCamelCase` para variables y métodos, y `snake_case` para archivos. Se priorizará la organización modular y reutilización de widgets. | [Effective Dart](https://dart.dev/effective-dart/style) |
+| **TypeScript / Angular (Landing Page)** | Aplicación de Google TypeScript Style Guide y convenciones de Angular. Se utilizará `PascalCase` para clases, `camelCase` para variables y métodos, y nombres de archivos en `kebab-case`. | [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html) / [Angular Style Guide](https://angular.dev/style-guide) |
+| **C++ / Drogon (Backend)** | Aplicación de Google C++ Style Guide, priorizando el uso de nombres descriptivos, separación de responsabilidades, manejo seguro de recursos y organización modular de controladores y servicios. | [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html) |
+| **Python / FastAPI (Servicios de IA)** | Aplicación del estándar PEP 8, utilizando `snake_case` para funciones y variables, `PascalCase` para clases y `UPPER_CASE` para constantes. Se fomentará el uso de anotaciones de tipos y funciones reutilizables. | [PEP 8](https://peps.python.org/pep-0008/) |
+| **SQL / PostgreSQL (Base de datos)** | Aplicación de convenciones SQL con nombres descriptivos en inglés, preferentemente `snake_case` para tablas y columnas. Se mantendrá consistencia en claves primarias, claves foráneas y relaciones entre entidades. | [SQL Style Guide](https://www.sqlstyle.guide/) |
+| **Gherkin (Archivos .feature – QA / BDD)** | Aplicación de convenciones para especificaciones legibles, utilizando `Feature`, `Scenario`, `Given`, `When` y `Then` para describir comportamientos verificables de los servicios backend. | [Gherkin Reference](https://cucumber.io/docs/gherkin/reference/) |
+
+#### Convenciones generales de codificación
+
+El equipo de **ReWear** aplicará las siguientes convenciones en todos los componentes de Mirage:
+
+- **Idioma:** inglés para los identificadores, comentarios y nombres de archivos, así como para la descripción de escenarios Gherkin.
+- **Nomenclatura:** uso de `PascalCase`, `camelCase` y `snake_case` según las convenciones de cada lenguaje.
+- **Organización:** separación del código por módulos y responsabilidades, siguiendo los principios de Clean Code.
+- **Documentación:** comentarios claros y concisos para explicar la lógica compleja, evitando información redundante.
+- **Calidad:** aplicación de formateadores y analizadores estáticos, como `dart format`, `dart analyze`, ESLint y Ruff, según corresponda.
+
+Estas convenciones permitirán mantener un código uniforme, facilitar el trabajo colaborativo y reducir errores durante el desarrollo y mantenimiento de Mirage.
+
+
+### 7.1.4.	Software Deployment Configuration.
+
+Esta sección describe la configuración y el proceso de despliegue de **Mirage**, solución desarrollada por la startup **ReWear**, estableciendo los procedimientos necesarios para publicar sus diferentes productos digitales a partir de los repositorios de código fuente administrados en GitHub.
+
+La estrategia de despliegue contempla el uso de **GitHub Actions** para la integración y entrega continua (CI/CD), **Docker** para la contenerización de los servicios backend y **Amazon Web Services (AWS)** como infraestructura cloud propuesta. Asimismo, se consideran los servicios externos necesarios para el almacenamiento de imágenes y procesamiento de inteligencia artificial.
+
+El despliegue se realizará progresivamente, priorizando la validación de los componentes funcionales antes de su publicación en un entorno de producción.
+
+#### Productos digitales y entornos de despliegue
+
+| **Producto / Componente** | **Tecnología** | **Entorno de despliegue propuesto** | **Repositorio / Referencia** |
+|---|---|---|---|
+| **Mirage Mobile Application** | Flutter / Dart | Compilación de APK o Android App Bundle para instalación y distribución en dispositivos Android. | [mirage-mobile](https://github.com/G1-Emergentes/mirage-mobile) |
+| **Mirage Backend / IAM Service** | C++ / Drogon | Contenedores Docker desplegados en infraestructura AWS. | [iam-service](https://github.com/G1-Emergentes/iam-service) |
+| **AI Processing Services** | Python / FastAPI | Contenedores Docker para procesamiento de imágenes, recomendaciones y generación de avatares. | Módulo existente en iam-service; futuras separaciones según arquitectura. |
+| **Mirage Landing Page** | Angular / TypeScript | Hosting estático mediante GitHub Pages o un servicio equivalente. | Repositorio de implementación pendiente de confirmar. |
+| **Database Services** | PostgreSQL / Redis | Servicios de persistencia y caché alojados en infraestructura cloud. | Configuración asociada al backend. |
+| **External AI & Media Services** | Cloudinary / Pinecone / Gemini API | Servicios SaaS consumidos mediante API. | Servicios externos integrados a la solución. |
+
+#### Procedimiento de despliegue
+
+El equipo seguirá un proceso de despliegue estructurado que permita validar cada componente antes de su publicación.
+
+**1. Preparación del código fuente**
+
+Los integrantes del equipo trabajarán mediante el flujo GitFlow, desarrollando funcionalidades en ramas `feature` y realizando su integración en `develop` mediante Pull Requests.
+
+Una vez completadas las pruebas y validaciones correspondientes, se preparará una rama `release` y se integrará la versión aprobada en `main`, utilizando Semantic Versioning para identificar cada entrega.
+
+**2. Despliegue de la aplicación móvil**
+
+Para generar una versión distribuible de Mirage Mobile se realizarán los siguientes pasos:
+
+- Clonar el repositorio `mirage-mobile` desde GitHub.
+- Instalar Flutter SDK y las dependencias del proyecto.
+- Configurar la URL del backend correspondiente al entorno de despliegue.
+- Ejecutar las pruebas y el análisis estático del código.
+- Generar el paquete de distribución Android.
+- Instalar y validar el aplicativo en dispositivos físicos.
+
+Los comandos principales serán:
+
+```bash
+git clone https://github.com/G1-Emergentes/mirage-mobile.git
+cd mirage-mobile
+
+flutter pub get
+flutter analyze
+flutter test
+flutter build apk --release
+```
+
+El archivo APK generado podrá utilizarse para pruebas piloto. Para una eventual publicación en Google Play se deberá generar un Android App Bundle firmado y completar los requisitos de la plataforma.
+
+**3. Despliegue del backend**
+
+El backend de Mirage, desarrollado en C++ con Drogon, será preparado para su ejecución en contenedores Docker.
+
+El procedimiento contempla:
+
+- Obtener el código fuente desde el repositorio `iam-service`.
+- Configurar las dependencias de compilación y las variables de entorno.
+- Ejecutar las pruebas disponibles del servicio.
+- Construir la aplicación mediante CMake, según la configuración del repositorio.
+- Generar una imagen Docker utilizando un Dockerfile compatible.
+- Publicar la imagen en un registro de contenedores y desplegarla en AWS.
+- Verificar la conectividad con PostgreSQL y los demás servicios requeridos.
+
+La configuración de credenciales, cadenas de conexión y claves de acceso se realizará mediante variables de entorno o mecanismos seguros de administración de secretos.
+
+**4. Despliegue de los servicios de inteligencia artificial**
+
+Los módulos desarrollados en Python con FastAPI se prepararán para ejecutarse de manera independiente del backend principal cuando la arquitectura lo requiera.
+
+Se configurarán sus dependencias, modelos y endpoints para permitir el procesamiento de imágenes, identificación de prendas, generación de recomendaciones y experimentación con avatares tridimensionales.
+
+Estos servicios podrán empaquetarse mediante Docker y desplegarse en AWS. La capacidad de procesamiento necesaria se determinará mediante pruebas de rendimiento, especialmente para las operaciones de reconstrucción 3D.
+
+**5. Publicación de la landing page**
+
+La landing page desarrollada en Angular será compilada para producción y publicada mediante un servicio de alojamiento web estático, como GitHub Pages.
+
+El proceso comprenderá la instalación de dependencias, compilación de archivos optimizados, configuración de rutas y publicación de los archivos generados.
+
+La implementación de este procedimiento estará sujeta a la creación o confirmación del repositorio correspondiente.
+
+**6. Configuración de servicios cloud**
+
+Se establecerán las conexiones entre los componentes desplegados y los servicios externos utilizados por Mirage:
+
+- **PostgreSQL:** almacenamiento de usuarios, prendas, outfits y catálogos.
+- **Redis:** almacenamiento temporal y operaciones de caché.
+- **Cloudinary:** almacenamiento y distribución de imágenes.
+- **Pinecone:** almacenamiento y consulta de información vectorial.
+- **Google Gemini API:** procesamiento inteligente de imágenes y apoyo a recomendaciones.
+
+Las comunicaciones se realizarán mediante HTTPS y mecanismos de autenticación apropiados. Las bases de datos y los servicios internos no deberán exponerse directamente a Internet.
+
+**7. Validación posterior al despliegue**
+
+Después de publicar cada componente se realizarán pruebas funcionales y de integración para comprobar la comunicación entre la aplicación móvil, el backend, los servicios de inteligencia artificial y las bases de datos.
+
+Se validarán especialmente los procesos de autenticación, gestión del perfil, registro de prendas y las funcionalidades que se encuentren implementadas en la versión correspondiente.
+
+#### Integración y despliegue continuo (CI/CD)
+
+El equipo propone utilizar **GitHub Actions** para automatizar la validación y preparación de versiones de Mirage.
+
+El pipeline considerará las siguientes etapas:
+
+| **Etapa** | **Descripción** |
+|---|---|
+| **Checkout** | Obtención del código fuente desde GitHub. |
+| **Install Dependencies** | Instalación de las dependencias correspondientes a cada componente. |
+| **Build** | Compilación de la aplicación móvil, landing page o servicios backend. |
+| **Test** | Ejecución de pruebas automatizadas y validaciones de calidad. |
+| **Package** | Generación de artefactos Android o imágenes Docker, según el producto. |
+| **Deploy** | Publicación de los componentes aprobados en su entorno correspondiente. |
+| **Verification** | Verificación del funcionamiento de los servicios y conectividad entre componentes. |
+
+La ejecución de estas etapas permitirá detectar errores antes de publicar nuevas versiones y mantener un proceso de despliegue reproducible.
+
+
+#### Consideraciones de seguridad y disponibilidad
+
+Para garantizar un despliegue controlado, se adoptarán las siguientes medidas:
+
+- Uso de HTTPS para proteger las comunicaciones.
+- Almacenamiento seguro de credenciales y claves de API.
+- Separación de los entornos de desarrollo, pruebas y producción.
+- Restricción del acceso a bases de datos y servicios internos.
+- Ejecución de pruebas antes de publicar nuevas versiones.
+- Mantenimiento de versiones estables para facilitar la recuperación ante errores.
+
+Estas prácticas contribuirán a asegurar la integridad de los componentes desplegados y reducir los riesgos asociados con nuevas publicaciones.
+
+
+## 7.2.	Solution Implementation.
+
+### 7.2.1.	Sprint 1
+
+Esta sección presenta la planificación del primer Sprint del equipo **ReWear**, correspondiente al desarrollo de **Mirage**.
+
+Durante esta reunión se establecieron los objetivos principales del sprint, las funcionalidades prioritarias y la distribución inicial del trabajo entre los integrantes del equipo.
+
+Al tratarse del primer Sprint del proyecto, no se incluyen resúmenes de revisiones ni retrospectivas anteriores.
+
+El enfoque principal será **desarrollar las bases funcionales de los bounded contexts User Auth Service, Recommendation Service y Virtual Try-On Service**, con el objetivo de implementar la autenticación de usuarios, establecer el procesamiento inicial de recomendaciones personalizadas y validar la viabilidad técnica del probador virtual mediante representaciones tridimensionales.
+
+### 7.2.1.1.	Sprint Planning 1.
+
+| **Campo** | **Descripción** |
+|---|---|
+| **Sprint #** | Sprint 1 |
+| **Date** | 10-11-26 |
+| **Time** | 6:00 pm |
+| **Location** | Virtual – Google Meet |
+| **Prepared By** | Equipo ReWear |
+| **Attendees (Planning Meeting)** | Cabanillas Meza, Jose Mateo (u202311458); Ortiz Cardenas, Johanna Antuanete (u202310358); Sánchez Manrique, Italo Ludwing (u202316967); Sarmiento Medina, Loreley (u202310005); Zegarra López, Renato Sebastián Rubber (u202311558). |
+| **Sprint n - 1 Review Summary** | No aplica, debido a que corresponde al primer Sprint del proyecto Mirage. Durante esta etapa se establecerán las primeras implementaciones de los servicios y se configurarán los entornos necesarios para su desarrollo e integración. |
+| **Sprint n - 1 Retrospective Summary** | No aplica, debido a que todavía no se ha realizado una iteración anterior. Las oportunidades de mejora relacionadas con la organización, comunicación y desarrollo serán evaluadas al finalizar el Sprint 1. |
+| **Sprint 1 Goal** | **Our focus is on** establishing the initial backend architecture of Mirage by developing the User Auth Service, Recommendation Service, and Virtual Try-On Service. **We believe it delivers** the technical foundation required for secure user access, personalized outfit recommendations, and virtual clothing visualization. **This will be confirmed when** users can register and log in, the recommendation service can generate initial outfit suggestions, and the virtual try-on module demonstrates a functional 3D visualization prototype. **Outcome:** Implementar las primeras funcionalidades de los tres servicios y validar su funcionamiento mediante pruebas. **Impact:** Establecer las bases técnicas para una experiencia de moda digital personalizada e interactiva. **Customer(s):** Usuarios interesados en gestionar su armario digital y explorar nuevas combinaciones de ropa. **Event:** Los usuarios pueden acceder al sistema, obtener recomendaciones iniciales y visualizar un prototipo de prueba virtual. |
+| **Sprint 1 Velocity** | Se propone una capacidad inicial de **26 Story Points**, pendiente de validación durante la planificación del equipo. |
+| **Sum of Story Points** | La suma de las historias y tareas técnicas propuestas para este sprint es de **26 Story Points**. |
+
+#### Funcionalidades priorizadas para el Sprint 1
+
+| **Bounded Context / Service** | **User Story ID** | **Funcionalidad** | **Story Points** |
+|---|---|---|---|
+| **User Auth Service** | US01 | Registro de nueva cuenta de usuario. | 3 |
+| **User Auth Service** | US02 | Inicio de sesión de usuario. | 2 |
+| **Recommendation Service** | US06 | Registro y actualización de preferencias de estilo. | 3 |
+| **Recommendation Service** | US15 | Recomendación de outfits a partir de una prenda o accesorio seleccionado. | 5 |
+| **Virtual Try-On Service** | TS02 | Validación técnica del renderizado 3D y compatibilidad del probador virtual con dispositivos móviles estándar. | 13 |
+| **Total** | | | **26** |
+
+Las funcionalidades seleccionadas permitirán establecer la base tecnológica de los tres servicios priorizados para esta iteración. En particular, el Virtual Try-On Service se enfocará inicialmente en validar el renderizado tridimensional, sin considerar todavía la implementación completa de la prueba virtual de prendas sobre un avatar personalizado.
+
+La implementación de funcionalidades avanzadas, como la generación de avatares mediante fotografías, la estimación de proporciones corporales y la prueba virtual en tiempo real mediante realidad aumentada, se abordará en futuras iteraciones de acuerdo con los resultados de las validaciones técnicas.
+
+
+### 7.2.1.2.	Sprint Backlog 1.
+
+El Sprint Backlog 1 de **Mirage** está orientado a establecer las primeras funcionalidades de los bounded contexts **User Auth Service, Recommendation Service y Virtual Try-On Service**, con el propósito de implementar los mecanismos básicos de autenticación, desarrollar la lógica inicial de recomendaciones personalizadas y validar la viabilidad técnica de la visualización tridimensional.
+
+Durante este sprint, el equipo **ReWear** trabajará en el registro e inicio de sesión de usuarios, la administración de preferencias de estilo, las recomendaciones basadas en prendas seleccionadas y las pruebas iniciales de renderizado 3D.
+
+Para organizar y dar seguimiento a las actividades se utilizará un tablero de Trello, donde las tareas estarán clasificadas en los estados **To-do, In-Process, To-Review y Done**, permitiendo visualizar el progreso del equipo.
+
+**Sprint Board URL:** 
+
+**Figura X. Sprint 1 Board de Mirage**
+
+
+##### Sprint Backlog – Task Breakdown
+
+**Sprint #: Sprint 1**
+
+| User Story ID | User Story Title | Task ID | Task Title | Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---|---|
+| US01 | Registro de nueva cuenta de usuario | T01 | Design User Registration API | Definir endpoints y modelos de datos necesarios para el registro de usuarios. | 4 | Cabanillas Meza, Jose Mateo | To-do |
+| US01 | Registro de nueva cuenta de usuario | T02 | Implement User Registration | Implementar el registro de usuarios, validación de datos y almacenamiento seguro de credenciales. | 8 | Cabanillas Meza, Jose Mateo | To-do |
+| US01 | Registro de nueva cuenta de usuario | T03 | Test User Registration | Desarrollar pruebas para validar el registro exitoso, campos obligatorios y cuentas duplicadas. | 4 | Sánchez Manrique, Italo Ludwing | To-do |
+| US02 | Inicio de sesión de usuario | T04 | Implement Authentication Endpoint | Implementar el endpoint de autenticación y validación de credenciales. | 6 | Cabanillas Meza, Jose Mateo | To-do |
+| US02 | Inicio de sesión de usuario | T05 | Implement JWT Authentication | Configurar la generación y validación de tokens JWT para sesiones de usuario. | 6 | Sánchez Manrique, Italo Ludwing | To-do |
+| US02 | Inicio de sesión de usuario | T06 | Test User Authentication | Validar el inicio de sesión con credenciales correctas e incorrectas mediante pruebas automatizadas. | 4 | Sánchez Manrique, Italo Ludwing | To-do |
+| US06 | Registro y actualización de preferencias de estilo | T07 | Design Style Preferences Model | Definir la estructura de datos para almacenar colores, estilos y preferencias personales de los usuarios. | 4 | Ortiz Cardenas, Johanna Antuanete | To-do |
+| US06 | Registro y actualización de preferencias de estilo | T08 | Implement Style Preferences API | Implementar endpoints para registrar, consultar y actualizar las preferencias de estilo. | 8 | Ortiz Cardenas, Johanna Antuanete | To-do |
+| US06 | Registro y actualización de preferencias de estilo | T09 | Test Style Preferences | Validar el almacenamiento y actualización de preferencias mediante pruebas de API. | 4 | Sánchez Manrique, Italo Ludwing | To-do |
+| US15 | Recomendación a partir de un artículo clave | T10 | Design Recommendation Service | Definir la estructura del servicio y los criterios iniciales para recomendar prendas compatibles. | 6 | Sarmiento Medina, Loreley | To-do |
+| US15 | Recomendación a partir de un artículo clave | T11 | Implement Basic Outfit Recommendation | Desarrollar la lógica inicial para generar sugerencias utilizando una prenda seleccionada y preferencias del usuario. | 10 | Sarmiento Medina, Loreley | To-do |
+| US15 | Recomendación a partir de un artículo clave | T12 | Create Recommendation API Endpoint | Implementar el endpoint para solicitar y consultar recomendaciones personalizadas. | 6 | Ortiz Cardenas, Johanna Antuanete | To-do |
+| US15 | Recomendación a partir de un artículo clave | T13 | Test Recommendation Service | Verificar las respuestas del servicio, las entradas válidas y el manejo de errores. | 4 | Sarmiento Medina, Loreley | To-do |
+| TS02 | Renderizado 3D y AR compatible con hardware estándar | T14 | Research 3D Rendering Technologies | Evaluar tecnologías y librerías compatibles con Flutter para visualizar modelos tridimensionales. | 6 | Zegarra López, Renato Sebastián Rubber | To-do |
+| TS02 | Renderizado 3D y AR compatible con hardware estándar | T15 | Implement 3D Visualization Prototype | Desarrollar un prototipo que permita cargar y visualizar un modelo tridimensional dentro de la aplicación. | 12 | Zegarra López, Renato Sebastián Rubber | To-do |
+| TS02 | Renderizado 3D y AR compatible con hardware estándar | T16 | Test 3D Rendering Performance | Evaluar el tiempo de carga y el comportamiento del prototipo en un dispositivo Android de prueba. | 6 | Zegarra López, Renato Sebastián Rubber | To-do |
+| — | Technical Task | T17 | Configure Development Environment | Configurar dependencias, herramientas y variables de entorno necesarias para los servicios del sprint. | 4 | Cabanillas Meza, Jose Mateo | To-do |
+| — | Technical Task | T18 | Configure GitHub Workflow | Crear o validar las ramas de trabajo y establecer las convenciones GitFlow para los repositorios utilizados. | 3 | Sánchez Manrique, Italo Ludwing | To-do |
+| — | Technical Task | T19 | Document Backend API | Documentar los endpoints implementados, sus parámetros y las respuestas esperadas. | 4 | Ortiz Cardenas, Johanna Antuanete | To-do |
+| — | Technical Task | T20 | Perform Sprint Integration Testing | Realizar pruebas de integración entre los servicios disponibles y registrar los resultados obtenidos. | 6 | Sánchez Manrique, Italo Ludwing | To-do |
+
+ 
+### 7.2.1.3.	Development Evidence for Sprint Review.
+
+En esta sección se presentan las evidencias del desarrollo realizado durante el **Sprint 1 de Mirage**, correspondiente a la implementación inicial de los bounded contexts **User Auth Service, Recommendation Service y Virtual Try-On Service**, así como su integración con la aplicación móvil.
+
+Durante esta iteración, el equipo **ReWear** trabajó en la implementación de servicios de autenticación, funcionalidades de generación y gestión de outfits, procesamiento de modelos tridimensionales y almacenamiento de recursos digitales.
+
+Las evidencias se encuentran registradas en los repositorios de GitHub de la organización **G1-Emergentes**, donde es posible consultar el historial de commits, las modificaciones realizadas y las integraciones mediante Pull Requests.
+
+A continuación, se presentan los commits registrados en los repositorios correspondientes al desarrollo del Sprint 1.
+
+#### User Auth Service – Development Evidence
+
+**Repository:** [iam-service](https://github.com/G1-Emergentes/iam-service)
+
+Este repositorio contiene la implementación inicial del servicio de autenticación de Mirage y un componente de procesamiento de avatares. Durante el sprint se incorporó la estructura inicial del proyecto y se realizaron ajustes en la configuración del repositorio.
+
+| **Repository** | **Branch** | **Commit ID** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+|---|---|---|---|---|---|
+| iam-service | main | [bd6b216](https://github.com/G1-Emergentes/iam-service/commit/bd6b2161b7cc00766b95732f8cd3ace36bf95056) | Initial import of Mirage IAM and avatar worker | No especificado. | 10/11/2026 |
+| iam-service | main | [5b31af4](https://github.com/G1-Emergentes/iam-service/commit/5b31af466e6342aef3efe3733b130ff2bb0196f3) | Exclude local Supabase CLI metadata | No especificado. | 10/11/2026 |
+
+#### Virtual Try-On Service – Development Evidence
+
+**Repository:** [virtual-try-on-service](https://github.com/G1-Emergentes/virtual-try-on-service)
+
+Este repositorio corresponde al desarrollo del servicio de prueba virtual de Mirage. Durante el Sprint 1 se incorporaron funcionalidades relacionadas con la generación de modelos tridimensionales mediante SPAR3D, almacenamiento de modelos en Supabase Storage y prueba virtual de accesorios.
+
+Asimismo, se realizó la integración de funcionalidades mediante un Pull Request hacia la rama principal del repositorio.
+
+| **Repository** | **Branch** | **Commit ID** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+|---|---|---|---|---|---|
+| virtual-try-on-service | main | [c2c1cc5](https://github.com/G1-Emergentes/virtual-try-on-service/commit/c2c1cc5b5c86a526c543a0b5d11848c9ed34f851) | feat(Virtual Try-On Service): modelos 3D por prenda con SPAR3D | No especificado. | 10/11/2026 |
+| virtual-try-on-service | main | [e6163c8](https://github.com/G1-Emergentes/virtual-try-on-service/commit/e6163c8165a41e64796a5c7646ad7c0a46243ebd) | feat(Virtual Try-On Service): guardar modelos en Supabase Storage | Incorporación de SupabaseModelRepository para almacenar archivos GLB, miniaturas, fotografías y metadatos en el bucket privado accessory-models. Configuración de almacenamiento mediante variables de entorno, soporte para almacenamiento local y manejo del error MODEL_STORAGE_UNAVAILABLE (503). | 11/11/2026 |
+| virtual-try-on-service | main | [85b6b71](https://github.com/G1-Emergentes/virtual-try-on-service/commit/85b6b712cac615b1c7eb4f873a6e3d3aab0c68d2) | feat(ar): implement virtual glasses try-on service | No especificado. | 11/11/2026 |
+| virtual-try-on-service | main | [e9e77dd](https://github.com/G1-Emergentes/virtual-try-on-service/commit/e9e77dd9ef990f27ff0c7089329330f6c9c1e6e6) | Merge pull request #1 from G1-Emergentes/feat/ar-fit | Feat/ar fit. Integración de la rama feat/ar-fit mediante el Pull Request #1. | 11/11/2026 |
+
+#### Mirage Mobile Application – Development Evidence
+
+**Repository:** [mirage-mobile](https://github.com/G1-Emergentes/mirage-mobile)
+
+Este repositorio contiene la aplicación móvil desarrollada con Flutter. Durante el Sprint 1 se incorporó la estructura inicial de la aplicación y se realizaron avances en la gestión de prendas, generación de outfits mediante inteligencia artificial y almacenamiento y edición de combinaciones.
+
+Además, se integraron cambios provenientes de ramas de desarrollo mediante Pull Requests.
+
+| **Repository** | **Branch** | **Commit ID** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+|---|---|---|---|---|---|
+| mirage-mobile | main | [7c36e89](https://github.com/G1-Emergentes/mirage-mobile/commit/7c36e89ed77bf37566d7e0669570045bf534c259) | Initial import of Mirage Flutter mobile app | No especificado. | 10/11/2026 |
+| mirage-mobile | main | [aa10508](https://github.com/G1-Emergentes/mirage-mobile/commit/aa10508473bedf670959a096e8f1d36a6573b77b) | Feat():Agregar ropa y generar outfits ia | No especificado. | 10/11/2026 |
+| mirage-mobile | main | [c2abba2](https://github.com/G1-Emergentes/mirage-mobile/commit/c2abba20989a1529d7abb56df86fb3cf753b2b05) | Feat():Guardar outfits | No especificado. | 11/11/2026 |
+| mirage-mobile | main | [58a3d7d](https://github.com/G1-Emergentes/mirage-mobile/commit/58a3d7d0bd7b2d71c0056ae6a8513ac67230472c) | Fix():Editar outfits | No especificado. | 11/11/2026 |
+| mirage-mobile | main | [9e3c00b](https://github.com/G1-Emergentes/mirage-mobile/commit/9e3c00b550c99e3879c488525505ce236d682999) | Merge pull request #1 from G1-Emergentes/features/new-function | Features/new function. Integración de la rama features/new-function mediante el Pull Request #1. | 11/11/2026 |
+| mirage-mobile | main | [855a7a2](https://github.com/G1-Emergentes/mirage-mobile/commit/855a7a24e81a2b9f4865288b5009b497b2052445) | Merge pull request #3 from G1-Emergentes/develop | Develop. Integración de la rama develop mediante el Pull Request #3. | 11/11/2026 |
+
+#### Summary of Development Evidence
+
+| **Repository** | **Number of Commits** | **Main Development Evidence** |
+|---|---|---|
+| iam-service | 2 | Incorporación inicial del servicio IAM y del componente de procesamiento de avatares, junto con ajustes de configuración del repositorio. |
+| virtual-try-on-service | 4 | Generación de modelos 3D mediante SPAR3D, almacenamiento en Supabase Storage, desarrollo del servicio de prueba virtual de gafas e integración de cambios. |
+| mirage-mobile | 6 | Incorporación de la aplicación Flutter, registro de prendas, generación de outfits mediante IA, guardado y edición de combinaciones e integración de ramas de desarrollo. |
+| **Total** | **12** | **Evidencias registradas en los tres repositorios del Sprint 1.** |
+
+Las evidencias presentadas permiten identificar avances relacionados con la implementación de los servicios priorizados y su integración con la aplicación móvil de Mirage.
+
+El historial de commits y Pull Requests constituye evidencia de los cambios incorporados al código fuente. La validación de su funcionamiento deberá complementarse con pruebas de ejecución, resultados de integración y demostraciones durante el Sprint Review.
+
+
+### 7.2.1.4.	Testing Suite Evidence for Sprint Review.
+
+
+### 7.2.1.4. Testing Suite Evidence for Sprint Review
+
+En esta sección se presentan las pruebas diseñadas para validar las funcionalidades desarrolladas durante el **Sprint 1 de Mirage**, correspondientes a los bounded contexts **User Auth Service, Recommendation Service y Virtual Try-On Service**.
+
+El equipo **ReWear** contempla la aplicación de Unit Tests, Integration Tests y Acceptance Tests para verificar el comportamiento de los servicios, la comunicación entre componentes y el cumplimiento de los criterios de aceptación establecidos en las historias de usuario.
+
+Para las pruebas de aceptación se utilizará el enfoque **Behavior-Driven Development (BDD)**, mediante archivos `.feature` escritos en lenguaje Gherkin, complementados con sus respectivas definiciones de pasos (Step Definitions).
+
+Las pruebas estarán relacionadas con las funcionalidades priorizadas en el Sprint Backlog. Su ejecución y aprobación deberán sustentarse mediante resultados verificables y registros de GitHub.
+
+#### Testing Repositories
+
+Los archivos de pruebas se mantendrán en los mismos repositorios que contienen el código fuente de los servicios correspondientes.
+
+| **Repository** | **Testing Scope** | **Repository URL** |
+|---|---|---|
+| **iam-service** | Pruebas de registro, autenticación, validación de credenciales y administración de sesiones. | [G1-Emergentes/iam-service](https://github.com/G1-Emergentes/iam-service) |
+| **virtual-try-on-service** | Pruebas de generación de modelos tridimensionales, almacenamiento de recursos y procesamiento de pruebas virtuales. | [G1-Emergentes/virtual-try-on-service](https://github.com/G1-Emergentes/virtual-try-on-service) |
+| **mirage-mobile** | Pruebas de widgets, navegación e integración de la aplicación Flutter con los servicios backend. | [G1-Emergentes/mirage-mobile](https://github.com/G1-Emergentes/mirage-mobile) |
+| **Recommendation Service** | Pruebas de preferencias de estilo, generación de recomendaciones y validación de respuestas. | Repositorio de implementación pendiente de confirmar. |
+
+#### Unit Tests
+
+Los Unit Tests permitirán validar individualmente las clases, funciones y componentes responsables de las funcionalidades principales del Sprint 1.
+
+La siguiente tabla presenta la relación de pruebas unitarias diseñadas, considerando las responsabilidades esperadas de los servicios.
+
+| **Test ID** | **Service** | **Class / Component** | **Test Description** | **Related User Story** |
+|---|---|---|---|---|
+| UT01 | User Auth Service | Authentication Controller / Service | Verificar que el registro acepte datos válidos de un nuevo usuario. | US01 |
+| UT02 | User Auth Service | Authentication Service | Validar el rechazo de credenciales incorrectas durante el inicio de sesión. | US02 |
+| UT03 | User Auth Service | Token Management | Verificar la generación y validación de tokens de autenticación. | US02 |
+| UT04 | Recommendation Service | Style Preferences Service | Validar el registro y actualización de las preferencias de estilo. | US06 |
+| UT05 | Recommendation Service | Recommendation Engine | Verificar la generación de recomendaciones a partir de una prenda seleccionada. | US15 |
+| UT06 | Virtual Try-On Service | 3D Reconstruction Component | Validar el manejo de entradas y resultados del proceso de reconstrucción 3D. | TS02 |
+| UT07 | Virtual Try-On Service | Model Storage Repository | Verificar la validación de archivos y el manejo de errores durante el almacenamiento de modelos. | TS02 |
+
+Los nombres de los componentes representan responsabilidades de prueba y deberán ajustarse a las clases y funciones concretas implementadas en cada repositorio. No constituyen una relación de pruebas cuya ejecución haya sido confirmada.
+
+#### Integration Tests
+
+Los Integration Tests verificarán la interacción entre los componentes y servicios desarrollados durante el sprint.
+
+| **Test ID** | **Related Service** | **Test Description** | **Expected Result** |
+|---|---|---|---|
+| IT01 | User Auth Service | Validar la comunicación entre el endpoint de registro y el sistema de persistencia. | El usuario se registra y su información queda almacenada correctamente. |
+| IT02 | User Auth Service | Verificar el proceso de autenticación mediante credenciales y generación de sesión. | El sistema devuelve una respuesta de autenticación válida. |
+| IT03 | Recommendation Service | Validar la comunicación entre las preferencias del usuario y el módulo de recomendaciones. | El servicio genera una respuesta de recomendación basada en los datos disponibles. |
+| IT04 | Virtual Try-On Service | Verificar la generación de modelos 3D y su almacenamiento en Supabase Storage. | El modelo generado se almacena y puede recuperarse mediante un mecanismo autorizado. |
+| IT05 | Virtual Try-On Service | Verificar la comunicación entre el servicio de prueba virtual y los recursos tridimensionales disponibles. | El servicio procesa la solicitud y devuelve la respuesta esperada. |
+
+#### Acceptance Tests – BDD
+
+Para las pruebas de aceptación se utilizará Gherkin, permitiendo describir escenarios funcionales mediante las palabras clave `Feature`, `Scenario`, `Given`, `When` y `Then`.
+
+Los siguientes archivos representan escenarios BDD propuestos para los servicios contemplados en el Sprint 1. Su incorporación al código fuente y su ejecución automatizada deberán verificarse antes de reportarlos como pruebas completadas.
+
+##### Feature 1: User Authentication
+
+**Related User Stories:** US01 – Registro de usuario y US02 – Inicio de sesión.
+
+**Proposed File:** `tests/features/user_authentication.feature`
+
+```gherkin
+Feature: User Authentication
+  As a Mirage user
+  I want to register and log in
+  So that I can access my personal account
+
+  Scenario: Successful user registration
+    Given a user with valid registration information
+    And the email address is not registered
+    When the user submits the registration request
+    Then the system should accept the registration
+    And return a successful registration response
+
+  Scenario: Successful user login
+    Given a registered user with valid credentials
+    When the user submits the login request
+    Then the system should authenticate the user
+    And return valid authentication credentials
+
+  Scenario: Login with invalid credentials
+    Given a registered user
+    When the user submits an incorrect password
+    Then the system should reject the authentication
+    And return an authentication error
+```
+
+##### Feature 2: Outfit Recommendation
+
+**Related User Stories:** US06 – Preferencias de estilo y US15 – Recomendaciones a partir de un artículo clave.
+
+**Proposed File:** `tests/features/outfit_recommendation.feature`
+
+```gherkin
+Feature: Outfit Recommendation
+  As a Mirage user
+  I want to receive outfit recommendations
+  So that I can discover new clothing combinations
+
+  Scenario: Save user style preferences
+    Given an authenticated user
+    And valid style preferences
+    When the user saves the preferences
+    Then the system should store the preferences
+    And allow the user to retrieve them
+
+  Scenario: Generate outfit recommendations
+    Given an authenticated user
+    And a garment available in the digital closet
+    When the user requests an outfit recommendation
+    Then the system should process the selected garment
+    And return an outfit recommendation
+
+  Scenario: Recommendation with invalid garment
+    Given an authenticated user
+    And an invalid garment identifier
+    When the user requests an outfit recommendation
+    Then the system should reject the request
+    And return a validation error
+```
+
+##### Feature 3: Virtual Try-On Service
+
+**Related Technical Story:** TS02 – Renderizado 3D y AR compatible con hardware estándar.
+
+**Proposed File:** `tests/features/virtual_try_on.feature`
+
+```gherkin
+Feature: Virtual Try-On Service
+  As a Mirage user
+  I want to visualize clothing and accessories in 3D
+  So that I can explore virtual fashion experiences
+
+  Scenario: Generate a 3D model from a valid image
+    Given a valid garment image
+    When the reconstruction service processes the image
+    Then the system should generate a 3D model
+    And return the model information
+
+  Scenario: Store a generated 3D model
+    Given a successfully generated 3D model
+    When the system stores the model
+    Then the model should be saved successfully
+    And an authorized retrieval reference should be available
+
+  Scenario: Reject an invalid image
+    Given an unsupported image file
+    When the user requests 3D reconstruction
+    Then the system should reject the request
+    And return an appropriate validation error
+```
+
+#### Step Definitions
+
+Los archivos `.feature` deberán complementarse con Step Definitions encargadas de traducir los escenarios Gherkin a operaciones ejecutables sobre los servicios.
+
+Para los servicios desarrollados en Python podrá utilizarse una herramienta compatible con BDD, como Behave. Las pruebas deberán ejecutarse utilizando un entorno de prueba y datos controlados.
+
+A modo de referencia, se presenta un ejemplo de implementación de pasos correspondiente al escenario de autenticación.
+
+**Proposed File:** `tests/steps/authentication_steps.py`
+
+```python
+import os
+import requests
+from behave import given, when, then
+
+BASE_URL = os.environ["TEST_API_BASE_URL"]
+
+@given("a registered user with valid credentials")
+def step_registered_user(context):
+    context.credentials = {
+        "email": os.environ["TEST_USER_EMAIL"],
+        "password": os.environ["TEST_USER_PASSWORD"]
+    }
+
+@when("the user submits the login request")
+def step_submit_login(context):
+    context.response = requests.post(
+        f"{BASE_URL}/api/v1/auth/login",
+        json=context.credentials,
+        timeout=10
+    )
+
+@then("the system should authenticate the user")
+def step_verify_authentication(context):
+    assert context.response.status_code == 200
+
+@then("return valid authentication credentials")
+def step_verify_credentials(context):
+    response_data = context.response.json()
+    assert response_data.get("access_token")
+```
+
+Este código es una propuesta de Step Definitions y debe adaptarse al contrato real de autenticación de Mirage, incluyendo los nombres de los campos, la estructura de respuesta y el mecanismo de preparación de usuarios de prueba.
+
+Para los componentes desarrollados en C++ se utilizarán frameworks de testing compatibles con el servicio y, para las pruebas de API, podrán emplearse runners BDD externos que consuman sus endpoints HTTP.
+
+#### Testing Evidence – GitHub Commits
+
+Los repositorios de Mirage permiten mantener trazabilidad de los cambios asociados con el desarrollo y las pruebas.
+
+A continuación, se presentan los commits de inicialización identificados durante el Sprint 1. Estos commits se utilizan como referencias del código fuente que incluye los directorios de pruebas; no deben interpretarse como evidencia suficiente de que los tests fueron ejecutados exitosamente.
+
+| **Repository** | **Branch** | **Commit ID** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+|---|---|---|---|---|---|
+| iam-service | main | [bd6b216](https://github.com/G1-Emergentes/iam-service/commit/bd6b2161b7cc00766b95732f8cd3ace36bf95056) | Initial import of Mirage IAM and avatar worker | Importación inicial del proyecto. El repositorio contiene un directorio de pruebas; el alcance exacto de los tests incluidos requiere verificación. | 10/11/2026 |
+| virtual-try-on-service | main | [c2c1cc5](https://github.com/G1-Emergentes/virtual-try-on-service/commit/c2c1cc5b5c86a526c543a0b5d11848c9ed34f851) | feat(Virtual Try-On Service): modelos 3D por prenda con SPAR3D | Incorporación de funcionalidades de generación 3D. No se ha confirmado que este commit incorpore pruebas automatizadas específicas. | 10/11/2026 |
+| mirage-mobile | main | [7c36e89](https://github.com/G1-Emergentes/mirage-mobile/commit/7c36e89ed77bf37566d7e0669570045bf534c259) | Initial import of Mirage Flutter mobile app | Importación inicial de la aplicación Flutter. El repositorio contiene un directorio test; no se han confirmado resultados de ejecución. | 10/11/2026 |
+
+**Estado de la evidencia:** todavía se requiere identificar commits que modifiquen directamente los archivos de pruebas, así como registrar los resultados de ejecución de los Unit Tests, Integration Tests y Acceptance Tests.
+
+Una vez implementados y ejecutados los escenarios BDD, el equipo deberá incorporar sus archivos `.feature`, Step Definitions y evidencias de resultados a los repositorios correspondientes.
+
+#### Testing Validation Criteria
+
+Para considerar satisfactoria la validación de los componentes del Sprint 1 se establecen los siguientes criterios:
+
+- Los Unit Tests deben verificar las funciones y comportamientos críticos de cada servicio.
+- Los Integration Tests deben comprobar la comunicación entre los endpoints y las dependencias necesarias.
+- Los Acceptance Tests deben validar los criterios de aceptación de las historias de usuario mediante escenarios Gherkin.
+- Los resultados deben identificar las pruebas aprobadas, fallidas y pendientes.
+- Los archivos de pruebas deben mantenerse versionados en GitHub.
+- La evidencia final debe incluir los commits relacionados con las pruebas y sus resultados de ejecución.
+
+
+### 7.2.1.5.	Execution Evidence for Sprint Review.
+
+
+Durante el **Sprint 1 de Mirage**, el equipo **ReWear** desarrolló y ejecutó diferentes funcionalidades de la aplicación móvil utilizando Flutter. Las evidencias muestran avances en la autenticación de usuarios, gestión del armario digital, recomendaciones de outfits mediante inteligencia artificial y funcionalidades iniciales de prueba virtual.
+
+A continuación, se presentan las capturas de pantalla obtenidas durante la ejecución de la aplicación en un emulador Android.
+
+#### Inicio y autenticación de usuarios
+
+**Figura 1. Pantalla de inicio de Mirage**
+
+![Mirage Logo](assets/sprint1/Mirage-logo.jpeg)
+
+*Se muestra la pantalla de bienvenida de Mirage, incorporando el logotipo y la identidad visual de ReWear.*
+
+**Figura 2. Introducción al armario digital**
+
+![Mirage Onboarding](assets/sprint1/Mirage-your-closed.jpeg)
+
+*Se presenta el proceso de introducción a la aplicación, mostrando las principales características del armario digital.*
+
+**Figura 3. Introducción a las funcionalidades de realidad aumentada**
+
+![Mirage AR Onboarding](assets/sprint1/Mirage-see-more.jpeg)
+
+*Se muestran las funcionalidades propuestas de visualización 3D, prueba virtual de accesorios mediante realidad aumentada y generación de outfits personalizados.*
+
+**Figura 4. Inicio de sesión**
+
+![Mirage Login](assets/sprint1/Mirage-login.jpeg)
+
+*Se presenta la interfaz de autenticación de usuarios mediante correo electrónico y contraseña, incluyendo la opción de acceso con Google.*
+
+**Figura 5. Recuperación de contraseña**
+
+![Mirage Password Recovery](assets/sprint1/Mirage-acceso.jpeg)
+
+*Se muestra el formulario para solicitar la recuperación de contraseña mediante el correo electrónico registrado.*
+
+#### Gestión del armario digital
+
+**Figura 6. Dashboard principal**
+
+![Mirage Dashboard](assets/sprint1/Mirage-dashboard.jpeg)
+
+*Se presenta la pantalla principal de Mirage, que permite acceder al armario digital, recomendaciones personalizadas y funcionalidades de prueba virtual.*
+
+**Figura 7. Armario digital**
+
+![Mirage My Closet](assets/sprint1/Mirage-my-closet.jpeg)
+
+*Se muestra la organización de prendas por categorías, como polos, pantalones, zapatos y accesorios.*
+
+**Figura 8. Perfil de usuario**
+
+![Mirage Profile](assets/sprint1/Mirage-perfil.jpeg)
+
+*Se presenta el perfil personal del usuario, incluyendo las opciones de configuración, preferencias, medidas corporales y outfits guardados.*
+
+**Figura 9. Listado de prendas**
+
+![Mirage Tops](assets/sprint1/Mirage-tops.jpeg)
+
+*Se visualizan las prendas registradas en una categoría del armario, incorporando opciones de búsqueda, filtrado y ordenamiento.*
+
+**Figura 10. Registro de nuevas prendas**
+
+![Mirage Add Item](assets/sprint1/Mirage-add-new-item.jpeg)
+
+*Se muestra el formulario para agregar prendas mediante fotografías y atributos como nombre, categoría, color y estilo.*
+
+**Figura 11. Detalle de accesorios**
+
+![Mirage Item Information](assets/sprint1/Mirage-informacion.jpeg)
+
+*Se presenta la información de un accesorio registrado, incluyendo sus características y las opciones de visualización 3D, prueba virtual y agregado a outfits.*
+
+#### Recomendaciones y gestión de outfits
+
+**Figura 12. Asistente de inteligencia artificial**
+
+![Mirage AI Stylist](assets/sprint1/Mirage-IA-estilista.jpeg)
+
+*Se muestra el asistente virtual de Mirage, que permite solicitar recomendaciones de outfits utilizando las prendas disponibles en el armario personal.*
+
+**Figura 13. Gestión de outfits**
+
+![Mirage New Outfit](assets/sprint1/MIrage-nuevo-outfit.jpeg)
+
+*Se presenta el detalle de un outfit compuesto por tres prendas, con opciones para editarlo, eliminarlo o iniciar una prueba virtual.*
+
+#### Virtual Try-On Service
+
+**Figura 14. Selección de fotografía corporal**
+
+![Mirage Body Photo](assets/sprint1/Mirage-photo.jpeg)
+
+*Se muestra la interfaz para seleccionar una fotografía corporal que será utilizada como referencia en la generación de una vista previa virtual. También se observa un mensaje de error al recuperar el avatar guardado.*
+
+**Figura 15. Preparación de prueba virtual**
+
+![Mirage Ready to Try](assets/sprint1/Mirage-ready-to-try.jpeg)
+
+*Se presentan las prendas seleccionadas para la prueba virtual, junto con la fotografía corporal y las opciones para reemplazarla o continuar con el proceso.*
+
+**Figura 16. Procesamiento de outfit mediante IA**
+
+![Mirage Creating Look](assets/sprint1/Mirage-creating-look.jpeg)
+
+*Se muestra el estado de procesamiento de un outfit, incluyendo las etapas de análisis, ajuste de proporciones y generación de la vista previa.*
+
+**Figura 17. Resultado de la prueba virtual**
+
+![Mirage AI Look](assets/sprint1/MIrage-AI-look.jpeg)
+
+*Se presenta una vista previa visual de la combinación generada mediante inteligencia artificial, incluyendo opciones para regenerar, comparar y editar el outfit.*
+
+
+### 7.2.1.6.	Services Documentation Evidence for Sprint Review.
+
+Durante el **Sprint 1 de Mirage**, el equipo ReWear desarrolló y documentó los endpoints de los servicios **User Auth Service, Profile Service, Digital Closet Service y Virtual Try-On Service**, utilizando Swagger UI y la especificación OpenAPI.
+
+La documentación permite identificar las operaciones HTTP disponibles, sus rutas, los mecanismos de autenticación y las funcionalidades ofrecidas por cada servicio. Estos componentes proporcionan las bases para gestionar cuentas de usuarios, almacenar prendas y outfits, administrar preferencias personales y generar modelos tridimensionales para experiencias de prueba virtual.
+
+Los servicios backend utilizan principalmente **C++17 con Drogon**, junto con integraciones con Supabase para autenticación y almacenamiento, mientras que el servicio Virtual Try-On contempla procesamiento de imágenes y generación de modelos 3D mediante SPAR3D.
+
+A continuación, se presentan los endpoints documentados y las evidencias obtenidas mediante Swagger UI durante el Sprint 1.
+
+#### User Auth Service – API Documentation
+
+El **User Auth Service** administra las funcionalidades de registro, autenticación y gestión de sesiones de los usuarios de Mirage.
+
+La documentación utiliza **OpenAPI 3.0** y permite consultar las operaciones disponibles, así como utilizar la opción `Authorize` para proporcionar credenciales en las solicitudes protegidas.
+
+**Repository:** [iam-service](https://github.com/G1-Emergentes/iam-service)
+
+**API Documentation:** URL local de Swagger UI del servicio IAM, pendiente de registrar.
+
+**Related User Stories:** US01, US02, US03 y US04.
+
+| **HTTP Method** | **Endpoint** | **Description** | **Parameters / Request** |
+|---|---|---|---|
+| POST | `/api/v1/auth/register` | Registrar una nueva cuenta de usuario. | Body: datos de registro del usuario. |
+| POST | `/api/v1/auth/login` | Iniciar sesión mediante correo y contraseña. | Body: credenciales del usuario. |
+| POST | `/api/v1/auth/google` | Autenticar al usuario mediante Google. | Body: credencial de autenticación de Google. |
+| POST | `/api/v1/auth/refresh` | Renovar una sesión de usuario. | Body: información de renovación requerida por el servicio. |
+| GET | `/api/v1/auth/me` | Consultar la información del usuario autenticado. | Header: Authorization Bearer Token. |
+| POST | `/api/v1/auth/logout` | Cerrar la sesión actual. | Datos de sesión según el contrato del servicio. |
+| POST | `/api/v1/auth/forgot-password` | Solicitar la recuperación de contraseña. | Body: correo electrónico. |
+| PUT | `/api/v1/auth/reset-password` | Actualizar la contraseña del usuario. | Body: información requerida para restablecer la contraseña. |
+| POST | `/api/v1/auth/resend-verification` | Reenviar la verificación del correo electrónico. | Body: datos de verificación. |
+| POST | `/api/v1/auth/verify-email` | Verificar el código asociado al correo electrónico. | Body: código de verificación. |
+
+**Figura 1. User Auth Service – Swagger UI**
+
+![User Auth Service Swagger](assets/sprint1/user-auth-swagger.jpeg)
+
+*La Figura 1 presenta la documentación OpenAPI del User Auth Service, incluyendo las operaciones de registro, inicio de sesión, autenticación mediante Google, renovación de sesiones y recuperación de contraseñas.*
+
+#### Profile Service – API Documentation
+
+El **Profile Service** proporciona operaciones para crear y actualizar información personal, consultar preferencias de estilo y administrar medidas corporales utilizadas por las funcionalidades de personalización de Mirage.
+
+**Repository:** [iam-service](https://github.com/G1-Emergentes/iam-service)
+
+**API Documentation:** URL local de Swagger UI del servicio de perfiles, pendiente de registrar.
+
+**Related User Stories:** US05, US06 y funcionalidades preparatorias del avatar personalizado.
+
+| **HTTP Method** | **Endpoint** | **Description** | **Parameters / Request** |
+|---|---|---|---|
+| POST | `/api/v1/profiles` | Crear el perfil de una cuenta autenticada. | Body: información inicial del perfil. |
+| GET | `/api/v1/profiles/{userId}` | Consultar perfil, preferencias y medidas. | Path: userId. |
+| PUT | `/api/v1/profiles/{userId}` | Actualizar los datos personales. | Path: userId. Body: información del perfil. |
+| GET | `/api/v1/profiles/{userId}/measurements` | Consultar las medidas corporales. | Path: userId. |
+| PUT | `/api/v1/profiles/{userId}/measurements` | Actualizar las medidas corporales. | Path: userId. Body: medidas. |
+| GET | `/api/v1/profiles/{userId}/preferences` | Consultar las preferencias de estilo. | Path: userId. |
+| PUT | `/api/v1/profiles/{userId}/preferences` | Registrar o reemplazar las preferencias. | Path: userId. Body: preferencias. |
+| GET | `/health` | Consultar el estado del servidor. | Sin parámetros. |
+
+**Figura 2. Profile Service – Swagger UI**
+
+![Profile Service Swagger](assets/sprint1/profile-swagger.jpeg)
+
+*La Figura 2 muestra los endpoints para la administración de perfiles, preferencias de estilo y medidas corporales, los cuales permiten centralizar la información personal utilizada por Mirage.*
+
+#### Digital Closet Service – API Documentation
+
+El **Digital Closet Service** permite gestionar las prendas del armario digital y los outfits guardados por los usuarios.
+
+El servicio utiliza **C++17 con Drogon**, documenta sus operaciones mediante **OpenAPI 3.0** y contempla integración con Supabase para el almacenamiento de imágenes privadas.
+
+Asimismo, ofrece operaciones que facilitan la comunicación con el sistema de recomendaciones y otros servicios de Mirage.
+
+**Repository:** repositorio del Digital Closet Service pendiente de registrar.
+
+**API Documentation:** URL local de Swagger UI del Digital Closet Service, pendiente de registrar.
+
+**Related User Stories:** US07, US09, US11, US13 y US31.
+
+##### Garments Endpoints
+
+| **HTTP Method** | **Endpoint** | **Description** | **Parameters / Request** |
+|---|---|---|---|
+| GET | `/api/v1/garments` | Listar las prendas del usuario autenticado. | Bearer Token. |
+| POST | `/api/v1/garments` | Registrar una nueva prenda. | Body: atributos de la prenda. |
+| POST | `/api/v1/garments/resolve` | Consultar prendas mediante sus identificadores. | Body: lista de identificadores. |
+| GET | `/api/v1/garments/{id}` | Consultar los datos de una prenda. | Path: id. |
+| PUT | `/api/v1/garments/{id}` | Actualizar los atributos de una prenda. | Path: id. Body: atributos. |
+| DELETE | `/api/v1/garments/{id}` | Eliminar una prenda mediante borrado lógico. | Path: id. |
+| POST | `/api/v1/garments/{id}/image-upload` | Solicitar una URL firmada para cargar una imagen. | Path: id. |
+| PUT | `/api/v1/garments/{id}/image` | Registrar la fotografía previamente subida. | Path: id. Body: referencia de la imagen. |
+| GET | `/api/v1/garments/{id}/image-access` | Obtener una URL temporal para visualizar la fotografía. | Path: id. |
+
+**Figura 3. Digital Closet Service – Garments**
+
+![Digital Closet Garments Swagger](assets/sprint1/digital-closet-garments.jpeg)
+
+*La Figura 3 presenta los endpoints relacionados con la creación, consulta, actualización y eliminación de prendas, así como la administración de sus imágenes mediante URLs firmadas.*
+
+##### Outfits Endpoints
+
+| **HTTP Method** | **Endpoint** | **Description** | **Parameters / Request** |
+|---|---|---|---|
+| GET | `/api/v1/outfits` | Listar los outfits guardados. | Bearer Token. |
+| POST | `/api/v1/outfits` | Registrar un nuevo outfit. | Body: nombre, estilo, ocasión y prendas. |
+| GET | `/api/v1/outfits/{id}` | Consultar un outfit específico. | Path: id. |
+| PUT | `/api/v1/outfits/{id}` | Actualizar nombre, estilo, ocasión y prendas. | Path: id. Body: información del outfit. |
+| DELETE | `/api/v1/outfits/{id}` | Eliminar un outfit mediante borrado lógico. | Path: id. |
+| POST | `/api/v1/outfits/{id}/image-upload` | Solicitar una URL firmada para cargar una imagen del outfit. | Path: id. |
+| PUT | `/api/v1/outfits/{id}/image` | Registrar la imagen previamente subida. | Path: id. Body: referencia de imagen. |
+| GET | `/api/v1/outfits/{id}/image-access` | Obtener una URL temporal para visualizar el outfit. | Path: id. |
+| GET | `/health` | Verificar la disponibilidad del servicio. | Sin parámetros. |
+
+**Figura 4. Digital Closet Service – Outfits**
+
+![Digital Closet Outfits Swagger](assets/sprint1/digital-closet-outfits.jpeg)
+
+*La Figura 4 presenta la documentación de los endpoints relacionados con la creación, almacenamiento, consulta, actualización y eliminación de outfits, incluyendo el acceso temporal a las imágenes almacenadas.*
+
+#### Virtual Try-On Service – API Documentation
+
+El **Virtual Try-On Service** contempla la generación y almacenamiento de modelos tridimensionales a partir de fotografías de prendas y accesorios.
+
+La documentación utiliza **OpenAPI 3.1** y presenta funcionalidades relacionadas con reconstrucción 3D, almacenamiento de archivos GLB, consulta del estado de procesamiento y configuración del ajuste de accesorios para realidad aumentada.
+
+Adicionalmente, el servicio incorpora una operación de validación de fotografías mediante Google Gemini antes de ejecutar procesos de reconstrucción.
+
+**Repository:** [virtual-try-on-service](https://github.com/G1-Emergentes/virtual-try-on-service)
+
+**API Documentation:** URL local de Swagger UI del Virtual Try-On Service, pendiente de registrar.
+
+**Related Technical Story:** TS02. También constituye una base técnica para las funcionalidades futuras US27, US28 y US33.
+
+| **HTTP Method** | **Endpoint** | **Description** | **Parameters / Request** |
+|---|---|---|---|
+| GET | `/api/v1/try-on/garments/models` | Consultar el estado de los modelos 3D de diferentes prendas. | Credenciales y parámetros según el contrato OpenAPI. |
+| POST | `/api/v1/try-on/garments/{garment_id}/model` | Solicitar la generación de un modelo 3D asociado a una prenda. | Path: garment_id. Body: datos requeridos para la generación. |
+| GET | `/api/v1/try-on/garments/{garment_id}/model` | Descargar el modelo tridimensional en formato GLB. | Path: garment_id. |
+| GET | `/api/v1/try-on/garments/{garment_id}/model/info` | Consultar el estado e información de un modelo 3D. | Path: garment_id. |
+| GET | `/api/v1/try-on/garments/{garment_id}/model/thumbnail` | Obtener la miniatura asociada a la prenda. | Path: garment_id. |
+| PUT | `/api/v1/try-on/garments/{garment_id}/model/ar-fit` | Guardar la configuración de ajuste del accesorio en realidad aumentada. | Path: garment_id. Body: configuración de calibración. |
+| POST | `/api/v1/try-on/generate` | Generar directamente un modelo GLB a partir de una fotografía. | Body: imagen y parámetros de generación. |
+| POST | `/api/v1/try-on/check` | Validar una fotografía mediante Gemini. | Body: imagen o referencia según el contrato. |
+| GET | `/health` | Consultar el estado del servicio. | Sin parámetros. |
+
+**Figura 5. Virtual Try-On Service – Garment Models**
+
+![Virtual Try-On Models Swagger](assets/sprint1/virtual-try-on-models.jpeg)
+
+*La Figura 5 muestra los endpoints encargados de generar, consultar y descargar modelos tridimensionales asociados con prendas del Digital Closet, además de la configuración de calibración para accesorios.*
+
+**Figura 6. Virtual Try-On Service – Generations and Photo Checks**
+
+![Virtual Try-On Generations Swagger](assets/sprint1/virtual-try-on-generations.jpeg)
+
+*La Figura 6 presenta las operaciones de generación directa de modelos GLB, validación de fotografías mediante Gemini y consulta del estado general del servicio.*
+
+
+#### Documentation Evidence Summary
+
+| **Service** | **Documentation Technology** | **Documented Operations** | **Evidence** |
+|---|---|---|---|
+| User Auth Service | OpenAPI 3.0 / Swagger UI | 10 | Figura 1 |
+| Profile Service | Swagger UI | 8 | Figura 2 |
+| Digital Closet Service – Garments | OpenAPI 3.0 / Swagger UI | 9 | Figura 3 |
+| Digital Closet Service – Outfits | OpenAPI 3.0 / Swagger UI | 9 | Figura 4 |
+| Virtual Try-On Service | OpenAPI 3.1 / Swagger UI | 9 | Figuras 5 y 6 |
+| **Total** | | **45 operaciones visibles** | **6 capturas de documentación** |
+
+La documentación de estos servicios proporciona una referencia técnica para comprender los endpoints disponibles y preparar las pruebas de integración entre la aplicación móvil y el backend de Mirage.
+
+
+### 7.2.1.7.	Software Deployment Evidence for Sprint Review.
+
+Durante el **Sprint 1 de Mirage**, el equipo **ReWear** realizó actividades relacionadas con la preparación de los entornos de desarrollo, configuración de servicios backend, integración con plataformas cloud y ejecución local de los componentes de la solución.
+
+El objetivo de estas actividades fue establecer una infraestructura inicial que permita la comunicación entre la aplicación móvil, los servicios de autenticación, el armario digital y el módulo de prueba virtual.
+
+Como parte de los avances de esta iteración, se cuenta con documentación Swagger UI de los servicios **User Auth Service, Profile Service, Digital Closet Service y Virtual Try-On Service**, así como modificaciones registradas en los repositorios de GitHub.
+
+Además, se incorporaron componentes para utilizar **Supabase** como servicio de autenticación y almacenamiento, y se desarrollaron funcionalidades de generación de modelos tridimensionales mediante **SPAR3D**.
+
+Las evidencias corresponden principalmente a la preparación de infraestructura, desarrollo e integración de servicios y ejecución en entornos de prueba. No se considera completado el despliegue público de producción.
+
+#### Deployment Activities
+
+La siguiente tabla resume las principales actividades relacionadas con el despliegue de los productos digitales de Mirage durante el Sprint 1.
+
+| **Component** | **Technology / Platform** | **Deployment Activity** | **Evidence / Status** |
+|---|---|---|---|
+| **User Auth Service** | C++17 / Drogon / Supabase Auth | Incorporación del servicio de autenticación y configuración para su integración con Supabase. | Código versionado y documentación Swagger UI disponible. |
+| **Profile Service** | C++17 / Drogon | Preparación de endpoints para gestionar perfiles, preferencias y medidas corporales. | Endpoints documentados en Swagger UI. |
+| **Digital Closet Service** | C++17 / Drogon / Supabase | Preparación de operaciones para prendas, outfits y almacenamiento de imágenes. | Documentación Swagger UI de Garments y Outfits. |
+| **Virtual Try-On Service** | Python / SPAR3D / Supabase Storage | Incorporación de generación de modelos 3D y almacenamiento de archivos GLB. | Commits de implementación y documentación Swagger UI. |
+| **Mirage Mobile Application** | Flutter / Dart | Incorporación del proyecto móvil y desarrollo de funcionalidades de prendas y outfits. | Código fuente y commits disponibles en GitHub. |
+| **Recommendation Service** | Servicio de recomendaciones | Preparación de funcionalidades relacionadas con recomendaciones personalizadas. | Se requiere confirmar el despliegue y la URL de su API independiente. |
+| **Cloud Storage** | Supabase Storage | Incorporación del repositorio para almacenar modelos tridimensionales y recursos asociados. | Commit de integración; funcionamiento cloud pendiente de evidenciar con pruebas. |
+| **CI/CD** | GitHub / GitHub Actions | Preparación del flujo de control de versiones para futuras automatizaciones. | No se ha confirmado la ejecución de un pipeline de despliegue. |
+
+
+Durante el **Sprint 1 de Mirage**, el equipo **ReWear** realizó actividades relacionadas con la configuración del entorno de desarrollo, ejecución de servicios mediante Docker y preparación de la aplicación móvil con Flutter. Estas actividades permitieron establecer las bases necesarias para el despliegue local y la integración de los componentes de la solución.
+
+#### Backend Deployment – Docker
+
+Se utilizó **Docker Desktop** para ejecutar y administrar contenedores de servicios backend y bases de datos. La evidencia muestra contenedores activos de PostgreSQL, Redis y una Web API, permitiendo verificar la disponibilidad de estos componentes en el entorno local.
+
+**Figura 1. Backend Deployment – Docker Desktop**
+
+![Backend Deployment](assets/sprint1/Backend-Deployment.PNG)
+
+*La Figura 1 muestra los contenedores en ejecución desde Docker Desktop, incluyendo PostgreSQL, Redis y Web API.*
+
+#### Mobile Application Deployment – Flutter
+
+Se configuró el entorno de desarrollo móvil utilizando **Flutter** y un emulador Android. La evidencia muestra la compilación de un aplicativo Flutter en modo debug y su ejecución en el emulador, como parte de las actividades de preparación y validación del entorno móvil.
+
+**Figura 2. Mobile Application Deployment – Flutter**
+
+![Mirage Mobile](assets/sprint1/Mirage-Mobile.PNG)
+
+*La Figura 2 muestra la ejecución de una aplicación Flutter en un emulador Android. La captura corresponde a un proyecto denominado RDP Mobile App, por lo que se utiliza como evidencia del entorno de ejecución Flutter y no de una versión funcional de Mirage.*
+
+#### Cloud Storage – Supabase
+
+Se consideró **Supabase Storage** para la administración de archivos digitales y recursos multimedia utilizados por los servicios de Mirage, como fotografías de prendas y modelos tridimensionales.
+
+**Figura 3. Supabase Storage**
+
+![Supabase Storage](assets/sprint1/deployment-auth-service.jpeg)
+
+*La Figura 3 presenta una interfaz de referencia de Supabase Storage con buckets y archivos. Esta captura no acredita por sí sola la configuración del almacenamiento del proyecto Mirage.*
+
+
+### 7.2.1.8.	Team Collaboration Insights during Sprint.
+
+
+Durante el **Sprint 1 de Mirage**, los integrantes del equipo **ReWear** colaboraron en el desarrollo e integración de los diferentes componentes de la solución, principalmente los servicios **User Auth Service, Recommendation Service y Virtual Try-On Service**, así como la aplicación móvil.
+
+Para gestionar el trabajo colaborativo se utilizó **GitHub**, permitiendo registrar los avances mediante commits, organizar los cambios y realizar integraciones entre ramas de desarrollo.
+
+Las siguientes capturas presentan las estadísticas de contribución de los repositorios, evidenciando la participación de los integrantes del equipo en diferentes actividades de implementación.
+
+**Figura 1. Team Collaboration – Repository Contributors**
+
+![Team Collaboration](assets/sprint1/Insights-1.png)
+
+*La Figura 1 muestra las contribuciones registradas en GitHub, reflejando la participación de los cinco integrantes del equipo en el repositorio correspondiente.*
+
+**Figura 2. Mobile Application – Repository Contributors**
+
+![Mobile Contributors](assets/sprint1/Insights-2.png)
+
+*La Figura 2 presenta las estadísticas de contribución de dos desarrolladores en el repositorio correspondiente a la aplicación móvil.*
+
+**Figura 3. Virtual Try-On Service – Repository Contributors**
+
+![Virtual Try-On Contributors](assets/sprint1/Insights-3.png)
+
+*La Figura 3 muestra las contribuciones de los desarrolladores que participaron en la implementación del servicio de prueba virtual.*
+
+En conclusión, las estadísticas de GitHub reflejan el **trabajo colaborativo del equipo ReWear** durante el Sprint 1, donde los integrantes contribuyeron en distintos componentes de Mirage. La distribución de actividades permitió avanzar en el desarrollo de los servicios y establecer las bases para su integración en las siguientes iteraciones.
+
+
+## 7.3.	Validation Interviews.
+
+Para validar la propuesta de valor y la experiencia de usuario de **Mirage**, el equipo **ReWear** realizará entrevistas de validación dirigidas a los dos segmentos objetivo identificados: **consumidores de moda** y **tiendas de ropa**.
+
+Estas entrevistas permitirán evaluar la facilidad de uso, comprensión de las funcionalidades y utilidad percibida de la Landing Page y la aplicación de Mirage. Asimismo, se buscará identificar dificultades de navegación, oportunidades de mejora y necesidades adicionales de los usuarios.
+
+Las sesiones se desarrollarán mediante la interacción directa de los participantes con los prototipos o módulos funcionales disponibles, aplicando preguntas abiertas, tareas guiadas y evaluaciones heurísticas para recopilar información sobre la experiencia de uso.
+
+### 7.3.1.	Diseño de Entrevistas.
+
+#### Segmento Objetivo 1: Consumidores de Moda
+
+Este segmento está conformado por jóvenes y adultos jóvenes interesados en la moda, quienes buscan organizar sus prendas, descubrir nuevas combinaciones y personalizar su estilo mediante herramientas digitales.
+
+**Objetivo de la entrevista:** Evaluar si los usuarios comprenden la propuesta de Mirage y pueden interactuar fácilmente con las funcionalidades principales del armario digital, recomendaciones personalizadas y prueba virtual.
+
+**Elementos que se evaluarán:**
+
+- Comprensión de la propuesta de valor presentada en la Landing Page.
+- Facilidad de navegación y acceso a la aplicación.
+- Registro e inicio de sesión.
+- Registro y visualización de prendas en el armario digital.
+- Generación y almacenamiento de outfits.
+- Comprensión de las recomendaciones personalizadas.
+- Interacción con las funcionalidades disponibles de visualización 3D o prueba virtual.
+
+**User Flows para la validación:**
+
+| **User Flow** | **Descripción** | **Objetivo de validación** |
+|---|---|---|
+| UF01 – Landing Page Navigation | Explorar la Landing Page e identificar las funcionalidades principales de Mirage. | Evaluar la claridad de la propuesta de valor y facilidad de navegación. |
+| UF02 – User Registration and Login | Registrar una cuenta e iniciar sesión en la aplicación. | Comprobar la facilidad del proceso de autenticación. |
+| UF03 – Digital Closet Management | Registrar una prenda y visualizarla dentro del armario digital. | Evaluar la facilidad de uso del registro y organización de prendas. |
+| UF04 – Outfit Recommendations | Seleccionar una prenda y solicitar recomendaciones de outfits. | Evaluar la utilidad y comprensión de las recomendaciones. |
+| UF05 – Outfit Management | Guardar y consultar una combinación de prendas. | Verificar la facilidad para administrar outfits. |
+| UF06 – Virtual Try-On | Explorar un modelo 3D o utilizar una función disponible de prueba virtual. | Evaluar la comprensión, interacción y utilidad percibida de la visualización virtual. |
+
+**Preguntas de validación:**
+
+1. ¿Qué entiendes sobre Mirage después de visitar la Landing Page?
+2. ¿Qué tan sencillo te resultó registrarte e iniciar sesión?
+3. ¿Tuviste alguna dificultad al registrar una prenda en el armario digital?
+4. ¿Consideras útiles las recomendaciones de outfits para combinar tu ropa?
+5. ¿Qué opinas de la posibilidad de visualizar prendas o accesorios virtualmente?
+6. ¿Qué funcionalidad mejorarías para que Mirage sea más fácil de utilizar?
+
+#### Segmento Objetivo 2: Tiendas de Ropa
+
+Este segmento está conformado por tiendas de ropa y accesorios interesadas en ampliar la visibilidad de sus productos mediante plataformas digitales.
+
+**Objetivo de la entrevista:** Evaluar si los representantes de tiendas comprenden la propuesta comercial de Mirage y consideran útil la posibilidad de publicar sus productos y permitir que los usuarios los descubran mediante recomendaciones y experiencias digitales.
+
+**Elementos que se evaluarán:**
+
+- Comprensión de la propuesta de valor de Mirage para tiendas.
+- Facilidad para encontrar información comercial en la Landing Page.
+- Claridad del proceso de contacto o solicitud de alianza.
+- Comprensión de las funcionalidades propuestas para gestionar catálogos.
+- Interés en permitir la visualización virtual de productos.
+- Utilidad percibida de los mecanismos de descubrimiento de prendas.
+
+**User Flows para la validación:**
+
+| **User Flow** | **Descripción** | **Objetivo de validación** |
+|---|---|---|
+| UF07 – Landing Page Exploration | Explorar la Landing Page e identificar los beneficios de Mirage para tiendas. | Evaluar la claridad de la propuesta comercial. |
+| UF08 – Store Partnership Request | Localizar y completar el formulario de solicitud de alianza. | Validar la facilidad del proceso de contacto comercial. |
+| UF09 – Store Profile Registration | Explorar el proceso propuesto de creación de una cuenta comercial. | Evaluar la comprensión del registro de tiendas. |
+| UF10 – Product Catalog Management | Explorar el flujo de publicación y administración de prendas comerciales. | Identificar dificultades en la gestión del catálogo. |
+| UF11 – Virtual Product Visualization | Explorar cómo se visualizarían productos comerciales mediante el probador virtual. | Evaluar el interés y la utilidad percibida de la funcionalidad. |
+
+**Preguntas de validación:**
+
+1. ¿Qué beneficios consideras que Mirage podría ofrecer a tu tienda?
+2. ¿La Landing Page explica claramente cómo participar como tienda aliada?
+3. ¿Qué tan sencillo te parece el proceso de registro o solicitud de alianza?
+4. ¿Consideras útil publicar las prendas de tu catálogo dentro de Mirage?
+5. ¿Crees que permitir la visualización virtual de productos aportaría valor a tus clientes?
+6. ¿Qué funcionalidades necesitaría Mirage para resultar útil a tu negocio?
+
+#### Metodología de las Entrevistas
+
+Las entrevistas se desarrollarán mediante sesiones individuales, presenciales o virtuales, en las que los participantes realizarán tareas relacionadas con los User Flows definidos.
+
+Durante cada sesión, el equipo observará el comportamiento de los usuarios, registrará las dificultades encontradas y recopilará sus comentarios sobre la experiencia.
+
+| **Aspecto** | **Descripción** |
+|---|---|
+| **Técnica** | Entrevistas semiestructuradas y pruebas de usabilidad. |
+| **Participantes** | Usuarios pertenecientes a los dos segmentos objetivo de Mirage. |
+| **Modalidad** | Presencial o virtual mediante Google Meet. |
+| **Duración estimada** | Entre 15 y 25 minutos por participante. |
+| **Materiales** | Landing Page, prototipos de Figma y módulos funcionales disponibles de Mirage. |
+| **Método de evaluación** | Observación directa, preguntas abiertas y evaluación mediante los criterios heurísticos establecidos para el proyecto. |
+| **Registro de resultados** | Notas de observación, respuestas de los participantes y evidencias de interacción, previa autorización. |
+
+Para las funcionalidades que aún no se encuentren implementadas, se utilizarán prototipos interactivos, diferenciando los resultados obtenidos mediante simulaciones de aquellos correspondientes a componentes funcionales.
+
+#### Criterios de Evaluación
+
+Los resultados se analizarán considerando los siguientes aspectos:
+
+- **Usabilidad:** facilidad para completar las tareas propuestas.
+- **Claridad:** comprensión de las funcionalidades y mensajes de la interfaz.
+- **Navegación:** facilidad para identificar opciones y desplazarse entre pantallas.
+- **Eficiencia:** tiempo y cantidad de acciones necesarias para completar las tareas.
+- **Satisfacción:** percepción general de los participantes sobre la experiencia.
+- **Utilidad:** valor percibido de las funcionalidades de Mirage.
+
+Los hallazgos obtenidos servirán para identificar problemas de usabilidad y proponer mejoras en la Landing Page, la aplicación móvil y los futuros módulos comerciales.
+
+### 7.3.2.	Registro de Entrevistas.
+
+### 7.3.3.	Evaluaciones según heurísticas.
+
+En esta sección se presenta el proceso de evaluación heurística de la experiencia de usuario de **Mirage**, desarrollado por el equipo **ReWear**. La evaluación tiene como propósito identificar posibles problemas de usabilidad, arquitectura de información y diseño inclusivo en la Landing Page y las interfaces de la aplicación.
+
+El análisis se realizará tomando como referencia el formato establecido en el **Anexo D: UX Heuristics & Principles Evaluation**, considerando las actividades de validación definidas para los segmentos objetivo de consumidores de moda y tiendas de ropa.
+
+#### UX Heuristics & Principles Evaluation
+
+**Usability – Inclusive Design – Information Architecture**
+
+| **Campo** | **Información** |
+|---|---|
+| **Carrera** | Ingeniería de Software |
+| **Curso** | Software Emergentes |
+| **Sección** | Por completar |
+| **Profesores** | Por completar |
+| **Auditor** | Equipo ReWear |
+| **Cliente(s)** | Participantes de las entrevistas de validación |
+| **Site or App** | Mirage Landing Page / Mirage Mobile Application |
+| **Segmentos objetivo** | Consumidores de moda y tiendas de ropa |
+
+#### Tareas a evaluar
+
+El alcance de la evaluación comprende las siguientes tareas de interacción con los productos digitales de Mirage.
+
+| **ID** | **Tarea** | **Segmento objetivo** |
+|---|---|---|
+| T01 | Explorar la Landing Page e identificar la propuesta de valor. | Ambos segmentos |
+| T02 | Registrar una cuenta e iniciar sesión. | Consumidores de moda |
+| T03 | Registrar y visualizar prendas en el armario digital. | Consumidores de moda |
+| T04 | Generar recomendaciones de outfits. | Consumidores de moda |
+| T05 | Guardar y consultar outfits. | Consumidores de moda |
+| T06 | Explorar las funcionalidades disponibles de prueba virtual. | Consumidores de moda |
+| T07 | Identificar los beneficios comerciales de Mirage. | Tiendas de ropa |
+| T08 | Localizar el formulario de contacto para tiendas aliadas. | Tiendas de ropa |
+| T09 | Explorar el flujo propuesto de gestión de catálogos. | Tiendas de ropa |
+
+Las funcionalidades que aún no se encuentren implementadas serán evaluadas mediante prototipos interactivos, diferenciando los resultados obtenidos con prototipos de aquellos correspondientes a la aplicación funcional.
+
+#### Tareas no incluidas en esta evaluación
+
+- Publicación completa de catálogos comerciales.
+- Procesamiento de pagos o compras dentro de la plataforma.
+- Prueba virtual avanzada de prendas en tiempo real.
+- Interacciones sociales entre usuarios.
+- Administración de alianzas comerciales en producción.
+
+Estas funcionalidades podrán incorporarse en futuras sesiones de evaluación, conforme avance su implementación.
+
+#### Escala de severidad
+
+Los problemas identificados se clasificarán mediante la escala de severidad establecida en el formato de evaluación heurística.
+
+| **Nivel** | **Severidad** | **Descripción** |
+|---|---|---|
+| **1** | Problema superficial | Dificultad poco frecuente o fácil de superar. Puede corregirse cuando exista disponibilidad de tiempo. |
+| **2** | Problema menor | Dificultad que afecta parcialmente la experiencia. Se recomienda corregirla en una próxima versión. |
+| **3** | Problema mayor | Problema frecuente que dificulta considerablemente completar una tarea. Requiere una corrección prioritaria. |
+| **4** | Problema muy grave | Problema crítico que impide continuar con una funcionalidad esencial. Debe corregirse antes de su publicación. |
+
+#### Tabla resumen de evaluación heurística
+
+La siguiente tabla presenta ejemplos de posibles problemas que deben revisarse durante las sesiones de validación de Mirage. Los resultados definitivos se registrarán a partir de las observaciones reales de los participantes.
+
+| **#** | **Problema potencial a evaluar** | **Heurística / Principio** | **Severidad** |
+|---|---|---|---|
+| 1 | El usuario podría no identificar claramente cómo agregar una prenda al armario. | Usability: Reconocimiento antes que recuerdo. | Pendiente |
+| 2 | La aplicación podría no comunicar claramente el estado de generación de un outfit. | Usability: Visibilidad del estado del sistema. | Pendiente |
+| 3 | Los usuarios podrían tener dificultades para regresar desde el probador virtual. | Usability: Libertad y control del usuario. | Pendiente |
+| 4 | Algunas opciones de navegación podrían resultar difíciles de localizar. | Information Architecture: Findability. | Pendiente |
+| 5 | El contraste de determinados elementos podría dificultar su lectura. | Inclusive Design: Experiencias comparables. | Pendiente |
+| 6 | Las tiendas podrían no identificar fácilmente dónde solicitar una alianza comercial. | Information Architecture: Findability. | Pendiente |
+
+#### Descripción de problemas
+
+Los siguientes registros muestran la estructura que se utilizará para documentar cada problema identificado durante la evaluación.
+
+##### Problema #1: Dificultad para identificar el registro de prendas
+
+**Severidad:** Pendiente de evaluación.
+
+**Heurística:** Usability – Reconocimiento antes que recuerdo.
+
+**Problema:**
+
+Se evaluará si el usuario puede identificar fácilmente la opción para agregar una nueva prenda al armario digital de Mirage, sin necesitar instrucciones adicionales.
+
+**Recomendación:**
+
+Utilizar una acción visible para registrar prendas, acompañada de un ícono reconocible y una etiqueta clara.
+
+
+##### Problema #2: Falta de claridad durante la generación de outfits
+
+**Severidad:** Pendiente de evaluación.
+
+**Heurística:** Usability – Visibilidad del estado del sistema.
+
+**Problema:**
+
+Se verificará si la aplicación comunica adecuadamente al usuario cuándo una recomendación está siendo procesada y cuándo el resultado se encuentra disponible.
+
+**Recomendación:**
+
+Incorporar indicadores visuales de carga y mensajes que informen sobre el estado de la generación de recomendaciones.
+
+
+##### Problema #3: Dificultad para regresar desde el probador virtual
+
+**Severidad:** Pendiente de evaluación.
+
+**Heurística:** Usability – Libertad y control del usuario.
+
+**Problema:**
+
+Se evaluará si el usuario puede abandonar fácilmente la visualización tridimensional y regresar al armario digital sin perder su contexto de navegación.
+
+**Recomendación:**
+
+Incorporar controles de navegación claros que permitan cerrar la visualización virtual o regresar a la pantalla anterior.
+
+
+##### Problema #4: Dificultad para encontrar funcionalidades principales
+
+**Severidad:** Pendiente de evaluación.
+
+**Heurística:** Information Architecture – Findability.
+
+**Problema:**
+
+Se analizará si las opciones del armario digital, recomendaciones y outfits guardados están organizadas de manera comprensible y pueden localizarse sin esfuerzo excesivo.
+
+**Recomendación:**
+
+Organizar las funcionalidades mediante categorías y etiquetas consistentes, priorizando las acciones más utilizadas.
+
+
+##### Problema #5: Posibles dificultades de accesibilidad visual
+
+**Severidad:** Pendiente de evaluación.
+
+**Heurística:** Inclusive Design – Experiencias comparables.
+
+**Problema:**
+
+Se revisará si los textos, botones e indicadores presentan suficiente contraste, tamaños legibles y alternativas de identificación que no dependan únicamente del color.
+
+**Recomendación:**
+
+Mejorar el contraste, mantener tamaños de texto adecuados y utilizar etiquetas descriptivas junto con elementos visuales.
+
+
+##### Problema #6: Dificultad para identificar la solicitud de alianza comercial
+
+**Severidad:** Pendiente de evaluación.
+
+**Heurística:** Information Architecture – Findability.
+
+**Problema:**
+
+Se evaluará si los representantes de tiendas pueden encontrar fácilmente la información sobre alianzas comerciales y acceder al formulario de contacto desde la Landing Page.
+
+**Recomendación:**
+
+Incorporar una sección visible para tiendas aliadas y un botón de acción con una etiqueta clara, como "Registrar mi tienda" o "Solicitar alianza".
+
+
+## 7.4.	Video About-the-Product.
+
 ## Conclusiones
 
 El enfoque Attribute-Driven Design permitió priorizar los drivers arquitectónicos de Mirage, como el comportamiento temporal, el rendimiento, la escalabilidad, la seguridad, la interoperabilidad y la precisión de la IA, a partir de las user stories principales. Esto aseguró que la arquitectura responda a necesidades reales del negocio y no solo a la funcionalidad. Además, los escenarios de atributos de calidad se definieron con medidas concretas, como un tiempo de respuesta de 4 segundos o menos, una latencia de 200 ms o menos y más de 500 usuarios concurrentes, lo que hace verificable el cumplimiento de los requisitos no funcionales y facilita su validación posterior. El refinamiento del escenario de reconocimiento con IA evidenció, a su vez, la dependencia crítica de servicios externos, por lo que es necesario considerar mecanismos de resiliencia, como timeouts y reintentos, desde etapas tempranas del diseño.
