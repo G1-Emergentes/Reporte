@@ -86,6 +86,29 @@
         - Capítulo VI: Solution UX Design (6.1 – 6.5)
       </td>
     </tr>
+    <tr>
+      <td>TB2</td>
+      <td>12/11/2026</td>
+      <td>
+        - Cabanillas Meza, Jose Mateo <br>
+        - Ortiz Cardenas, Johanna Antuanete <br>
+        - Sánchez Manrique, Italo Ludwing <br>
+        - Sarmiento Medina, Loreley <br>
+        - Zegarra López, Renato Sebastián Rubber
+      </td>
+      <td>
+        - Capítulo VII: Solution Implementation, Validation & Deployment.<br>
+        - Software Development Environment Configuration.<br>
+        - Source Code Management y Coding Conventions.<br>
+        - Software Deployment Configuration y C4 Deployment Diagram.<br>
+        - Sprint 1: Sprint Planning y Sprint Backlog.<br>
+        - Development Evidence y Testing Suite Evidence for Sprint Review.<br>
+        - Services Documentation Evidence y Execution Evidence.<br>
+        - Software Deployment Evidence y Team Collaboration Insights.<br>
+        - Validation Interviews: Diseño de Entrevistas y Evaluaciones según Heurísticas.<br>
+        - Actualización del Student Outcome 3 con las contribuciones de TB2.
+      </td>
+    </tr>
   </tbody>
 </table>
 </div>
@@ -109,51 +132,106 @@ TB1 (19/09/2026):
 </tr>
 </thead>
 <tbody>
+
 <tr>
 <td>3.c1. Comunica oralmente con efectividad a diferentes rangos de audiencia.</td>
 <td>
+
 <b>Cabanillas Meza, Jose Mateo</b><br>
 TB1: Participé exponiendo los diagramas de arquitectura de software (system landscape, contexto, contenedores y despliegue) ante el equipo y el docente.<br><br>
+
 TP: Participé en el desarrollo del proyecto realizando los diagramas C4, definiendo los sistemas tecnológicos y elaborando los wireframes, comunicando y coordinando las decisiones de diseño con el equipo.<br><br>
+
+TB2: Participé comunicando al equipo los avances del Sprint 1 relacionados con el desarrollo del User Auth Service, explicando la implementación de los endpoints de autenticación, la configuración del backend y su integración con los servicios de Mirage. Asimismo, coordiné aspectos técnicos para facilitar la integración de los componentes desarrollados.<br><br>
+
 <b>Ortiz Cardenas, Johanna Antuanete</b><br>
 TB1: Participé explicando el Attribute-Driven Design (drivers, decisiones de diseño y escenarios de calidad) al equipo y en la sustentación.<br><br>
+
 TP: Participé explicando al equipo y en la sustentación los diagramas de clases y el modelo de base de datos de los bounded contexts, así como el diseño de la landing page, de la aplicación y los wireflows que conectan sus pantallas.<br><br>
+
+TB2: Participé comunicando los avances técnicos del Virtual Try-On Service, explicando la generación de modelos tridimensionales mediante SPAR3D y la integración de funcionalidades relacionadas con el probador virtual. Asimismo, coordiné con el equipo las decisiones de implementación y las mejoras necesarias para el funcionamiento del servicio.<br><br>
+
 <b>Sánchez Manrique, Italo Ludwing</b><br>
 TB1: Participé comunicando los hallazgos de entrevistas, needfinding y ubiquitous language en las revisiones del equipo.<br><br>
+
+TB2: Participé comunicando y coordinando los avances del Sprint 1, explicando al equipo la organización del Sprint Planning, Sprint Backlog y las evidencias de desarrollo, pruebas, documentación de APIs y despliegue. Asimismo, presenté los avances de la aplicación móvil y los servicios implementados, facilitando la comunicación de los resultados técnicos para el Sprint Review.<br><br>
+
 <b>Sarmiento Medina, Loreley</b><br>
 TB1: Participé presentando el perfil de la startup, el proceso Lean UX y los segmentos objetivo ante el equipo y el docente.<br><br>
+
 TP: Participé explicando al equipo y durante la sustentación las decisiones de UX/UI de Mirage, incluyendo los lineamientos visuales, la arquitectura de información, la organización de la Landing Page y los principales flujos de navegación de la aplicación. Asimismo, presenté los wireframes, mock-ups y User Flows desarrollados para los módulos de armario digital, creación de outfits, AI Try-On, realidad aumentada, comunidad, tiendas aliadas, experiencia QR y probador virtual.<br><br>
+
+TB2: Participé comunicando al equipo los avances del Virtual Try-On Service, explicando la implementación de la prueba virtual de accesorios y el almacenamiento de modelos tridimensionales mediante Supabase Storage. Asimismo, compartí las decisiones técnicas relacionadas con el procesamiento de imágenes y la integración del servicio con las funcionalidades de Mirage.<br><br>
+
 <b>Zegarra López, Renato Sebastián Rubber</b><br>
 TB1: Participé exponiendo el Event Storming y el modelado estratégico de DDD al equipo.<br><br>
-  TP: Participé en el desarrollo del proyecto elaborando los diagramas C4, definiendo los sistemas tecnológicos y diseñando los wireframes, coordinando las decisiones de arquitectura y diseño con el equipo.<br><br>
+
+TP: Participé en el desarrollo del proyecto elaborando los diagramas C4, definiendo los sistemas tecnológicos y diseñando los wireframes, coordinando las decisiones de arquitectura y diseño con el equipo.<br><br>
+
+TB2: Participé comunicando los avances de la aplicación móvil de Mirage y su integración con los servicios desarrollados durante el Sprint 1. Expliqué al equipo los principales flujos implementados, como la gestión del armario digital, la generación y almacenamiento de outfits y las funcionalidades iniciales del probador virtual, coordinando las mejoras necesarias para la experiencia de usuario.<br><br>
+
 </td>
 
-<td>TB1: El equipo comunicó oralmente sus avances de forma clara y ordenada, adaptando el nivel técnico según la audiencia (compañeros, docente).</td>
+<td>
+<b>TB1:</b> El equipo comunicó oralmente sus avances de forma clara y ordenada, adaptando el nivel técnico según la audiencia, incluyendo compañeros y docente.<br><br>
+
+<b>TP:</b> Los integrantes fortalecieron sus habilidades de comunicación mediante la presentación y explicación de diagramas de arquitectura, modelos de dominio, diseños de interfaces y flujos de navegación, facilitando la comprensión de las decisiones técnicas y funcionales del proyecto.<br><br>
+
+<b>TB2:</b> El equipo fortaleció su comunicación oral mediante la coordinación de actividades del Sprint 1 y la explicación de los avances técnicos de los servicios User Auth, Recommendation y Virtual Try-On, así como de la aplicación móvil. Esto permitió compartir conocimientos, resolver dudas y presentar los resultados de implementación de manera comprensible para los integrantes y el docente.
+</td>
 </tr>
+
 <tr>
 <td>3.c2. Comunica por escrito con efectividad a diferentes rangos de audiencia.</td>
 <td>
+
 <b>Cabanillas Meza, Jose Mateo</b><br>
 TB1: Me encargué de redactar la sección de arquitectura de software del informe (4.3).<br><br>
+
 TP: Documenté en el proyecto los diagramas C4, los sistemas tecnológicos y los wireframes, describiendo de manera clara la arquitectura y la propuesta de solución.<br><br>
+
+TB2: Contribuí con la documentación técnica del User Auth Service, incluyendo la descripción de los endpoints de autenticación, la configuración del backend y los aspectos relacionados con la integración de servicios. Asimismo, participé en el registro de avances técnicos mediante GitHub, facilitando la trazabilidad de los cambios realizados durante el sprint.<br><br>
+
 <b>Ortiz Cardenas, Johanna Antuanete</b><br>
 TB1: Me encargué de redactar la sección de Attribute-Driven Design del informe (4.1).<br><br>
+
 TP: Me encargué de elaborar y redactar los Domain Layer Class Diagrams y el Database Design Diagram de los bounded contexts (5.X.6.1 y 5.X.6.2), así como las secciones de Landing & Applications Design y Applications Wireflow Diagrams del informe (6.3, 6.4.2).<br><br>
+
+TB2: Contribuí con la documentación de los avances del Virtual Try-On Service, describiendo la generación de modelos 3D mediante SPAR3D, los endpoints del servicio y las funcionalidades implementadas para la visualización de prendas. Asimismo, registré cambios en GitHub, permitiendo mantener evidencia del desarrollo y la evolución del servicio.<br><br>
+
 <b>Sánchez Manrique, Italo Ludwing</b><br>
 TB1: Me encargué de redactar las secciones de entrevistas, needfinding y ubiquitous language del informe (2.2 a 2.4).<br><br>
 
+TB2: Me encargué de desarrollar y organizar la documentación correspondiente al Sprint 1 de Mirage, incluyendo Sprint Planning, Sprint Backlog, Development Evidence, Testing Suite Evidence, Services Documentation Evidence, Software Deployment Evidence, Execution Evidence y Team Collaboration Insights. Asimismo, documenté los avances de los servicios backend y de la aplicación móvil mediante tablas de commits, capturas de Swagger UI y evidencias de ejecución. También participé en la elaboración de las secciones de entrevistas de validación y evaluación heurística, manteniendo la estructura y coherencia del informe en Markdown dentro del repositorio de GitHub.<br><br>
+
 <b>Sarmiento Medina, Loreley</b><br>
 TB1: Me encargué de redactar el perfil de la startup, el Lean UX y el análisis de competidores del informe (1.1 a 2.1).<br><br>
-TP: Me encargué de desarrollar y documentar el capítulo de Solution UX Design, incluyendo los Style Guidelines, Information Architecture, Landing Page UI Design y Applications UX/UI Design. Elaboré y organicé los wireframes, mock-ups y User Flow Diagrams de la aplicación, así como la documentación del prototipo navegable en Figma<br><br>
+
+TP: Me encargué de desarrollar y documentar el capítulo de Solution UX Design, incluyendo los Style Guidelines, Information Architecture, Landing Page UI Design y Applications UX/UI Design. Elaboré y organicé los wireframes, mock-ups y User Flow Diagrams de la aplicación, así como la documentación del prototipo navegable en Figma.<br><br>
+
+TB2: Contribuí con la documentación técnica del Virtual Try-On Service, registrando los avances relacionados con la implementación de la prueba virtual de accesorios, el almacenamiento de archivos GLB y la integración con Supabase Storage. Asimismo, documenté los cambios realizados mediante commits en GitHub, facilitando la comprensión de las funcionalidades implementadas y su integración con Mirage.<br><br>
+
 <b>Zegarra López, Renato Sebastián Rubber</b><br>
 TB1: Me encargué de redactar la sección de Domain-Driven Design con Event Storming del informe (4.2.2 a 4.2.5).<br><br>
-  TP: Documenté los diagramas C4, los sistemas tecnológicos y los wireframes desarrollados para el proyecto, explicando de forma clara la arquitectura y el diseño de la solución.</b><br>
+
+TP: Documenté los diagramas C4, los sistemas tecnológicos y los wireframes desarrollados para el proyecto, explicando de forma clara la arquitectura y el diseño de la solución.<br><br>
+
+TB2: Contribuí con la documentación de los avances de la aplicación móvil de Mirage, describiendo las funcionalidades implementadas para la gestión de prendas, generación de recomendaciones y administración de outfits. Asimismo, participé en el registro de cambios mediante GitHub y en la organización de evidencias visuales que muestran la ejecución de las principales pantallas y flujos desarrollados durante el Sprint 1.<br><br>
+
 </td>
 
-<td>TB1: El equipo elaboró un informe escrito estructurado y coherente, integrando cada sección de forma clara para distintos lectores (docente, equipo).</td>
+<td>
+<b>TB1:</b> El equipo elaboró un informe escrito estructurado y coherente, integrando cada sección de forma clara para distintos lectores, como el docente y los integrantes del equipo.<br><br>
+
+<b>TP:</b> El equipo consolidó la documentación técnica y visual del proyecto, utilizando diagramas, modelos de datos, prototipos y descripciones funcionales que facilitaron la comprensión de la arquitectura y la experiencia de usuario de Mirage.<br><br>
+
+<b>TB2:</b> El equipo fortaleció su capacidad de comunicación escrita mediante la elaboración de documentación técnica, registro de commits, descripción de endpoints, evidencias de ejecución y seguimiento de actividades del Sprint 1. El uso de GitHub y Markdown permitió organizar los entregables y mantener la trazabilidad de los avances, facilitando la comprensión del proyecto tanto para el equipo de desarrollo como para el docente.
+</td>
 </tr>
+
 </tbody>
 </table>
+
 
 ## **Contenido**
 
