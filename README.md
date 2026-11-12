@@ -5105,6 +5105,79 @@ Los hallazgos obtenidos servirán para identificar problemas de usabilidad y pro
 
 ### 7.3.2.	Registro de Entrevistas.
 
+
+#### Entrevista de Validación N.º 1 – Consumidor de Moda
+
+La primera entrevista de validación de **Mirage** estuvo dirigida a un participante del segmento objetivo de consumidores de moda. El propósito fue presentar las principales funcionalidades de la aplicación móvil y recopilar opiniones sobre su utilidad, diseño visual y facilidad de uso.
+
+Durante la sesión se mostraron las funcionalidades relacionadas con el armario digital, registro de prendas, recomendaciones de outfits mediante inteligencia artificial, visualización de modelos 3D, realidad aumentada y personalización del perfil.
+
+**Datos de la entrevista:**
+
+| **Campo** | **Descripción** |
+|---|---|
+| **Entrevista** | Entrevista de Validación N.º 1 |
+| **Proyecto** | Mirage – ReWear |
+| **Segmento objetivo** | Consumidores de moda |
+| **Entrevistador** | Cárdenas |
+| **Entrevistado** | Participante del segmento objetivo (nombre no especificado) |
+| **Fecha** | No especificada |
+| **Duración aproximada** | 5 minutos |
+| **Modalidad** | Demostración de funcionalidades y entrevista |
+| **Evidencia** | [Ver entrevista en YouTube](https://www.youtube.com/watch?v=YJrrvDJYsFw) |
+
+#### Desarrollo de la entrevista
+
+Durante la entrevista, se presentó Mirage como una aplicación móvil que busca ayudar a los usuarios a decidir qué vestir y aprovechar mejor las prendas de su armario.
+
+Se explicaron las funcionalidades principales de la aplicación, incluyendo el registro digital de prendas mediante fotografías, las recomendaciones personalizadas con inteligencia artificial y las experiencias de prueba virtual.
+
+Posteriormente, se realizó un recorrido por las principales pantallas de la aplicación, mostrando el inicio de sesión, Home, My Closet, Accessories, Explore y Profile.
+
+Finalmente, se presentó la funcionalidad de Mirage como estilista virtual y se solicitó al participante su opinión sobre la experiencia, las funcionalidades que más le interesaron y los aspectos que consideraba necesario mejorar.
+
+#### Análisis de las respuestas
+
+| **Aspecto evaluado** | **Respuesta u observación del entrevistado** | **Análisis** |
+|---|---|---|
+| **Prueba virtual de outfits** | El participante indicó que le gustó especialmente la posibilidad de visualizar cómo se vería utilizando diferentes combinaciones de ropa. | La prueba virtual fue la funcionalidad que despertó mayor interés durante la entrevista, lo que sugiere que representa un elemento atractivo de la propuesta de Mirage. |
+| **Diseño visual** | El participante sugirió que las fotografías de las prendas deberían mostrarse sin fondo o con una mejor integración respecto a los colores de la interfaz. | Se identificó una oportunidad de mejora relacionada con la presentación visual de las prendas, buscando una apariencia más uniforme y estética. |
+| **Organización de la aplicación** | El participante señaló que la aplicación estaba ordenada. | La percepción positiva sobre la organización sugiere que la distribución de las funcionalidades resultó comprensible durante la demostración. |
+| **Facilidad de uso** | El participante consideró que la aplicación era sencilla de utilizar. | La respuesta refleja una percepción favorable de usabilidad, aunque será necesario complementarla con pruebas donde el usuario realice tareas sin ayuda. |
+| **Valoración general** | El entrevistado expresó una opinión positiva sobre las funcionalidades presentadas. | La demostración generó una reacción favorable, especialmente respecto a la visualización virtual y la organización del armario. |
+
+#### Hallazgos principales
+
+A partir de las respuestas recopiladas, se identificaron los siguientes hallazgos:
+
+1. **Interés en el Virtual Try-On:** El participante destacó la posibilidad de visualizar cómo le quedaría un outfit, mostrando interés por las experiencias de prueba virtual.
+
+2. **Oportunidad de mejora visual:** Se sugirió eliminar los fondos de las fotografías de prendas o mejorar su integración con los colores de la aplicación para obtener una interfaz más estética.
+
+3. **Percepción positiva de organización:** El participante manifestó que las funcionalidades presentadas estaban ordenadas y que la aplicación parecía sencilla de utilizar.
+
+4. **Valoración favorable de Mirage:** La opinión general fue positiva, lo que representa un indicio inicial de aceptación de la propuesta, aunque no permite generalizar los resultados al resto del segmento objetivo.
+
+#### Recomendaciones de mejora
+
+A partir de las observaciones del participante, se plantean las siguientes acciones:
+
+- **Optimizar las imágenes de prendas:** Evaluar la eliminación automática del fondo mediante procesamiento de imágenes para mejorar su presentación dentro del armario digital.
+- **Uniformizar la presentación visual:** Ajustar los fondos, colores y tamaños de las imágenes para mantener consistencia entre las diferentes categorías de prendas.
+- **Mantener la organización de la interfaz:** Conservar la estructura de navegación y la distribución de funcionalidades que recibieron comentarios positivos.
+- **Profundizar la validación del Virtual Try-On:** Realizar pruebas prácticas con usuarios para comprobar si pueden completar el proceso de prueba virtual sin dificultades.
+
+#### Conclusión de la entrevista
+
+La primera entrevista de validación permitió obtener una percepción favorable sobre la propuesta de Mirage, destacando especialmente la funcionalidad de **prueba virtual de outfits** y la organización general de la aplicación.
+
+El principal aspecto de mejora identificado estuvo relacionado con la presentación visual de las prendas, específicamente con la eliminación de fondos y la armonización de las imágenes con los colores de la interfaz.
+
+Estos resultados proporcionan información cualitativa inicial para orientar mejoras de diseño. Sin embargo, debido a que la sesión consistió principalmente en una demostración guiada, será necesario realizar pruebas de interacción directa para evaluar con mayor precisión la usabilidad y el cumplimiento de las tareas propuestas.
+
+**Evidencia audiovisual:** [Entrevista de validación de Mirage – YouTube](https://www.youtube.com/watch?v=YJrrvDJYsFw)
+
+
 ### 7.3.3.	Evaluaciones según heurísticas.
 
 En esta sección se presenta el proceso de evaluación heurística de la experiencia de usuario de **Mirage**, desarrollado por el equipo **ReWear**. La evaluación tiene como propósito identificar posibles problemas de usabilidad, arquitectura de información y diseño inclusivo en la Landing Page y las interfaces de la aplicación.
