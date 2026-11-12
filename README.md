@@ -10,7 +10,7 @@
 <h4>1ASI0728 – ARQUITECTURAS DE SOFTWARE EN TECNOLOGIAS EMERGENTES</h4>
 <h4>NRC: 9077</h4>
 <h4>PROFESOR(A): Marino Humberto Jara Palacios</h4>
-<h4>INFORME DE TP</h4>
+<h4>INFORME DE TB2</h4>
 <h4>CICLO: 2026-20</h4>
 
 <br>
@@ -28,7 +28,7 @@
 
 <br>
 
-<h4>OCTUBRE - 2026</h4>
+<h4>NOVIEMBRE - 2026</h4>
 
 </div>
 
