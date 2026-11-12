@@ -3610,10 +3610,123 @@ Para considerar satisfactoria la validación de los componentes del Sprint 1 se 
 
 ### 7.2.1.5.	Execution Evidence for Sprint Review.
 
+
+Durante el **Sprint 1 de Mirage**, el equipo **ReWear** desarrolló y ejecutó diferentes funcionalidades de la aplicación móvil utilizando Flutter. Las evidencias muestran avances en la autenticación de usuarios, gestión del armario digital, recomendaciones de outfits mediante inteligencia artificial y funcionalidades iniciales de prueba virtual.
+
+A continuación, se presentan las capturas de pantalla obtenidas durante la ejecución de la aplicación en un emulador Android.
+
+#### Inicio y autenticación de usuarios
+
+**Figura 1. Pantalla de inicio de Mirage**
+
+![Mirage Logo](assets/sprint1/Mirage-logo.jpeg)
+
+*Se muestra la pantalla de bienvenida de Mirage, incorporando el logotipo y la identidad visual de ReWear.*
+
+**Figura 2. Introducción al armario digital**
+
+![Mirage Onboarding](assets/sprint1/Mirage-your-closed.jpeg)
+
+*Se presenta el proceso de introducción a la aplicación, mostrando las principales características del armario digital.*
+
+**Figura 3. Introducción a las funcionalidades de realidad aumentada**
+
+![Mirage AR Onboarding](assets/sprint1/Mirage-see-more.jpeg)
+
+*Se muestran las funcionalidades propuestas de visualización 3D, prueba virtual de accesorios mediante realidad aumentada y generación de outfits personalizados.*
+
+**Figura 4. Inicio de sesión**
+
+![Mirage Login](assets/sprint1/Mirage-login.jpeg)
+
+*Se presenta la interfaz de autenticación de usuarios mediante correo electrónico y contraseña, incluyendo la opción de acceso con Google.*
+
+**Figura 5. Recuperación de contraseña**
+
+![Mirage Password Recovery](assets/sprint1/Mirage-acceso.jpeg)
+
+*Se muestra el formulario para solicitar la recuperación de contraseña mediante el correo electrónico registrado.*
+
+#### Gestión del armario digital
+
+**Figura 6. Dashboard principal**
+
+![Mirage Dashboard](assets/sprint1/Mirage-dashboard.jpeg)
+
+*Se presenta la pantalla principal de Mirage, que permite acceder al armario digital, recomendaciones personalizadas y funcionalidades de prueba virtual.*
+
+**Figura 7. Armario digital**
+
+![Mirage My Closet](assets/sprint1/Mirage-my-closet.jpeg)
+
+*Se muestra la organización de prendas por categorías, como polos, pantalones, zapatos y accesorios.*
+
+**Figura 8. Perfil de usuario**
+
+![Mirage Profile](assets/sprint1/Mirage-perfil.jpeg)
+
+*Se presenta el perfil personal del usuario, incluyendo las opciones de configuración, preferencias, medidas corporales y outfits guardados.*
+
+**Figura 9. Listado de prendas**
+
+![Mirage Tops](assets/sprint1/Mirage-tops.jpeg)
+
+*Se visualizan las prendas registradas en una categoría del armario, incorporando opciones de búsqueda, filtrado y ordenamiento.*
+
+**Figura 10. Registro de nuevas prendas**
+
+![Mirage Add Item](assets/sprint1/Mirage-add-new-item.jpeg)
+
+*Se muestra el formulario para agregar prendas mediante fotografías y atributos como nombre, categoría, color y estilo.*
+
+**Figura 11. Detalle de accesorios**
+
+![Mirage Item Information](assets/sprint1/Mirage-informacion.jpeg)
+
+*Se presenta la información de un accesorio registrado, incluyendo sus características y las opciones de visualización 3D, prueba virtual y agregado a outfits.*
+
+#### Recomendaciones y gestión de outfits
+
+**Figura 12. Asistente de inteligencia artificial**
+
+![Mirage AI Stylist](assets/sprint1/Mirage-IA-estilista.jpeg)
+
+*Se muestra el asistente virtual de Mirage, que permite solicitar recomendaciones de outfits utilizando las prendas disponibles en el armario personal.*
+
+**Figura 13. Gestión de outfits**
+
+![Mirage New Outfit](assets/sprint1/MIrage-nuevo-outfit.jpeg)
+
+*Se presenta el detalle de un outfit compuesto por tres prendas, con opciones para editarlo, eliminarlo o iniciar una prueba virtual.*
+
+#### Virtual Try-On Service
+
+**Figura 14. Selección de fotografía corporal**
+
+![Mirage Body Photo](assets/sprint1/Mirage-photo.jpeg)
+
+*Se muestra la interfaz para seleccionar una fotografía corporal que será utilizada como referencia en la generación de una vista previa virtual. También se observa un mensaje de error al recuperar el avatar guardado.*
+
+**Figura 15. Preparación de prueba virtual**
+
+![Mirage Ready to Try](assets/sprint1/Mirage-ready-to-try.jpeg)
+
+*Se presentan las prendas seleccionadas para la prueba virtual, junto con la fotografía corporal y las opciones para reemplazarla o continuar con el proceso.*
+
+**Figura 16. Procesamiento de outfit mediante IA**
+
+![Mirage Creating Look](assets/sprint1/Mirage-creating-look.jpeg)
+
+*Se muestra el estado de procesamiento de un outfit, incluyendo las etapas de análisis, ajuste de proporciones y generación de la vista previa.*
+
+**Figura 17. Resultado de la prueba virtual**
+
+![Mirage AI Look](assets/sprint1/MIrage-AI-look.jpeg)
+
+*Se presenta una vista previa visual de la combinación generada mediante inteligencia artificial, incluyendo opciones para regenerar, comparar y editar el outfit.*
+
+
 ### 7.2.1.6.	Services Documentation Evidence for Sprint Review.
-
-
-### 7.2.1.5. Services Documentation Evidence for Sprint Review
 
 Durante el **Sprint 1 de Mirage**, el equipo ReWear desarrolló y documentó los endpoints de los servicios **User Auth Service, Profile Service, Digital Closet Service y Virtual Try-On Service**, utilizando Swagger UI y la especificación OpenAPI.
 
@@ -3790,15 +3903,374 @@ La documentación de estos servicios proporciona una referencia técnica para co
 
 ### 7.2.1.7.	Software Deployment Evidence for Sprint Review.
 
+Durante el **Sprint 1 de Mirage**, el equipo **ReWear** realizó actividades relacionadas con la preparación de los entornos de desarrollo, configuración de servicios backend, integración con plataformas cloud y ejecución local de los componentes de la solución.
+
+El objetivo de estas actividades fue establecer una infraestructura inicial que permita la comunicación entre la aplicación móvil, los servicios de autenticación, el armario digital y el módulo de prueba virtual.
+
+Como parte de los avances de esta iteración, se cuenta con documentación Swagger UI de los servicios **User Auth Service, Profile Service, Digital Closet Service y Virtual Try-On Service**, así como modificaciones registradas en los repositorios de GitHub.
+
+Además, se incorporaron componentes para utilizar **Supabase** como servicio de autenticación y almacenamiento, y se desarrollaron funcionalidades de generación de modelos tridimensionales mediante **SPAR3D**.
+
+Las evidencias corresponden principalmente a la preparación de infraestructura, desarrollo e integración de servicios y ejecución en entornos de prueba. No se considera completado el despliegue público de producción.
+
+#### Deployment Activities
+
+La siguiente tabla resume las principales actividades relacionadas con el despliegue de los productos digitales de Mirage durante el Sprint 1.
+
+| **Component** | **Technology / Platform** | **Deployment Activity** | **Evidence / Status** |
+|---|---|---|---|
+| **User Auth Service** | C++17 / Drogon / Supabase Auth | Incorporación del servicio de autenticación y configuración para su integración con Supabase. | Código versionado y documentación Swagger UI disponible. |
+| **Profile Service** | C++17 / Drogon | Preparación de endpoints para gestionar perfiles, preferencias y medidas corporales. | Endpoints documentados en Swagger UI. |
+| **Digital Closet Service** | C++17 / Drogon / Supabase | Preparación de operaciones para prendas, outfits y almacenamiento de imágenes. | Documentación Swagger UI de Garments y Outfits. |
+| **Virtual Try-On Service** | Python / SPAR3D / Supabase Storage | Incorporación de generación de modelos 3D y almacenamiento de archivos GLB. | Commits de implementación y documentación Swagger UI. |
+| **Mirage Mobile Application** | Flutter / Dart | Incorporación del proyecto móvil y desarrollo de funcionalidades de prendas y outfits. | Código fuente y commits disponibles en GitHub. |
+| **Recommendation Service** | Servicio de recomendaciones | Preparación de funcionalidades relacionadas con recomendaciones personalizadas. | Se requiere confirmar el despliegue y la URL de su API independiente. |
+| **Cloud Storage** | Supabase Storage | Incorporación del repositorio para almacenar modelos tridimensionales y recursos asociados. | Commit de integración; funcionamiento cloud pendiente de evidenciar con pruebas. |
+| **CI/CD** | GitHub / GitHub Actions | Preparación del flujo de control de versiones para futuras automatizaciones. | No se ha confirmado la ejecución de un pipeline de despliegue. |
+
+
+Durante el **Sprint 1 de Mirage**, el equipo **ReWear** realizó actividades relacionadas con la configuración del entorno de desarrollo, ejecución de servicios mediante Docker y preparación de la aplicación móvil con Flutter. Estas actividades permitieron establecer las bases necesarias para el despliegue local y la integración de los componentes de la solución.
+
+#### Backend Deployment – Docker
+
+Se utilizó **Docker Desktop** para ejecutar y administrar contenedores de servicios backend y bases de datos. La evidencia muestra contenedores activos de PostgreSQL, Redis y una Web API, permitiendo verificar la disponibilidad de estos componentes en el entorno local.
+
+**Figura 1. Backend Deployment – Docker Desktop**
+
+![Backend Deployment](assets/sprint1/Backend-Deployment.PNG)
+
+*La Figura 1 muestra los contenedores en ejecución desde Docker Desktop, incluyendo PostgreSQL, Redis y Web API.*
+
+#### Mobile Application Deployment – Flutter
+
+Se configuró el entorno de desarrollo móvil utilizando **Flutter** y un emulador Android. La evidencia muestra la compilación de un aplicativo Flutter en modo debug y su ejecución en el emulador, como parte de las actividades de preparación y validación del entorno móvil.
+
+**Figura 2. Mobile Application Deployment – Flutter**
+
+![Mirage Mobile](assets/sprint1/Mirage-Mobile.PNG)
+
+*La Figura 2 muestra la ejecución de una aplicación Flutter en un emulador Android. La captura corresponde a un proyecto denominado RDP Mobile App, por lo que se utiliza como evidencia del entorno de ejecución Flutter y no de una versión funcional de Mirage.*
+
+#### Cloud Storage – Supabase
+
+Se consideró **Supabase Storage** para la administración de archivos digitales y recursos multimedia utilizados por los servicios de Mirage, como fotografías de prendas y modelos tridimensionales.
+
+**Figura 3. Supabase Storage**
+
+![Supabase Storage](assets/sprint1/deployment-auth-service.jpeg)
+
+*La Figura 3 presenta una interfaz de referencia de Supabase Storage con buckets y archivos. Esta captura no acredita por sí sola la configuración del almacenamiento del proyecto Mirage.*
+
+
 ### 7.2.1.8.	Team Collaboration Insights during Sprint.
+
+
+Durante el **Sprint 1 de Mirage**, los integrantes del equipo **ReWear** colaboraron en el desarrollo e integración de los diferentes componentes de la solución, principalmente los servicios **User Auth Service, Recommendation Service y Virtual Try-On Service**, así como la aplicación móvil.
+
+Para gestionar el trabajo colaborativo se utilizó **GitHub**, permitiendo registrar los avances mediante commits, organizar los cambios y realizar integraciones entre ramas de desarrollo.
+
+Las siguientes capturas presentan las estadísticas de contribución de los repositorios, evidenciando la participación de los integrantes del equipo en diferentes actividades de implementación.
+
+**Figura 1. Team Collaboration – Repository Contributors**
+
+![Team Collaboration](assets/sprint1/Insights-1.png)
+
+*La Figura 1 muestra las contribuciones registradas en GitHub, reflejando la participación de los cinco integrantes del equipo en el repositorio correspondiente.*
+
+**Figura 2. Mobile Application – Repository Contributors**
+
+![Mobile Contributors](assets/sprint1/Insights-2.png)
+
+*La Figura 2 presenta las estadísticas de contribución de dos desarrolladores en el repositorio correspondiente a la aplicación móvil.*
+
+**Figura 3. Virtual Try-On Service – Repository Contributors**
+
+![Virtual Try-On Contributors](assets/sprint1/Insights-3.png)
+
+*La Figura 3 muestra las contribuciones de los desarrolladores que participaron en la implementación del servicio de prueba virtual.*
+
+En conclusión, las estadísticas de GitHub reflejan el **trabajo colaborativo del equipo ReWear** durante el Sprint 1, donde los integrantes contribuyeron en distintos componentes de Mirage. La distribución de actividades permitió avanzar en el desarrollo de los servicios y establecer las bases para su integración en las siguientes iteraciones.
+
 
 ## 7.3.	Validation Interviews.
 
+Para validar la propuesta de valor y la experiencia de usuario de **Mirage**, el equipo **ReWear** realizará entrevistas de validación dirigidas a los dos segmentos objetivo identificados: **consumidores de moda** y **tiendas de ropa**.
+
+Estas entrevistas permitirán evaluar la facilidad de uso, comprensión de las funcionalidades y utilidad percibida de la Landing Page y la aplicación de Mirage. Asimismo, se buscará identificar dificultades de navegación, oportunidades de mejora y necesidades adicionales de los usuarios.
+
+Las sesiones se desarrollarán mediante la interacción directa de los participantes con los prototipos o módulos funcionales disponibles, aplicando preguntas abiertas, tareas guiadas y evaluaciones heurísticas para recopilar información sobre la experiencia de uso.
+
 ### 7.3.1.	Diseño de Entrevistas.
+
+#### Segmento Objetivo 1: Consumidores de Moda
+
+Este segmento está conformado por jóvenes y adultos jóvenes interesados en la moda, quienes buscan organizar sus prendas, descubrir nuevas combinaciones y personalizar su estilo mediante herramientas digitales.
+
+**Objetivo de la entrevista:** Evaluar si los usuarios comprenden la propuesta de Mirage y pueden interactuar fácilmente con las funcionalidades principales del armario digital, recomendaciones personalizadas y prueba virtual.
+
+**Elementos que se evaluarán:**
+
+- Comprensión de la propuesta de valor presentada en la Landing Page.
+- Facilidad de navegación y acceso a la aplicación.
+- Registro e inicio de sesión.
+- Registro y visualización de prendas en el armario digital.
+- Generación y almacenamiento de outfits.
+- Comprensión de las recomendaciones personalizadas.
+- Interacción con las funcionalidades disponibles de visualización 3D o prueba virtual.
+
+**User Flows para la validación:**
+
+| **User Flow** | **Descripción** | **Objetivo de validación** |
+|---|---|---|
+| UF01 – Landing Page Navigation | Explorar la Landing Page e identificar las funcionalidades principales de Mirage. | Evaluar la claridad de la propuesta de valor y facilidad de navegación. |
+| UF02 – User Registration and Login | Registrar una cuenta e iniciar sesión en la aplicación. | Comprobar la facilidad del proceso de autenticación. |
+| UF03 – Digital Closet Management | Registrar una prenda y visualizarla dentro del armario digital. | Evaluar la facilidad de uso del registro y organización de prendas. |
+| UF04 – Outfit Recommendations | Seleccionar una prenda y solicitar recomendaciones de outfits. | Evaluar la utilidad y comprensión de las recomendaciones. |
+| UF05 – Outfit Management | Guardar y consultar una combinación de prendas. | Verificar la facilidad para administrar outfits. |
+| UF06 – Virtual Try-On | Explorar un modelo 3D o utilizar una función disponible de prueba virtual. | Evaluar la comprensión, interacción y utilidad percibida de la visualización virtual. |
+
+**Preguntas de validación:**
+
+1. ¿Qué entiendes sobre Mirage después de visitar la Landing Page?
+2. ¿Qué tan sencillo te resultó registrarte e iniciar sesión?
+3. ¿Tuviste alguna dificultad al registrar una prenda en el armario digital?
+4. ¿Consideras útiles las recomendaciones de outfits para combinar tu ropa?
+5. ¿Qué opinas de la posibilidad de visualizar prendas o accesorios virtualmente?
+6. ¿Qué funcionalidad mejorarías para que Mirage sea más fácil de utilizar?
+
+#### Segmento Objetivo 2: Tiendas de Ropa
+
+Este segmento está conformado por tiendas de ropa y accesorios interesadas en ampliar la visibilidad de sus productos mediante plataformas digitales.
+
+**Objetivo de la entrevista:** Evaluar si los representantes de tiendas comprenden la propuesta comercial de Mirage y consideran útil la posibilidad de publicar sus productos y permitir que los usuarios los descubran mediante recomendaciones y experiencias digitales.
+
+**Elementos que se evaluarán:**
+
+- Comprensión de la propuesta de valor de Mirage para tiendas.
+- Facilidad para encontrar información comercial en la Landing Page.
+- Claridad del proceso de contacto o solicitud de alianza.
+- Comprensión de las funcionalidades propuestas para gestionar catálogos.
+- Interés en permitir la visualización virtual de productos.
+- Utilidad percibida de los mecanismos de descubrimiento de prendas.
+
+**User Flows para la validación:**
+
+| **User Flow** | **Descripción** | **Objetivo de validación** |
+|---|---|---|
+| UF07 – Landing Page Exploration | Explorar la Landing Page e identificar los beneficios de Mirage para tiendas. | Evaluar la claridad de la propuesta comercial. |
+| UF08 – Store Partnership Request | Localizar y completar el formulario de solicitud de alianza. | Validar la facilidad del proceso de contacto comercial. |
+| UF09 – Store Profile Registration | Explorar el proceso propuesto de creación de una cuenta comercial. | Evaluar la comprensión del registro de tiendas. |
+| UF10 – Product Catalog Management | Explorar el flujo de publicación y administración de prendas comerciales. | Identificar dificultades en la gestión del catálogo. |
+| UF11 – Virtual Product Visualization | Explorar cómo se visualizarían productos comerciales mediante el probador virtual. | Evaluar el interés y la utilidad percibida de la funcionalidad. |
+
+**Preguntas de validación:**
+
+1. ¿Qué beneficios consideras que Mirage podría ofrecer a tu tienda?
+2. ¿La Landing Page explica claramente cómo participar como tienda aliada?
+3. ¿Qué tan sencillo te parece el proceso de registro o solicitud de alianza?
+4. ¿Consideras útil publicar las prendas de tu catálogo dentro de Mirage?
+5. ¿Crees que permitir la visualización virtual de productos aportaría valor a tus clientes?
+6. ¿Qué funcionalidades necesitaría Mirage para resultar útil a tu negocio?
+
+#### Metodología de las Entrevistas
+
+Las entrevistas se desarrollarán mediante sesiones individuales, presenciales o virtuales, en las que los participantes realizarán tareas relacionadas con los User Flows definidos.
+
+Durante cada sesión, el equipo observará el comportamiento de los usuarios, registrará las dificultades encontradas y recopilará sus comentarios sobre la experiencia.
+
+| **Aspecto** | **Descripción** |
+|---|---|
+| **Técnica** | Entrevistas semiestructuradas y pruebas de usabilidad. |
+| **Participantes** | Usuarios pertenecientes a los dos segmentos objetivo de Mirage. |
+| **Modalidad** | Presencial o virtual mediante Google Meet. |
+| **Duración estimada** | Entre 15 y 25 minutos por participante. |
+| **Materiales** | Landing Page, prototipos de Figma y módulos funcionales disponibles de Mirage. |
+| **Método de evaluación** | Observación directa, preguntas abiertas y evaluación mediante los criterios heurísticos establecidos para el proyecto. |
+| **Registro de resultados** | Notas de observación, respuestas de los participantes y evidencias de interacción, previa autorización. |
+
+Para las funcionalidades que aún no se encuentren implementadas, se utilizarán prototipos interactivos, diferenciando los resultados obtenidos mediante simulaciones de aquellos correspondientes a componentes funcionales.
+
+#### Criterios de Evaluación
+
+Los resultados se analizarán considerando los siguientes aspectos:
+
+- **Usabilidad:** facilidad para completar las tareas propuestas.
+- **Claridad:** comprensión de las funcionalidades y mensajes de la interfaz.
+- **Navegación:** facilidad para identificar opciones y desplazarse entre pantallas.
+- **Eficiencia:** tiempo y cantidad de acciones necesarias para completar las tareas.
+- **Satisfacción:** percepción general de los participantes sobre la experiencia.
+- **Utilidad:** valor percibido de las funcionalidades de Mirage.
+
+Los hallazgos obtenidos servirán para identificar problemas de usabilidad y proponer mejoras en la Landing Page, la aplicación móvil y los futuros módulos comerciales.
 
 ### 7.3.2.	Registro de Entrevistas.
 
 ### 7.3.3.	Evaluaciones según heurísticas.
+
+En esta sección se presenta el proceso de evaluación heurística de la experiencia de usuario de **Mirage**, desarrollado por el equipo **ReWear**. La evaluación tiene como propósito identificar posibles problemas de usabilidad, arquitectura de información y diseño inclusivo en la Landing Page y las interfaces de la aplicación.
+
+El análisis se realizará tomando como referencia el formato establecido en el **Anexo D: UX Heuristics & Principles Evaluation**, considerando las actividades de validación definidas para los segmentos objetivo de consumidores de moda y tiendas de ropa.
+
+#### UX Heuristics & Principles Evaluation
+
+**Usability – Inclusive Design – Information Architecture**
+
+| **Campo** | **Información** |
+|---|---|
+| **Carrera** | Ingeniería de Software |
+| **Curso** | Software Emergentes |
+| **Sección** | Por completar |
+| **Profesores** | Por completar |
+| **Auditor** | Equipo ReWear |
+| **Cliente(s)** | Participantes de las entrevistas de validación |
+| **Site or App** | Mirage Landing Page / Mirage Mobile Application |
+| **Segmentos objetivo** | Consumidores de moda y tiendas de ropa |
+
+#### Tareas a evaluar
+
+El alcance de la evaluación comprende las siguientes tareas de interacción con los productos digitales de Mirage.
+
+| **ID** | **Tarea** | **Segmento objetivo** |
+|---|---|---|
+| T01 | Explorar la Landing Page e identificar la propuesta de valor. | Ambos segmentos |
+| T02 | Registrar una cuenta e iniciar sesión. | Consumidores de moda |
+| T03 | Registrar y visualizar prendas en el armario digital. | Consumidores de moda |
+| T04 | Generar recomendaciones de outfits. | Consumidores de moda |
+| T05 | Guardar y consultar outfits. | Consumidores de moda |
+| T06 | Explorar las funcionalidades disponibles de prueba virtual. | Consumidores de moda |
+| T07 | Identificar los beneficios comerciales de Mirage. | Tiendas de ropa |
+| T08 | Localizar el formulario de contacto para tiendas aliadas. | Tiendas de ropa |
+| T09 | Explorar el flujo propuesto de gestión de catálogos. | Tiendas de ropa |
+
+Las funcionalidades que aún no se encuentren implementadas serán evaluadas mediante prototipos interactivos, diferenciando los resultados obtenidos con prototipos de aquellos correspondientes a la aplicación funcional.
+
+#### Tareas no incluidas en esta evaluación
+
+- Publicación completa de catálogos comerciales.
+- Procesamiento de pagos o compras dentro de la plataforma.
+- Prueba virtual avanzada de prendas en tiempo real.
+- Interacciones sociales entre usuarios.
+- Administración de alianzas comerciales en producción.
+
+Estas funcionalidades podrán incorporarse en futuras sesiones de evaluación, conforme avance su implementación.
+
+#### Escala de severidad
+
+Los problemas identificados se clasificarán mediante la escala de severidad establecida en el formato de evaluación heurística.
+
+| **Nivel** | **Severidad** | **Descripción** |
+|---|---|---|
+| **1** | Problema superficial | Dificultad poco frecuente o fácil de superar. Puede corregirse cuando exista disponibilidad de tiempo. |
+| **2** | Problema menor | Dificultad que afecta parcialmente la experiencia. Se recomienda corregirla en una próxima versión. |
+| **3** | Problema mayor | Problema frecuente que dificulta considerablemente completar una tarea. Requiere una corrección prioritaria. |
+| **4** | Problema muy grave | Problema crítico que impide continuar con una funcionalidad esencial. Debe corregirse antes de su publicación. |
+
+#### Tabla resumen de evaluación heurística
+
+La siguiente tabla presenta ejemplos de posibles problemas que deben revisarse durante las sesiones de validación de Mirage. Los resultados definitivos se registrarán a partir de las observaciones reales de los participantes.
+
+| **#** | **Problema potencial a evaluar** | **Heurística / Principio** | **Severidad** |
+|---|---|---|---|
+| 1 | El usuario podría no identificar claramente cómo agregar una prenda al armario. | Usability: Reconocimiento antes que recuerdo. | Pendiente |
+| 2 | La aplicación podría no comunicar claramente el estado de generación de un outfit. | Usability: Visibilidad del estado del sistema. | Pendiente |
+| 3 | Los usuarios podrían tener dificultades para regresar desde el probador virtual. | Usability: Libertad y control del usuario. | Pendiente |
+| 4 | Algunas opciones de navegación podrían resultar difíciles de localizar. | Information Architecture: Findability. | Pendiente |
+| 5 | El contraste de determinados elementos podría dificultar su lectura. | Inclusive Design: Experiencias comparables. | Pendiente |
+| 6 | Las tiendas podrían no identificar fácilmente dónde solicitar una alianza comercial. | Information Architecture: Findability. | Pendiente |
+
+#### Descripción de problemas
+
+Los siguientes registros muestran la estructura que se utilizará para documentar cada problema identificado durante la evaluación.
+
+##### Problema #1: Dificultad para identificar el registro de prendas
+
+**Severidad:** Pendiente de evaluación.
+
+**Heurística:** Usability – Reconocimiento antes que recuerdo.
+
+**Problema:**
+
+Se evaluará si el usuario puede identificar fácilmente la opción para agregar una nueva prenda al armario digital de Mirage, sin necesitar instrucciones adicionales.
+
+**Recomendación:**
+
+Utilizar una acción visible para registrar prendas, acompañada de un ícono reconocible y una etiqueta clara.
+
+
+##### Problema #2: Falta de claridad durante la generación de outfits
+
+**Severidad:** Pendiente de evaluación.
+
+**Heurística:** Usability – Visibilidad del estado del sistema.
+
+**Problema:**
+
+Se verificará si la aplicación comunica adecuadamente al usuario cuándo una recomendación está siendo procesada y cuándo el resultado se encuentra disponible.
+
+**Recomendación:**
+
+Incorporar indicadores visuales de carga y mensajes que informen sobre el estado de la generación de recomendaciones.
+
+
+##### Problema #3: Dificultad para regresar desde el probador virtual
+
+**Severidad:** Pendiente de evaluación.
+
+**Heurística:** Usability – Libertad y control del usuario.
+
+**Problema:**
+
+Se evaluará si el usuario puede abandonar fácilmente la visualización tridimensional y regresar al armario digital sin perder su contexto de navegación.
+
+**Recomendación:**
+
+Incorporar controles de navegación claros que permitan cerrar la visualización virtual o regresar a la pantalla anterior.
+
+
+##### Problema #4: Dificultad para encontrar funcionalidades principales
+
+**Severidad:** Pendiente de evaluación.
+
+**Heurística:** Information Architecture – Findability.
+
+**Problema:**
+
+Se analizará si las opciones del armario digital, recomendaciones y outfits guardados están organizadas de manera comprensible y pueden localizarse sin esfuerzo excesivo.
+
+**Recomendación:**
+
+Organizar las funcionalidades mediante categorías y etiquetas consistentes, priorizando las acciones más utilizadas.
+
+
+##### Problema #5: Posibles dificultades de accesibilidad visual
+
+**Severidad:** Pendiente de evaluación.
+
+**Heurística:** Inclusive Design – Experiencias comparables.
+
+**Problema:**
+
+Se revisará si los textos, botones e indicadores presentan suficiente contraste, tamaños legibles y alternativas de identificación que no dependan únicamente del color.
+
+**Recomendación:**
+
+Mejorar el contraste, mantener tamaños de texto adecuados y utilizar etiquetas descriptivas junto con elementos visuales.
+
+
+##### Problema #6: Dificultad para identificar la solicitud de alianza comercial
+
+**Severidad:** Pendiente de evaluación.
+
+**Heurística:** Information Architecture – Findability.
+
+**Problema:**
+
+Se evaluará si los representantes de tiendas pueden encontrar fácilmente la información sobre alianzas comerciales y acceder al formulario de contacto desde la Landing Page.
+
+**Recomendación:**
+
+Incorporar una sección visible para tiendas aliadas y un botón de acción con una etiqueta clara, como "Registrar mi tienda" o "Solicitar alianza".
+
 
 ## 7.4.	Video About-the-Product.
 
